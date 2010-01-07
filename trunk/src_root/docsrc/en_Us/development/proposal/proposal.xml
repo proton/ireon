@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+  "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+    <!ENTITY % global.entities SYSTEM
+        "../../../include/global.xml">
+    %global.entities;
+]>
+	<article lang="en">
+	
+	<articleinfo>
+    <title>Proposal of MMORPG Ireon</title>
+        
+   	<releaseinfo>Version 1.1.0</releaseinfo>
+        
+    <abstract>
+    <para>
+        This document describes our game design philosophy, our 
+        goals, and the differences between us and other mmorpgs. It 
+        is the project's basic and briefest management document.
+    </para>
+    <para>
+        If you have any questions, feel free to ask them at 
+        project’s <ulink url="http://forum.ireon.org/" 
+        >forum</ulink> or via e-mail <email>input@ireon.org</email>.
+    </para>
+    </abstract>
+        
+    <keywordset>
+   	<keyword>ireon</keyword>
+    <keyword>proposal</keyword>
+    </keywordset>
+    
+    <copyright>
+    	&copyrightinfo;
+    </copyright>
+    
+    <legalnotice>
+    	&legalnotice;
+    </legalnotice>
+    </articleinfo>
+    
+    <sect1 id="what_do_we_do">
+    <title id="what_do_we_do.title">What do we do</title>
+    <para>
+        Our primary goal is to develop a multiplayer online
+        three-dimensional RPG, a client-server persistent virtual 
+        world.
+    </para>
+    <para>
+        The game is to be played through the Internet. The virtual 
+        allocated server will be rented for the game. Playing the 
+        game will be free of charge for all users.
+    </para>
+    <para>
+        Ireon is an open source software, full source code is going 
+        to be available through GPL license.
+    </para>
+    
+    <sect2 id="platform">
+    <title id="platform.title">The platform</title>
+    <para>
+        The game is going to be developed for the PC platform. 
+        Development for other platforms currently is not planned. 
+        Developers will support the client for Windows OS, and 
+        server for FreeBSD. Developers will not support any other 
+        systems, but will help anyone who's willing to do it.
+	</para>
+	<para>
+        Hardware requirements for client and server parts will be 
+        described later in the <ulink 
+        url="http://www.ireon.org/en/docs/html/srs/index.html" 
+        >Software Requirements Specification</ulink>. Requirements 
+        should be relatively low to ensure wide accessibility 
+        (potential new developers included).
+	</para>
+    </sect2>
+    <!-- /The platform -->
+    
+    <sect2 id="audience">
+    <title id="audience.title">The audience</title>
+    <para>
+        The game is designed for the players who are at least 14 
+        years old. The game is intended for the English- and 
+        Russian-speaking markets (developers will support both 
+        English and Russian versions), that's why we are going to 
+        keep in mind opportunities for fairly simple localizations 
+        from the very beginning of development. 
+    </para>
+    <para>
+        The world is designed for moderate and moderately hardcore 
+        players. Players should have basic knowledge of RPGs and 
+        online games. The game is not designed for hardcore lovers 
+        of any specific RPG systems or games.
+    </para>
+    <para>
+        Our increased attention to social and exploring parts of 
+        virtual worlds hopefully will attract some additional 
+        players from MUDs and browser-based online games.
+    </para>
+    </sect2>
+    <!-- /The audience -->
+    
+    <sect2 id="similar_worlds">
+    <title id="similar_worlds.title">Worlds out there</title>
+    <para>
+        Some virtual worlds that share certain features with us:
+    </para>
+    <itemizedlist>
+    <listitem>
+    <para>
+    	<ulink url="http://www.worldofwarcraft.com/">World of 
+    	Warcraft</ulink> &mdash; a large-scale commercial world 
+    	similar in concept and style (server-client model, 
+    	three-dimensional world, real time play, fantasy setting, 
+    	etc.)
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+    	<ulink url="http://www.lineage2.com/">Lineage II</ulink> 
+    	&mdash; in the same way as World of Warcraft
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        <ulink url="http://www.planeshift.it/">Planeshift</ulink> 
+        &mdash; open source code
+   	</para>
+    </listitem>
+    <listitem>
+    <para>
+        <ulink url="http://www.3sider.com/">3sider</ulink> &mdash; a 
+        browser-based game where players affect global world 
+        situation by their actions
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        <ulink url="http://www.pentacore.ru/">Pentacore</ulink> 
+        &mdash; a browsed-based game that has politics and 
+        territories under control of different factions
+    </para>
+    </listitem>
+    </itemizedlist>
+    </sect2>
+    <!-- /Worlds out there -->
+    
+    <sect2 id="releaze_time">
+    <title id="releaze_time.title">When is release</title>
+    <para>
+        You can find information about planned playable release date 
+        in the <ulink 
+        url="http://www.ireon.org/en/docs/html/spmp.html" >Software 
+        Project Management Plan</ulink>.
+   	</para>
+    </sect2>
+    <!-- /When is release -->
+    
+    <sect2 id="our_goals">
+    <title id="our_goals.title">Our goals</title>
+    <para>
+        Our goal is research and development (r&amp;d) in game 
+        design, game programming and organization of distributed 
+        game development process. Certain project members may have 
+        other goals such as meeting new people or the world conquest 
+        :)
+     </para>
+     </sect2>
+     <!-- /Our goals -->
+        
+    <sect2 id="metrics">
+   	<title id="metrics.title">The metrics</title>
+    <para>
+        We are going to consider the project successful if:
+    </para>
+    <itemizedlist>
+    <listitem>
+    <para>
+        we have a detailed software requirements specification (two 
+        hundred pages excluding tables and so forth);
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+    	we develop and document (in a software project management 
+    	plan and similar papers) development methodology and define 
+    	and test tools for a smooth development process;
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        at least one game server is always online with at 
+        least 70-100 players online.
+    </para>
+    </listitem>
+    </itemizedlist>
+    </sect2>
+    <!-- /The metrics -->
+    
+    </sect1>
+    <!-- /What do we do -->
+    
+    <sect1 id="problem">
+    <title id="problem.title">The problem</title>
+    <para>
+        Nowadays the majority of large-scale client-server online 
+        RPGs are action-oriented worlds (Korean games are especially 
+        good examples of that). That is, they are designed mostly 
+        for those players who like fights, ratings, and 
+        tournaments.
+    </para>
+    <para>
+        On the other hand, surveys and studies (for example, see 
+        Nick Yee's <ulink 
+        url="http://www.nickyee.com/daedalus/">Daedalus</ulink> 
+        project) show that not all players are willing to have 
+        exactly this kind of life in a virtual world. Moreover, in 
+        our opinion a number of people who mostly want to socialize 
+        and interact greatly exceeds a number of action-lovers, but 
+        none of those people are taken into account in existing 
+        games.
+    </para>
+    <para>
+        There are some RPGs for those 'others'. For example <ulink 
+        url="http://www.atitd.com/">A Tale in the Desert</ulink> is 
+        designed mostly for explorer-type players and <ulink 
+        url="http://www.secondlife.com/">Second Life</ulink> is 
+        designed mostly for socializers. And certainly there are 
+        hundreds of MUDs each giving innumerable options for 
+        roleplaying and socializing. But all these worlds can not be 
+        considered popular when seen against large commercial 
+        'action' projects. In our POV, this is because of their flat 
+        learning curve (which is actually a bad thing opposite to 
+        the popular misapprehension), poor usability, and poor 
+        quality of service.
+    </para>
+    </sect1>
+    <!-- /The problem -->
+    
+    <sect1 id="our_solution">
+    <title id="our_solution.title">Our solution</title>
+    <para>
+        The ultimate goal of our project is to combine highly varied 
+        and interesting gameplay from MUDs with human-friendly 
+        interface and easily understandable visuals of client-server 
+        RPGs. Our core aims are easy socializing and rich gameplay 
+        (where 'rich' means the roles of warrior and battle mage are 
+        not the only ones possible).
+    </para>
+    <para>
+        Here are examples of specific game roles for 
+        non-fighters-like players:
+    </para>
+    <itemizedlist>
+    <listitem>
+    <para>
+        trader and crafter for explorers;
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        politician and journalist for socializers.
+    </para>
+    </listitem>
+    </itemizedlist>
+    <para>
+        But for all that openness and playing free of charge are not 
+        considered as key player-attracting factors. Openness of 
+        project is first and foremost needed for attracting new 
+        developers.
+    </para>
+    </sect1>
+    <!-- /Our solution -->
+    
+    <sect1 id="us_and_them">
+    <title id="us_and_them.title">The differences between us and 
+    other projects</title>
+    <para>
+        Our core difference from similar projects is gameplay based 
+        on needs of players, not dreams of developers. Our team is 
+        not a <emphasis>group of gamers</emphasis> that decided to 
+        develop 'a better World of Warcraft with more mobs'. In our 
+        work we are guided by studies and experience of leading 
+        experts in development of virtual worlds (you can find a 
+        list of recommended reading at our site). We pay special 
+        attention to usability and easy acquaintance of players with 
+        concepts of our world.
+    </para>
+    <para>
+        So, to sum up what do we have:
+    </para>
+    <itemizedlist>
+    <listitem>
+    <para>
+        efficient management &mdash; we place high emphasis on 
+        development process, methodology, tools, documents, etc.;
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        responsible approach &mdash; we study and draw on experience 
+        of other developers (e.g. using third-party software like 
+        Ogre engine);
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        steady workflow &mdash; our work does not depend on 
+        spontaneous enthusiasm of project's members, but is a 
+        continous process;
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        highest possible openness (code included) that continually 
+        attracts new developers.
+    </para>
+    </listitem>
+    </itemizedlist>
+    </sect1>
+    <!-- /The difference between us and other projects -->
+    
+    <sect1 id="what_read_next">
+    <title id="what_read_next.title">What to read next</title>
+    <para>
+    	If you are interested in project's management, next 
+    	document you should read is probably the <ulink 
+    	url="http://www.ireon.org/en/docs/html/spmp.html">Software 
+    	Project Management Plan</ulink>.
+    </para>
+    <para>
+        If you want to learn about Ireon's game design, the place to 
+        begin is the <ulink 
+        url="http://www.ireon.org/en/docs/html/concept.html">Concept 
+        Document</ulink>.
+    </para>
+    <para>
+        If you are not exactly sure what do you want to read next, 
+        our <ulink 
+        url="http://bugtraq.ireon.org/wiki/en/Tutorials/Docs" 
+        >Documentaion Guide</ulink> may help you to make up your 
+        mind.
+    </para>
+    </sect1>
+    <!-- /What to read next -->
+    
+	</article>
+	<!-- /Proposal of MMORPG Ireon -->

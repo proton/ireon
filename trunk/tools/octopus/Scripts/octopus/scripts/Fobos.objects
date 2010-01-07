@@ -1,0 +1,6 @@
+defineObjectTemplate
+{
+	name = "Fobos/Fobos",
+	entity = "Fobos"
+}
+

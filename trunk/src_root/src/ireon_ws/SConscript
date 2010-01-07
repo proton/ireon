@@ -1,0 +1,67 @@
+Import('codeBaseEnv')
+
+# -------------------------------------------------------------------------------
+# ---- ireon world server -------------------------------------------------------
+# -------------------------------------------------------------------------------
+
+wsBuildEnv = codeBaseEnv.Copy()
+
+wsBuildEnv['_targetName'] = 'ws'
+wsBuildEnv['_buildDir'] = str(codeBaseEnv['buildRoot_']) + '/' + wsBuildEnv['_targetName'] + '/'
+wsBuildEnv.BuildDir(wsBuildEnv['_buildDir'], '#src/', duplicate = 0)
+
+wsBuildEnv.Append (CPPPATH = ['#include/ireon_ws/', '#include/common/OgreTypes/', \
+								'#include/common/OgreOde', '#include/common/OgreOde/ServerOde', \
+								'/usr/local/ireon/srv/sdl/SDL-1.2.9/include', '/usr/local/ireon/srv/sdl/SDL_net-1.2.5'])
+wsBuildEnv.Append(LIBS = ['tinyxml_STL', 'SDL_net', 'SDL', 'ogre_types'])
+if (wsBuildEnv['platform_'] == 'win32') :
+	wsBuildEnv.Append(LIBS = ['intl', 'DevIl', 'WinMM']);
+elif (wsBuildEnv['platform_'] == 'posix') :
+	wsBuildEnv.Append (CPPDEFINES = ['EXT_HASH']);
+	wsBuildEnv.Append(LIBS = ['SDLmain', 'IL','z']);
+
+wsBuildEnv.Alias(wsBuildEnv['_targetName'], wsBuildEnv.Program(wsBuildEnv['_buildDir']+wsBuildEnv['_targetName'],[ \
+			wsBuildEnv['_buildDir']+'ireon_ws/main.cpp', \
+			wsBuildEnv['_buildDir']+'ireon_ws/ws_app.cpp', \
+			wsBuildEnv['_buildDir']+'ireon_ws/stdafx.cpp', \
+			wsBuildEnv['_buildDir']+'common/config.cpp', \
+			wsBuildEnv['_buildDir']+'common/xmlconfig.cpp', \
+			wsBuildEnv['_buildDir']+'common/synchronizer.cpp', \
+
+			wsBuildEnv['_buildDir']+'ireon_ws/net/ws_client.cpp', \
+			wsBuildEnv['_buildDir']+'ireon_ws/net/world_server.cpp', \
+			wsBuildEnv['_buildDir']+'ireon_ws/net/ws_player_context.cpp', \
+
+			wsBuildEnv['_buildDir']+'ireon_ws/world/ws_world.cpp', \
+			wsBuildEnv['_buildDir']+'ireon_ws/world/world_char_mob.cpp', \
+			wsBuildEnv['_buildDir']+'ireon_ws/world/world_char_player.cpp', \
+			wsBuildEnv['_buildDir']+'ireon_ws/world/world_character.cpp', \
+			wsBuildEnv['_buildDir']+'ireon_ws/world/world_object.cpp', \
+
+			wsBuildEnv['_buildDir']+'ireon_ws/resource/colour.cpp', \
+			wsBuildEnv['_buildDir']+'ireon_ws/resource/image.cpp', \
+			wsBuildEnv['_buildDir']+'common/resource/resource_manager.cpp', \
+
+			wsBuildEnv['_buildDir']+'common/db/account.cpp', \
+			wsBuildEnv['_buildDir']+'common/db/client_char_data.cpp', \
+			wsBuildEnv['_buildDir']+'ireon_ws/db/world_db.cpp', \
+			wsBuildEnv['_buildDir']+'ireon_ws/db/world_mob_prototype.cpp', \
+
+			wsBuildEnv['_buildDir']+'common/net/data.cpp', \
+			wsBuildEnv['_buildDir']+'common/net/net_data_processor.cpp', \
+			wsBuildEnv['_buildDir']+'common/net/net_server.cpp', \
+			wsBuildEnv['_buildDir']+'common/net/layers/compressing_layer.cpp', \
+			wsBuildEnv['_buildDir']+'common/net/layers/encrypting_layer.cpp', \
+			wsBuildEnv['_buildDir']+'common/net/layers/sock_layer.cpp', \
+			wsBuildEnv['_buildDir']+'common/net/layers/utility_layer.cpp', \
+			wsBuildEnv['_buildDir']+'common/net/net_types.cpp', \
+
+			wsBuildEnv['_buildDir']+'common/file/file.cpp', \
+			wsBuildEnv['_buildDir']+'common/file/fs.cpp', \
+			wsBuildEnv['_buildDir']+'common/file/directory.cpp', \
+
+			wsBuildEnv['_buildDir']+'common/log/log.cpp', \
+			wsBuildEnv['_buildDir']+'common/log/log_listener.cpp', \
+
+			wsBuildEnv['_buildDir']+'common/kernel/crc.cpp' \
+			]))

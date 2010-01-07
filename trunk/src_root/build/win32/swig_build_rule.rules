@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioToolFile
+	Name="SWIG interface file"
+	Version="8,00"
+	>
+	<Rules>
+		<CustomBuildRule
+			Name="Interface file SWIG"
+			DisplayName="Interface file SWIG"
+			CommandLine="swig.exe -c++ -python -I()  -DDEFINE -o $(InputName)X.cpp -oh $(InputName)X.h    interface_file.i"
+			Outputs="$(InputName)X.cpp $(InputName)X.h"
+			AdditionalDependencies="$(InputName).i $(InputName).cpp"
+			FileExtensions="*.i"
+			ExecutionDescription="Generated wrapper for $(InputName)"
+			>
+			<Properties>
+			</Properties>
+		</CustomBuildRule>
+	</Rules>
+</VisualStudioToolFile>

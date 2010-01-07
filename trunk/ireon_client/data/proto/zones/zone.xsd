@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+
+<xsd:schema targetNamespace="http://www.ireon.org/ireon/client/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:cfg="http://www.ireon.org/ireon/client/">
+
+  
+  <xsd:element name="scene" type="cfg:CfgScene"/> 
+ <xsd:complexType name="CfgPosition">
+    
+        <xsd:attribute name="x" type="xsd:float" use="required"/>
+        <xsd:attribute name="y" type="xsd:float" use="required"/>
+        <xsd:attribute name="z" type="xsd:float" use="required"/>
+    
+ </xsd:complexType>
+
+ 
+ <xsd:complexType name="CfgRotation">
+
+        <xsd:attribute name="qx" type="xsd:float" use="required"/>
+        <xsd:attribute name="qy" type="xsd:float" use="required"/>
+        <xsd:attribute name="qz" type="xsd:float" use="required"/>
+        <xsd:attribute name="qw" type="xsd:float" use="required"/>
+
+ </xsd:complexType>
+ 
+
+ <xsd:complexType name="CfgScale">
+
+        <xsd:attribute name="x" type="xsd:float" use="required"/>
+        <xsd:attribute name="y" type="xsd:float" use="required"/>
+        <xsd:attribute name="z" type="xsd:float" use="required"/>
+
+ </xsd:complexType>
+ 
+ 
+ <xsd:complexType name="CfgEntity">
+
+        <xsd:attribute name="name" type="xsd:string" use="required"/>
+        <xsd:attribute name="id" type="xsd:unsignedInt" use="required"/>
+        <xsd:attribute name="meshFile" type="xsd:string" use="required"/>
+        <xsd:attribute name="materialFile" type="xsd:string" use="required"/>
+        <xsd:attribute name="castsShadow" type="xsd:boolean" use="required"/>
+
+ </xsd:complexType>
+ 
+
+ 
+ <xsd:complexType name="CfgNode">
+    <xsd:sequence>
+        <xsd:element name="position" type="cfg:CfgPosition"/>
+        <xsd:element name="rotation" type="cfg:CfgRotation"/>
+        <xsd:element name="scale" type="cfg:CfgScale"/>
+        <xsd:element name="entity" minOccurs="0" maxOccurs="1" type="xsd:token"/>
+        
+        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="node" type="cfg:CfgNode" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+   </xsd:sequence>
+   
+   <xsd:attribute name="name" type="xsd:string" use="required"/>
+   
+ </xsd:complexType>
+ 
+ <xsd:complexType name="CfgNodes">
+   <xsd:sequence>
+        <xsd:element name="node" type="cfg:CfgNode" minOccurs="0" maxOccurs="unbounded"/>
+   </xsd:sequence>
+ </xsd:complexType>
+ 
+
+ 
+ <xsd:complexType name="CfgScene">
+   <xsd:sequence>
+    <xsd:element name="nodes" type="cfg:CfgNodes"/>
+   </xsd:sequence>
+   <xsd:attribute name="formatVersion" type="xsd:string" use="required"/>
+ </xsd:complexType>
+
+
+
+</xsd:schema>

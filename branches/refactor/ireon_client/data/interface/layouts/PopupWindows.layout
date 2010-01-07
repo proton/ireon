@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+<Window Type="DefaultGUISheet" >
+<Window Type="TaharezLook/FrameWindow" Name="DefaultPopupWindow" >
+<Property Name="CloseButtonEnabled" 	Value="False" />
+<Property Name="DragMovingEnabled" 		Value="True" />
+<Property Name="SizingEnabled" 			Value="False" />
+<Property Name="TitlebarEnabled" 		Value="True" />
+<Property Name="TitlebarFont" 			Value="Tahoma-12" />
+<Property Name="Position" 				Value="x:0.3 y:0.3" />
+<Property Name="Size" 					Value="w:0.4 h:0.3" />
+<Property Name="Text" 					Value="Title" />
+<Window Type="TaharezLook/StaticText" Name="DefaultPopupWindow/Text" >
+<Property Name="Position" 				Value="x:0.1 y:0.15" />
+<Property Name="Size" 					Value="w:0.8 h:0.75" />
+<Property Name="BackgroundEnabled" 		Value="false" />
+<Property Name="FrameEnabled" 			Value="false" />
+<Property Name="HorzFormatting" 		Value="HorzJustified" />
+<Property Name="VertFormatting" 		Value="VertCentered" />
+<Property Name="Text" 					Value="Text" />
+</Window>
+<Window Type="TaharezLook/Button" Name="DefaultPopupWindow/Button" >
+<Property Name="Position" 				Value="x:0.35 y:0.7" />
+<Property Name="Size" 					Value="w:0.3 h:0.15" />
+<Property Name="Text" 					Value="Ага" />
+</Window>
+</Window>
+<Window Type="TaharezLook/FrameWindow" Name="ConnectionPopupWindow" >
+<Property Name="CloseButtonEnabled" 	Value="False" />
+<Property Name="DragMovingEnabled" 		Value="True" />
+<Property Name="SizingEnabled" 			Value="False" />
+<Property Name="TitlebarEnabled" 		Value="True" />
+<Property Name="TitlebarFont" 			Value="Tahoma-12" />
+<Property Name="Position" 				Value="x:0.30 y:0.30" />
+<Property Name="Size" 					Value="w:0.4 h:0.3" />
+<Property Name="Text" 					Value="Connect" />
+<Window Type="TaharezLook/StaticText" Name="ConnectionPopupWindow/Text" >
+<Property Name="Position" 				Value="x:0.1 y:0.25" />
+<Property Name="Size" 					Value="w:0.8 h:0.70" />
+<Property Name="BackgroundEnabled" 		Value="false" />
+<Property Name="FrameEnabled" 			Value="false" />
+<Property Name="HorzFormatting" 		Value="HorzCentered" />
+<Property Name="VertFormatting" 		Value="VertCentered" />
+<Property Name="Text" 					Value="" />
+</Window>
+<Window Type="TaharezLook/Button" Name="ConnectionPopupWindow/Button" >
+<Property Name="Position" 				Value="x:0.35 y:0.7" />
+<Property Name="Size" 					Value="w:0.3 h:0.18" />
+<Property Name="Text" 					Value="Отменить" />
+</Window>
+</Window>
+<Window Type="TaharezLook/FrameWindow" Name="LoggingPopupWindow" >
+<Property Name="CloseButtonEnabled" 	Value="False" />
+<Property Name="DragMovingEnabled" 		Value="True" />
+<Property Name="SizingEnabled" 			Value="False" />
+<Property Name="TitlebarEnabled" 		Value="True" />
+<Property Name="Position" 				Value="x:0.30 y:0.30" />
+<Property Name="Size" 					Value="w:0.4 h:0.3" />
+<Property Name="Text" 					Value="" />
+<Window Type="TaharezLook/StaticText" Name="LoggingPopupWindow/Text" >
+<Property Name="Position" 				Value="x:0.1 y:0.25" />
+<Property Name="Size" 					Value="w:0.8 h:0.70" />
+<Property Name="BackgroundEnabled" 		Value="false" />
+<Property Name="FrameEnabled" 			Value="false" />
+<Property Name="HorzFormatting" 		Value="HorzCentered" />
+<Property Name="VertFormatting" 		Value="VertCentered" />
+<Property Name="Text" 					Value="Авторизация" />
+</Window>
+</Window>
+</Window>
+</GUILayout>

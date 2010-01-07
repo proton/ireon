@@ -1,0 +1,54 @@
+Import('codeBaseEnv')
+
+# -------------------------------------------------------------------------------
+# ---- ireon root server --------------------------------------------------------
+# -------------------------------------------------------------------------------
+
+rsBuildEnv = codeBaseEnv.Copy()
+
+rsBuildEnv['_targetName'] = 'rs'
+rsBuildEnv['_buildDir'] = str(codeBaseEnv['buildRoot_']) + '/' + rsBuildEnv['_targetName'] + '/'
+rsBuildEnv.BuildDir(rsBuildEnv['_buildDir'], '#src/', duplicate = 0)
+
+rsBuildEnv.Append (CPPPATH = ['#include/ireon_rs/', '/usr/local/ireon/srv/sdl/SDL-1.2.9/include', \
+								'/usr/local/ireon/srv/sdl/SDL_net-1.2.5'])
+rsBuildEnv.Append(LIBS = ['tinyxml_STL', 'SDL_net', 'SDLmain', 'SDL','z']);
+if (rsBuildEnv['platform_'] == 'win32') :
+	rsBuildEnv.Append(LIBS = ['intl']);
+
+rsBuildEnv.Alias(rsBuildEnv['_targetName'], rsBuildEnv.Program(rsBuildEnv['_buildDir']+rsBuildEnv['_targetName'],[ \
+			rsBuildEnv['_buildDir']+'common/generic_app.cpp', \
+			rsBuildEnv['_buildDir']+'ireon_rs/main.cpp', \
+			rsBuildEnv['_buildDir']+'ireon_rs/root_app.cpp', \
+			rsBuildEnv['_buildDir']+'ireon_rs/stdafx.cpp', \
+			rsBuildEnv['_buildDir']+'common/xmlconfig.cpp', \
+			rsBuildEnv['_buildDir']+'common/synchronizer.cpp', \
+
+			rsBuildEnv['_buildDir']+'ireon_rs/net/root_eserver.cpp', \
+			rsBuildEnv['_buildDir']+'ireon_rs/net/root_iserver.cpp', \
+			rsBuildEnv['_buildDir']+'ireon_rs/net/rs_player_context.cpp', \
+			rsBuildEnv['_buildDir']+'ireon_rs/net/rs_world_context.cpp', 
+
+			rsBuildEnv['_buildDir']+'ireon_rs/db/root_db.cpp', \
+			rsBuildEnv['_buildDir']+'common/db/account.cpp', \
+			rsBuildEnv['_buildDir']+'common/db/client_char_data.cpp', \
+
+			rsBuildEnv['_buildDir']+'common/net/data.cpp', \
+			rsBuildEnv['_buildDir']+'common/net/net_data_processor.cpp', \
+			rsBuildEnv['_buildDir']+'common/net/net_server.cpp', \
+			rsBuildEnv['_buildDir']+'common/net/layers/compressing_layer.cpp', \
+			rsBuildEnv['_buildDir']+'common/net/layers/encrypting_layer.cpp', \
+			rsBuildEnv['_buildDir']+'common/net/layers/sock_layer.cpp', \
+			rsBuildEnv['_buildDir']+'common/net/layers/utility_layer.cpp', \
+			rsBuildEnv['_buildDir']+'common/net/net_types.cpp', \
+
+			rsBuildEnv['_buildDir']+'common/file/file.cpp', \
+			rsBuildEnv['_buildDir']+'common/file/fs.cpp', \
+			rsBuildEnv['_buildDir']+'common/file/directory.cpp', \
+
+			rsBuildEnv['_buildDir']+'common/log/log.cpp', \
+			rsBuildEnv['_buildDir']+'common/log/log_listener.cpp', \
+
+			rsBuildEnv['_buildDir']+'common/kernel/crc.cpp' \
+			]))
+

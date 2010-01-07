@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!ENTITY game_title "Ireon">
+<!ENTITY proj_name "Ireon">
+<!ENTITY land_name "Новалия (Novalia)">
+<!ENTITY world_name "Ireon">
+
+<!-- chapter entities -->
+<!ENTITY northern_novalia_chapter SYSTEM "chapters/northern_novalia.xml">
+<!ENTITY west_mountains_chapter SYSTEM "chapters/west_mountains.xml">
+<!ENTITY tardorian_mountains_chapter SYSTEM "chapters/tardorian_mountains.xml">
+<!ENTITY white_hills_chapter SYSTEM "chapters/white_hills.xml">
+<!ENTITY arnall_woods_chapter SYSTEM "chapters/arnall_woods.xml">
+<!ENTITY gillimor_plains_chapter SYSTEM "chapters/gillimor_plains.xml">
+<!ENTITY gillimor_lowlands_chapter SYSTEM "chapters/gillimor_lowlands.xml">
+<!ENTITY kharum_plains_chapter SYSTEM "chapters/kharum_plains.xml">
+<!ENTITY mergon_mires_chapter SYSTEM "chapters/mergon_mires.xml">
+<!ENTITY fjornell_isle_chapter SYSTEM "chapters/fjornell_isle.xml">

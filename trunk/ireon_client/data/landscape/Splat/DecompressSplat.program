@@ -1,0 +1,14 @@
+
+vertex_program DecompressSplatcg/VP cg
+{
+	source DecompressSplat.cg
+	entry_point main_vp
+	profiles vs_1_1 arbvp1
+}
+
+fragment_program DecompressSplatcg/FP cg
+{
+	source DecompressSplat.cg
+	entry_point main_fp
+	profiles ps_2_0 arbfp1
+}

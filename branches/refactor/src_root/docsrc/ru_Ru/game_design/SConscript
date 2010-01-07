@@ -1,0 +1,3 @@
+Import('*')
+
+SConscript(['chronicles/SConscript', 'concept/SConscript', 'game_basics/SConscript', 'srs/SConscript', 'world_guide/SConscript'], exports='docBuildEnv')

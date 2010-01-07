@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!DOCTYPE article
+  PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+  "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  [
+    <!ENTITY % global.entities SYSTEM
+        "../../../include/global.xml">
+    %global.entities;
+  ]
+>
+
+<article lang="ru">
+
+  <articleinfo>
+
+    <title>Ключи и двери</title>
+    <subtitle>Gates and keys</subtitle>
+    <author>
+      <firstname>Майкл</firstname>
+      <surname>Розак</surname>
+    </author>
+
+    <copyright>
+      <holder>Mike Rozak</holder>
+    </copyright>
+    <copyright>
+      <holder>Перевод ireon.org</holder>
+    </copyright>
+
+    <legalnotice>
+      <para>
+      	Все права защищены. Публикуется с разрешения автора.
+      </para>
+    </legalnotice>
+
+    <abstract>
+      <para>
+        Перевод статьи Майкла Розака Gates and keys (<ulink url=
+        "http://www.mxac.com.au/drt/GatesAndKeys.htm" >оригинал на
+        английском языке</ulink>).
+      </para>
+    </abstract>
+
+  </articleinfo>
+
+    <para>
+    	<ulink url= "http://www.mxac.com.au/drt/GUT.htm" >Игры, в 
+    	которых вы управляете персонажем</ulink> &mdash; а это и 
+    	однопользовательские адвенчуры и шутеры, и МПМ &mdash; часто 
+    	разделяют свои миры на отдельные зоны, в которые игрок может 
+    	получить доступ, только выполнив определенные задания. 
+    	Дизайнеры хотят, чтобы новый контент открывался игроку 
+    	постепенно в течение игры, а не <emphasis>весь 
+    	сразу</emphasis>, что ослабило бы общее впечатление от игры. 
+    	(Персонаж получает новые возможности, такие, как заклинания, 
+    	также <ulink url= 
+    	"http://www.mxac.com.au/drt/SubGameVariation.htm" 
+    	>постепенно</ulink> в течение игры.)
+    </para>
+    <para>
+    	Так что я решил перечислить различные типы ключей и дверей. 
+    	Начнем с самых распространенных:
+    	<itemizedlist>
+        <listitem><para>
+          <emphasis>Двери</emphasis>
+          	<itemizedlist>
+            <listitem><para>
+            	Заперты на замок, <emphasis>ключ</emphasis> нужно 
+            	найти (или отобрать силой) где-нибудь в другом 
+            	месте.
+            </para></listitem>
+        	<listitem><para>
+        		Заперты на замок, открыть который можно, решив 
+        		<ulink url= 
+"http://www.mxac.com.au/drt/PuzzlesProblemSolving.htm" 
+				>головоломку</ulink>.
+        	</para></listitem>
+            </itemizedlist>
+        </para></listitem>
+        <listitem><para>
+          <emphasis>Страж</emphasis> &mdash; Функцию запертой двери 
+          выполняет охранник, который не пропустит персонажей, если 
+          те не подходят по определенным критериям. Некоторые игры 
+          позволяют не мучаться с этими критериями и просто убивать 
+          стражей, преграждающих путь.
+        </para></listitem>
+        <listitem><para>
+          <emphasis>Монстры</emphasis> &mdash; это замок из 
+          &laquo;плоти и крови&raquo;, в основе которого лежит 
+          уровень персонажа. Убийство монстров не только открывает 
+          проход, но и само по себе предполагает действия со стороны 
+          игрока и вознаграждает его опытом или трофеями.
+        </para></listitem>
+      </itemizedlist>
+    </para>
+    <para>
+    	Как еще ограничить путешествия потенциальных Колумбов? Вот 
+    	пара вариантов:
+    	<itemizedlist>
+        <listitem><para>
+          	<emphasis>Цена</emphasis> &mdash; путешествие в новые 
+          	земли не бесплатно.
+          	<itemizedlist>
+            <listitem><para>
+            	<emphasis>Ресурсы</emphasis> &mdash; за билет на 
+            	поезд нужно заплатить.
+            </para></listitem>
+        	<listitem><para>
+            	<emphasis>Время</emphasis> &mdash; пересечение 
+            	границы занимает время:
+            		<itemizedlist>
+            		<listitem><para>
+            			<emphasis>Внеигровое время</emphasis> 
+            			&mdash; Игрока просят вернуться на следующий 
+            			день, и к тому времени персонаж попадает в 
+            			пункт своего назначения.
+            		</para></listitem>
+        			<listitem><para>
+        				<emphasis>Игровое время</emphasis> &mdash; 
+        				игрок вынужден околачиваться вокруг и ждать.
+        					<itemizedlist>
+            				<listitem><para>
+            					<emphasis>Труд</emphasis> 
+            					&mdash; как в рамках игрового 
+            					процесса (работа на шахте), 
+            					так и просто бег на пару километров 
+            					(зажав клавишу W на 10 минут).
+            				</para></listitem>
+      						</itemizedlist>
+        			</para></listitem>
+      				</itemizedlist>
+            </para></listitem>
+      		</itemizedlist>
+        </para></listitem>
+        <listitem><para>
+          	<emphasis>Выбор</emphasis> &mdash; чтобы 
+          	пересечь границу игроку приходится чем-то пожертвовать:
+          		<itemizedlist>
+        		<listitem><para>
+        			<emphasis>Плавание</emphasis> &mdash; на 
+        			персонаже не может быть брони и вообще он не 
+        			может иметь с собой много вещей.
+        		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Узкий коридор</emphasis> &mdash; те же 
+        			самые ограничения по весу<footnote><para>Хлипкие 
+        			подвесные лестницы &mdash; еще одна 
+        			альтернатива.</para></footnote>.
+        		</para></listitem>
+      			</itemizedlist>
+        </para></listitem>
+        <listitem><para>
+        	<emphasis>Скрытые/замаскированные объекты</emphasis>
+        		<itemizedlist>
+        		<listitem><para>
+        			<emphasis>Скрытые двери</emphasis> &mdash; 
+        			игроки пройдут через скрытые двери, только если 
+        			они (а) заметят подсказку, указывающую на нее, 
+        			(б) всегда ищут секретные двери, ибо они 
+        			исследователи по своей природе, (в) прочитают 
+        			прохождение игры, составленное другими или (д) 
+        			нпц им подскажет, где эти скрытые двери стоит 
+        			поискать.
+        		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Недоступные вообще</emphasis> 
+        			&mdash; игроки не могут попасть в локацию до тех 
+        			пор, пока нпц им о ней не скажет. Локации даже 
+        			нет на карте.
+        		</para></listitem>
+      			</itemizedlist>
+        </para></listitem>
+        <listitem><para>
+        	<emphasis>Препятствия</emphasis> &mdash; чтобы попасть 
+        	на новую территорию, игрокам нужно преодолеть 
+        	нетривиальное препятствие, обычно в виде мини-игры:
+        		<itemizedlist>
+        		<listitem><para>
+        			<emphasis>Восхождение наверх</emphasis> &mdash; 
+        			вы ведь всегда мечтали о карьере альпиниста?
+        		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Прыжки</emphasis> &mdash; игра такая 
+        			же древняя как первые аркады. Нужны ли вам 
+        			платформы, находящиеся в постоянном движении 
+        			&mdash; вопрос открытый.
+        		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Лабиринт</emphasis> &mdash; 
+        			строго говоря, проход не закрыт, но найти его 
+        			проблематично.
+        		</para></listitem>
+      			</itemizedlist>
+        </para></listitem>
+        <listitem><para>
+        	<emphasis>Подготовка</emphasis> &mdash; игрок не может 
+        	пройти без необходимой подготовки:
+        		<itemizedlist>
+        		<listitem><para>
+        			<emphasis>Навыки</emphasis> &mdash; без 
+        			определенного уровня скилов персонажу пройти не 
+        			удастся. Поскольку часто игроки сами 
+        			распределяют очки навыков, это может стать 
+        			задачей грамотного распределения ресурсов.
+        		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Подводная зона</emphasis> &mdash; без 
+        			необходимых заклинаний или &laquo;бутылок&raquo; 
+        			для дыхания под водой игроку туда путь заказан.
+        		</para></listitem>
+      			</itemizedlist>
+        </para></listitem>
+        <listitem><para>
+        	<emphasis>Риски</emphasis> &mdash; путешествие на новую
+        	территорию опасно, поскольку там есть        		
+        	<itemizedlist>
+        		<listitem><para>
+        			<emphasis>Монстры</emphasis> и
+        		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Ловушки</emphasis>
+        		</para></listitem>
+      			</itemizedlist>
+        </para></listitem>
+        <listitem><para>
+        	<emphasis>Состояние</emphasis> &mdash; место существует 
+        	в зависимости от состояния вашего рассудка, что приводит 
+        	к различному восприятию одного мира разными персонажами.
+        		<itemizedlist>
+        		<listitem><para>
+        			<emphasis>Альтернативная реальность</emphasis> 
+        			&mdash; когда игрок надевает кольцо невидимости, 
+        			он попадает в мир теней, который наполовину 
+        			реальность, а наполовину населен прежде 
+        			невидимыми обитателями.
+        		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Взгляд с другой точки 
+        			зрения</emphasis> &mdash; если персонаж получает 
+        			звание рыцаря, все игровые нпц внезапно начинают 
+        			относиться к игроку иначе, чем раньше.
+         		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Эвенты</emphasis> &mdash; например, 
+        			нпц могут собираться и танцевать только в 
+        			определенном месте в определенное время. Если 
+        			игрок не знает этого места и времени, то танца 
+        			он не увидит.
+        		</para></listitem>
+      			</itemizedlist>
+        </para></listitem>
+        <listitem><para>
+          	<emphasis>Ограничение по времени</emphasis> &mdash; 
+          	дверь открывается только в определенное время, например, 
+          	в полнолуние.
+        </para></listitem>
+      </itemizedlist>
+    </para>
+
+</article>

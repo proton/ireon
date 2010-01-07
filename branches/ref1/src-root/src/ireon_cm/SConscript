@@ -1,0 +1,55 @@
+Import('codeBaseEnv')
+
+# -------------------------------------------------------------------------------
+# ---- ireon cluster manager ----------------------------------------------------
+# -------------------------------------------------------------------------------
+
+cmBuildEnv = codeBaseEnv.Copy()
+
+cmBuildEnv['_targetName'] = 'cm'
+cmBuildEnv['_buildDir'] = str(codeBaseEnv['buildRoot_']) + '/' + cmBuildEnv['_targetName'] + '/'
+cmBuildEnv.BuildDir(cmBuildEnv['_buildDir'], '#src/', duplicate = 0)
+
+cmBuildEnv.Append (CPPPATH = ['#include/ireon_cm/', '#include/common/OgreTypes/', \
+								'/usr/local/ireon/srv/sdl/SDL-1.2.9/include', '/usr/local/ireon/srv/sdl/SDL_net-1.2.5'])
+cmBuildEnv.Append(LIBS = ['tinyxml_STL', 'SDL_net', 'SDL', 'ogre_types','z']);
+if (cmBuildEnv['platform_'] == 'win32') :
+	cmBuildEnv.Append(LIBS = ['intl']);
+elif (cmBuildEnv['platform_'] == 'posix') :
+	cmBuildEnv.Append (CPPDEFINES = ['EXT_HASH']);
+
+cmBuildEnv.Alias(cmBuildEnv['_targetName'], cmBuildEnv.Program(cmBuildEnv['_buildDir']+cmBuildEnv['_targetName'],[ \
+			cmBuildEnv['_buildDir']+'common/generic_app.cpp', \
+			cmBuildEnv['_buildDir']+'ireon_cm/main.cpp', \
+			cmBuildEnv['_buildDir']+'ireon_cm/cm_app.cpp', \
+			cmBuildEnv['_buildDir']+'ireon_cm/stdafx.cpp', \
+			cmBuildEnv['_buildDir']+'common/xmlconfig.cpp', \
+			cmBuildEnv['_buildDir']+'common/synchronizer.cpp', \
+
+			cmBuildEnv['_buildDir']+'ireon_cm/net/cm_client.cpp', \
+			cmBuildEnv['_buildDir']+'ireon_cm/net/cm_server.cpp', \
+			cmBuildEnv['_buildDir']+'ireon_cm/net/cm_world_context.cpp', \
+			cmBuildEnv['_buildDir']+'ireon_cm/db/cm_db.cpp', \
+
+			cmBuildEnv['_buildDir']+'common/db/account.cpp', \
+			cmBuildEnv['_buildDir']+'common/db/client_char_data.cpp', \
+
+			cmBuildEnv['_buildDir']+'common/net/data.cpp', \
+			cmBuildEnv['_buildDir']+'common/net/net_client.cpp', \
+			cmBuildEnv['_buildDir']+'common/net/net_server.cpp', \
+			cmBuildEnv['_buildDir']+'common/net/layers/compressing_layer.cpp', \
+			cmBuildEnv['_buildDir']+'common/net/layers/encrypting_layer.cpp', \
+			cmBuildEnv['_buildDir']+'common/net/layers/sock_layer.cpp', \
+			cmBuildEnv['_buildDir']+'common/net/layers/utility_layer.cpp', \
+			cmBuildEnv['_buildDir']+'common/net/net_types.cpp', \
+
+			cmBuildEnv['_buildDir']+'common/file/file.cpp', \
+			cmBuildEnv['_buildDir']+'common/file/fs.cpp', \
+			cmBuildEnv['_buildDir']+'common/file/directory.cpp', \
+
+			cmBuildEnv['_buildDir']+'common/log/log.cpp', \
+			cmBuildEnv['_buildDir']+'common/log/log_listener.cpp', \
+
+			cmBuildEnv['_buildDir']+'common/kernel/crc.cpp' \
+			]))
+

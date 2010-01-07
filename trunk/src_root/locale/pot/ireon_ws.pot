@@ -1,0 +1,374 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-11-14 22:05+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:229
+msgid "Interface initialization..."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:277
+msgid "Inititalize Font"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:283
+msgid "Initialize input system scaling"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:311
+#, possible-c-format
+msgid "Error in initialisation CEGUI: %s"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:314
+msgid "Interface initialization complete."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:512
+msgid "Init OIS"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:537
+msgid "Set OIS callbacks"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:541
+msgid "Initialize OIS completed"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:544
+msgid "Set Key process layers"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:557
+msgid "Loading GUI schemes"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:582
+#, possible-c-format
+msgid "Loading scheme '%s'.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:602
+#, possible-c-format
+msgid "Loading layout '%s'.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\character.cpp:374
+#, possible-c-format
+msgid "(%s): stop fight.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\client_static_prototype.cpp:45
+#: D:\projects\ireon.trunk\src_root\src\common\world\static_object\client_static_prototype.cpp:50
+#, possible-c-format
+msgid "Error loading static prototype: XML parser returned an error: %s\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\client_static_prototype.cpp:54
+#: D:\projects\ireon.trunk\src_root\src\common\world\static_object\client_static_prototype.cpp:59
+#, possible-c-format
+msgid "Error loading static prototype: resource isn't static prototype. %s\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\client_static_prototype.cpp:65
+#: D:\projects\ireon.trunk\src_root\src\common\world\client_static_prototype.cpp:72
+#: D:\projects\ireon.trunk\src_root\src\common\world\static_object\client_static_prototype.cpp:70
+#: D:\projects\ireon.trunk\src_root\src\common\world\static_object\client_static_prototype.cpp:77
+#, possible-c-format
+msgid "Error loading static prototype: error in file near '%s'.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\client_zone.cpp:45
+#, possible-c-format
+msgid "Error loading zone: XML parser returned an error: %s\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\client_zone.cpp:54
+#, possible-c-format
+msgid "Error loading zone: resource isn't zone. %s\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\client_zone.cpp:62
+#, possible-c-format
+msgid "Error loading zone: error in file near '%s'.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\mob_prototype.cpp:44
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\db\world_mob_prototype.cpp:45
+#, possible-c-format
+msgid "Error loading mob prototype: XML parser returned an error: %s\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\mob_prototype.cpp:53
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\db\world_mob_prototype.cpp:54
+#, possible-c-format
+msgid "Error loading mob prototype: resource isn't mob prototype. %s\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\mob_prototype.cpp:61
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\db\world_mob_prototype.cpp:62
+#, possible-c-format
+msgid "Error loading mob prototype: error in file near '%s'.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\world.cpp:227
+#, possible-c-format
+msgid "Character with id %d added to world.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\world.cpp:255
+#, possible-c-format
+msgid "Character with id %d removed from world.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\world.cpp:346
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\ws_world.cpp:283
+#, possible-c-format
+msgid "Mob prototype '%s' added to cache."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\static_object\command.cpp:91
+#, possible-c-format
+msgid "Loading '%s'... \b"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\static_object\command.cpp:94
+msgid "Yes"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\static_object\command.cpp:98
+msgid "No"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\include\common\world\dispatcher.h:37
+#, possible-c-format
+msgid "Command: %s"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\ws_app.cpp:44
+msgid "Initializing ireon.org world server..."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\ws_app.cpp:47
+msgid "PID file was not written!"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\ws_app.cpp:66
+msgid "Done world server initialization."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\ws_app.cpp:73
+msgid "Shutting world server down..."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\ws_app.cpp:102
+msgid "Starting world server main loop..."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\ws_app.cpp:118
+msgid "Caught EConnectionNotExist exception."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\ws_app.cpp:125
+#, possible-c-format
+msgid "World server lagged for %d msec"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\ws_app.cpp:155
+#, possible-c-format
+msgid "Creating connection to root server (host: %s, port %d)."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\ws_app.cpp:170
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\ws_app.cpp:194
+msgid "Done."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\ws_app.cpp:189
+#, possible-c-format
+msgid "Creating player listener on port %d with maximum %d connections..."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\db\player_characters_manager.cpp:27
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\db\player_characters_manager.cpp:79
+#, possible-c-format
+msgid "Character with id %d is already in game."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\db\player_characters_manager.cpp:73
+#, possible-c-format
+msgid "Incorrect token or missing login info for character %d."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\db\player_characters_manager.cpp:99
+#, possible-c-format
+msgid "Character %d was not found in charactersInGame set."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\net\wspc\main_state.cpp:37
+#, possible-c-format
+msgid "Got login request from %s."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\net\wspc\main_state.cpp:57
+#, possible-c-format
+msgid "Character %d successfully logged in."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\net\wspc\main_state.cpp:62
+msgid "Bad login from client."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\net\wspc\main_state.cpp:67
+msgid "Bad character name supplied for client by root server."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\net\wspc\main_state.cpp:84
+#, possible-c-format
+msgid "Got logout request for char %d from %s."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\net\wsrs\main_state.cpp:39
+msgid "Sending login request to root server."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\net\wsrs\main_state.cpp:54
+msgid "Got login response from root server."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\net\wsrs\main_state.cpp:64
+msgid "Logged in to root server."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\net\wsrs\main_state.cpp:69
+msgid "Got login response from rs: login failed."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\net\wsrs\main_state.cpp:78
+msgid "Got check char request from root server."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\net\wsrs\main_state.cpp:95
+msgid "Got char login information from rs."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\net\wsrs\main_state.cpp:110
+#, possible-c-format
+msgid "Registering char %d login information."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\net\wsrs\main_state.cpp:116
+#, possible-c-format
+msgid "Could not register temporary login: char %d is already in game."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\resource\image.cpp:342
+msgid "Loading image from empty data stream."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\resource\image.cpp:378
+#, possible-c-format
+msgid "Error loading image of type '%s'."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\resource\image.cpp:410
+#, possible-c-format
+msgid "Unsupported image format '%s'."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\resource\image.cpp:432
+#, possible-c-format
+msgid "Invalid file name, no extention: '%s'."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\mesh.cpp:238
+msgid "Some strange error occurred. Call zak asap."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\world_character.cpp:112
+#, possible-c-format
+msgid ""
+"Try to insert character with id %d (%s) to world, but there is no page for "
+"its coordinates (%f,%f).\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\world_char_mob.cpp:42
+#, possible-c-format
+msgid "Incorrect position specification for mob %d, setting default..."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\world_char_mob.cpp:71
+msgid "Incorrect default origin for zone (see mobs.xml)."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\world_char_mob.cpp:232
+msgid "Incorrect mob group size"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\world_char_mob.cpp:254
+msgid "Incorrect origin for flock."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\world_char_player.cpp:120
+#, possible-c-format
+msgid "Sending position interval too big (%d).\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\ws_world.cpp:297
+msgid "Loading mobs info..."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\ws_world.cpp:301
+#, possible-c-format
+msgid "XML parser returned an error: %s\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\ws_world.cpp:325
+msgid "WSWorld.init: Done."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\ws_world.cpp:349
+msgid "Landcape page isn't square.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\ws_world.cpp:355
+msgid ""
+"Not enough options in terrain config. Must be:\n"
+" Width, Height, PageSize, ScaleX, ScaleY, ScaleZ, LandScapeFileName, "
+"LandScapeExtension.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\ws_world.cpp:385
+#, possible-c-format
+msgid "Image format isn't 8 bit grayscale. File: '%s'.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\ws_world.cpp:390
+#, possible-c-format
+msgid "Terrain page must be %dx%d pixels. File: '%s'.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\ws_world.cpp:746
+msgid ""
+"Could not add entity: triangle was not found in navigation mesh for entity "
+"default position."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_ws\world\ws_world.cpp:777
+#, possible-c-format
+msgid "Creating world pages 2d array (size: %d x %d)."
+msgstr ""

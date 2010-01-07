@@ -1,0 +1,2188 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!DOCTYPE article
+  PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+  "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  [
+    <!ENTITY % global.entities SYSTEM
+        "../../../include/global.xml">
+    %global.entities;
+  ]
+>
+
+<article lang="en">
+
+  <articleinfo>
+
+    <title>
+      	Hearts, Clubs, Diamonds, Spades: Players Who Suit MUDs
+    </title>
+    <author>
+      <firstname>Richard A.</firstname>
+      <surname>Bartle</surname>
+    </author>
+    
+    <copyright>
+      <holder>Richard A. Bartle</holder>
+    </copyright>
+
+    <legalnotice>
+      <para>
+          All rights reserved.
+      </para>
+    </legalnotice>
+
+  <abstract>
+  <para>
+  	  <ulink url= "http://www.mud.co.uk/richard/hcds.htm" >Hearts, 
+  	  Clubs, Diamonds, Spades: Players Who Suit MUDs</ulink>
+  </para>
+  <para>
+      Four approaches to playing MUDs are identified and described. 
+      These approaches may arise from the inter-relationship of two 
+      dimensions of playing style: action versus interaction, and 
+      world-oriented versus player-oriented. An account of the 
+      dynamics of player populations is given in terms of these 
+      dimensions, with particular attention to how to promote 
+      balance or equilibrium. This analysis also offers an 
+      explanation for the labelling of MUDs as being either "social" 
+      or "gamelike".
+  </para>
+  </abstract>
+
+  </articleinfo>
+
+
+  <sect1 id="preface">
+  <title>Preface</title>
+  <para>
+      Most MUDs can trace their lineage directly back to Trubshaw's 
+      1978 game<footnote><para>Bartle, R. A. (1990). Interactive 
+      Multi-Player Computer Games. MUSE Ltd, Colchester, Essex, UK 
+      <ulink url= 
+      "ftp://ftp.lambda.moo.mud.org/pub/MOO/papers/mudreport.txt" 
+      >Interactive Multi-User Computer Games</ulink> | 
+      Burka, L. P. (1995). The MUDline.</para></footnote> and, 
+      perhaps because of this heritage, the vast majority are 
+      regarded as "games" by their "players". For the convenience of 
+      its readers, this paper continues to view MUDs in this 
+      tradition; however, it should be noted that MUDs can be of 
+      considerable value in non-game (ie. "serious") 
+      applications<footnote><para>Bruckman, A. S. (1994). Workshop: 
+      "Serious" Uses of MUDs? Proc. DIAC-94 | Kort, B. (1991). The 
+      MUSE as an Educational Medium BBN Labs, Cambridge, 
+      Massachusetts | Bruckman, A. S. &amp; Resnick, M. (1993). 
+      Virtual Professional Community: Results from the MediaMOO 
+      Project. MIT Media Laboratory, Cambridge, Massachusetts | 
+      Curtis, P. &amp; Nichols, D. A. (1993). MUDs Grow Up: Social 
+      Virtual Reality in the Real World. Xerox PARC, Palo Alto, 
+      California 
+      <ulink url= 
+      "ftp://ftp.lambda.moo.mud.org/pub/MOO/papers/MUDsGrowUp.txt" 
+      >MUDs Grow Up</ulink> |
+      Evard, R. (1993). Collaborative Networked 
+      Communication: MUDs as System Tools. Proc. LISA-93
+      <ulink url=
+      "http://www.ccs.neu.edu/home/remy/documents/cncmast.html"
+      >Collaborative Networked Communication</ulink> |
+      Fanderclai, T. F. (1995). MUDs in Education: New Environments, 
+      New Pedagogies. Computer-Mediated Communication Magazine, 
+      2(1), 8 | Riner, R. D. &amp; Clodius, J. A. (1995). Simulating 
+      Future Histories: The NAU Solar System Simulation and Mars 
+      Settlement. Anthropology &amp; Education Quarterly 
+      26(1):95-104 | Moock, C. (1996). Virtual Campus at the 
+      University of Waterloo.</para></footnote>.
+  </para>
+  <para>
+      Indeed, the thrust of this paper emphasises those factors 
+      which should be borne in mind when attempting to create a 
+      stable MUD in general, whatever the application; it is only 
+      the terminology which is that of "fun" MUDs, not the subject 
+      matter. In any case, even those MUDs which are built, from the 
+      ground up, to be absolutely straight are still treated by 
+      users as if they were games in some respects, eg. by choosing 
+      whimsical names rather than using their real 
+      ones<footnote><para>Roush, W. (1993). The Virtual STS Centre 
+      on MediaMOO: Issues and Challenges as Non-Technical Users 
+      Enter Social Virtual Spaces. MIT Media Laboratory, Cambridge, 
+      Massachusetts.</para></footnote>.
+  </para>
+  <para>
+      It is worthwhile considering for a moment whether MUDs (as 
+      they are generally played) really are games, or whether 
+      they're something else. People have many recreational 
+      activities available to them, and perhaps MUDs fit some other 
+      category better? Looking up the word "game" in a dictionary of 
+      synonyms<footnote><para>Urdang, L. &amp; Manser, M. (1980). 
+      The Pan Dictionary of Synonyms and Antonyms Pan Reference, 
+      London, UK.</para></footnote> elicits three related nouns: 
+      "pastime", "sport" and "entertainment" (a fourth, "amusement", 
+      is the general class of which the others are all examples). So 
+      it might be useful to ask:
+  </para>
+  <para>
+      Are MUDs
+  <itemizedlist>
+  <listitem>
+  <para>
+      games? Like chess, tennis, AD&amp;D?
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+      pastimes? Like reading, gardening, cooking?
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+      sports? Like huntin', shootin', fishin'?
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+      entertainments? Like nightclubs, TV, concerts?
+  </para>
+  </listitem>
+  </itemizedlist>
+  </para>
+  <para>
+      Or are they a combination of all four? Perhaps individual 
+      players even see the <emphasis>same</emphasis> MUD differently 
+      from each another?
+  </para>
+  <para>
+      These questions will be returned to at the end of this paper, 
+      along with some proposed answers.
+  </para>
+  </sect1>
+   
+   
+  
+  	<sect1 id="simple_taxonomy">
+    <title>A simple taxonomy</title>
+    <para>
+    	This work grew out of a long, heated discussion which ran 
+    	from November 1989 to May 1990 between the wizzes (ie. 
+    	highly experienced players, of rank wizard or witch) on one 
+    	particular commercial MUD in the UK<footnote><para>Bartle, 
+    	R. A. (1985). MUD2 [MUDDLE] MUSE Ltd, Colchester, Essex, 
+    	UK</para></footnote>. The debate was sparked by the question 
+    	"What do people want out of a MUD?", and comprised several 
+    	hundred bulletin-board postings, some of considerable 
+    	length, typically concerning what the players liked, what 
+    	they didn't like, why they played, and changes they would 
+    	like to see to "improve" the game. Some 15 individuals took 
+    	a major part, with perhaps another 15 adding their comments 
+    	from time to time; this comprised almost the entire set of 
+    	active wizzes during that period. Although at times the 
+    	debate became quite intense, never did it lapse into the 
+    	flaming which typically ends most open-ended, multi-speaker, 
+    	online discussions.
+    </para>
+    <para>
+    	The fact that the people contributing to this argument were 
+    	the most advanced players in a MUD which allowed 
+    	player-killing might, on the face of it, be taken as 
+    	evidence that they would probably prefer more "gamelike" 
+    	aspects over "social" ones. However, this was not the case: 
+    	the MUD in question had players of all types in it, even at 
+    	wiz level. (Later in this paper, an analysis is given as to 
+    	how such a MUD can come to be).
+    </para>
+    <para>
+    	When the participants had finally run out of new things to 
+    	say, it became time for me (as senior administrator) to 
+    	summarise. Abstracting the various points that had been 
+    	raised, a pattern emerged; people habitually found the same 
+    	kinds of thing about the game "fun", but there were several 
+    	(four, in fact) sub-groupings into which opinion divided. 
+    	Most players leaned at least a little to all four, but each 
+    	tended to have some particular overall preference. The 
+    	summary was generally well received by those who had 
+    	participated in the debate.
+    </para>
+    <para>
+    	Note that although this MUD was one in which player-killing 
+    	was allowed, the taxonomy which is about to be described 
+    	does (as will be explained later) apply equally to "social" 
+    	MUDs. The advice concerning changes which can be made to 
+    	affect the player make-up of a MUD is, however, less useful 
+    	to social MUDs, or to ones with a heavy role-playing 
+    	component. Also, the original discussion concerned only 
+    	non-administrative aspects of MUDding; people who might 
+    	play MUDs to learn object-oriented programming, for example, 
+    	are therefore not addressed by this paper.
+    </para>
+    <para>
+    	The four things that people typically enjoyed personally 
+    	about MUDs were:
+    	<orderedlist numeration="arabic">
+        <listitem><para>
+        	Achievement within the game context. Players give 
+        	themselves game-related goals, and vigorously set out to 
+        	achieve them. This usually means accumulating and 
+        	disposing of large quantities of high-value treasure, or 
+        	cutting a swathe through hordes of mobiles (ie. monsters 
+        	built in to the virtual world).
+    	</para></listitem>
+    	<listitem><para>
+    		Exploration of the game. Players try to find out as much 
+    		as they can about the virtual world. Although initially 
+    		this means mapping its topology (ie. exploring the MUD's 
+    		breadth), later it advances to experimentation with its 
+    		physics (ie. exploring the MUD's depth).
+    	</para></listitem>
+    	<listitem><para>
+    		Socialising with others. Players use the game's 
+    		communicative facilities, and apply the role-playing 
+    		that these engender, as a context in which to converse 
+    		(and otherwise interact) with their fellow players.
+    	</para></listitem>
+    	<listitem><para>
+    		Imposition upon others. Players use the tools provided 
+    		by the game to cause distress to (or, in rare 
+    		circumstances, to help) other players. Where permitted, 
+    		this usually involves acquiring some weapon and applying 
+    		it enthusiastically to the persona of another player in 
+    		the game world.
+    	</para></listitem>
+      	</orderedlist>
+    </para>
+    <para>
+    	So, labelling the four player types abstracted, we get: 
+    	achievers, explorers, socialisers and killers. An easy way 
+    	to remember these is to consider suits in a conventional 
+    	pack of cards: achievers are Diamonds (they're always 
+    	seeking treasure); explorers are Spades (they dig around for 
+    	information); socialisers are Hearts (they empathise with 
+    	other players); killers are Clubs (they hit people with 
+    	them).
+    </para>
+    <para>
+    	Naturally, these areas cross over, and players will often 
+    	drift between all four, depending on their mood or current 
+    	playing style. However, my experience having observed 
+    	players in the light of this research suggests that many (if 
+    	not most) players do have a primary style, and will only 
+    	switch to other styles as a (deliberate or subconscious) 
+    	means to advance their main interest.
+    </para>
+    <para>
+    	Looking at each player type in more detail, then:
+    </para>
+    <para>
+    	1) Achievers regard points-gathering and rising in levels as 
+    	their main goal, and all is ultimately subserviant to this. 
+    	Exploration is necessary only to find new sources of 
+    	treasure, or improved ways of wringing points from it.
+    </para>
+    <para>
+    	Socialising is a relaxing method of discovering what other 
+    	players know about the business of accumulating points, that 
+    	their knowledge can be applied to the task of gaining 
+    	riches. Killing is only necessary to eliminate rivals or 
+    	people who get in the way, or to gain vast amounts of points 
+    	(if points are awarded for killing other players).
+    </para>
+    <para>
+    	Achievers say things like:
+    <itemizedlist>
+      <listitem>
+        <para>
+            "I'm busy."
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+        	"Sure, I'll help you. What do I get?"
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          	"So how do YOU kill the dragon, then?"
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          	"Only 4211 points to go!"
+        </para>
+      </listitem>
+    </itemizedlist>
+    </para>
+    <para>
+    	2) Explorers delight in having the game expose its internal 
+    	machinations to them. They try progressively esoteric 
+    	actions in wild, out-of-the-way places, looking for 
+    	interesting features (ie. bugs) and figuring out how things 
+    	work. Scoring points may be necessary to enter some next 
+    	phase of exploration, but it's tedious, and anyone with half 
+    	a brain can do it.
+    </para>
+    <para>
+    	Killing is quicker, and might be a constructive exercise in 
+    	its own right, but it causes too much hassle in the long run 
+    	if the deceased return to seek retribution. Socialising can 
+    	be informative as a source of new ideas to try out, but most 
+    	of what people say is irrelevant or old hat. The real fun 
+    	comes only from discovery, and making the most complete set 
+    	of maps in existence.
+    </para>
+    <para>
+      	Explorers say things like:
+    <itemizedlist>
+      <listitem>
+        <para>
+          	"Hmm..."
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          	"You mean you don't know the shortest route from 
+          	&lt;obscure room one&gt; to &lt;obscure room two&gt;?"
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          	"I haven't tried that one, what's it do?"
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          	"Why is it that if you carry the uranium you get 
+          	radiation sickness, and if you put it in a bag you still 
+          	get it, but if you put it in a bag and drop it then wait 
+          	20 seconds and pick it up again, you don't?"
+        </para>
+      </listitem>
+    </itemizedlist>
+    </para>
+    <para>
+    	3) Socialisers are interested in people, and what they have 
+    	to say. The game is merely a backdrop, a common ground where 
+    	things happen to players. Inter-player relationships are 
+    	important: empathising with people, sympathising, joking, 
+    	entertaining, listening; even merely observing people play 
+    	can be rewarding &mdash; seeing them grow as individuals, 
+    	maturing 
+    	over time. 
+    </para>
+    <para>
+    	Some exploration may be necessary so as to understand what 
+    	everyone else is talking about, and points-scoring could be 
+    	required to gain access to neat communicative spells 
+    	available only to higher levels (as well as to obtain a 
+    	certain status in the community).
+    </para>
+    <para> 
+    	Killing, however, is something only ever to be excused if 
+    	it's a futile, impulsive act of revenge, perpetrated upon 
+    	someone who has caused intolerable pain to a dear friend. 
+    	The only ultimately fulfilling thing is not how to rise 
+    	levels or kill hapless drips; it's getting to know people, 
+    	to undertand them, and to form beautiful, lasting 
+    	relationships.
+    </para>
+    <para>
+      	Socialisers say things like:
+    <itemizedlist>
+      <listitem>
+        <para>
+          	"Hi!"
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          	"Yeah, well, I'm having trouble with my boyfriend."
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          	"What happened? I missed it, I was talking."
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          	"Really? Oh no! Gee, that's terrible! Are you sure? 
+          	Awful, just awful!"
+        </para>
+      </listitem>
+    </itemizedlist>
+    </para>
+    <para>
+    	4) Killers get their kicks from imposing themselves on 
+    	others. This may be "nice", ie. busybody do-gooding, but few 
+    	people practice such an approach because the rewards (a 
+    	warm, cosy inner glow, apparently) aren't very substantial. 
+    	Much more commonly, people attack other players with a view 
+    	to killing off their personae (hence the name for this style 
+    	of play). The more massive the distress caused, the greater 
+    	the killer's joy at having caused it. 
+    </para>
+    <para>
+    	Normal points-scoring 
+    	is usually required so as to become powerful enough to begin 
+    	causing havoc in earnest, and exploration of a kind is 
+    	necessary to discover new and ingenious ways to kill people. 
+    	Even socialising is sometimes worthwhile beyond taunting a 
+    	recent victim, for example in finding out someone's playing 
+    	habits, or discussing tactics with fellow killers. They're 
+    	all just means to an end, though; only in the knowledge that 
+    	a real person, somewhere, is very upset by what you've just 
+    	done, yet can themselves do nothing about it, is there any 
+    	true adrenalin-shooting, juicy fun.
+    </para>
+	<para>
+      	Killers says things like:
+    <itemizedlist>
+      <listitem>
+        <para>
+          	"Ha!"
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          	"Coward!"
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          	"Die!"
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          	"Die! Die! Die!"
+        </para>
+      </listitem>
+    </itemizedlist>
+    </para>
+	<para>
+		(Killers are people of few words).
+	</para>
+	<para>
+		How many players typically fall within each area depends on 
+		the MUD. If, however, too many gravitate to one particular 
+		style, the effect can be to cause players of other 
+		persuasions to leave, which in turn may feed back and reduce 
+		the numbers in the first category. For example, too many 
+		killers will drive away the achievers who form their main 
+		prey; this in turn will mean that killers will stop playing, 
+		as they'll have no worthwhile victims (players considered by 
+		killers to be explorers generally don't care about death, 
+		and players considered to be socialisers are too easy to 
+		pose much of a challenge). These direct relationships are 
+		discussed in more detail towards the end of this paper.
+	</para>
+    <para>
+    	For the most part, though, the inter-relationships between 
+    	the various playing styles are more subtle: a sharp 
+    	reduction in the number of explorers for whatever reason 
+    	could mean a gradual reduction in achievers, who get bored 
+    	if they're not occasionally told of different hoops they can 
+    	jump through for points; this could affect the number of 
+    	socialisers (the fewer players there are, the less there is 
+    	to talk about), and it would certainly lower the killer 
+    	population (due to a general lack of suitable victims).
+    </para>
+    <para>
+    	Making sure that a game doesn't veer off in the wrong 
+    	direction and lose players can be difficult; administrators 
+    	need to maintain a balanced relationship between the 
+    	different types of players, so as to guarantee their MUD's 
+    	"feel". Note that I am not advocating any particular form of 
+    	equilibrium: it is up to the game administrators themseles 
+    	to decide what atmosphere they want their MUD to have, and 
+    	thus define the point at which it is "balanced" (although 
+    	the effort required to maintain this desired state could be 
+    	substantial).
+    </para>
+    <para>
+    	Later, this paper considers means by which a MUD can be 
+    	pushed in different directions, either to restore an earlier 
+    	balance between the player types, to define a new target set 
+    	of relationships between the player types, or to cause the 
+    	interplay between the player types to break down entirely. 
+    	However, first a means is required of formally linking the 
+    	four principal playing styles into aspects of a unified 
+    	whole; this helps account for different degrees of adherence 
+    	to particular styles, and aids visualisation of what 
+    	"altering the balance" of a MUD might actually mean.
+    </para>
+  	</sect1>
+  
+  
+  	<sect1 id="interest_graph">
+    <title>Interest graph</title>
+	<para>
+		Consider the following abstract graph: 
+    </para>
+    	<figure id="en_hcds_1">
+              <title>Interest graph</title>
+              <graphic
+                fileref="figures/en_hcds_1.gif"/>
+            </figure>
+    <para>
+    	The axes of the graph represent the source of players' 
+    	interest in a MUD. The x-axis goes from an emphasis on 
+    	players (left) to an emphasis on the environment (right); 
+    	the y-axis goes from acting with (bottom) to acting on 
+    	(top). The four extreme corners of the graph show the four 
+    	typical playing preferences associated with each quadrant. 
+    	To see how the graph works, it is appropriate to consider 
+    	each of the four styles in detail:
+    </para>
+    <para>
+    	1) Achievers are interested in doing things to the game, ie. 
+    	in ACTING on the WORLD. It's the fact that the game 
+    	environment is a fully-fledged world in which they can 
+    	immerse themselves that they find compelling; its being 
+    	shared with other people merely adds a little authenticity, 
+    	and perhaps a competitive element. The point of playing is 
+    	to master the game, and make it do what you want it to do; 
+    	there's nothing intrinsically worthwhile in rooting out 
+    	irrelevant details that will never be of use, or in idling 
+    	away your life with gossip.
+    </para>
+    <para>
+    	Achievers are proud of their formal status in the game's 
+    	built-in level hierarchy, and of how short a time they took 
+    	to reach it.
+    </para>
+    <para>
+    	2) Explorers are interested in having the game surprise 
+    	them, ie. in INTERACTING with the WORLD. It's the sense of 
+    	wonder which the virtual world imbues that they crave for; 
+    	other players add depth to the game, but they aren't 
+    	essential components of it, except perhaps as sources of new 
+    	areas to visit. Scoring points all the time is a worthless 
+    	occupation, because it defies the very open-endedness that 
+    	makes a world live and breathe. Most accomplished explorers 
+    	could easily rack up sufficient points to reach the top, but 
+    	such one-dimensional behaviour is the sign of a limited 
+    	intellect.
+    </para>
+    <para>
+    	Explorers are proud of their knowledge of the game's finer 
+    	points, especially if new players treat them as founts of 
+    	all knowledge.
+    </para>
+    <para>
+    	3) Socialisers are interested in INTERACTING with other 
+    	PLAYERS. This usually means talking, but it can extend to 
+    	more exotic behaviour. Finding out about people and getting 
+    	to know them is far more worthy than treating them as fodder 
+    	to be bossed around. The game world is just a setting; it's 
+    	the characters that make it so compelling.
+    </para>
+    <para>
+    	Socialisers are proud of their friendships, their contacts 
+    	and their influence.
+    </para>
+    <para>
+    	4) Killers are interested in doing things to people, ie. in 
+    	ACTING on other PLAYERS. Normally, this is not with the 
+    	consent of these "other players" (even if, objectively, the 
+    	interference in their play might appear "helpful"), but 
+    	killers don't care; they wish only to demonstrate their 
+    	superiority over fellow humans, preferably in a world which 
+    	serves to legitimise actions that could mean imprisonment in 
+    	real life. Accumulated knowledge is useless unless it can be 
+    	applied; even when it is applied, there's no fun unless it 
+    	can affect a real person instead of an emotionless, 
+    	computerised entity.
+    </para>
+    <para>
+    	The "interest graph" is a representational structure which 
+    	can chart what players find of interest in a MUD. The axes 
+    	can be assigned a relative scale reflecting the ratio of an 
+    	individual's interest between the two extremes that it 
+    	admits. Thus, for example, someone who thinks that the 
+    	people who are in the world are maybe twice as important as 
+    	the the world itself would lie on a vertical line 
+    	intersecting the x-axis at a point one 1/6 of the distance 
+    	from the origin to the left edge; if they had little 
+    	interest in bending the game to their will, preferring their 
+    	actions to have some give and take, then they would also lie 
+    	on a horizontal line at the bottom of the y-axis. The 
+    	interesection of the two lines would put them in the 
+    	socialiser quadrant, with leanings to explorer.
+    </para>
+    <para>
+    	It is, of course, possible to analyse the behaviour of 
+    	individual players quantitatively by processing transcripts 
+    	of their games. Unfortunately, this is very difficult to do 
+    	except for very limited domains (eg. forms of 
+    	communication<footnote><para>Cherny, L. (1995). The Modal 
+    	Complexity of Speech Events in a Social MUD. Electronic 
+    	Journal of Communication, Summer 1995. The Situated 
+    	Behaviour of MUD Back Channels. Dept. Linguistics, Stanford 
+    	University, California.</para></footnote>). An alternative 
+    	approach might simply be to ask the players what they 
+    	themselves like about a particular MUD: even a short 
+    	questionnaire, completed anonymously, can give a fair 
+    	indication of what players find 
+    	enjoyable<footnote><para>Emert, H. G. (1993). "X" Marks the 
+    	Spot. East Stroudsburg University, 
+    	Pennsylvania.</para></footnote>.
+    </para>
+    <para>
+    	Such information can then be used to determine the make-up 
+    	of the MUD's player base, so that in times of falling player 
+    	numbers the current composition could be compared against 
+    	some earlier ideal, and remedial action taken to redress the 
+    	imbalance. This "ideal" configuration would, however, be 
+    	specific to that particular MUD, and its precise form is 
+    	therefore not addressed here. Instead, the more general 
+    	issue of how to alter the balance between player types is 
+    	considered, along with the gross effects that can be 
+    	expected to follow from having done so.
+    </para>
+    </sect1>
+    
+    
+    <sect1 id="changing_balance">
+  	<title>Changing the player type balance</title>
+    <para>
+    	A stable MUD is one in which the four principal styles of 
+    	player are in equilibrium. This doesn't imply that there are 
+    	the same number of players exhibiting each style; rather, it 
+    	means that over time the proportion of players for each 
+    	style remains roughly constant, so that the balance between 
+    	the the various types remains the same. Other factors are 
+    	important, to do with the rate at which new players arrive 
+    	and overall player numbers, but their consideration is not 
+    	within the brief of this paper; the interaction between 
+    	players of different types is within its brief, however, and 
+    	is discussed in some detail later.
+    </para>
+    <para>
+    	The actual point of balance (ie. whereabouts in the interest 
+    	graph the centre of gravity of the individual players' 
+    	points lies) can vary quite enormously; it is up to 
+    	individual administrators to determine where they want it to 
+    	lie, and to make any programming or design changes necessary 
+    	to ensure that this is where it actually does. What kind of 
+    	strategies, though, can be employed to achieve this task?
+    </para>
+    <para>
+    	In order to answer this question, consider the interest 
+    	graph. If it is regarded as a plane in equilibrium, it can 
+    	be tilted in a number of ways to favour different areas. 
+    	Usually, this will be at the expense of some other 
+    	(opposite) area, but not necessarily. Although tilting can 
+    	in theory occur along any line in the plane, it makes sense 
+    	(at least initially) to look at what happens when the tilt 
+    	lines coincide with the x and y axes in the graph.
+    </para>
+    <para>
+    	What follows, then, is a brief examination of means by which 
+    	a MUD can be adjusted so as to favour the various extremes 
+    	of the interest graph, and what would happen if each 
+    	approach were taken to the limit:
+    </para>
+    
+    
+    	<sect2 id="players">
+  		<title>Players</title>
+    	<para>
+    		Putting the emphasis on players rather than the game is 
+    		easy &mdash; you just provide the system with lots of 
+    		communication commands and precious little else. The 
+    		more the scales are tipped towards players, though, the 
+    		less of a MUD you have and the more of a CB-style 
+    		chatline. Beyond a certain point, the game can't provide 
+    		a context for communication, and it ceases to be a 
+    		viable virtual world: it's just a comms channel for the 
+    		real world. At this stage, when all sense of 
+    		elsewhere-presence is lost, you no longer have a MUD.
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="world">
+  		<title>World</title>
+    	<para>
+    		Tilting the game towards the world rather than its 
+    		inhabitants is also easy: you simply make it so big and 
+    		awkward to traverse that no-one ever meets anyone in it; 
+    		alternatively, you can ensure that if they do meet up, 
+    		then there are very few ways in which they can interact. 
+    		Although this can result in some nice simulations, 
+    		there's a loss of motivation implicit within it: anyone 
+    		can rack up points given time, but there's not the same 
+    		sense of achievement as when it's done under pressure 
+    		from competing players.
+    	</para>
+    	<para>
+    		And what use is creating beautifully-crafted areas 
+    		anyway, if you can't show them to people? Perhaps if 
+    		computer-run personae had more AI a MUD could go further 
+    		in this direction<footnote><para>Mauldin, M. L. (1994). 
+    		Chatterbots, TinyMUDs and the Turing Test: Entering the 
+    		Loebner Prize Competition. Proc. 
+    		AAAI-94</para></footnote>, but it couldn't (yet) go all 
+    		the way (as authors of single-player games have 
+    		found<footnote><para>Caspian-Kaufman, J. (1995). Sid 
+    		Meier's CivNET: Instruction Manual Microprose, Hunt 
+    		Valley, Maryland.</para></footnote>). Sometimes, you 
+    		just do want to tell people real-world things &mdash; 
+    		you have a new baby, or a new job, or your cat has died. 
+    		If there's no-one to tell, or no way to tell them, you 
+    		don't have a MUD.
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="interacting">
+  		<title>Interacting</title>
+    	<para>
+    		Putting the emphasis on interaction rather than action 
+    		can also go a long way. Restricting the freedom of 
+    		players to choose different courses of action is the 
+    		mechanism for implementing it, so they can only follow a 
+    		narrow or predetermined development path. Essentially, 
+    		it's MUD-as-theatre: you sit there being entertained, 
+    		but not actually participating much. You may feel like 
+    		you're in a world, but it's one in which you're 
+    		paralysed. If the bias is only slight, it can make a MUD 
+    		more "nannyish", which newcomers seem to enjoy, but 
+    		pushing it all the way turns it into a radio set. 
+    		Knowledge may be intrinsically interesting (i.e. 
+    		trivia), but it's meaningless unless it can be applied. 
+    		If players can't play, it's not a MUD.
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="acting">
+  		<title>Acting</title>
+    	<para>
+    		If the graph is redrawn to favour doing-to over doing-
+    		with, the game quickly becomes boring. Tasks are 
+    		executed repeatedly, by rote. There's always monotony, 
+    		never anything new, or, if these is something new, it's 
+    		of the "man versus random number generator" variety. 
+    		People do need to be able to put into practice what 
+    		they've learned, but they also need to be able to learn 
+    		it in the first place! Unless the one leads to the 
+    		other, it's only a matter of time before patience is 
+    		exhausted and the players give up. Without depth, you 
+    		have no MUD.
+    	</para>
+    	</sect2>
+    	
+    <para>
+    	From the above list of ways to tilt the interest graph, a 
+    	set of strategems can be composed to help MUD administrators 
+    	shift the focus of their games in whatever particular 
+    	direction they choose. Some of these strategems are simply a 
+    	question of management: if you don't tell people what 
+    	communication commands there are, for example, people will 
+    	be less likely to use them all. Although such approaches are 
+    	good for small shifts in the way a MUD is played, the more 
+    	powerful and absolute method is to consider programming 
+    	changes (programming being the "nature" of a MUD, and 
+    	administration being the "nurture").
+    </para>
+    	
+    <para>
+    	Here, then, are the programming changes which administrators 
+    	might wish to consider in order to shape their MUD:
+    </para>
+    
+    <para>
+		Ways to emphasise PLAYERS over WORLD:
+	<itemizedlist>
+	<listitem><para>
+    	add more communication facilities
+	</para></listitem>
+	<listitem><para>
+        add more player-on-player commands (eg. transitive ones like 
+        TICKLE or CONGRATULATE, or commands to form and maintain 
+        closed groups of personae)
+	</para></listitem>
+	<listitem><para>
+		make communication facilities easy and intuitive
+	</para></listitem>
+	<listitem><para>
+		decrease the size of the world
+	</para></listitem>
+	<listitem><para>
+		increase the connectivity between rooms
+	</para></listitem>
+	<listitem><para>
+		maximise the number of simultaneous players
+	</para></listitem>
+	<listitem><para>
+        restrict building privileges to a select few
+    </para></listitem>
+	<listitem><para>
+		cut down on the number of mobiles
+	</para></listitem>
+	</itemizedlist>
+    </para>
+    
+    
+    <para>
+		Ways to emphasise WORLD over PLAYERS:
+	<itemizedlist>
+	<listitem><para>
+    	have only basic communication facilities
+	</para></listitem>
+	<listitem><para>
+        have few ways that players can do things to other players
+	</para></listitem>
+	<listitem><para>
+		make building facilities easy and intuitive
+	</para></listitem>
+	<listitem><para>
+		maximise the size of the world (ie. add 
+		<emphasis>breadth</emphasis>)
+	</para></listitem>
+	<listitem><para>
+		use only "rational" room connections in most cases
+	</para></listitem>
+	<listitem><para>
+		grant building privileges to many
+	</para></listitem>
+	<listitem><para>
+        have lots of mobiles
+	</para></listitem>
+	</itemizedlist>
+    </para>
+    
+    <para>
+		Ways to emphasise INTERACTING over ACTING:
+	<itemizedlist>
+	<listitem><para>
+    	make help facilities produce vague information
+	</para></listitem>
+	<listitem><para>
+        produce cryptic hints when players appear stuck
+	</para></listitem>
+	<listitem><para>
+		maximise the effects of commands (ie. add 
+		<emphasis>depth</emphasis>)
+	</para></listitem>
+	<listitem><para>
+		lower the rewards for achievement
+	</para></listitem>
+	<listitem><para>
+		have only a shallow level/class system
+	</para></listitem>
+	<listitem><para>
+		produce amusing responses for amusing commands
+	</para></listitem>
+	<listitem><para>
+        edit all room descriptions for consistent atmosphere
+    </para></listitem>
+	<listitem><para>
+		limit the number of commands available in any one area
+	</para></listitem>
+	<listitem><para>
+		have lots of small puzzles that can be solved easily
+	</para></listitem>
+	<listitem><para>
+		allow builders to add completely new commands
+	</para></listitem>
+	</itemizedlist>
+    </para>
+    
+    <para>
+		Ways to emphasise ACTING over INTERACTING:
+	<itemizedlist>
+	<listitem><para>
+    	provide a game manual
+	</para></listitem>
+	<listitem><para>
+        include auto-map facilities
+	</para></listitem>
+	<listitem><para>
+		include auto-log facilities
+	</para></listitem>
+	<listitem><para>
+		raise the rewards for achievement
+	</para></listitem>
+	<listitem><para>
+		have an extensive level/class system
+	</para></listitem>
+	<listitem><para>
+		make commands be applicable wherever they might reasonably 
+		have meaning
+	</para></listitem>
+	<listitem><para>
+        have large puzzles, that take over an hour to complete
+    </para></listitem>
+	<listitem><para>
+		have many commands relating to fights
+	</para></listitem>
+	<listitem><para>
+		only allow building by top-quality builders
+	</para></listitem>
+	</itemizedlist>
+    </para>
+    
+   
+    <para>
+    	These strategies can be combined to encourage or discourage 
+    	different styles of play. To appeal to achievers, for 
+    	example, one approach might be to introduce an extensive 
+    	level/class system (so as to provide plenty of opportunity 
+    	to reward investment of time) and to maximise the size of 
+    	the world (so there is more for them to achieve). Note that 
+    	the "feel" of a MUD is derived from the position on the 
+    	interest graph of the MUD's players, from which a "centre of 
+    	gravity" can be approximated. 
+    </para>
+    <para>
+    	It is therefore sometimes possible to make two changes 
+    	simultaneously which have "opposite" effects, altering how 
+    	some individuals experience the MUD but not changing how the 
+    	MUD feels overall. For example, adding large puzzles (to 
+    	emphasise ACTING) and adding small puzzles (to emphasise 
+    	INTERACTING) would encourage both pro-ACTING and 
+    	pro-INTERACTING players, thereby keeping the MUD's centre 
+    	of gravity in the same place while tending to increase total 
+    	player numbers. In general, though, these strategems should 
+    	not be used as a means to attract new players; strategems 
+    	should only be selected from one set per axis.
+    </para>
+    <para>
+    	The effects of the presence (or lack of it) of other types 
+    	of players are also very important, and can be used as a 
+    	different way to control relative population sizes. The 
+    	easiest (but, sadly, most tedious) way to discuss the 
+    	interactions which pertain between the various player types 
+    	is to enumerate the possible combinations and consider them 
+    	independently; this is the approach adopted by this paper.
+    </para>
+    <para>
+		First, however, it is pertinent to discuss the ways that 
+		players generally categorise MUDs today.
+    </para>
+    </sect1>
+    
+    
+    <sect1 id="social_versus_gamelike">
+  	<title>The social versus gamelike debate</title>
+  	<para>
+    	Following the introduction of TinyMUD<footnote><para>Aspnes, 
+    	J. (1989). TinyMUD [C]. <ulink url=
+    	"http://ftp.tcp.com/ftp/pub/mud/TinyMUD/tinymud-pc.1.0.tar.gz"
+    	>TinyMUD</ulink></para></footnote>, in which combat 
+    	wasn't even implemented, players now tend to categorise 
+    	individual MUDs as either "social" or 
+    	"gamelike"<footnote><para>Carton, S. (1995). Internet 
+    	Virtual Worlds Quick Tour: MUDs, MOOs and MUSHes: 
+    	Interactive games, Conferences and Forums Ventana Press, 
+    	Chapel Hill, North Carolina.</para></footnote>. In terms of 
+    	the preceding discussion, "social" means that the games are 
+    	heavily weighted to the area below the x-axis, but whether 
+    	"gamelike" means the games are weighted heavily above the 
+    	x-axis, or merely balanced on it, is a moot point. Players 
+    	of social MUDs might suggest that "gamelike" means a 
+    	definite bias on and above the x-axis, because from their 
+    	perspective any explicit element of competitiveness is "too 
+    	much". Some (but not most) players of gamelike MUDs could 
+    	disagree, pointing out that their MUDs enjoy rich social 
+    	interactions between the players despite the fact that 
+    	combat is allowed.
+    <para>
+    </para>
+    	So strongly is this distinction felt, particularly among 
+    	social MUDders, that many of their newer participants don't 
+    	regard themselves as playing "MUDs" at all, insisting that 
+    	this term refers only to combat-oriented games, with which 
+    	they don't wish to be associated. The rule-of-thumb applied 
+    	is server type, so, for example, LPMUD is gamelike, MOO is 
+    	social; this is despite the fact that each of these systems 
+    	is of sufficient power and flexibility that it could 
+    	probably be used to implement an interpreter for the other 
+    	one!
+    <para>
+    </para>
+    	Consequently, there are general Internet-related books with 
+    	chapter titles like "Interactive Multiuser Realities: MUDs, 
+    	MOOs, MUCKs and MUSHes"<footnote><para>Poirier, J. R. (1994). Interactive 
+    	Multiuser Realities: MUDs, MOOs, MUCKs, and MUSHes. The 
+    	Internet Unleashed, 1192-1127. SAMS Publishing, 
+    	Indianapolis, Indiana.</para></footnote> and "MUDs, MUSHes, 
+    	and Other Role-Playing 
+    	Games"<footnote><para>Eddy, A. (1994). Internet After Hours 
+    	Prima, Rocklin, California.</para></footnote>. This fertile 
+    	ground is where the term 
+    	"MU*"<footnote><para>Norrish, J. (1995). 
+    	MU*s.</para></footnote> originates &mdash; as an attempt to 
+    	fill 
+    	the void left by assigning the word "MUD" to gamelike (or 
+    	"player-killing") MUDs; its deliberate use can therefore 
+    	reasonably be described as a political 
+    	act<footnote><para>Bruckman, A. S. (1992). Identity 
+    	Workshop: Emergent Social and Psychological Phenomena in 
+    	Text-Based Virtual Reality. MIT Media Laboratory, Cambridge, 
+    	Massachusetts.</para></footnote>.
+    </para>
+    <para>
+    	This attitude misses the point, however. Although social 
+    	MUDs may be a major branch on the MUD family tree, they are, 
+    	nevertheless, still on it, and are therefore still MUDs. If 
+    	another overarching term is used, then it will only be a 
+    	matter of time before someone writes a combat-oriented 
+    	server called "KillerMU*" or whatever, and cause the wound 
+    	to reopen. Denial of history is not, in general, a wise 
+    	thing to do.
+    </para>
+    <para>
+    	Besides, social MUDs do have their killers (ie. people who 
+    	fall into that area of the interest graph). Simply because 
+    	explicit combat is prohibited, there is nevertheless plenty 
+    	of opportunity to cause distress in other ways. To list a 
+    	few: virtual rape<footnote><para>Dibbell, J. (1993). A Rape 
+    	in Cyberspace. The Village Voice, December 21, 1993
+    	<ulink url= 
+
+"ftp://ftp.lambda.moo.mud.org/pub/MOO/papers/VillageVoice.txt" >A 
+Rape in Cyberspace</ulink>
+    	| Reid, E. (1994). Cultural Formations in Text-Based 
+    	Virtual Realities. Dept. English, University of Melbourne, 
+    	Australia.
+    	<ulink url= 
+    	
+"ftp://ftp.lambda.moo.mud.org/pub/MOO/papers/CulturalFormations.txt" 
+>Cultural Formations</ulink>
+    	</para></footnote>; general sexual 
+    	harrassment<footnote><para>Rosenberg, M. S. (1992). Virtual 
+    	Reality: Reflections of Life, Dreams and Technology. An 
+    	Ethnography of a Computer Society.
+    	<ulink url=  	
+    	
+"ftp://ftp.lambda.moo.mud.org/pub/MOO/papers/ethnography.txt" >An 
+Ethnography</ulink></para></footnote>; 
+    	deliberate fracturing of the 
+    	community<footnote><para>Whitlock, T. D. (1994). Fuck Art, 
+    	Let's Kill!: Towards a Post Modern 
+    	Community.</para></footnote>; vexatious 
+    	litigancy<footnote><para>Whitlock, T. D. (1994b). 
+    	Technological Hierarchy in MOO: Reflections on Power in 
+    	Cyberspace</para></footnote>. Indeed, proper management of a 
+    	MUD insists that contingency plans and procedures are 
+    	already in place such that antisocial behaviour can be dealt 
+    	with promptly when it 
+    	occurs<footnote><para>Bruckman, A. S. (1994b). Approaches to 
+    	Managing Deviant Behaviour in Virtual Communities. MIT Media 
+    	Laboratory, Cambridge, Massachusetts.</para></footnote>.
+    </para>
+    <para>
+    	Social MUDs do have their achievers, too: people who regard 
+    	building as a competitive act, and can vie to have the 
+    	"best" rooms in the MUD<footnote><para>Clodius, J. A. 
+    	(1994). Concepts of Space in a Virtual 
+    	Community.</para></footnote>, or who seek to acquire a large 
+    	quota for creating ever-more objects<footnote><para>Farmer, 
+    	F. R., Morningstar, C. &amp; Crockford, D. (1994). From 
+    	Habitat to Global Cyberspace. Proc. CompCon-94, 
+    	IEEE</para></footnote>. The fact that a MUD might not itself 
+    	reward such behaviour should, of course, naturally foster a 
+    	community of players who are primarily interested in talking 
+    	and listening, but there nevertheless 
+    	<emphasis>will</emphasis> still be killers and achievers 
+    	around &mdash; in the same way that there will be 
+    	socialisers and explorers in even the most bloodthirsty of 
+    	MUDs.
+    </para>
+    <para>
+    	Researchers have tended to use a more precise distinction 
+    	than the players, in terms of a MUD's similarity to 
+    	(single-user) adventure games. Amy Bruckman's observation 
+    	that:
+    </para>
+    <para>
+    	"there are two basic types [of MUD]: those which are like
+        adventure games, and those which are 
+        not"<footnote><para>Bruckman, A. S. (1992). Identity 
+        Workshop: Emergent Social and Psychological Phenomena in 
+        Text-Based Virtual Reality. MIT Media Laboratory, Cambridge, 
+        Massachusetts.</para></footnote>
+    </para>
+    <para>
+    	is the most succinct and unarguable expression of this 
+    	dichotomy. However, in his influential paper on MUDs, Pavel 
+    	Curtis states:
+    </para>
+    <para>
+    	"Three major factors distinguish a MUD from an 
+    	Adventure-style computer game, though:
+    </para>
+    <para>
+    <itemizedlist>
+	<listitem><para>
+    	A MUD is not goal-oriented; it has no beginning or end, no 
+    	'score', and no notion of 'winning' or 'success'. In short, 
+    	even though users of MUDs are commonly called players, a MUD 
+    	isn't really a game at all.
+	</para></listitem>
+	<listitem><para>
+        A MUD is extensible from within; a user can add new objects 
+        to the database such as rooms, exits, 'things', and notes. 
+        [...]
+	</para></listitem>
+	<listitem><para>
+		A MUD generally has more than one user connected at a time. 
+		All of the connected users are browsing and manipulating the 
+		same database and can encounter the new objects created by 
+		others. The multiple users on a MUD can communicate with 
+		each other in real 
+		time."<footnote><para>Curtis, P. (1992). Mudding: Social 
+		Phenomena in Text-Based Virtual Realities. Proc. 
+		DIAC-92 
+		<ulink url=
+"ftp://ftp.lambda.moo.mud.org/pub/MOO/papers/DIAC92.txt" 
+>Mudding: Social Phenomena</ulink></para></footnote>
+	</para></listitem>
+	</itemizedlist>
+    </para>
+    <para>
+    	This definition explicitly rules out MUDs as adventure games 
+    	&mdash; indeed, it claims that they are not games at all. 
+    	This is perhaps too tight a definition, since the very first 
+    	MUD was most definitely programmed to be a game (I know, 
+    	because I programmed it to be one!). The second point, which 
+    	states that MUDs must involve building, is also untrue of 
+    	many MUDs; in particular, commercial MUDs often aim for a 
+    	high level of narrative consistency (which isn't conducive 
+    	to letting players add things unchecked), and, if they have 
+    	a graphical front-end, it is also inconvenient if new 
+    	objects appear that generate no images. However, the fact 
+    	that Curtis comes down on the side of "social" MUDs to bear 
+    	the name "MUD" at least recognises that these programs are 
+    	MUDs, which is more than many "MU*" advocates are prepared 
+    	to admit.
+    </para>
+    <para>
+    	This issue of "social or gamelike" will be returned to 
+    	presently, with an explanation of exactly why players of 
+    	certain MUDs which are dubbed "gamelike" might find a binary 
+    	distinction counter-intuitive.
+    </para>
+    </sect1>
+    
+    
+    <sect1 id="player_interactions">
+  	<title>Player interactions</title>
+  	<para>
+  		What follows is a brief explanation of how players 
+  		predominantly of one type view those other players whom they 
+  		perceive to be predominantly of one type. Warning: these 
+  		notes concern <emphasis>stereotypical</emphasis> players, 
+  		and are not to be assumed to be true of any individual 
+  		player who might otherwise exhibit the common traits of one 
+  		or more of the player classes.
+    </para>
+    <para>
+    	The effects of increasing and decreasing the various 
+    	populations is also discussed, but this does 
+    	<emphasis>not</emphasis> take into account physical 
+    	limitations on the amount of players involved. Thus, for 
+    	example, if the number of socialisers is stated to have "no 
+    	effect" on the number of achievers, that disregards the fact 
+    	that there may be an absolute maximum number of players that 
+    	the MUD can comfortably hold, and the socialisers may be 
+    	taking up slots which achievers could otherwise have filled. 
+    	Also, the knock-on effects of other interactions are not 
+    	discussed at this stage: a game with fewer socialisers means 
+    	the killers will seek out more achievers, for example, so 
+    	there is a secondary effect of having fewer achievers even 
+    	though there is no primary effect. This propogation of 
+    	influences is, however, examined in detail afterwards, when 
+    	the first-level dynamics have been laid bare.
+    </para>
+    
+    
+    	<sect2 id="achievers_achievers">
+  		<title>Achievers v. achievers</title>
+    	<para>
+    		Achievers regard other achievers as competition to be 
+    		beaten (although this is typically friendly in nature, 
+    		rather than cut-throat). Respect is given to those other 
+    		achievers who obviously are extraordinarily good, but 
+    		typically achievers will cite bad luck or lack of time 
+    		as reasons for not being as far advanced in the game as 
+    		their contemporaries.
+    	</para>
+    	<para>
+    		That said, achievers do often co-operate with one 
+    		another, usually to perform some difficult collective 
+    		goal, and from these shared experiences can grow deep, 
+    		enduring friendships which may surpass in intensity 
+    		those commonly found among individuals of other groups. 
+    		This is perhaps analagous to the difference between the 
+    		bond that soldiers under fire share and the bond that 
+    		friends in a bar share.
+    	</para>
+    	<para>
+    		Achievers do not need the presence of any other type of 
+    		player in order to be encouraged to join a MUD: they 
+    		would be quite happy if the game were empty but for 
+    		them, assuming it remained a challenge (although some do 
+    		feel a need to describe their exploits to anyone who 
+    		will listen). Because of this, a MUD can't have too many 
+    		achievers, physical limitations excepted.
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="achievers_explorers">
+  		<title>Achievers v. explorers</title>
+    	<para>
+    		Achievers tend to regard explorers as losers: people who 
+    		have had to resort to tinkering with the game mechanics 
+    		because they can't cut it as a player. Exceptionally 
+    		good explorers may be elevated to the level of 
+    		eccentric, in much the same way that certain individuals 
+    		come to be regarded as gurus by users of large computer 
+    		installations: what they do is pointless, but they're 
+    		useful to have around when you need to know something 
+    		obscure, fast. They can be irritating, and they rarely 
+    		tell the whole truth (perhaps because they don't know 
+    		it?), but they do have a place in the world.
+    	</para>
+    	<para>
+    		The overall number of explorers has only a marginal 
+    		effect on the population of achievers. In essence, more 
+    		explorers will mean that fewer of the really powerful 
+    		objects will be around around for the achievers to use, 
+    		the explorers having used their arcane skills to obtain 
+    		them first so as to use them in their diabolical 
+    		experiments... This can cause achievers to become 
+    		frustrated, and leave. More importantly, perhaps, the 
+    		number of explorers affects the <emphasis>rate of 
+    		advancement</emphasis> of achievers, because it 
+    		determines whether or not they have to work out all 
+    		those tiresome puzzles themselves. Thus, more explorers 
+    		will lead to a quicker rise through the ranks for 
+    		achievers, which will tend to encourage them (if not 
+    		overdone).
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="achievers_socialisers">
+  		<title>Achievers v. socialisers</title>
+    	<para>
+    		Achievers merely tolerate socialisers. Although they are 
+    		good sources of general hearsay on the comings and 
+    		goings of competitors, they're nevertheless pretty much 
+    		a waste of space as far as achievers are concerned. 
+    		Typically, achievers will regard socialisers with a 
+    		mixture of contempt, disdain, irritation and pity, and 
+    		will speak to them in either a sharp or patronising 
+    		manner. Occasionally, flame wars between different 
+    		cliques of socialisers and achievers may break out, and 
+    		these can be among the worst to stop: the achievers 
+    		don't want to lose the argument, and the socialisers 
+    		don't want to stop talking!
+    	</para>
+    	<para>
+    		Changing the number of socialisers in a MUD has no 
+    		effect on the number of achievers.
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="achievers_killers">
+  		<title>Achievers v. killers</title>
+    	<para>
+    		Achievers don't particularly like killers. They realise 
+    		that killers as a concept are necessary in order to make 
+    		achievement meaningful and worthwhile (there being no 
+    		way to "lose" the game if any fool can "win" just by 
+    		plodding slowly unchallenged), however they don't 
+    		pesonally like being attacked unless it's obvious from 
+    		the outset that they'll win. They also object to being 
+    		interrupted in the middle of some grand scheme to 
+    		accumulate points, and they don't like having to arm 
+    		themselves against surprise attacks every time they 
+    		start to play. Achievers will, occasionally, resort to 
+    		killing tactics themselves, in order to cause trouble 
+    		for a rival or to reap whatever rewards the game itself 
+    		offers for success, however the risks are usually too 
+    		high for them to pursue such options very often.
+    	</para>
+    	<para>
+    		Increasing the number of killers will reduce the number 
+    		of achievers; reducing the killer population will 
+    		increase the achiever population. Note, however, that 
+    		those general MUDs which nevertheless allow 
+    		player-killing tend to do so in the belief that in 
+    		small measure it is good for the game: it promotes 
+    		camaraderie, excitement and intensity of experience (and 
+    		it's the only method that players will accept to ensure 
+    		that complete idiots don't plod inexorably through the 
+    		ranks to acquire a degree of power which they aren't 
+    		really qualified to wield). As a consequence, reducing 
+    		the number of killers <emphasis>too</emphasis> much will 
+    		be perceived as cheapening the game, making high 
+    		achievement commonplace, and it will put off those 
+    		achievers who are alarmed at the way any fool can "do 
+    		well" just by playing poorly for long enough.
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="explorers_achievers">
+  		<title>Explorers v. achievers</title>
+    	<para>
+    		Explorers look on achievers as nascent explorers, who 
+    		haven't yet figured out that there's more to life than 
+    		pursuing meaningless goals. They are therefore willing 
+    		to furnish them with information, although, like all 
+    		experts, they will rarely tell the full story when they 
+    		can legitimately give cryptic clues instead. Apart from 
+    		the fact that they sometimes get in the way, and won't 
+    		usually hand over objects that are needed for 
+    		experiments, achievers can live alongside explorers 
+    		without much friction.
+    	</para>
+    	<para>
+    		Explorers' numbers aren't affected by the presence of 
+    		achievers.
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="explorers_explorers">
+  		<title>Explorers v. explorers</title>
+    	<para>
+    		Explorers hold good explorers in great respect, but are 
+    		merciless to bad ones. One of the worst things a fellow 
+    		explorer can do is to give out incorrect information, 
+    		believing it to be true. Other than that, explorers 
+    		thrive on telling one another their latest discoveries, 
+    		and generally get along very well. Outwardly, they will 
+    		usually claim to have the skill necessary to follow the 
+    		achievement path to glory, but have other reasons for 
+    		not doing so (eg. time, tedium, or having proven 
+    		themselves already with a different persona). There are 
+    		often suspicions, though, that explorers are too 
+    		theoretical in most cases, and wouldn't be able to put 
+    		their ideas into practice on a day-to-day basis if they 
+    		were to recast themselves in the achiever or killer 
+    		mould.
+    	</para>
+    	<para>
+    		Explorers enjoy the company of other explorers, and they 
+    		will play more often if they have people around them to 
+    		whom they can relate. Unfortunately, not many people 
+    		have the type of personality which finds single-minded 
+    		exploring a riveting subject, so numbers are notoriously 
+    		difficult to increase. If you have explorers in a game, 
+    		hold on to them!
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="explorers_socialisers">
+  		<title>Explorers v. socialisers</title>
+    	<para>
+    		Explorers consider socialisers to be people whom they 
+    		can impress, but who are otherwise pretty well 
+    		unimportant. Unless they can appreciate the explorer's 
+    		talents, they're not really worth spending time with. 
+    		There are some explorers who treat conversation as their 
+    		specialist explorer subject, but these are very rare 
+    		indeed; most will be polite and attentive, but they'll 
+    		find some diversion if the conversation isn't 
+    		MUD-related or if their fellow interlocutor is clearly 
+    		way below them in the game-understanding stakes.
+    	</para>
+    	<para>
+    		The explorer population is not directly affected by the 
+    		size of the socialiser population.
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="explorers_killers">
+  		<title>Explorers v. killers</title>
+    	<para>
+    		Explorers often have a grudging respect for killers, but 
+    		they do find their behaviour wearisome. It's just so 
+    		annoying to be close to finishing setting up something 
+    		when a killer comes along and attacks you. On the other 
+    		hand, many killers do know their trade well, and are 
+    		quite prepared to discuss the finer details of it with 
+    		explorers. Sometimes, an explorer may try attacking 
+    		other players as an exercise, and they can be extremely 
+    		effective at it. 
+    	</para>
+    	<para>
+    		Explorers who are particularly riled by a killer may 
+    		even decide to "do something about it" themselves. If 
+    		they make such a decision, then it can be seriously bad 
+    		news for the killer concerned: being jumped and trashed 
+    		by a low-level (in terms of game rank) explorer can have 
+    		a devastating effect on a killer's reputation, and turn 
+    		them into a laughing stock overnight. Explorers do not, 
+    		however, tend to have the venom or malice that true 
+    		killers possess, nor will they continue the practice to 
+    		the extent that they acquire a reputation of their own 
+    		for killing.
+    	</para>
+    	<para>
+    		The affect of killers on the explorer population is 
+    		fairly muted, because most explorers don't particularly 
+    		care if they get killed (or at least they profess not 
+    		not). However, if it happens too often then they will 
+    		become disgruntled, and play less frequently.
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="socialisers_achievers">
+  		<title>Socialisers v. achievers</title>
+    	<para>
+    		Socialisers like achievers, because they provide the 
+    		running soap opera about which the socialisers can 
+    		converse. Without such a framework, there is no uniting 
+    		cause to bring socialisers together (at least not 
+    		initially). Note that socialisers don't particularly 
+    		enjoy talking <emphasis>to</emphasis> achievers (not 
+    		unless they can get them to open up, which is very 
+    		difficult); they do, however, enjoy talking 
+    		<emphasis>about</emphasis> them. A cynic might suggest 
+    		that the relationship between socialisers and achievers 
+    		is similar to that between women and men...
+    	</para>
+    	<para>
+    		Increasing the achiever/socialiser ratio has only a 
+    		subtle effect: socialisers may come to feel that the MUD 
+    		is "all about" scoring points and killing mobiles, and 
+    		some of them may therefore leave before matters "get 
+    		worse". Decreasing it has little effect unless the 
+    		number of active achievers drops to near zero, in which 
+    		case new socialisers might find it difficult to break 
+    		into established conversational groups, and thus decide 
+    		to take their play elsewhere.
+    	</para>
+    	<note><para>
+    		Although earlier it was stated that this paper 
+    		does not address people who play MUDs for meta-reasons, 
+    		eg. to learn how to program, I believe that their 
+    		empirical behaviour with regard to the actions of other 
+    		players is sufficiently similar to that of socialisers 
+    		for the two groups to be safely bundled together when 
+    		considering population dynamics.
+    	</para></note>
+    	</sect2>
+    	
+    	
+    	<sect2 id="socialisers_explorers">
+  		<title>Socialisers v. explorers</title>
+    	<para>
+    		Socialisers generally consider explorers to be sad 
+    		characters who are desperately in need of a life. Both 
+    		groups like to talk, but rarely about the same things, 
+    		and if they do get together it's usually because the 
+    		explorer wants to sound erudite and the socialiser has 
+    		nothing better to do at the time.
+    	</para>
+    	<para>
+    		The number of explorers in a MUD has no effect on the 
+    		number of socialisers.
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="socialisers_socialisers">
+  		<title>Socialisers v. socialisers</title>
+    	<para>
+    		A case of positive feedback: socialisers can talk to one 
+    		another on any subject for hours on end, and come back 
+    		later for more. The key factor is whether there is an 
+    		open topic of conversation: in a game-like environment, 
+    		the MUD itself provides the context for discussion, 
+    		whether it be the goings-on of other players or the 
+    		feeble attempts of a socialiser to try playing it; in a 
+    		non-game environment, some other subject is usually 
+    		required to structure conversations, either within the 
+    		software of the MUD itself (eg. building) or without it 
+    		(eg. "This is a support MUD for the victims of cancer"). 
+    		Note that this kind of subject-setting is only required 
+    		as a form of ice-breaker: once socialisers have acquired 
+    		friends, they'll invariably find other things that they 
+    		can talk about.
+    	</para>
+    	<para>
+    		The more socialisers there are in a game, the more new 
+    		ones will be attracted to it.
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="socialisers_killers">
+  		<title>Socialisers v. killers</title>
+    	<para>
+    		This is perhaps the most fractious relationship between 
+    		player group types. The hatred that some socialisers 
+    		bear for killers admits no bounds. Partly, this is the 
+    		killers' own fault: they go out of their way to rid MUDs 
+    		of namby-pamby socialisers who wouldn't know a weapon if 
+    		one came up and hit them (an activity that killers are 
+    		only too happy to demonstrate), and they will generally 
+    		hassle socialisers at every opportunity simply because 
+    		it's so easy to get them annoyed. However, the main 
+    		reason that socialisers tend to despise killers is that 
+    		they have completely antisocial motives, whereas 
+    		socialisers have (or like to think they have) a much 
+    		more friendly and helpful attitude to life. The fact 
+    		that many socialisers take attacks on their personae 
+    		personally only compounds their distaste for killers.
+    	</para>
+    	<para>
+    		It could be argued that killers do have a positive role 
+    		to play from the point of view of socialisers. There are 
+    		generally two defences made for their existence: 1) 
+    		without killers, socialisers would have little to talk 
+    		about; 2) without evil as a contrast, there is no good. 
+    		The former is patently untrue, as socialisers will 
+    		happily talk about anything and everything; it may be 
+    		that it helps provide a catalyst for long conversations, 
+    		but only if it isn't an everyday occurrence. The second 
+    		argument is more difficult to defend against (being 
+    		roughly equivalent to the reason why God allows the 
+    		devil to exist), however it presupposes that those who 
+    		attack other players are the only example of nasty 
+    		people in a MUD. In fact, there is plenty of opportunity 
+    		for players of all persuasions to behave obnoxiously to 
+    		one another; killers merely do it more openly, and (if 
+    		allowed) in the context of the game world.
+    	</para>
+    	<para>
+    		Increasing the number of killers will decrease the 
+    		number of socialisers by a much greater degree. 
+    		Decreasing the number of killers will likewise greatly 
+    		encourage (or, rather, fail to discourage) socialisers 
+    		to play the MUD.
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="killers_achievers">
+  		<title>Killers v. achievers</title>
+    	<para>
+    		Killers regard achievers as their natural prey. 
+    		Achievers are good fighters (because they've learned the 
+    		necessary skills against mobiles), but they're not quite 
+    		as good as killers, who are more specialised. This gives 
+    		the "thrill of the chase" which many killers enjoy 
+    		&mdash; an achiever may actually be able to escape, but 
+    		will usually succumb at some stage, assuming they don't 
+    		see sense and quit first. Achievers also dislike being 
+    		attacked, which makes the experience of attacking them 
+    		all the more fun; furthermore, it is unlikely that they 
+    		will stop playing after being set back by a killer, and 
+    		thus they can be "fed upon" again, later. The main 
+    		disadvantage of pursuing achievers, however, is that an 
+    		achiever can get so incensed at being attacked that they 
+    		decide to take revenge. A killer may thus innocently 
+    		enter a game only to find a heavily-armed achiever lying 
+    		in wait, which rather puts the boot on the other foot...
+    	</para>
+    	<para>
+    		Note that there is a certain sub-class of killers, 
+    		generally run by wiz-level players, who have a more 
+    		ethical point to their actions. In particular, their aim 
+    		is to "test" players for their "suitability" to advance 
+    		to the higher levels themselves. In general, such 
+    		personae should not be regarded as falling into the 
+    		killer category, although in some instances the ethical 
+    		aspect is merely an excuse to indulge in killing sprees 
+    		without fear of sanction. Rather, these killers tend to 
+    		be run by people in either the achievement category 
+    		(protecting their own investment) or the explorer 
+    		category (trying to teach their victims how to defend 
+    		themselves against real killers).
+    	</para>
+    	<para>
+    		Increasing the number of achievers will, over time, 
+    		increase the number of killers in a typically Malthusian 
+    		fashion.
+    	</para>
+    	</sect2>
+    
+    
+    	<sect2 id="killers_explorers">
+  		<title>Killers v. explorers</title>
+    	<para>
+    		Killers tend to leave explorers alone. Not only can 
+    		explorers be formidable fighters (with many obscure, 
+    		unexpected tactics at their disposal), but they often 
+    		don't fret about being attacked &mdash; a fact which is 
+    		very frustrating for killers. Sometimes, particularly 
+    		annoying explorers will simply ignore a killer's attack, 
+    		and make no attempt whatsoever to defend against it; 
+    		this is the ultimate in cruelty to killers. For more 
+    		long-term effects, though, a killer's being beaten by an 
+    		explorer has more impact on the game: the killer will 
+    		feel shame, their reputation will suffer, and the 
+    		explorer will pass on survival tactics to everyone else. 
+    		In general, then, killers will steer well clear of even 
+    		half-decent explorers, except when they have emptied a 
+    		game of everyone else and are so desperate for a fix 
+    		that even an explorer looks tempting...
+    	</para>
+    	<para>
+    		Increasing the number of explorers will slightly 
+    		decrease the number of killers.
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="killers_socialisers">
+  		<title>Killers v. socialisers</title>
+    	<para>
+    		Killers regard socialisers with undisguised glee. It's 
+    		not that socialisers are in any way a challenge, as 
+    		usually they will be pushovers in combat; rather, 
+    		socialisers feel a dreadful hurt when attacked 
+    		(especially if it results in the loss of their persona), 
+    		and it is this which killers enjoy about it. Besides, 
+    		killers tend to like to have a bad reputation, and if 
+    		there's one way to get people to talk about you, it's to 
+    		attack a prominent socialiser...
+    	</para>
+    	<para>
+    		Increasing the number of socialisers will increase the 
+    		number of killers, although of course the number of 
+    		socialisers wouldn't remain increased for very long if 
+    		that happened.
+    	</para>
+    	</sect2>
+    	
+    	
+    	<sect2 id="killers_killers">
+  		<title>Killers v. killers</title>
+    	<para>
+    		Killers try not to cross the paths of other killers, 
+    		except in pre-organised challenge matches. Part of the 
+    		psychology of killers seems to be that they wish to be 
+    		viewed as somehow superior to other players; being 
+    		killed by a killer in open play would undermine their 
+    		reputation, and therefore they avoid risking it (compare 
+    		Killers v Explorers). This means that nascent or wannabe 
+    		killers are often put off their chosen particular career 
+    		path because they themselves are attacked by more 
+    		experienced killers and soundly thrashed. For this 
+    		reason, it can take a very long time to increase the 
+    		killer population in a MUD, even if all the conditions 
+    		are right for them to thrive; killer numbers rise 
+    		grindingly slowly, unless competent killers are imported 
+    		from another MUD to swell the numbers artificially.
+    	</para>
+    	<para>
+    		Killers will occasionally work in teams, but only as a 
+    		short-term exercise; they will usually revert to 
+    		stalking their victims solo in the next session they 
+    		play.
+    	</para>
+    	<para>
+    		There are two cases where killers might be attacked by 
+    		players who, superficially, look like other killers. One 
+    		of these is the "killer killer", usually run by 
+    		wiz-level players, which has been discussed earlier. 
+    		The other is in the true hack-and-slash type of MUD, 
+    		where the whole aim of the game is to kill other 
+    		personae, and no-one particularly minds being killed 
+    		because they weren't expecting to last very long anyway. 
+    		This type of play does not appeal to "real" killers, 
+    		because it doesn't cause people emotional distress when 
+    		their personae are deleted (indeed, socialisers prefer 
+    		it more than killers do). However, it's better than 
+    		nothing.
+    	</para>
+    	<para>
+    		The only effect that killers have on other killers is in 
+    		reducing the number of potential victims available. 
+    		This, in theory, should keep the number of killers down, 
+    		however in practice killers will simply attack less 
+    		attractive victims instead. It takes a very drastic 
+    		reduction in the number of players before established 
+    		killers will decide to stop playing a MUD and move 
+    		elsewhere, by which time it is usually too late to save 
+    		the MUD concerned.
+    	</para>
+    	</sect2>
+    </sect1>
+    
+    
+	<sect1 id="dynamics">
+  	<title>Dynamics</title>
+  	<para>
+		From the discussion in the previous section, it is possible 
+		to summarise the interactions between player types as 
+		follows:
+    </para>
+    
+    <para>
+    	To increase the number of achievers:
+    <itemizedlist>
+	<listitem><para>
+          reduce the number of killers, but not by too much.
+	</para></listitem>
+	<listitem><para>
+          if killer numbers are high, increase the number of 
+          explorers.
+	</para></listitem>
+	</itemizedlist>
+	</para>
+	
+	<para>
+		To decrease the number of achievers:
+	<itemizedlist>
+	<listitem><para>
+        increase the number of killers.
+	</para></listitem>
+	<listitem><para>
+        if killer numbers are low, reduce the number of explorers.
+	</para></listitem>
+	</itemizedlist>
+	</para>
+	
+	<para>
+		To increase the number of explorers:
+	<itemizedlist>
+	<listitem><para>
+        increase the number of explorers.
+	</para></listitem>
+	</itemizedlist>
+	</para>
+	
+	<para>
+		To decrease the number of explorers:
+	<itemizedlist>
+	<listitem><para>
+        massively increase the number of killers.
+	</para></listitem>
+	</itemizedlist>
+	</para>
+	
+	<para>
+		To increase the number of socialisers:
+	<itemizedlist>
+	<listitem><para>
+        slightly decrease the number of killers.  
+	</para></listitem>
+	<listitem><para>
+        increase the number of socialisers.
+	</para></listitem>
+	</itemizedlist>
+	</para>
+	
+	<para>
+		To decrease the number of socialisers:
+	<itemizedlist>
+	<listitem><para>
+        slightly increase the number of killers  
+	</para></listitem>
+	<listitem><para>
+        massively increase the number of achievers.
+    </para></listitem>
+	<listitem><para>
+		massively decrease the number of achievers.
+	</para></listitem>
+	<listitem><para>
+		decrease the number of socialisers.
+	</para></listitem>
+	</itemizedlist>
+	</para>
+	
+	<para>
+		To increase the number of killers:
+	<itemizedlist>
+	<listitem><para>
+        increase the number of achievers.  
+	</para></listitem>
+	<listitem><para>
+        massively decrease the number of explorers.  
+	</para></listitem>
+	<listitem><para>
+        increase the number of socialisers.  
+	</para></listitem>
+	</itemizedlist>
+	</para>
+	
+	<para>
+		To decrease the number of killers:
+	<itemizedlist>
+	<listitem><para>
+        decrease the number of achievers.
+	</para></listitem>
+	<listitem><para>
+        massively increase the number of explorers.  
+	</para></listitem>
+	<listitem><para>
+        decrease the number of socialisers.  
+	</para></listitem>
+	</itemizedlist>
+	</para>
+	
+    <para>
+    	What are the dynamics of this model? In other words, if 
+    	players of each type were to trickle into a system, how 
+    	would it affect the overall make-up of the player 
+    	population?
+    </para>
+    <para>
+    	In the figure below, green indicates increasing numbers and 
+    	red indicates decreasing numbers. A red line with a green 
+    	arrowhead means that decreasing numbers of the box pointed 
+    	from lead to increasing numbers of the box pointed to; a red 
+    	line with a red arrowhead would mean that a decrease in one 
+    	leads to a decrease in the other, and so on. The thickness 
+    	of the line shows the strength of the effect: thin lines 
+    	mean there's only a small effect; medium lines mean there's 
+    	an effect involving roughly equal numbers of players from 
+    	both boxes; thick lines means there's a great effect, 
+    	magnifying the influence of the origin box.
+    </para>
+    <para>
+    	<figure id="en_hcds_2">
+              <title>The flow of influence</title>
+              <graphic
+                fileref="figures/en_hcds_2.gif"/>
+            </figure>
+    </para>
+    <para>
+    	From this, it can be seen that the numbers of killers and 
+    	achievers is basically an equilibrium: increasing the number 
+    	of achievers will increase the number of killers, which will 
+    	in turn dampen down the increase in the number of achievers 
+    	and thereby reduce the number of excess killers.
+    </para>
+    <para>
+    	The explorer population is almost inert: only huge numbers 
+    	of killers will reduce it. It should be noted, however, that 
+    	massively increasing the number of explorers is the only way 
+    	to reduce the number of killers without also reducing the 
+    	player numbers in other groups. Because increasing the 
+    	number of explorers in a MUD generally encourages others to 
+    	join (and non-explorers to experiment with exploration), 
+    	this gives a positive feedback which will eventually reduce 
+    	the killer population (although recall the earlier point 
+    	concerning how few people are, by nature, explorers).
+    </para>
+    <para>
+    	The most volatile group of people is that of the 
+    	socialisers. Not only is it highly sensitive to the number 
+    	of killers, but it has both positive and negative feedback 
+    	on itself, which amplifies any changes. An increase in the 
+    	number of socialisers will lead to yet more socialisers, but 
+    	it will also increase the number of killers; this, in turn, 
+    	will reduce the number of socialisers drastically, which 
+    	will feed back into a yet greater reduction. It is possible 
+    	for new socialisers to arrive in large enough quantities for 
+    	a downward spiral in numbers not to be inevitable, but it is 
+    	unlikely that such a system could remain viable in over a 
+    	long period of time.
+    </para>
+    <para>
+    	This analysis of the dynamics of the relationships between 
+    	players leads naturally to a consideration of what 
+    	configurations could be considered stable. There are four:
+    <orderedlist numeration="arabic">
+    <listitem><para>
+        Killers and achievers in equilibrium. If the number of 
+        killers gets too high, then the achievers will be driven 
+        off, which will cause the number of killers to fall also 
+        (through lack of victims). If there aren't enough killers, 
+        then achievers feel the MUD isn't a sufficient challenge 
+        (there being no way to "lose" in it), and they will 
+        gradually leave; new killers could appear, attracted by the 
+        glut of potential prey, however this happens so slowly that 
+        its impact is less than that of the disaffection among 
+        achievers. Socialisers who venture out of whatever safe 
+        rooms are available eventually fall prey to killers, and 
+        leave the game. Those who stay find that there aren't many 
+        interesting (to them) people around with whom to talk, and 
+        they too drift off. Explorers potter around, but are not a 
+        sufficient presence to affect the number of killers.
+    </para></listitem>
+    <listitem><para>
+        A MUD dominated by socialisers. Software changes to the MUD 
+        are made which prevent (or at least seriously discourage) 
+        killers from practising their craft on socialisers; incoming 
+        socialisers are encouraged by those already there, and a 
+        chain reaction starts. There are still achievers and 
+        explorers, but they are swamped by the sheer volume of 
+        socialisers. The number of socialisers is limited only by 
+        external factors, or the presence of killers masquerading as 
+        socialisers. If the population of socialisers drops below a 
+        certain critical level, then the chain reaction reverses and 
+        almost all the players will leave, however only events 
+        outside the MUD would cause that to happen once the critical 
+        mass had been reached.
+    </para></listitem>
+    <listitem><para>
+    	A MUD where all groups have a similar influence (although 
+    	not necessarily similar numbers). By nurturing explorers 
+    	using software means (ie. giving the game great depth or 
+    	"mystique", or encouraging non-explorers to dabble for a 
+    	while by regularly adding new areas and features), the 
+    	overall population of explorers will gradually rise, and the 
+    	killer population will be held in check by them. The killers 
+    	who remain do exert an influence on the number of 
+    	socialisers, sufficient to stop them from going into 
+    	fast-breeder mode, but insufficient to initiate an exodus. 
+    	Achievers are set upon by killers often enough to feel that 
+    	their achievements in the game have meaning. This is perhaps 
+    	the most balanced form of MUD, since players can change 
+    	their position on the interest graph far more freely: 
+    	achievers can become explorers, explorers can become 
+    	socialisers, socialisers can become achievers &mdash; all 
+    	without sacrificing stability. However, actually attaining 
+    	that stability in the first place is very difficult indeed; 
+    	it requires not only a level of game design beyond what most 
+    	MUDs can draw on, but time and player management skills that 
+    	aren't usually available to MUD administrators. Furthermore, 
+    	the administrators need to recognise that they are aiming 
+    	for a player mix of this kind in advance, because the 
+    	chances of its occurring accidentally are slim.
+    </para></listitem>
+    <listitem><para>
+    	A MUD with no players. The killers have killed/frightened 
+    	off everyone else, and left to find some other MUD in which 
+    	to ply their trade. Alternatively, a MUD structured 
+    	expressly for socialisers never managed to acquire a 
+    	critical mass of them.
+    </para></listitem>
+    </orderedlist>
+    </para>
+    
+    <para>
+    	Other types could conceivably exist, but they are very rare 
+    	if they do. The dynamics model is, however, imprecise: it 
+    	takes no account of outside factors which may influence 
+    	player types or the relationships between then. It is thus 
+    	possible that some of the more regimented MUDs (eg. 
+    	role-playing MUDs, educational MUDs, group therapy MUDs) 
+    	have an external dynamic (eg. fandom interest in a subject, 
+    	instructions from a teacher/trainer, tolerance of others as 
+    	a means to advance the self) which adds to their cohesion, 
+    	and that this could make an otherwise flaky configuration 
+    	hold together. So other stable MUD forms may, therefore, 
+    	still be out there.
+    </para>
+    <para>
+    	It might be argued that "role-playing" MUDs form a separate 
+    	category, on a par with "gamelike" and "social" MUDs. 
+    	However, I personally favour the view that role-playing is 
+    	merely a strong framework within which the four types of 
+    	player still operate: some people will role-play to increase 
+    	their power over the game (achievers); others will do so to 
+    	explore the wonder of the game world (explorers); others 
+    	will do so because they enjoy interacting and co-operating 
+    	within the context that the role-playing environment offers 
+    	(socialisers); others will do it because it gives them a 
+    	legitimate excuse to hurt other players (killers). I have 
+    	not, however, undertaken a study of role-playing MUDs, and 
+    	it could well be that there is a configuration of player 
+    	types peculiar to many of them which would be unstable were 
+    	it not for the order imposed by enforcing role-play. It 
+    	certainly seems likely that robust role-playing rules could 
+    	make it easier for a MUD to achieve type 3) stability, 
+    	whatever.
+    </para>
+    <para>
+    	At this point, we return to the social/gamelike MUD debate.
+    </para>
+    <para>
+    	Ignoring the fourth (null) case from the above, it is now 
+    	much easier to see why there is a schism. Left to market 
+    	forces, a MUD will either gravitate towards type 1) 
+    	("gamelike") or type 2) ("social"), depending on its 
+    	administrators' line on player-killing (more precisely: how 
+    	much being "killed" annoys socialisers). However, the 
+    	existence of type 3) MUDs, albeit in smaller numbers because 
+    	of the difficulty of reaching the steady state, does show 
+    	that it is possible to have both socialisers and achievers 
+    	co-existing in significant numbers in the same MUD.
+    </para>
+    <para>
+    	It's very easy to label a MUD as either "hack-and-slash" or 
+    	"slack-and-hash", depending on whether or not player-killing 
+    	is allowed. However, using player-killing as the only 
+    	defining factor in any distinction is an 
+    	over-generalisation, as it groups together type 1) and type 
+    	3) MUDs. These two types of MUD should not be considered as 
+    	identical forms: the socialising which occurs in a type 3) 
+    	MUD simply isn't possible in a type 1), and as a result the 
+    	sense of community in type 3)s is very strong. It is no 
+    	accident that type 3) MUDs are the ones preferred 
+    	commercially, because they can hold onto their players for 
+    	far longer than the other two forms. A type 1) MUD is only 
+    	viable commercially if there is a sufficiently large well of 
+    	potential players to draw upon, because of the much greater 
+    	churn rate these games have. Type 2)s have a similarly high 
+    	turnover; indeed, when TinyMUD first arrived on the scene it 
+    	was almost slash-and-burn, with games lasting around six 
+    	months on university computers before a combination of 
+    	management breakdown (brought on by player boredom) and 
+    	resource hogging would force them to close down &mdash; with 
+    	no other MUDs permitted on the site for perhaps years 
+    	afterwards.
+    </para>
+    <para>
+    	This explains why some MUDs perceived by socialisers to be 
+    	"gamelike" can actually be warm, friendly places, while 
+    	others are nasty and vicious: the former are type 3), and 
+    	the latter are type 1). Players who enter the type 3)s, 
+    	expecting them to be type 1)s, may be pleasantly 
+    	surprised<footnote><para>Bruckman, A. S. (1993). Gender 
+    	Swapping on the Internet Proc. INET-93</para></footnote>. 
+    	However, it should be noted that this initial warm behaviour 
+    	is sometimes the approach used by administrators to ensure a 
+    	new player's further participation in their particular MUD, 
+    	and that, once hooked, a player may find that attitudes 
+    	undergo a subtle change<footnote><para>Epperson, H. L. 
+    	(1995). Patterns of Social Behaviour in Computer-Mediated 
+    	Communications. Dept. Sociology, Rice 
+    	University.
+    	<ulink url=
+    	
+"http://www.eff.org/Net_culture/Misc/web_social_behavior.paper"
+>Patterns of Social Behaviour</ulink></para></footnote>.
+    </para>
+    <para>
+    	As mentioned earlier, this paper is not intended to promote 
+    	any one particular style of MUD. Whether administrators aim 
+    	for type 1), 2) or 3) is up to them &mdash; they're all 
+    	MUDs, and they address different needs. However, the fact 
+    	that they are all MUDs, and not "MU*s" (or any other 
+    	abbreviation-of-the-day), really should be emphasised.
+    </para>
+    <para>
+    	To summarise: "gamelike" MUDs are the ones in which the 
+    	killer-achiever equilibrium has been reached, ie. type 1); 
+    	"social" MUDs are the ones in which the pure-social 
+    	stability point has been reached, ie. type 2), and this is 
+    	the basis upon which they differ. There is a type 3) "all 
+    	round" (my term) MUD, which exhibits both social and 
+    	gamelike traits, however such MUDs are scarce because the 
+    	conditions necessary to reach the stable point are difficult 
+    	or time-consuming to arrange.
+    </para>
+    </sect1>
+    
+    
+    <sect1 id="overbalancing">
+  	<title>Overbalancing MUD</title>
+  	<para>
+  		Earlier, the effect of taking each axis on the interest 
+  		graph to its extremes was used to give an indication of what 
+  		would happen if a MUD was pushed so far that it lost its 
+  		MUDness. It was noted, though, that along the axes was not 
+  		the only way a MUD could be tilted.
+    </para>
+    <para>
+    	What would happen if, in an effort to appeal to certain 
+    	types of player, a MUD was overcompensated in their favour?
+    </para>
+    <para>
+    	Tilting a MUD towards achievers would make it obsessed with 
+    	gameplay. Players would spend their time looking for tactics 
+    	to improve their position, and the presence of other players 
+    	would become unnecessary. The result would be effectively a 
+    	single-player adventure game (SUD?).
+    </para>
+    <para>
+    	Tilting towards explorers would add depth and interest, but 
+    	remove much of the activity. Spectacle would dominate over 
+    	action, and again there would be no need for other players. 
+    	The result of this is basically an online book.
+    </para>
+    <para>
+    	Tilting towards socialisers removes all gameplay, and 
+    	centres on communication. Eventually, all sense of the 
+    	virtual world is lost, and a chatline or IRC-style CB 
+    	program results.
+    </para>
+    <para>
+    	Tilting towards killers is more difficult, because this type 
+    	of player is parasitic on the other three types. The 
+    	emphasis on causing grief has to be sacrificed in favour of 
+    	the thrill of the chase, and bolstered by the use of 
+    	quick-thinking and skill to overcome adversity in clever 
+    	(but violent) ways. In other words, this becomes an arcade 
+    	("shoot 'em up") type of game.
+    </para>
+    <para>
+    	It's a question of balance: if something is added to a MUD 
+    	to tilt the graph one way, other mechanisms will need to be 
+    	in place to counterbalance it (preferably automatically). 
+    	Otherwise, what results is a SUD, book, chatline or arcade 
+    	game. It's the combination that makes MUDs unique &mdash; 
+    	and special. It is legitimate to say that anything which 
+    	goes too far in any direction is not a MUD; it is not 
+    	legitimate to say that something which doesn't go far enough 
+    	in any direction is not a MUD. So long as a system is a 
+    	(text-based) multi-user virtual world, that's enough.
+    </para>
+    </sect1>
+    
+    
+    <sect1 id="summary">
+  	<title>Summary</title>
+  	<para>
+    	To answer the questions posed in the preface:
+    </para>
+    <para>
+    	Are MUDs
+    <itemizedlist>
+	<listitem><para>
+        games? Like chess, tennis, AD&amp;D?
+    </para>
+    <para>
+    	Yes &mdash; to achievers.
+	</para></listitem>
+	<listitem><para>
+        pastimes? Like reading, gardening, cooking?
+    </para>
+    <para>
+    	Yes &mdash; to explorers.
+	</para></listitem>
+	<listitem><para>
+        sports? Like huntin', shooting', fishin'?
+    </para>
+    <para> 
+    	Yes &mdash; to killers.
+	</para></listitem>
+	<listitem><para>
+		entertainments? Like nightclubs, TV, concerts?
+	</para>
+    <para>
+    	Yes &mdash; to socialisers.
+	</para></listitem>
+	</itemizedlist>
+	</para>
+    </sect1>
+    
+    
+    <sect1 id="endnotes">
+  	<title>Endnotes</title>
+    <para>
+    	This paper is an April 1996 extension of an earlier article, 
+    	"Who Plays MUAs"<footnote><para>Bartle, R. A. (1990a). Who 
+    	Plays MUAs? Comms Plus!, October/November 1990 
+    	18-19.</para></footnote>. As a result of this, and of the 
+    	fact that I am not a trained psychologist, do not expect a 
+    	conventionally rigorous approach to the subject matter.
+    </para>
+    <para>
+    	Permission to redistribute freely for academic purposes is 
+    	granted provided that no material changes are made to the 
+    	text.
+    </para>
+    </sect1>
+    
+    
+	</article>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+  This is default config file for ireon.org root server.
+
+  DO NOT CHANGE IT! Set values you need in config/config.xml instead.
+
+  -->
+
+<config>
+	<database>
+		<host>
+			localhost
+		</host>
+		<port>
+			3306
+		</port>
+		<db>
+			ireon-rs
+		</db>
+		<tableNamesPrefix/>
+		<!-- user must owerwrite thesу values -->
+		<user>
+		</user>
+		<password>
+		</password>
+	</database>
+
+	<!-- cluster managers connections settings -->
+	<internalConnections>
+		<port>
+			29105
+		</port>
+		<maxConnections>
+			10
+		</maxConnections>
+		<cmAddress>
+			127.0.0.1
+		</cmAddress>
+	</internalConnections>
+
+	<!-- players connections settings -->
+	<playerConnections>
+		<port>
+			29100
+		</port>
+		<maxConnections>
+			20
+		</maxConnections>
+	</playerConnections>
+
+</config>

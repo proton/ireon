@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!ENTITY game_title "Ireon">
+<!ENTITY proj_name "Ireon">
+<!ENTITY land_name "Новалия (Novalia)">
+<!ENTITY world_name "Ireon">
+
+<!-- chapter entities -->
+<!ENTITY preface SYSTEM "chapters/preface.xml">
+<!ENTITY intro_chapter SYSTEM "chapters/intro.xml">
+<!ENTITY background_chapter SYSTEM "chapters/background.xml">
+<!ENTITY roleplay_chapter SYSTEM "chapters/roleplay.xml">
+<!ENTITY states_chapter SYSTEM "chapters/states.xml">
+<!ENTITY communities_chapter SYSTEM "chapters/communities.xml">
+<!ENTITY world_chapter SYSTEM "chapters/world.xml">
+<!ENTITY magic_chapter SYSTEM "chapters/magic.xml">
+<!ENTITY gameplay_chapter SYSTEM "chapters/gameplay.xml">
+<!ENTITY others_chapter SYSTEM "chapters/others.xml">
+
+
+<!ENTITY glossary SYSTEM "glossary.xml">
+

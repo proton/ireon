@@ -1,0 +1,383 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-11-14 22:05+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:229
+msgid "Interface initialization..."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:277
+msgid "Inititalize Font"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:283
+msgid "Initialize input system scaling"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:311
+#, possible-c-format
+msgid "Error in initialisation CEGUI: %s"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:314
+msgid "Interface initialization complete."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:512
+msgid "Init OIS"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:537
+msgid "Set OIS callbacks"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:541
+msgid "Initialize OIS completed"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:544
+msgid "Set Key process layers"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:557
+msgid "Loading GUI schemes"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:582
+#, possible-c-format
+msgid "Loading scheme '%s'.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\interface\interface.cpp:602
+#, possible-c-format
+msgid "Loading layout '%s'.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\character.cpp:374
+#, possible-c-format
+msgid "(%s): stop fight.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\client_static_prototype.cpp:45
+#: D:\projects\ireon.trunk\src_root\src\common\world\static_object\client_static_prototype.cpp:50
+#, possible-c-format
+msgid "Error loading static prototype: XML parser returned an error: %s\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\client_static_prototype.cpp:54
+#: D:\projects\ireon.trunk\src_root\src\common\world\static_object\client_static_prototype.cpp:59
+#, possible-c-format
+msgid "Error loading static prototype: resource isn't static prototype. %s\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\client_static_prototype.cpp:65
+#: D:\projects\ireon.trunk\src_root\src\common\world\client_static_prototype.cpp:72
+#: D:\projects\ireon.trunk\src_root\src\common\world\static_object\client_static_prototype.cpp:70
+#: D:\projects\ireon.trunk\src_root\src\common\world\static_object\client_static_prototype.cpp:77
+#, possible-c-format
+msgid "Error loading static prototype: error in file near '%s'.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\client_zone.cpp:45
+#, possible-c-format
+msgid "Error loading zone: XML parser returned an error: %s\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\client_zone.cpp:54
+#, possible-c-format
+msgid "Error loading zone: resource isn't zone. %s\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\client_zone.cpp:62
+#, possible-c-format
+msgid "Error loading zone: error in file near '%s'.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\mob_prototype.cpp:44
+#, possible-c-format
+msgid "Error loading mob prototype: XML parser returned an error: %s\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\mob_prototype.cpp:53
+#, possible-c-format
+msgid "Error loading mob prototype: resource isn't mob prototype. %s\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\mob_prototype.cpp:61
+#, possible-c-format
+msgid "Error loading mob prototype: error in file near '%s'.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\world.cpp:227
+#, possible-c-format
+msgid "Character with id %d added to world.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\world.cpp:255
+#, possible-c-format
+msgid "Character with id %d removed from world.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\world.cpp:346
+#, possible-c-format
+msgid "Mob prototype '%s' added to cache."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\static_object\command.cpp:91
+#, possible-c-format
+msgid "Loading '%s'... \b"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\static_object\command.cpp:94
+msgid "Yes"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\world\static_object\command.cpp:98
+msgid "No"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\include\common\world\dispatcher.h:37
+#, possible-c-format
+msgid "Command: %s"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\root_app.cpp:34
+msgid "PID file was not written!"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\root_app.cpp:48
+msgid "Starting MySQL database connection..."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\root_app.cpp:70
+msgid "Could not initialize database connection!"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\root_app.cpp:74
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\root_app.cpp:99
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\root_app.cpp:124
+msgid "Done."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\root_app.cpp:93
+#, possible-c-format
+msgid ""
+"Creating server for ws connections on port %d with maximum %d connections..."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\root_app.cpp:118
+#, possible-c-format
+msgid ""
+"Creating server for player connections on port %d with maximum %d "
+"connections..."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\root_app.cpp:137
+msgid "Starting main loop."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\check_version_state.cpp:44
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\hello_state.cpp:43
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\hello_state.cpp:108
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:52
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:171
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:253
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rsws\main_state.cpp:60
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rsws\main_state.cpp:84
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rsws\main_state.cpp:118
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rsws\main_state.cpp:157
+msgid "Caught ENetDataException."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\check_version_state.cpp:49
+#, possible-c-format
+msgid "Received version '%u.%u.%u.%u'."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\check_version_state.cpp:81
+msgid "Version check: version ok."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\check_version_state.cpp:85
+msgid "Version check: failed."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\hello_state.cpp:31
+msgid "Got login attempt."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\hello_state.cpp:68
+#, possible-c-format
+msgid "Login successfull. (Login: %s)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\hello_state.cpp:73
+#, possible-c-format
+msgid "Double connect, access denied. (Login: %s)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\hello_state.cpp:78
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\hello_state.cpp:133
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\hello_state.cpp:158
+#, possible-c-format
+msgid "Database error! (Login: %s)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\hello_state.cpp:83
+#, possible-c-format
+msgid ""
+"Login failed -- account not found or password does not match. (Login: %s)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\hello_state.cpp:95
+msgid "Got account registration request."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\hello_state.cpp:119
+#, possible-c-format
+msgid "Registration failed. Username or password too short. (Login: %s)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\hello_state.cpp:128
+#, possible-c-format
+msgid "Registration failed. Duplicate login. (Login: %s)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\hello_state.cpp:153
+#, possible-c-format
+msgid "Registration successfull. (Login: %s)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:40
+msgid "Got create char request."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:66
+#, possible-c-format
+msgid "Char creation failed. Duplicate name %s."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:71
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:91
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:109
+#, possible-c-format
+msgid "Database error! (Char name: %s)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:85
+#, possible-c-format
+msgid "Exceeded allowed number of characters per account. (Account id: %d)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:104
+#, possible-c-format
+msgid "Created new char. (Account id: %d, char name: %s)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:122
+#, possible-c-format
+msgid "Char list request from account %s."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:133
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:184
+#, possible-c-format
+msgid "Database error! (acc: %s)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:159
+msgid "Got char selection request."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:193
+#, possible-c-format
+msgid "Selected character not found! (acc: %s)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:206
+#, possible-c-format
+msgid "m_charsToCheck list is not emrty! Cleaning up. (acc: %s)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:240
+msgid "Got char check response."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:274
+#, possible-c-format
+msgid "Unknown char id %d."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:369
+#, possible-c-format
+msgid "Got character deletion request: account id %d, char is id %d.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:379
+#, possible-c-format
+msgid "Attempt to remove nonexisting character %d.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:389
+#, possible-c-format
+msgid "Could not find cluser to remove char %d.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rspc\main_state.cpp:400
+#, possible-c-format
+msgid "Sent remove request to cluster %d for char %d.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rsws\main_state.cpp:37
+msgid "Got ws login request."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rsws\main_state.cpp:53
+msgid "Got ws login request with id == nullWSId."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rsws\main_state.cpp:70
+msgid "Got check char request."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rsws\main_state.cpp:95
+#, possible-c-format
+msgid "Sent check char %d in game request to ws."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rsws\main_state.cpp:97
+#, possible-c-format
+msgid "Duplicate check char request for char %d."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rsws\main_state.cpp:104
+msgid "Got char check result."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rsws\main_state.cpp:132
+#, possible-c-format
+msgid "Player context id for char %d not found."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rsws\main_state.cpp:139
+msgid "Got char selected packet from rspc context."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\ireon_rs\net\rsws\main_state.cpp:169
+#, possible-c-format
+msgid "Sent char %d connection token to ws."
+msgstr ""

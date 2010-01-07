@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!DOCTYPE article
+  PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+  "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  [
+    <!ENTITY % global.entities SYSTEM
+        "../../../include/global.xml">
+    %global.entities;
+  ]
+>
+
+<article lang="en">
+
+  <articleinfo>
+
+    <title>I was young and I needed the money</title>
+    <subtitle>
+
+    </subtitle>
+    <author>
+      <firstname>Richard A.</firstname>
+      <surname>Bartle</surname>
+    </author>
+
+    <copyright>
+        <holder>Richard A. Bartle</holder>
+    </copyright>
+    <copyright>
+        <holder>The Escapist magazine</holder>
+    </copyright>
+
+    <legalnotice>
+      <para>
+        All rights reserved.
+      </para>
+    </legalnotice>
+
+    <abstract>
+      <para> <ulink url=
+      "http://www.escapistmagazine.com/issue/43/3" 
+      >I was young and I needed the money</ulink></para>
+    </abstract>
+
+    </articleinfo>
+
+
+    <para>
+    	So, it's the year 2000, at the height of the dot com boom. 
+    	You've just been hired as Head of Online Games for a company 
+    	with a paper value of over a billion dollars. You're 
+    	promised a team of 30 people and as much time as you want to 
+    	create the world's best massively multiplayer game world. 
+    	What do you do?
+    </para>
+    <para>
+    	What you <emphasis>should</emphasis> do is hire the first 30 
+    	people you see on the street, irrespective of their skills, 
+    	abilities or state of sobriety. What you 
+    	<emphasis>shouldn't</emphasis> do is advertise, interview 
+    	applicants, assess what they can bring to the project, and 
+    	make appointments only after careful consideration.
+    </para>
+    <para>
+    	The reason you should do the former is because that's what 
+    	everyone else will do. Thus, when the company's directors 
+    	realize that expansion is happening too quickly and they 
+    	impose a recruitment freeze, you have all the job 
+    	<emphasis>slots</emphasis> in place, if not any people who 
+    	can actually <emphasis>do</emphasis> those jobs. You won't 
+    	be calling a producer and telling him he should take his 
+    	house off the market because we can't hire him after all, 
+    	you'll just be replacing the Australian gap-year student you 
+    	met playing snooker in a pub.
+    </para>
+    <para>
+    	This explains how I was left to develop a virtual world with 
+    	a team consisting of three programmers, a level designer and 
+    	me, when there were six people officially working on the 
+    	company's single-page WAP site.
+    </para>
+    <para>
+    	Oh, we were given a more concrete deadline, too: one year. 
+    	We were also given a budget: nothing.
+    </para>
+    <para>
+    	What kind of massively multiplayer game could we write in 12 
+    	months from a standing start, with only three programmers, a 
+    	level designer and me? No producer, no artists, no QA; no 
+    	design document, no tools, no middleware; no hardware, 
+    	except our 700MHz PCs and a 250MHz server.
+    </para>
+    <para>
+    	Hey, I know this one &mdash; we write a text game!
+    </para>
+    <para>
+    	This <emphasis>did</emphasis> make horrible sense. I already 
+    	had all that was needed to build and operate a textual 
+    	world, because I'd spent 20 years building and operating 
+    	them. It would be a push, but we could 
+    	<emphasis>do</emphasis> this.
+    </para>
+    <para>
+    	All we required was some fiendish mind-control system to 
+    	persuade people to play a text game when they really wanted 
+    	to play <emphasis>EverQuest</emphasis>.
+    </para>
+    <para>
+    	So, that would be sex, then.
+    </para>
+    <para>
+    	I'd written a pitch for a sex MUD about five years earlier, 
+    	but the funding fell through. Now was the time to dust it 
+    	off! The thing is, sex in a text world has three things 
+    	going for it that sex in a graphics world doesn't:
+    	<itemizedlist>
+        <listitem><para>
+        	It's freeform. You don't have to motion-capture every 
+        	position in the Kama Sutra and beyond, because people 
+        	can animate it themselves using words.
+        </para></listitem>
+        <listitem><para>
+        	It's legal. You can write about antics that you would be 
+        	jailed for depicting visually. The word is 
+        	porno<emphasis>graphy</emphasis>, not 
+        	porno<emphasis>texty</emphasis>.
+        </para></listitem>
+        <listitem><para>
+        	For a basic sex game to work, you need comparable 
+        	numbers of both men and women. A female-friendly game, 
+        	by virtue of its having women in it, is male-friendly; 
+        	therefore, you need to attract women. And hey, guess 
+        	what? Study after study has shown that, in general, 
+        	women prefer words to pictures &mdash; especially when 
+        	it comes to sexual fantasizing.
+        </para></listitem>
+        </itemizedlist>
+    </para>
+    <para>
+    	We toyed with the idea of creating a game for the gay 
+    	market, on the grounds that there might be more homosexual 
+    	male gamers than female gamers of any flavor, but 
+    	unfortunately we were all straight so we weren't 
+    	sufficiently engaged with the culture to know if this was 
+    	indeed the case. When I approached the one gay guy in the 
+    	office to ask him what he thought, he indignantly told me 
+    	that he wasn't gay, and if I spoke another word on the 
+    	subject he'd have me for harassment.
+    </para>
+    <para>
+    	As luck would have it, around this time we noticed our level 
+    	designer was female. This settled it: We decided to go for 
+    	the broader market, as clearly one person is able to 
+    	represent the views of 50% of the population with absolute 
+    	accuracy. We'd program in functionality for non-straight 
+    	encounters, but wouldn't build the game around them.
+    </para>
+    <para>
+    	The atmosphere we strove to engender was one of wit and 
+    	humor. Whether players would continue with this when they 
+    	got down to business would be up to them, but we assumed 
+    	they probably wouldn't. Humor was important for us, though, 
+    	because it lightened the mood, giving a liberal and 
+    	liberating "anything goes," fun impression. And, frankly, if 
+    	you have to implement fetishes for opera gloves, headphones, 
+    	feathers and being stuck in a car in a muddy field, well, 
+    	how can you <emphasis>not</emphasis> inject humor into it?
+    </para>
+    <para>
+    	The overall premise was that players were executives staying 
+    	in a hotel in downtown Anonymous American City. While they 
+    	were logged off, they'd be buying or selling or whatever it 
+    	is executives do, their performance at which would be tied 
+    	directly to how satisfied they were with their life. In 
+    	other words, the better the sex they had in their time off 
+    	(that is, while playing the game), the more money they'd 
+    	make in their work time (that is, while logged off). They 
+    	could spend this money on a better hotel room with better 
+    	facilities and lots of clothes, toys and other goodies 
+    	&mdash; so long as they could fit all these into their 
+    	suitcase. This was so people who wanted, say, BDSM would 
+    	visit a BDSM club and mix with other like-minded people, 
+    	rather than kitting out room 419 with a rack and electrodes 
+    	and sitting there glumly all alone.
+    </para>
+    <para>
+    	Geographically, we arranged the world using the traditional 
+    	grid system of every Anonymous American City. The hotel Blue 
+    	Heights occupied the middle block, with two blocks on either 
+    	side for us to fill with <emphasis>stuff</emphasis>. The 
+    	further from the center you were, the more colorful the 
+    	services on offer you were likely to find. Horizontal 
+    	thoroughfares were numbered, from 69th Street (what else?) 
+    	to 74th Street. Vertically were named (therefore themed) 
+    	avenues: Peters, Queens, Great Union, Straight, Bohemia and 
+    	Bacchus. Thus, if you wanted something to pep up your 
+    	performance you might visit the Chinese medicine shop on 
+    	73rd between Gt. Union and Queens, but if you just wanted to 
+    	mail something to someone you'd go to the post office on the 
+    	corner of Straight and 72nd.
+    </para>
+    <para>
+    	We decided to allow some real-world illegal activities such 
+    	as narcotics, but to make them losing strategies for 
+    	gameplay. If you wanted to get high on cocaine and point a 
+    	gun to a character's head, you'd get associated medical and 
+    	police problems that would cost money to address and would 
+    	never go away entirely. Still, if this is your bag, better 
+    	you do it in a game than in real life. That said, consent 
+    	was central to everything: Thus, no bestiality and no 
+    	pedophilia. You can make love to a beanie baby (people do, 
+    	I've seen the web sites), but not to a squirrel, no matter 
+    	how much it's giving you that come-hither stare.
+    </para>
+    <para>
+    	So far, so good, but you'll have noticed we were making some 
+    	moral judgments here. Many people in real life insist on no 
+    	sex before marriage; we, however, were condoning sex with 
+    	people who were complete strangers five minutes previously. 
+    	How did we make these decisions? Well, we basically 
+    	determined to allow anything implementable, whether we 
+    	ourselves were in favor of it or not, so long as it was not 
+    	so emotive as to break "magic circle"<footnote><para> 
+    	<ulink url= 
+    	
+"http://terranova.blogs.com/terra_nova/2004/01/but_is_it_play.html"
+    	>But is it play?</ulink></para></footnote>: if any 
+    	one of us felt something came with too much Reality, we 
+    	didn't put it in. For example, some people &mdash; 
+    	interestingly, many more women than men &mdash; have rape 
+    	fantasies. Should we have implemented rape? Well, no, 
+    	because that's too serious for a game. Even if characters 
+    	were allowed to flag themselves as "rape-able," it would be 
+    	too much. You're probably balking even reading about my 
+    	discussing it, it's so emotive.
+
+    </para>
+    <para>
+    	It was clear to us that not only should everything be 
+    	consensual, but it should be personal to individuals: You 
+    	could say, "These specific people are allowed to make love 
+    	to me," but not, "Anyone in this room is allowed to make 
+    	love to anyone else in this room." To this end, we 
+    	implemented a fairly neat permissions system whereby every 
+    	character had an attitude toward every other character. The 
+    	default was <emphasis>stranger</emphasis>, which meant all 
+    	physical contact was forbidden. Next was 
+    	<emphasis>acquaintance</emphasis>, which allowed formal 
+    	contact only. You could get to this stage either by setting 
+    	it manually using a permit command, or by doing something 
+    	that implied it; for example, proffering or accepting a 
+    	handshake. From here we went to <emphasis>friend</emphasis> 
+    	(non-intimate contact), <emphasis>boy/girlfriend</emphasis> 
+    	(intimate contact), <emphasis>lover</emphasis> (sexual 
+    	contact) and, for the sub/dom community, 
+    	<emphasis>master/mistress</emphasis> (unrestricted &mdash; 
+    	they could control you as a puppet if they wanted).
+    </para>
+    <para>
+    	Sex in the real world has biological consequences, the main 
+    	ones being sexually transmitted diseases and children. STDs 
+    	were present only when curable; you might catch chlamydia, 
+    	but not AIDS. Children, we completely ruled out as an 
+    	option; characters might suffer gameplay-affecting 
+    	is-she-pregnant anxiety after a wild night of unprotected 
+    	sex, but it would last a (game) month at most.
+    </para>
+    <para>
+    	As for the sex act itself, we implemented it using a 
+    	modification of the classic MUD combat system. Before you 
+    	get all uppity and insist that it's disgraceful to associate 
+    	sex with fighting and I should not be allowed within looking 
+    	distance of women for merely harboring such thoughts (and I 
+    	have, indeed, had people say that), let me highlight the 
+    	word <emphasis>modification</emphasis>. The mechanics are 
+    	similar (automatic exchanges of interactions, qualified by 
+    	inputs undertaken during the process), but that's where it 
+    	ends. For example, in a combat MUD, your actions typically 
+    	determine how many points you get; in this game, your 
+    	actions determined how many points your 
+    	<emphasis>partner</emphasis> got. In other words, your 
+    	partner benefited from your sexual prowess, not you.
+    </para>
+    <para>
+    	Lest you gain the impression that the only interesting thing 
+    	about this game was its subject matter, I'd like to say, 
+    	categorically, right here and now, that OK, you're probably 
+    	right. As a designer, I was personally very excited by some 
+    	of the concepts we developed, but there are probably fewer 
+    	than 20 people in the whole world who would share my 
+    	enthusiasm in this regard; sadly, therefore, there's not 
+    	much point in my boasting about it. I would, however, like 
+    	to mention our superb system for automatically monitoring 
+    	the ability of body parts to function.
+    </para>
+    <para>
+    	For instance, take room descriptions. They would change 
+    	on-the-fly if you were unable to see or hear or whatever; 
+    	commands which required the use of fingers (such as playing 
+    	the piano) wouldn't work if your fingers were restricted 
+    	(such as they would be if you were wearing mittens). This 
+    	worked across all sensory modalities and all components of 
+    	the body (and yes, male and female bodies did have some 
+    	different components). It remains cutting-edge stuff for 
+    	textual worlds, but of course only designers are likely to 
+    	care much about it; as a player, you just want to play. The 
+    	reason I mention it is that although it's something that 
+    	would enhance all MUDs, it was developed specifically in 
+    	response to a sex game requirement: bondage. If you're 
+    	blindfolded and have a horse bit in your mouth, you can 
+    	still make out some of the environment ("hmm, that feels 
+    	like the heat from a branding iron") but you can't always 
+    	perform everyday commands ("I'd shout for help if it weren't 
+    	for this horse bit in my mouth").
+    </para>
+    <para>
+    	Plus, I <emphasis>do</emphasis> want to boast, dammit!
+    </para>
+    <para>
+    	I could continue for pages and pages, here. I could tell you 
+    	about the fetish system, the mad cultists, the Little Black 
+    	Book, how fashion worked, interactions with NPCs, layers of 
+    	clothing ... but I can't right now, so I'll have to stop. I 
+    	will say, though, for you designer types out there, we did 
+    	account for my player types system, and I didn't advocate 
+    	having permanent death...
+    </para>
+    <para>
+    	But it all fell apart with some four months to go. Despite 
+    	the fact we were on course to go into open beta by the end 
+    	of our allotted year, the company didn't have a year's worth 
+    	of money. Somehow, hiring 800 people on the strength of a 
+    	business plan that could be paraphrased as "spend what we 
+    	have and then figure out how to get some more" was not 
+    	sustainable. We lost our jobs and the game went into 
+    	mothballs.
+    </para>
+    <para>
+    	Would it have worked? I was cautiously optimistic, even 
+    	though there was no support in the company itself for the 
+    	product. ("We can't be associated with sex games, only with 
+    	violent games" &mdash; actual quote from a member of the 
+    	sales team!) I don't think it would have been a huge 
+    	storming success, but I figured we could have got maybe 
+    	10,000 regular players within six months of opening &mdash; 
+    	perhaps more, if AOL had banned it.
+    </para>
+    <para>
+    	Would I do it again? Well, I'd certainly think about it. It 
+    	raised some very interesting design issues that produced 
+    	some highly novel solutions, which I'd like to see in 
+    	action. The subject matter isn't itself remarkable, though: 
+    	Rather like writing for a franchise, you can stray within 
+    	the confines of the defined world, but you don't get to 
+    	change the Unique Selling Points.
+    </para>
+    <para>
+    	It beats the hell out of WAP, though.
+    </para>
+
+    </article>

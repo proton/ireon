@@ -1,0 +1,90 @@
+# this makefile generates c++ mappings (data bindings) for xml schema files
+# using xsd (http://codesynthesis.com/products/xsd/c++/tree/)
+
+#
+# customization zone
+#
+
+# add files for xsd processing here
+# paths are relative to project files tree root, first directory in path
+# is used as project directory, file basename is used for target
+# filenames generation. intermediate directories are discarded.
+# i.e. output files will be in
+#        src_root/src/<proj_dir>/xsd/
+#   and  src_root/include/<proj_dir>/xsd/
+
+XSD_FILES = ireon_ws/config/config.xsd \
+			ireon_rs/config/config.xsd \
+			ireon_client/config/config.xsd \
+			ireon_ws/data/zones/navigation_mesh.xsd \
+			ireon_client/data/proto/statics.xsd \
+			ireon_client/data/proto/zones.xsd \
+			ireon_client/data/proto/mobs.xsd  \
+			ireon_client/data/proto/statics/static.xsd \
+			ireon_client/data/proto/mobs/mob.xsd \
+			ireon_client/data/proto/zones/zone.xsd \
+			common/xsd/navigation_mesh.xsd
+			
+			
+
+# suffix for generated h files
+# i.e. config.xsd bocomes config_xsd.h
+H_SUFFIX = _xsd.h
+
+# suffix for generated cpp files
+# i.e. config.xsd bocomes config_xsd.cpp
+CPP_SUFFIX = _xsd.cpp
+
+
+#
+# end of customization zone
+#
+
+#
+# beware! cryptic code below! do not touch!
+#
+
+# xsd processor
+XSD = tools/xsd-2_3_0.exe
+
+XSD_PARAMS = cxx-tree --extern-xml-schema common/xsd/common.xsd \
+			 --generate-serialization --generate-forward --hxx-suffix $(H_SUFFIX) \
+			 --cxx-suffix $(CPP_SUFFIX) --fwd-suffix _fwd_xsd.h
+
+MOVE = tools/mv
+RM = tools/rm
+
+
+.DEFAULT_GOAL = all
+
+
+# generates target for given input file
+define xsd_processor_template
+target = ../../include/$(firstword $(subst /, ,$(1)))/xsd/$(addsuffix $(H_SUFFIX),$(notdir $(basename $(1))))
+ALL_GENERATED_TARGETS += $(1)
+PHONY_TARGETS += $(1)
+
+$(1) : $$(target)
+
+$$(target) : ../../../$(1)
+	$(XSD) $(XSD_PARAMS) --output-dir ../../include/$$(word 4,$$(subst /, ,$$@))/xsd $$<
+	$(MOVE) -f ../../include/$$(word 4,$$(subst /, ,$$@))/xsd/$(addsuffix $(CPP_SUFFIX),$(notdir $(basename $(1)))) ../../src/$$(word 4,$$(subst /, ,$$@))/xsd
+
+endef
+
+
+# calls target generator for each file in XSD_FILES list
+$(foreach xsd,$(XSD_FILES),$(eval $(call xsd_processor_template,$(xsd))))
+
+
+# target for common code
+common_xsd : ../../include/common/xsd/common$(H_SUFFIX)
+../../include/common/xsd/common$(H_SUFFIX) :
+	$(XSD) cxx-tree --output-dir ../../include/common/xsd --generate-serialization --generate-xml-schema --hxx-suffix $(H_SUFFIX) common.xsd
+
+
+.PHONY: all common_xsd $(PHONY_TARGETS)
+all: common_xsd $(ALL_GENERATED_TARGETS)
+
+
+

@@ -1,0 +1,209 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-11-14 22:05+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: D:\projects\ireon.trunk\src_root\src\common\config.cpp:222
+#, possible-c-format
+msgid "Can't find required option '%s' in config file.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\db\mysql.cpp:28
+msgid "Connecting to db..."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\db\mysql.cpp:30
+msgid "Done."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\db\mysql.cpp:35
+#, possible-c-format
+msgid "Connection failed, reason: %s."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\client_connections_manager.cpp:127
+msgid "Got user message but CNetConnection does not exist."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\client_connections_manager.cpp:149
+#: D:\projects\ireon.trunk\src_root\src\common\net\server_connections_manager.cpp:172
+#, possible-c-format
+msgid "Attempt to send system message (id = %d)."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\client_connections_manager.cpp:167
+#, possible-c-format
+msgid "Connection with server %s already exists."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\client_connections_manager.cpp:179
+#, possible-c-format
+msgid "created new connection with server %s."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\client_connections_manager.cpp:190
+#, possible-c-format
+msgid "Connection for deletion (server %s) does not exist."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\client_connections_manager.cpp:196
+#, possible-c-format
+msgid "Removed connection with server %s."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\client_connections_manager.cpp:206
+#, possible-c-format
+msgid "Connection attempt to server %s failed!"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\generic_connections_manager.cpp:36
+#, possible-c-format
+msgid "service message handler already exists (msg id = %d)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\generic_connections_manager.cpp:38
+#, possible-c-format
+msgid "registering handler for user packets (msg id = %d)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\generic_connections_manager.cpp:48
+#, possible-c-format
+msgid "client service message handler already exists (msg id = %d)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\generic_connections_manager.cpp:50
+#, possible-c-format
+msgid "registering client handler for user packets (msg id = %d)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\generic_state.cpp:39
+#, possible-c-format
+msgid "State '%s': access to slot %u denied (signal filter applied)."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\generic_state.cpp:55
+#, possible-c-format
+msgid "State '%s': access to slot %u denied."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\generic_state.cpp:61
+#, possible-c-format
+msgid "State '%s': could not find signal with id %u."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\generic_state.cpp:79
+#, possible-c-format
+msgid "Signal handler re-registration -- signal %u."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\generic_state.cpp:105
+#, possible-c-format
+msgid "Calling timeout callback. (state: %s)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\net_connection.cpp:22
+#, possible-c-format
+msgid "Sending network packet (packetId = %d)."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\net_connection.cpp:31
+#, possible-c-format
+msgid "Processing network packet #%d."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\net_connection.cpp:38
+msgid "Current state not found, state machine not initialized?"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\net_connection.cpp:45
+#, possible-c-format
+msgid "Unknown packet id %d from #%s."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\net_connection.cpp:50
+msgid "Got EStateMachineError exception."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\net_connection.cpp:54
+msgid "Got EStateError exception."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\net_connection.cpp:58
+msgid "Caught ENetDataException."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\net_connection.cpp:85
+msgid "State creator redefinition."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\server_connections_manager.cpp:152
+#, possible-c-format
+msgid "Got user message for unknown player index %d."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\server_connections_manager.cpp:190
+#, possible-c-format
+msgid "Connection with id %d already exists."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\server_connections_manager.cpp:202
+#, possible-c-format
+msgid "Created new connection with index %d, for client %s."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\server_connections_manager.cpp:214
+#, possible-c-format
+msgid "Could not find connection for deletion (index = %d)."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\server_connections_manager.cpp:222
+#, possible-c-format
+msgid "Removed connection with index %d, for client %s."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\tests\net_layer_tests.cpp:67
+#, possible-c-format
+msgid "Got test packet 1. Data = %d (has to be 123)."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\tests\net_layer_tests.cpp:120
+msgid "Initiated connection."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\tests\net_layer_tests.cpp:131
+#, possible-c-format
+msgid "Got test packet 2. Data = %s (has to be \"test string\")."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\resource\resource_manager.cpp:20
+#, possible-c-format
+msgid "Adding resource location: '%s'."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\resource\resource_manager.cpp:29
+#, possible-c-format
+msgid "Unknown resource type: '%s'."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\resource\resource_manager.cpp:41
+#, possible-c-format
+msgid "Loading resource: '%s'."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\resource\resource_manager.cpp:46
+#, possible-c-format
+msgid "Resource %s not found."
+msgstr ""

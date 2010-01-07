@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!DOCTYPE article
+  PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+  "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  [
+    <!ENTITY % global.entities SYSTEM
+        "../../../include/global.xml">
+    %global.entities;
+  ]
+>
+
+<!--
+  Внимание, если на вашем компьютере есть локальная версия DTD
+Docbook, то
+  замените строчку
+    "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  на
+    "file:/path_to_dtd/docbookx.dtd"
+
+  (Если вы используете eDE от e-novative, то на строчку
+    "file:/c:/docbook/dtd/docbookx.dtd")
+-->
+
+
+
+<article lang="ru">
+
+  <articleinfo>
+
+   <title>Работа в команде ireon.org</title>
+    <authorgroup>
+      <author>
+        <othername>zak</othername>
+      </author>
+    </authorgroup>
+
+    <releaseinfo>Версия 0.1.0</releaseinfo>
+    <revhistory>
+      <revision>
+        <revnumber>0.1.1</revnumber>
+        <date>1 апреля 2005</date>
+        <revremark>создание начальной версии</revremark>
+      </revision>
+    </revhistory>
+
+
+    <abstract>
+      <para>
+        Данный документ описывает различные аспекты работы в команде
+        ireon.org. Данный документ является дополнением к плану
+        управления проектом, который необходимо прочесть перед
+        прочтением данного документа.
+      </para>
+      <para>
+        По всем вопросам обращайтесь на <ulink
+        url="http://forum.ireon.org/">форум проекта ireon</ulink>
+        или по электронной почте <email>zak[at]ireon.org</email>.
+      </para>
+    </abstract>
+
+    <keywordset>
+      <keyword>ireon</keyword>
+      <keyword>team</keyword>
+    </keywordset>
+
+    <copyright>
+      &copyrightinfo;
+    </copyright>
+    <legalnotice>
+      &legalnotice;
+    </legalnotice>
+  </articleinfo>
+
+<sect1>
+  <title>Введение</title>
+  <para>
+    Общую информацию о проекте можно получить из
+    концепт-документа. Данный документ дополняет план управления
+    программным проектом, который необходимо прочитать перед
+    прочтением этого документа. Все упомянутые документы доступны
+    с нашего сайта.
+  </para>
+
+  <sect2>
+    <title>Развитие этого документа</title>
+    <para>
+    Данный документ поддерживается лидером проекта. Лидер проекта
+    обязан поместить данный документ под управление конфигурациями и
+    поддерживать его в актуальном состоянии, еженедельно внося
+    необходимые изменения.
+    </para>
+  </sect2>
+
+</sect1>
+
+</article>

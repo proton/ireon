@@ -1,0 +1,119 @@
+16:39:56: Loading library OgrePlatform.dll
+16:39:56: ArchiveFactory for archive type Zip registered.
+16:39:56: Loading library .\RenderSystem_Direct3D7
+16:39:56: Direct3D7 Rendering Subsystem created.
+16:39:56: ----- DirectDraw Detection Starts
+16:39:56: Detected DirectDraw driver Первичный видеодрайвер.
+
+16:39:56: ----- DirectDraw Detection Ends
+16:39:56: Loading library .\RenderSystem_Direct3D9
+16:39:56: D3D9 : Direct3D9 Rendering SubSystem created.
+16:39:56: D3D9: Driver Detection Starts
+16:39:56: D3D9: Driver Detection Ends
+16:39:56: Loading library .\RenderSystem_GL
+16:39:56: OpenGL Rendering Subsystem created.
+16:39:56: Loading library .\Plugin_FileSystem
+16:39:56: ArchiveFactory for archive type FileSystem registered.
+16:39:56: Loading library .\Plugin_ParticleFX
+16:39:56: Particle Emitter Type 'Point' registered
+16:39:56: Particle Emitter Type 'Box' registered
+16:39:56: Particle Emitter Type 'Ellipsoid' registered
+16:39:56: Particle Emitter Type 'Cylinder' registered
+16:39:56: Particle Emitter Type 'Ring' registered
+16:39:56: Particle Emitter Type 'HollowEllipsoid' registered
+16:39:56: Particle Affector Type 'LinearForce' registered
+16:39:56: Particle Affector Type 'ColourFader' registered
+16:39:56: Particle Affector Type 'ColourFader2' registered
+16:39:56: Particle Affector Type 'ColourImage' registered
+16:39:56: Particle Affector Type 'ColourInterpolator' registered
+16:39:56: Particle Affector Type 'Scaler' registered
+16:39:56: Particle Affector Type 'Rotator' registered
+16:39:56: Loading library .\Plugin_BSPSceneManager
+16:39:56: Loading library .\Plugin_OctreeSceneManager
+16:39:56: Loading library .\Plugin_GuiElements
+16:39:56: GuiElementFactory for type Cursor registered.
+16:39:56: GuiElementFactory for type Panel registered.
+16:39:56: GuiElementFactory for type BorderPanel registered.
+16:39:56: GuiElementFactory for type TextArea registered.
+16:39:56: GuiElementFactory for type TextBox registered.
+16:39:56: GuiElementFactory for type Button registered.
+16:39:56: GuiElementFactory for type BorderButton registered.
+16:39:56: GuiElementFactory for type List registered.
+16:39:56: GuiElementFactory for type ScrollBar registered.
+16:39:56: GuiElementFactory for type PopupMenu registered.
+16:39:56: GuiElementFactory for type TTY registered.
+16:39:56: Loading library .\Plugin_NatureSceneManager
+16:39:56: *-*-* OGRE Initialising
+16:39:56: *-*-* Version 0.14.0
+16:39:56: FileSystem Archive Codec for ..\viewer\ created.
+16:39:56: FileSystem Archive Codec for e:\3dsmax6\maps\Reflection\ created.
+16:39:56: Zip Archive codec for OgreCore.zip created.
+16:39:56: D3D9 : RenderSystem Option: Anti aliasing = None
+16:39:56: D3D9 : RenderSystem Option: Full Screen = No
+16:39:56: D3D9 : RenderSystem Option: Rendering Device = NVIDIA GeForce4 MX 440
+16:39:56: D3D9 : RenderSystem Option: VSync = No
+16:39:56: D3D9 : RenderSystem Option: Video Mode = 640 x 480 @ 32-bit colour
+16:39:56: D3D9 : Subsystem Initialising
+16:39:56: D3D9 : Created D3D9 Rendering Window 'OGRE Render Window' : 640x480, 32bpp
+16:39:56: RenderSystem capabilities
+16:39:56: -------------------------
+16:39:56:  * Hardware generation of mipmaps: no
+16:39:56:  * Texture blending: yes
+16:39:56:  * Anisotropic texture filtering: yes
+16:39:56:  * Dot product texture operation: yes
+16:39:56:  * Cube mapping: yes
+16:39:56:  * Hardware stencil buffer: yes
+16:39:56:    - Stencil depth: 8
+16:39:56:    - Two sided stencil support: no
+16:39:56:    - Wrap stencil values: yes
+16:39:56:  * Hardware vertex / index buffers: yes
+16:39:56:  * Vertex programs: yes
+16:39:56:    - Max vertex program version: vs_1_1
+16:39:56:  * Fragment programs: no
+16:39:56:  * Texture Compression: yes
+16:39:56:    - DXT: yes
+16:39:56:    - VTC: no
+16:39:56:  * Scissor Rectangle: yes
+16:39:56:  * Hardware Occlusion Query: no
+16:39:56:  * User clip planes: no
+16:39:56: ***************************************
+16:39:56: *** D3D9 : Subsystem Initialised OK ***
+16:39:56: ***************************************
+16:39:56: Parsing material script: preview.material
+16:39:56: Parsing material script: ogrecore.material
+16:39:56: Parsing material script: ogreprofiler.material
+16:39:56: D3D9 : Loading 2D Texture, image name : 'New_Ogre_Border_Center.png' with 0 mip map levels
+16:39:56: D3D9 : Loading 2D Texture, image name : 'New_Ogre_Border.png' with 0 mip map levels
+16:39:56: D3D9 : Loading 2D Texture, image name : 'New_Ogre_Border_Break.png' with 0 mip map levels
+16:39:56: Font TrebuchetMSBoldusing texture size 512x512
+16:39:56: Info: Freetype returned null for character 160 in font TrebuchetMSBold
+16:39:56: D3D9 : Loading 2D Texture, image name : 'TrebuchetMSBoldTexture' with 0 mip map levels
+16:39:56: D3D9 : Loading 2D Texture, image name : 'New_Ogre_Logo.png' with 0 mip map levels
+16:39:56: Creating viewport on target 'OGRE Render Window', rendering from camera 'PlayerCam', relative dimensions L:0.00,T:0.00,W:1.00,H:1.00, Z-Order:0
+16:39:56: Viewport for camera 'PlayerCam' - actual dimensions L:0,T:0,W:640,H:480
+16:39:56: Mesh: Loading Sphere.mesh.
+16:39:56: Can't assign material none to SubEntity of Sphere because this Material does not exist. Have you forgotten to define it in a .material script?
+16:39:56: Win32Input8: DirectInput Activation Starts
+16:39:56: Win32Input8: Establishing keyboard input.
+16:39:56: Win32Input8: Keyboard input established.
+16:39:56: Win32Input8: Initializing mouse input in immediate mode.
+16:39:56: Win32Input8: Mouse input in immediate mode initialized.
+16:39:56: Win32Input8: DirectInput OK.
+16:39:58: Render Target 'OGRE Render Window' Average FPS: 585.828369 Best FPS: 585.828369 Worst FPS: 585.828369
+16:39:58: D3D9 : Shutting down cleanly.
+16:39:58: *-*-* OGRE Shutdown
+16:39:58: FileSystem Archive Codec for ..\viewer\ unloaded.
+16:39:58: Zip Archive Codec for OgreCore.zip unloaded.
+16:39:58: FileSystem Archive Codec for e:\3dsmax6\maps\Reflection\ unloaded.
+16:39:58: Unloading library .\Plugin_NatureSceneManager
+16:39:58: Unloading library .\Plugin_GuiElements
+16:39:58: Unloading library .\Plugin_OctreeSceneManager
+16:39:58: Unloading library .\Plugin_BSPSceneManager
+16:39:58: Unloading library .\Plugin_ParticleFX
+16:39:58: Unloading library .\Plugin_FileSystem
+16:39:58: Unloading library .\RenderSystem_GL
+16:39:58: D3D9 : Direct3D9 Rendering SubSystem destroyed.
+16:39:58: Unloading library .\RenderSystem_Direct3D9
+16:39:58: Direct3D7 Rendering Subsystem destroyed.
+16:39:58: Unloading library .\RenderSystem_Direct3D7
+16:39:58: Unloading library OgrePlatform.dll

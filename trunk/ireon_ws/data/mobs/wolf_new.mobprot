@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MobPrototype>
+<Option Id="7"/>
+<Option Name="Волк1"/>
+<Option Velocity="2"/>
+<Option MaxHP="100"/>
+<Option MaxMana="100"/>
+<Option Str="10"/>
+<Option Sta="10"/>
+<Option Int="10"/>
+<Option Wis="10"/>
+<Option Con="10"/>
+<Option Luck="10"/>
+<Option FightSpeed="20"/>
+</MobPrototype>

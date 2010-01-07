@@ -1,0 +1,169 @@
+Import('baseEnv')
+
+import os
+import glob
+import shutil
+
+
+def buildFODocument(target, source, env, for_signature):
+	cmdstr = 'Error___XSL_Transformation_Prereqs__NOT__Installed'
+	if env.prereqs.has_key('docbook-dtd'):
+		cmdstr = 'java -cp "' + os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep + 'saxon.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['docbook-xsl'][0]) + os.sep+'extensions/saxon653.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep+'resolver-1.0.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep) + os.pathsep + \
+				 '" com.icl.saxon.StyleSheet ' + \
+   			 ' -x org.apache.xml.resolver.tools.ResolvingXMLReader' + \
+    		 ' -y org.apache.xml.resolver.tools.ResolvingXMLReader' + \
+   			 ' -r org.apache.xml.resolver.tools.CatalogResolver' + \
+				 ' -o ' + str(target[0]) + ' ' + str(source[0]) + ' ' + \
+				 os.path.normpath(str(env.prereqs['docbook-ireon-xsl'][0]) + os.sep+'fo.xsl')
+	return cmdstr
+
+
+def buildPDFDocument(target, source, env, for_signature):
+	cmdstr = 'Error___FOP__NOT__Installed'
+	if env.prereqs.has_key('fop'):
+		cmdstr = 'java -cp "'+ \
+		     os.path.normpath(str(env.prereqs['fop'][0]) + '/build/fop.jar') + os.pathsep + \
+		     os.path.normpath(str(env.prereqs['fop'][0]) + '/lib/avalon-framework-cvs-20020806.jar') + os.pathsep + \
+		     os.path.normpath(str(env.prereqs['fop'][0]) + '/lib/batik.jar') + os.pathsep + \
+		     os.path.normpath(str(env.prereqs['fop'][0]) + '/lib/xercesImpl-2.2.1.jar') + os.pathsep + \
+		     os.path.normpath(str(env.prereqs['fop'][0]) + '/lib/jai_codec.jar') + os.pathsep + \
+		     os.path.normpath(str(env.prereqs['fop'][0]) + '/lib/jai_core.jar') + os.pathsep + \
+				 '"' + \
+		     ' org.apache.fop.apps.Fop' + \
+				 ' -c ' + os.path.normpath(str(env.prereqs['fop'][0]) + os.sep + 'conf/userconfig.xml') + \
+				 ' -fo ' + str(source[0]) + ' -pdf ' + str(target[0])
+	return cmdstr
+
+
+def buildXhtmlArticle(target, source, env, for_signature):
+	cmdstr = 'Error___XSL_Transformation_Prereqs__NOT__Installed'
+	if env.prereqs.has_key('docbook-dtd'):
+		cmdstr = 'java -cp "' + os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep + 'saxon.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['docbook-xsl'][0]) + os.sep+'extensions/saxon653.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep+'resolver-1.0.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep) + os.pathsep + \
+				 '" com.icl.saxon.StyleSheet ' + \
+   			 ' -x org.apache.xml.resolver.tools.ResolvingXMLReader' + \
+    		 ' -y org.apache.xml.resolver.tools.ResolvingXMLReader' + \
+   			 ' -r org.apache.xml.resolver.tools.CatalogResolver' + \
+				 ' -o ' + str(target[0]) + ' ' + str(source[0]) + ' ' + \
+				 os.path.normpath(str(env.prereqs['docbook-ireon-xsl'][0]) + os.sep+'xhtml-article.xsl')
+	return cmdstr
+
+
+def buildXhtmlBook(target, source, env, for_signature):
+	cmdstr = 'Error___XSL_Transformation_Prereqs__NOT__Installed'
+	if env.prereqs.has_key('docbook-dtd'):
+		cmdstr = 'java -cp "' + os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep + 'saxon.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['docbook-xsl'][0]) + os.sep+'extensions/saxon653.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep+'resolver-1.0.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep) + os.pathsep + \
+				 '" com.icl.saxon.StyleSheet ' + \
+   			 ' -x org.apache.xml.resolver.tools.ResolvingXMLReader' + \
+    		 ' -y org.apache.xml.resolver.tools.ResolvingXMLReader' + \
+   			 ' -r org.apache.xml.resolver.tools.CatalogResolver' + \
+				 ' ' + str(source[0]) + ' ' + \
+				 os.path.normpath(str(env.prereqs['docbook-ireon-xsl'][0]) + os.sep+'xhtml-book.xsl') + \
+				 ' base.dir="' + os.path.dirname(str(target[0].get_abspath())) + '\\\\" '
+	return cmdstr
+
+
+def buildSiteXhtmlArticle(target, source, env, for_signature):
+	cmdstr = 'Error___XSL_Transformation_Prereqs__NOT__Installed'
+	if env.prereqs.has_key('docbook-dtd'):
+		cmdstr = 'java -cp "' + os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep + 'saxon.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['docbook-xsl'][0]) + os.sep+'extensions/saxon653.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep+'resolver-1.0.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep) + os.pathsep + \
+				 '" com.icl.saxon.StyleSheet ' + \
+   			 ' -x org.apache.xml.resolver.tools.ResolvingXMLReader' + \
+    		 ' -y org.apache.xml.resolver.tools.ResolvingXMLReader' + \
+   			 ' -r org.apache.xml.resolver.tools.CatalogResolver' + \
+				 ' -o ' + str(target[0]) + ' ' + str(source[0]) + ' ' + \
+				 os.path.normpath(str(env.prereqs['docbook-ireon-xsl'][0]) + os.sep+'site-xhtml-article.xsl')
+	return cmdstr
+
+
+def buildSiteXhtmlBook(target, source, env, for_signature):
+	cmdstr = 'Error___XSL_Transformation_Prereqs__NOT__Installed'
+	if env.prereqs.has_key('docbook-dtd'):
+		cmdstr = 'java -cp "' + os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep + 'saxon.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['docbook-xsl'][0]) + os.sep+'extensions/saxon653.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep+'resolver-1.0.jar') + os.pathsep + \
+				 os.path.normpath(str(env.prereqs['saxon'][0]) + os.sep) + os.pathsep + \
+				 '" com.icl.saxon.StyleSheet ' + \
+   			 ' -x org.apache.xml.resolver.tools.ResolvingXMLReader' + \
+    		 ' -y org.apache.xml.resolver.tools.ResolvingXMLReader' + \
+   			 ' -r org.apache.xml.resolver.tools.CatalogResolver' + \
+				 ' ' + str(source[0]) + ' ' + \
+				 os.path.normpath(str(env.prereqs['docbook-ireon-xsl'][0]) + os.sep+'site-xhtml-book.xsl') + \
+				 ' base.dir="' + os.path.dirname(str(target[0].get_abspath())) + '\\\\" '
+	return cmdstr
+
+
+def cleanupDir(target, source, env):
+	''' Delete directory '''
+	shutil.rmtree(os.path.dirname(str(target[0].get_abspath()))+os.sep,1)
+	return None
+
+def cleanupDirStr(target, source, env):
+	''' For copyIncludes (see above) '''
+	print 'Delete directory %s' % os.path.dirname(str(target[0].get_abspath()))+os.sep
+
+
+def getImagesPath(env):
+	s = 'error'
+	if env.prereqs.has_key('docs-images'):
+		s = env.prereqs['docs-images'][0]+os.sep
+	return s
+
+
+def copyIncludes(target, source, env):
+	''' Copy directory contents without .svn files '''
+	src = source[0].get_abspath()
+	dest = target[0].get_abspath()
+	if os.path.exists(src):
+		for root, dirs, files in os.walk(src):
+			if root.find('.svn') <> -1:
+				continue
+			if '.svn' in dirs:
+				targdir = os.path.join(dest, root[len(src)+1:])
+				if not os.path.exists(targdir):
+					os.makedirs(targdir)
+				for name in files:
+					shutil.copyfile(os.path.join(root,name), os.path.join(targdir,name))
+	return None
+
+def copyIncludesStr(target, source, env):
+	''' For copyIncludes (see above) '''
+	print 'Copy incudes form %s to %s' % (source[0].get_abspath(), target[0].get_abspath())
+
+
+
+xhtmlArticleBuilder = Builder(generator = buildXhtmlArticle, suffix='html', src_suffix='xml')
+xhtmlBookBuilder = Builder(generator = buildXhtmlBook, suffix='html', src_suffix='xml')
+siteXhtmlArticleBuilder = Builder(generator = buildSiteXhtmlArticle, suffix='html', src_suffix='xml')
+siteXhtmlBookBuilder = Builder(generator = buildSiteXhtmlBook, suffix='html', src_suffix='xml')
+FODocumentBuilder = Builder(generator = buildFODocument, suffix='fo', src_suffix='xml')
+PDFDocumentBuilder = Builder(generator = buildPDFDocument, suffix='pdf', src_suffix='fo')
+
+docBuildEnv = baseEnv.Copy(BUILDERS = {'buildXhtmlArticle' : xhtmlArticleBuilder, 'buildXhtmlBook' : xhtmlBookBuilder, \
+                                       'buildSiteXhtmlArticle' : siteXhtmlArticleBuilder, 'buildSiteXhtmlBook' : siteXhtmlBookBuilder, \
+                                       'buildFODocument' : FODocumentBuilder, 'buildPDFDocument' : PDFDocumentBuilder}, \
+                                      ENV = {'PATH' : os.environ['PATH']})
+
+docBuildEnv.getImagesPath = getImagesPath
+docBuildEnv.copyIncludes = copyIncludes
+docBuildEnv.copyIncludesStr = copyIncludesStr
+docBuildEnv.cleanupDir = cleanupDir
+docBuildEnv.cleanupDirStr = cleanupDirStr
+
+docBuildEnv['buildRoot_'] = docBuildEnv.Dir(str(docBuildEnv['buildRoot_']) + os.sep + 'doc/')
+BuildDir('#'+str(docBuildEnv['buildRoot_']), '#docsrc', duplicate=0)
+
+Export('docBuildEnv')
+
+SConscript(['#'+str(docBuildEnv['buildRoot_'])+ os.sep + 'ru_Ru/SConscript'], exports='docBuildEnv')

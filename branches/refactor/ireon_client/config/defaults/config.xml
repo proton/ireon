@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+  This is default config file for ireon.org client.
+
+  DO NOT CHANGE IT! Set values you need in config/config.xml instead.
+
+  -->
+
+<config>
+	<rootServer>
+		<host>
+			localhost
+		</host>
+		<port>
+			29100
+		</port>
+	</rootServer>
+
+	<world>
+		<config>
+			../data/landscape/world.cfg
+		</config>
+	</world>
+
+	<profile>
+		<!-- no defaults for these -->
+		<login/>
+		<password/>
+	</profile>
+
+	<interface>
+		<dir>
+			../data/interface/
+		</dir>
+		<symbols>
+			абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_-+=|\/ &lt;&gt;,.;:{}[]'"?
+		</symbols>
+	</interface>
+</config>

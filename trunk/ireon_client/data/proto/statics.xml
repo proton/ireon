@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Configuration file for loading static prototypes.
+
+-->
+<cfg:statics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:cfg="http://www.ireon.org/ireon/client/"
+     xsi:schemaLocation="http://www.ireon.org/ireon/client/ statics.xsd" >
+
+    <prototype>house.static</prototype>
+    <prototype>well.static</prototype>
+    <prototype>stone.static</prototype>
+    <prototype>mill.static</prototype>
+    <prototype>tree01.static</prototype>
+    
+</cfg:statics>      

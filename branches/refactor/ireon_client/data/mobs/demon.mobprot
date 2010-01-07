@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MobPrototype>
+<Option Id="3"/>
+<Option Name="Демон"/>
+<Option Mesh="ch03.mesh"/>
+<Option Scale="-1 1 -1"/>
+</MobPrototype>

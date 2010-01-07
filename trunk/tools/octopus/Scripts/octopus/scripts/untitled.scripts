@@ -1,0 +1,5 @@
+defineScript
+{
+	name = "untitled",
+	file = "untitled.lua"
+}

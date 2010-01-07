@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	 'island' Scene file for ireon.org client.
+--> 
+<cfg:scene formatVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:cfg="http://www.ireon.org/ireon/client/"
+	xsi:schemaLocation="http://www.ireon.org/ireon/client/ zone.xsd">
+	<nodes>
+		<node name="altar" >
+			<position x="-348.73" y="889.397" z="-96.5288" />
+			<rotation qx="0.0" qy="0.0" qz="0.0" qw="1.0" />
+			<scale x="1.0" y="1.0" z="1.0" />
+			<entity/>
+		</node>
+		<node name="C3B" >
+			<position x="5934.7" y="368.533" z="6677.54" />
+			<rotation qx="0.707107" qy="0.0" qz="0.0" qw="0.707107" />
+			<scale x="0.3" y="0.3" z="0.3" />
+			<entity/>
+		</node>
+		<node name="cart_teeran" >
+			<position x="-167.053" y="915.121" z="821.451" />
+			<rotation qx="0.0333531" qy="-0.920364" qz="0.0805214" qw="0.381227" />
+			<scale x="1.0" y="1.0" z="1.0" />
+			<entity/>
+		</node>
+		<node name="fencing_Teeran_01" >
+			<position x="22.0737" y="835.245" z="-1080.44" />
+			<rotation qx="0.0" qy="-1.0" qz="0.0" qw="0.0" />
+			<scale x="0.809709" y="0.809709" z="0.562815" />
+			<entity/>
+		</node>
+		<node name="fencing_Teeran_02" >
+			<position x="876.561" y="882.898" z="-877.915" />
+			<rotation qx="0.0" qy="-0.737277" qz="0.0" qw="0.67559" />
+			<scale x="0.809709" y="0.809709" z="0.562815" />
+			<entity/>
+		</node>
+		<node name="fencing_Teeran_03" >
+			<position x="507.357" y="785.161" z="-1066.35" />
+			<rotation qx="0.0" qy="0.819152" qz="0.0" qw="0.573576" />
+			<scale x="0.809709" y="0.809709" z="0.562815" />
+			<entity/>
+		</node>
+		<node name="fencing_Teeran_04" >
+			<position x="-78.1123" y="875.911" z="-845.61" />
+			<rotation qx="0.0" qy="-0.92388" qz="0.0" qw="0.382683" />
+			<scale x="0.809709" y="0.809709" z="0.562815" />
+			<entity/>
+		</node>
+		<node name="House_Teeran_01" >
+			<position x="117.495" y="918.994" z="1034.85" />
+			<rotation qx="0.0" qy="-0.866025" qz="0.0" qw="0.5" />
+			<scale x="1.0" y="1.0" z="1.0" />
+			<entity/>
+		</node>
+		<node name="House_Teeran_02" >
+			<position x="290.554" y="891.679" z="-351.177" />
+			<rotation qx="0.0" qy="-0.34202" qz="0.0" qw="0.939693" />
+			<scale x="1.0" y="1.0" z="1.0" />
+			<entity/>
+		</node>
+		<node name="House_Teeran_03" >
+			<position x="1323.93" y="1025.02" z="492.102" />
+			<rotation qx="0.0" qy="0.737277" qz="0.0" qw="0.67559" />
+			<scale x="1.0" y="1.0" z="1.0" />
+			<entity/>
+		</node>
+		<node name="House_Teeran_04" >
+			<position x="1332.89" y="909.562" z="-31.1548" />
+			<rotation qx="0.0" qy="0.707107" qz="0.0" qw="0.707107" />
+			<scale x="0.500161" y="1.0" z="0.218826" />
+			<entity/>
+		</node>
+		<node name="House_Teeran_05" >
+			<position x="-120.153" y="923.375" z="523.567" />
+			<rotation qx="0.0" qy="-1.0" qz="0.0" qw="0.0" />
+			<scale x="1.0" y="1.0" z="1.0" />
+			<entity/>
+		</node>
+		<node name="House_Teeran_06" >
+			<position x="84.3652" y="883.535" z="1418.16" />
+			<rotation qx="0.0" qy="-0.866025" qz="0.0" qw="0.5" />
+			<scale x="1.0" y="1.0" z="1.0" />
+			<entity/>
+		</node>
+		<node name="House_Teeran_07" >
+			<position x="782.98" y="990.411" z="814.691" />
+			<rotation qx="0.0" qy="0.843392" qz="0.0" qw="0.537299" />
+			<scale x="1.0" y="1.0" z="1.0" />
+			<entity/>
+		</node>
+		<node name="House_Teeran_08" >
+			<position x="849.704" y="1012.84" z="1376.35" />
+			<rotation qx="0.0" qy="0.573576" qz="0.0" qw="0.819152" />
+			<scale x="1.0" y="1.0" z="1.0" />
+			<entity/>
+		</node>
+		<node name="House_Teeran_09" >
+			<position x="1046.32" y="909.717" z="-551.873" />
+			<rotation qx="0.0" qy="0.422618" qz="0.0" qw="0.906308" />
+			<scale x="1.0" y="1.0" z="1.0" />
+			<entity/>
+		</node>
+		<node name="House_Teeran_10" >
+			<position x="654.89" y="903.288" z="-147.886" />
+			<rotation qx="0.0" qy="-0.707107" qz="0.0" qw="0.707107" />
+			<scale x="1.0" y="1.0" z="1.0" />
+			<entity/>
+		</node>
+		<node name="Mill_Teeran" >
+			<position x="593.01" y="1051.79" z="429.066" />
+			<rotation qx="0.0" qy="-0.906308" qz="0.0" qw="0.422618" />
+			<scale x="1.0" y="1.0" z="1.0" />
+			<entity/>
+		</node>
+		<node name="Stone_01" >
+			<position x="1142.02" y="922.277" z="-326.792" />
+			<rotation qx="0.353553" qy="-0.612372" qz="0.612372" qw="0.353553" />
+			<scale x="1.30548" y="1.79953" z="1.30548" />
+			<entity/>
+		</node>
+		<node name="Stone_02" >
+			<position x="380.24" y="950.909" z="768.972" />
+			<rotation qx="0.652524" qy="0.27242" qz="-0.27242" qw="0.652524" />
+			<scale x="1.77981" y="1.0" z="1.31472" />
+			<entity/>
+		</node>
+		<node name="Stone_03" >
+			<position x="430.963" y="967.934" z="762.137" />
+			<rotation qx="0.707107" qy="0.0" qz="0.0" qw="0.707107" />
+			<scale x="1.0" y="1.0" z="1.0" />
+			<entity/>
+		</node>
+		<node name="Teran" >
+			<position x="1013.94" y="947.445" z="1849.83" />
+			<rotation qx="0.0" qy="-0.906308" qz="0.0" qw="-0.422618" />
+			<scale x="1.84025" y="1.84025" z="3.43969" />
+			<entity/>
+		</node>
+		<node name="Tree_leaf_01" >
+			<position x="365.597" y="894.349" z="-57.4785" />
+			<rotation qx="-0.604309" qy="-0.37744" qz="0.677028" qw="0.184347" />
+			<scale x="0.9" y="0.9" z="0.9" />
+			<entity/>
+		</node>
+		<node name="Tree_leaf_02" >
+			<position x="1206.22" y="991.543" z="1501.71" />
+			<rotation qx="-0.0981348" qy="-0.694875" qz="0.709914" qw="-0.0594998" />
+			<scale x="0.9" y="0.9" z="0.9" />
+			<entity/>
+		</node>
+		<node name="Tree_leaf_03" >
+			<position x="-272.677" y="914.913" z="1109.14" />
+			<rotation qx="0.474539" qy="0.0588841" qz="0.615145" qw="0.626851" />
+			<scale x="0.9" y="0.9" z="0.9" />
+			<entity/>
+		</node>
+		<node name="Tree_leaf_04" >
+			<position x="1400.55" y="1124.23" z="-391.394" />
+			<rotation qx="-0.294064" qy="-0.864576" qz="0.0526767" qw="-0.404054" />
+			<scale x="0.9" y="0.9" z="0.9" />
+			<entity/>
+		</node>
+		<node name="Tree_leaf_05" >
+			<position x="575.518" y="1140.58" z="839.787" />
+			<rotation qx="-0.691999" qy="0.379953" qz="0.569248" qw="-0.22963" />
+			<scale x="0.9" y="0.9" z="0.9" />
+			<entity/>
+		</node>
+		<node name="Tree_leaf_06" >
+			<position x="1500.8" y="1175.75" z="694.965" />
+			<rotation qx="-0.24592" qy="-0.207147" qz="0.944756" qw="-0.0636322" />
+			<scale x="0.9" y="0.9" z="0.9" />
+			<entity/>
+		</node>
+		<node name="Tree_trank_01" >
+			<position x="365.597" y="894.349" z="-57.4785" />
+			<rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+			<scale x="0.21" y="0.21" z="0.21" />
+			<entity/>
+		</node>
+		<node name="Tree_trank_02" >
+			<position x="1206.22" y="991.543" z="1501.71" />
+			<rotation qx="0.612372" qy="-0.353553" qz="0.353553" qw="0.612372" />
+			<scale x="0.21" y="0.21" z="0.21" />
+			<entity/>
+		</node>
+		<node name="Tree_trank_03" >
+			<position x="-272.677" y="914.913" z="1109.14" />
+			<rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+			<scale x="0.21" y="0.21" z="0.21" />
+			<entity/>
+		</node>
+		<node name="Tree_trank_04" >
+			<position x="1353.96" y="902.96" z="-450.179" />
+			<rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+			<scale x="0.21" y="0.21" z="0.21" />
+			<entity/>
+		</node>
+		<node name="Tree_trank_05" >
+			<position x="584.35" y="983.072" z="866.917" />
+			<rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+			<scale x="0.21" y="0.21" z="0.21" />
+			<entity/>
+		</node>
+		<node name="Tree_trank_06" >
+			<position x="1516.16" y="998.527" z="651.168" />
+			<rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+			<scale x="0.21" y="0.21" z="0.21" />
+			<entity/>
+		</node>
+		<node name="Trough_Teeran" >
+			<position x="1127.42" y="1013.96" z="1256.39" />
+			<rotation qx="0.0" qy="0.0" qz="0.0" qw="1.0" />
+			<scale x="1.0" y="1.0" z="1.0" />
+			<entity/>
+		</node>
+		<node name="Well_Teeran" >
+			<position x="921.124" y="990.049" z="318.593" />
+			<rotation qx="0.0" qy="0.0" qz="0.0" qw="1.0" />
+			<scale x="1.0" y="1.0" z="1.51858" />
+			<entity/>
+		</node>
+	</nodes>
+</cfg:scene>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Configuration file for loading zones.
+
+-->
+<cfg:zones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:cfg="http://www.ireon.org/ireon/client/"
+     xsi:schemaLocation="http://www.ireon.org/ireon/client/ zones.xsd" >
+
+    <zone>first.zone</zone>
+
+    
+</cfg:zones>      

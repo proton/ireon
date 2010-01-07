@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Configuration file for loading static prototypes.
+
+-->
+<cfg:static xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:cfg="http://www.ireon.org/ireon/client/"
+     xsi:schemaLocation="http://www.ireon.org/ireon/client/ static.xsd" >
+
+    <name>Mill</name>
+    <mesh>Mill_loc1.mesh</mesh>
+    <size>0 30 0</size>
+    
+</cfg:static>    
+

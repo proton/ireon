@@ -1,0 +1,20 @@
+<config>
+	<Port>
+		29120
+	</Port>
+	<MaxConnections>
+		20
+	</MaxConnections>
+	<CM>
+		localhost
+	</CM>
+	<CMPort>
+		29110
+	</CMPort>
+	<ID>
+		1
+	</ID>
+	<WorldCfg>
+		../data/world.cfg
+	</WorldCfg>
+</config>

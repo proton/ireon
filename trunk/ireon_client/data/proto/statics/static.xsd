@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<xsd:schema
+		targetNamespace="http://www.ireon.org/ireon/client/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:cfg="http://www.ireon.org/ireon/client/" >
+
+	<xsd:element name="static" type="cfg:CPCStatic" />
+
+	<xsd:complexType name="CPCStatic">
+	<xsd:all>
+		<xsd:element name="name"  type="xsd:string" minOccurs="0" default="unnamed"/>
+		<xsd:element name="mesh"  type="xsd:string" minOccurs="0" default="cube.mesh"/>
+		<xsd:element name="size" type="xsd:string" minOccurs="0" default="0 1 0"/>
+	</xsd:all>				
+	</xsd:complexType>
+
+</xsd:schema>

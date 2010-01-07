@@ -1,0 +1,486 @@
+/*
+  ( c) ireon.org
+  2005
+*/
+
+
+/* ------------------------- general  ------------------------- */
+
+body {
+	background-color: #fff;
+	color: #000;
+	margin: 0px 2% 0px 2%;
+	text-align: justify;
+}
+
+/* ------------------------- links  ------------------------- */
+
+a{
+	/*color :#CA0404*/
+/*	text-decoration: none;*/
+}
+
+A:LINK {
+	color: #207625;
+}
+
+
+a:VISITED{
+/*	text-decoration : none;*/
+	/*font-weight : normal;*/
+	color : #2F4F4F;
+}
+
+a:HOVER{
+	text-decoration : none;
+	color: #207625;
+/*	background-color: #EAF8F2;*/
+}
+
+
+/* ------------------------- text  ------------------------- */
+
+
+body, p, td, li, dt, dd, div
+{
+	font: 14px/17px Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+/* para */
+p
+{
+	font: 14px/17px;
+	margin: 0px 6% 0px 6%;
+	padding: 0px 0px 10px 0px;
+}
+
+.abstract p
+{
+}
+
+img
+{
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+em
+{
+font-weight: 600;
+font-style: italic;
+}
+
+.sect1, .glossary, .colophon{
+	margin-top: 50px;
+}
+
+div.part{
+	margin-top: 70px;
+}
+
+/* ------------------------- titles  ------------------------- */
+
+h1, h2, h3, h4, h5, h6, .abstract p b, .toc p {
+	font-family: Georgia, Verdana, Arial, Helvetica, Sans-Serif;
+	color: black;
+}
+
+h1.title {
+	font-size : 34px;
+	/*color : #CA0404;*/
+	margin: 0px;
+	padding: 0px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: 600;
+	line-height: 150%;
+	text-align: center;
+/*	background-color: white; */
+	margin: 15px 0px 0px 0px;
+	padding: 0px;
+}
+
+h3.author
+{
+	font-weight: normal;
+	text-align: center;
+	color: #000;
+	margin: 20px 0px 25px 0px;
+	padding: 0px;
+}
+
+.sect1 h3.author, .sect2 h3.author, .sect3 h3.author, .chapter h3.author
+{
+	text-align: left;
+	font-size: 100%;
+	margin: 15px 0px 15px 6%;
+}
+
+h3.subtitle, h2.subtitle {
+	font-size: 125%;
+	color: black;
+	text-align: center;
+	margin: 0px 0 45px 0;
+	padding: 0px;
+}
+
+/* sect1 heading */
+h2
+{
+	font-size: 170%;
+	font-weight: normal;
+	text-decoration: none;
+	/*background-color: white;*/
+	padding: 12px 15px 0px 0px;
+}
+
+/* sect(ion)2 title */
+h3
+{
+	font-size: 150%;
+	font-weight: normal;
+	text-decoration: none;
+	/*background-color: #ffffff;*/
+	margin: 25px 0 10px 0;
+	padding: 0 0 0 2%;
+}
+
+/* sect(ion)3 title */
+h4
+{
+font-size: 135%;
+font-weight: normal;
+text-decoration: none;
+/*background-color: #ffffff;*/
+margin: 10px 0 5px 0;
+padding: 0 0 0 4%;
+}
+
+/* sect(ion)4 title */
+h5
+{
+font-size: 120%;
+font-weight: normal;
+text-decoration: none ;
+/*background-color: #ffffff;*/
+margin: 3px 0 1px 0;
+padding: 0 0 0 6%;
+}
+
+/* sect(ion)5 title */
+h6
+{
+	font-size: 100%;
+	font-weight: 300;
+	text-decoration: none;
+	color: #000;
+	/*background-color: #ffffff;*/
+	margin: 1px 0 1px 0;
+	padding: 0 0 0 6%;
+}
+
+/* ------------------------- headers & footers  ----------------- */
+
+#customheader, #customfooter
+{
+font-size: 12px;
+text-align: center;
+vertical-align: middle;
+color: black;
+/*background-color: white;*/
+}
+
+#customfooter {
+margin-top: 35px;
+}
+
+#customheader {
+margin-bottom: 25px;
+}
+
+div.navilinks {
+	margin-top: 20px;
+/*	font-weight : bold;*/
+	font-size : 12px;
+}
+
+.navheader th, .navheader td, .navfooter th, .navfooter td
+{
+font-size: 12px;
+font-weight: 450;
+padding-left: 6%;
+padding-right: 6%;
+}
+
+
+/* ------------------------- titlepage stuff  ------------------- */
+
+div.revhistory{
+	border : 0px solid White;
+	margin: 35px 6% 35px 6%;
+}
+
+div.revhistory table{
+	border : 0px solid White;
+}
+
+div.revhistory table td, div.revhistory table th{
+	border : 0px ridge black;
+	border-bottom-width : 1px;
+}
+
+div.abstract{
+	margin: 15px 0px 10px 0px;
+}
+
+.abstract p b, .toc p b {
+	font-weight: normal;
+	font-style: italic;
+	font-size: 115%;
+}
+
+.copyright, .pubdate, .releaseinfo
+{
+	text-align: center;
+	margin: 5px 6% 5px 6%;
+	padding: 0;
+	border: 0;
+}
+
+p.releaseinfo{
+	margin : 0px 0px 10px 0px;
+/*	text-align : center;
+	font-weight : bold;*/
+}
+
+div.legalnotice
+{
+	font-size: 90%;
+	margin: 15px 6% 10px 6%;
+	padding: 5px 0px 5px 0px;
+	border: 1px solid gray;
+}
+
+div.legalnotice p {
+	margin: 0px 15px 0px 15px;
+	padding: 10px 10px 10px 0px;
+}
+
+
+/* ------------------------- glossary stuff  ------------------------- */
+
+div.glossdiv{
+	margin: 10px 0px 10px 0px;
+}
+
+div.glossdiv dl{
+	margin: 10px 0px 15px 25px;
+}
+
+div.glossdiv dl dt{
+	font-weight : bold;
+	margin-top: 15px;
+}
+
+div.glossdiv dl dd{
+	margin: 5px 0px 5px 0px;
+}
+
+div.glossary{
+	margin: 10px 0px 10px 0px;
+}
+
+div.glossary dl{
+	margin: 10px 0px 15px 25px;
+}
+
+div.glossary dl dt{
+	font-weight : bold;
+	margin-top: 15px;
+}
+
+div.glossary dl dd{
+	margin: 5px 0px 5px 0px;
+}
+
+/* ------------------------- misc  ------------------------- */
+
+hr{
+	height: 1px;
+	border: 0px;
+	color: black;
+	background-color: black;
+	margin: 20px 0px 10px 0px;
+}
+
+.mediaobject
+{
+text-align: center;
+}
+
+
+.calloutlist, .figure, .table
+{
+margin: 15px 6% 15px 6%;
+border: 1px black;
+}
+
+
+.itemizedlist, .variablelist {
+	margin: 5px 6% 10px 6%;
+	padding: 0px;
+}
+
+.itemizedlist .itemizedlist {
+	margin: 5px 0px 10px 0px;
+	padding: 0px;
+}
+
+.itemizedlist p.title{
+	margin: 0px 20px 0px 20px;
+}
+
+ul, ol{
+	margin: 0px 15px 0px 15px;
+	padding: 0px;
+}
+
+ol {
+	margin: 0px 8% 0px 8%;
+}
+
+li{
+	margin: 0px 5px 0px 20px;
+	padding: 0px;
+}
+
+li p{
+	margin: 0px;
+	padding: 0px;
+}
+
+td li p {
+		line-height: 60%;
+}
+
+td p{
+	margin: 0px;
+	padding: 0px;
+}
+
+.blockquote
+{
+margin-bottom: 30px;
+}
+
+.blockquote p, .blockquote td
+{
+font: 11px/16px;
+font-weight: 450;
+}
+
+
+.epigraph
+{
+margin-bottom: 30px;
+}
+
+.epigraph p, .epigraph td
+{
+font: 10px/14px;
+font-weight: 600;
+}
+
+.toc, .list-of-figures, .list-of-tables, .list-of-examples
+{
+margin: 15px 6% 15px 6%;
+}
+
+.toc p, .list-of-figures p, .list-of-tables p, .list-of-examples p
+{
+margin: 0px;
+padding: 0px;
+}
+
+.toc{
+/*	border: 0px dotted Gray;
+	border-left-width: 1px;*/
+}
+
+.figure
+{
+margin: 5px 5px 5px 5px;
+padding: 0;
+border: 0;
+text-align: center;
+}
+
+.figure p, .table p, .example p
+{
+font-size: 80%;
+}
+
+div.note table, div.important table, div.warning table, div.caution table, div.tip table
+{
+	margin: 0px 4% 0px 4%;
+	/*padding: 5px 0% 5px 0%;*/
+}
+
+div.note th, div.important th, div.warning th, div.caution th, div.tip th
+{
+font: 115%/18px;
+font-weight: normal;
+text-decoration: underline;
+text-align: left;
+}
+
+.note p, .important p, .warning p, .caution p, .tip p
+{
+	margin: 0;
+	padding: 0px 0px 10px 0px;
+}
+
+.note img, .important img, .warning img, .caution img, .tip img
+{
+	margin: 0px 6% 0px 6%;
+}
+
+pre.programlisting
+{
+font-family: "Courier New", Courier, Monospace;
+color: #000;
+background-color: #eee;
+margin: 0;
+border: 1px dotted #ddd;
+padding: 6px 6px 6px 6px;
+}
+
+.sidebar{
+	margin-top : 15px;
+	margin-left : 12%;
+	margin-bottom : 15px;
+	border : 1px solid Black;
+	padding-top : 10px;
+	padding-bottom : 10px;
+	margin-right : 12%;
+}
+
+.screen
+{
+	font: 11px/16px;
+	margin: 0px 6% 10px 6%;
+	padding: 10px 10px 10px 10px;
+	border: 1px dotted Gray;
+}
+
+span.strikethrough{
+	text-decoration: line-through;
+}
+
+div#Counter {
+	display: none;
+}

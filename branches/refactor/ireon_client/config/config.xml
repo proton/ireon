@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+  Configuration file for ireon.org client.
+
+  Use this file to override default settings in config/defaults/config.xml.
+
+  -->
+
+<config>
+	<profile>
+		<login>
+			llyeli
+		</login>
+		<password>
+			pass
+		</password>
+	</profile>
+</config>

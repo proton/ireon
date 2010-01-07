@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!DOCTYPE article
+  PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+  "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  [
+    <!ENTITY % global.entities SYSTEM
+        "../../../include/global.xml">
+    %global.entities;
+  ]
+>
+
+<article lang="en">
+
+  <articleinfo>
+
+    <title>Constructive Politics in a Massively Multiplayer Online
+    Roleplaying Game</title>
+    <subtitle>
+
+    </subtitle>
+    <author>
+      <firstname>Matthew</firstname>
+      <surname>Mihaly</surname>
+    </author>
+
+    <copyright>
+        <holder>Matthew Mihaly</holder>
+    </copyright>
+
+    <legalnotice>
+      <para>
+        All rights reserved.
+      </para>
+    </legalnotice>
+
+    <abstract>
+      <para> <ulink url =
+      "http://www.ironrealms.com/corp/cpmmorpg01.htm" >Constructive
+      Politics in a Massively Multiplayer Online Roleplaying
+      Game</ulink></para>
+    </abstract>
+
+    </articleinfo>
+
+
+    <sect1 id="introduction">
+    <title>Introduction</title>
+    <para>
+        Politics are no doubt one of the most persistent and
+        pervasive aspects of modern life. Since the days of
+        Cleisthenes in ancient Athens, success in politics has
+        conferred status, power, and often wealth upon its devotees.
+        It consumes and often destroys those who seek it, but the
+        lust for success in it seems unquenchable. Thus far, major
+        Massively Multiplayer Online Role-playing Games (MMORPGs)
+        have been slow to implement any politics besides very
+        rudimentary. This is a shame, as the social engineering
+        possibilities provided for by political systems are legion.
+    </para>
+    <para>
+        The object of this essay is to lay out the basic reasons why
+        an MMORPG should want a political system, and guidelines for
+        designing and implementing a system to provide constructive
+        politics in a massively multi-player online world. I'm not
+        going to go into detail about any specific system, because
+        nearly every functional detail will depend upon the
+        particulars of your world.
+    </para>
+    <para>
+        To begin with, I must define what I mean by "politics", and
+        particularly, by "constructive politics". For our purposes,
+        let us define "politics" as generally non-violent
+        competitions for power over fellow man. Thus, this would
+        include anything from the American presidential race, to
+        'office politics'. On the other hand, I would not term the
+        French Revolution, or the Austrian Wars of Succession, to be
+        politics in this sense. 
+    </para>
+    <para>
+        I should note that in this discussion I will focus mainly on 
+        what you'd call state governments, or autonomous (at least 
+        when you ignore the power of the admins) governments who 
+        control a geographical area. Particularly, I'll be using the 
+        city-state in the ancient Hellenic style as my examples, as 
+        the largest governmental organizations in most MMORPGs with 
+        political systems are functionally similar.
+    </para>
+    <para>
+        What then, do I mean by "constructive politics"? I believe
+        that political situations can often be categorized as static
+        or dynamic. It's not merely a bivalent possibility of
+        course, but a scale. On one end, there are completely static
+        political situations, meaning that there is no competition
+        whatsoever for power. Of course, as an absolute, that is not
+        possible, unless it is a state of one. 
+    </para>
+    <para>
+        Monarchies and tyrannies generally are static political 
+        situations. There is some competition for power, usually of 
+        the 'office politics' situation, with the various 
+        individuals competing for the favor of the those above and 
+        ultimately the top person, but in the end the only way to 
+        truly change the government is through some sort of physical 
+        force-based pressure against the installed government, 
+        whether that government be a national, office, or household 
+        government.
+    </para>
+    <para>
+        Dynamic politics, on the other hand, are political
+        situations where fluidity and whim are the rule of the day.
+        A hypothetical system where elected officeholders are
+        forbidden from holding office longer than one day, and could
+        not compete for it on the day after their day of glory,
+        would be an extreme example of a dynamic system,
+        particularly if the electorate was large and diverse. I
+        believe that in order to build and maintain a constructive,
+        rather than a destructive, system of politics, one must
+        build a dynamic system that is tempered with static
+        elements.
+    </para>
+    </sect1>
+
+
+    <sect1 id="admin_reasons">
+    <title>Reasons To Implement A Political System, Admin
+POV</title>
+    <para>
+        Why should you care about having a political system in your
+        game? I've identified three broad, main reasons: binding
+        players to your world, creating opinion leaders, and newbie
+        assistance.
+    </para>
+    <para>
+        Politics allow you to provide players with two very
+        important, positive feelings: a sense of attainment, and a
+        sense of ownership and control over their environment. By
+        giving players methods by which to advance in a political
+        hierarchy, provided there are rewards attached (which will
+        be discussed later), you give players the important feeling
+        of achievement as they climb the ladder of success. Further,
+        as players gain power in your world, they begin the
+        transformation from guest to owner (at least in their minds,
+        and that is what is important).
+    </para>
+    <para>
+        The second reason for having a political system is the
+        facilitation of the creation of opinion leaders. What I mean
+        by this are people who others look to for guidance and who
+        influence others opinions. To some extent or another, anyone
+        who isn't a complete hermit is at least a very minor opinion
+        leader, as we all have friends, family, and associates who
+        are influenced by us to some extent. 
+    </para>
+    <para> 
+        What we are concerned with, though, is the ability to 
+        manipulate the player-base without having to directly 
+        manipulate every single player. By manipulating players who 
+        have power over other players by virtue of their opinion, or 
+        by virtue of their position of power (which tends to make 
+        them an opinion leader), one can guide a world into 
+        productive behavior patterns more easily.
+    </para>
+    <para>
+        The final reason, from the admin point of view, for having a
+        political system, is to provide incentives for established
+        players to help newbies. If you create a system where the
+        membership of an organization, and particularly the leaders,
+        benefit from numbers of players and more importantly numbers
+        of heavy players, the established players will work to
+        orient the newbies and ultimately make them feel a part of
+        your world.
+    </para>
+    <para>
+      So, reasons for having a political system, from the admin
+      point of view:
+      <itemizedlist>
+        <listitem><para>
+          A sense of attainment and ownership in the world
+        </para></listitem>
+        <listitem><para>
+          Creation of opinion leaders
+        </para></listitem>
+        <listitem><para>
+          Provide incentives for player-assistance of newbies
+        </para></listitem>
+      </itemizedlist>
+    </para>
+    </sect1>
+
+
+    <sect1 id="citizen_motivations">
+    <title>Citizen Motivations For Civic Participation</title>
+    <para>
+        While it's well and good to say that there are a number of
+        benefits to be had in having a political system from the
+        admin point of view, we need to examine reasons why players
+        would be motivated to participate in a political system.
+        First, however, we need to understand why the citizens of
+        such a system would care enough to participate. Without a
+        citizenry that cares, a political system will fail. Let's
+        first briefly list the reasons that motivate people to
+        participate as a citizen, in real life systems. These would
+        include:
+    </para>
+    <para>
+        Fear of the current regime. An example of this is the old
+        Soviet Union, which liked to brag that 99% of its citizens
+        voted (under duress of course, and generally with only one,
+        state-sanctioned choice).
+    </para>
+    <para>
+        Comradeship. I use this as a blanket term for motivations
+        that involve a feeling of connection to the other citizens.
+        Leaders of countries with a strong sense of nationalism
+        often use this feeling to motivate the populace.
+    </para>
+    <para>
+        Public services. One of the most tangible benefits a citizen
+        in modern states receives are services that the government
+        has elected to provide, such as public roads, a legal
+        system, security from foreign threats, and so on. Of course,
+        it is the case that citizens who do not participate may
+        nearly always still take advantage of these services, but
+        many do feel obligated to participated due to taking
+        advantage of the services.
+    </para>
+    <para>
+        Glory by association. Rather intangible, but not to be
+        discounted, the feeling of glory that citizens of a
+        successful state receive can be a prime reason why people
+        care about their state. Whether it is an ancient Roman's
+        pride in its immense military and organizational success, or
+        19th century Germany's pride in its cultural and
+        intellectual prowess, or modern day American pride in its
+        status as the sole superpower, glory by association is a
+        powerful motivator.
+    </para>
+    <para>
+        Desire for self-determination. People want to have a say in
+        their governments, given the level of power they can have
+        over citizens. It's no more complex than a nearly universal
+        desire to have one's opinion count.
+    </para>
+    <para>
+        It is the case, of course, that the reasons for a citizen in
+        a MMORPG to care about being a citizen, will not be quite
+        the same as in real life. Particularly, one cannot expect to
+        use the element of fear too heavily. Unlike real life, where
+        often the only way to disassociate yourself with the state
+        you live in is suicide (I don't think I need to go into the
+        significant psychological barriers to that method of
+        escape), players in a mud can and will simply quit if they
+        feel that what they believe to be their rights are being
+        impinged upon too heavily.
+    </para>
+    <para>
+        Further, regardless of what in-game age you have a character
+        start at, you will never achieve the kind of rabid sense of
+        obligation or nationalism that real governments can achieve
+        through indoctrination from a very early age. Players come
+        to MMORPGs with their fundamental values already ingrained,
+        and trying to change that will just frustrate you and
+        irritate the player.
+    </para>
+    <para>
+        Although it is true that some players, particularly in an
+        intensive role-playing environment set in a world with a
+        pre-existing history of nationalism (Star Trek, Tolkien's
+        Elves vs. Dwarves, etc), can play with nationalist fervor,
+        these players will never suffer the kind of discomfort and
+        unpleasantness that real nationalists will. In the course of
+        role-playing of course, their characters may, but the
+        players themselves are there to have fun and will not stay
+        around forever supporting a hopeless cause, as people may
+        who are engaged in real-life nationalist movements.
+    </para>
+    <para>
+        Of course, there are similarities. Just as in real life,
+        comradeship is a powerful motivator. However, this
+        motivation only exists in any large degree when 
+        out-of-character relationships (assuming there is some 
+        element of role-playing in an MMORPG) are strong enough to 
+        cause players to feel that they have real, interpersonal 
+        relationships with the other players that far transcend the 
+        characters themselves. A player must feel that what happens 
+        to his friends character does, to some significant degree, 
+        affect his friend. He must feel that if his friend's 
+        character is harmed or disadvantaged, then his friend is
+        actually suffering.
+    </para>
+    <para>
+        Likewise, a player can be manipulated to care about being a
+        citizen by allowing governments to provide services for its
+        citizenry that the citizenry either cannot attain
+        independent of a government, or which are significantly
+        difficult to attain independent of a government. I will go
+        into specific examples of this later.
+    </para>
+    <para>
+        Glory by association is also a real reason which can be used
+        to make players care. Even though the actual contribution of
+        a citizen-player to the relative success of his government
+        may be negligible, just like in real life, players will take
+        significant pride in the success of a political organization
+        to which they belong. This can be true even if the 
+        player-citizen has absolutely no voice at all in his 
+        government. Like sports fans in real life, people construct 
+        psychological attachments to essentially unrelated 
+        organizations, and the success or failure of these 
+        organizations can cause powerful feelings of glory or shame.
+    </para>
+    </sect1>
+
+
+    <sect1 id="why_lead">
+    <title>Why Should I Lead?</title>
+    <para>
+        So, now I have given reasons why the citizenry of a
+        political organization can be caused to care about the
+        organization, but I have yet to explain why the leaders of
+        such an organization would be motivated to take upon
+        themselves the responsibilities of power. Unlike the
+        motivations for citizenry participation in a political
+        system, which differ in some respects between real life and
+        an MMORPG, the motivations for participation by the leaders
+        are fairly similar in both. Broadly, these are: power,
+        glory, challenge, and a desire to help.
+    </para>
+    <para>
+        Power needs little explanation, and is perhaps the prime
+        motivation for the majority of political leaders, both in an
+        MMORPG and in real life. People value power for a number of
+        reasons, including for its own sake, for the ability to
+        attract members of the opposite sex (particularly in the
+        case of men), for the ability to profit financially from
+        either legal or corrupt exploitation of the power (Roman
+        governors of mineral-rich provinces such as Spain were
+        particularly good at this), for the ability to exact revenge
+        upon ones enemies, and so on. All of these reasons can
+        motivate players in an MMORPG as well as in real life.
+    </para>
+    <para>
+        Glory is the recognition by ones peers (your peers being
+        those whose opinions you care about) of your success, or at
+        least the perception by one that ones peers are honouring
+        your achievements. For an excellent essay on the power of
+        glory in MMORPGs, read Jonathan Baron's article entitled
+        <ulink url=
+        "http://www.gamasutra.com/features/19991110/Baron_01.htm"
+        >"Glory and Shame"</ulink>.
+    </para>
+    <para>
+        While I suspect that the desire to overcome challenges plays
+        a smaller role in real life, I believe it can play quite a
+        large role in terms of motivating political leaders in an
+        MMORPG. The reason for this lies in the way that players
+        tend to view success in a game. Conditioned to expect there
+        to be at least some pre-defined goals in a game, some
+        players will treat a political system as another of Raph
+        Koster's 'Ladders of Success' (found in <ulink url =
+        "http://www.legendmud.org/raph/gaming/laws.html" >the Laws
+        of Online Gaming</ulink> document), and will measure their
+        success by their rise in a hierarchical political system.
+    </para>
+    <para>
+        The desire to help is, of course, what we wish all
+        politicians were motivated by. As anyone who pays any
+        attention to real life politics knows, it is generally an
+        unfulfilled wish, often because of the high cost in time and
+        money associated with attaining any office. Still, there are
+        those individuals for whom the simple desire to help is the
+        main reason why they seek office, and it behooves designers
+        to ensure that there are roles for these people.
+    </para>
+    <para>
+        Players lead because:
+        <itemizedlist>
+        <listitem><para>
+            Power
+        </para></listitem>
+        <listitem><para>
+            Glory
+        </para></listitem>
+        <listitem><para>
+            Challenge
+        </para></listitem>
+        <listitem><para>
+            Desire to help
+        </para></listitem>
+      </itemizedlist>
+    </para>
+    </sect1>
+
+
+    <sect1 id="meaning_creation">
+    <title>The Creation of Meaning</title>
+    <para>
+        So, now I have described the reasons why politics can be
+        valuable from a design and administrative point of view, the
+        general reasons why a player-citizen may care about
+        politics, and the reasons why anyone would bother seeking
+        office in an MMORPG. Let's now begin to examine more
+        specific methods for creating a system that can provide
+        solutions to these three general categories of reasons. I'm
+        not going to lay out a specific plan for creating such a
+        system, because the details must largely depend upon the
+        details of the rest of the MMORPG.
+    </para>
+    <para>
+        The first and most important thing that you must consider
+        when creating a political system is that it must have
+        meaning. It's not enough to, for instance, set up an
+        electoral system and create some offices to be run for. If
+        the system has no meaning to the player- citizens, then any
+        power that officeholders have over the citizens will serve
+        no purpose except irritating and angering the citizens. You
+        must create perceived benefit for the player-citizens.
+    </para>
+    <para>
+        I discussed earlier what perceived benefits a player-citizen
+        may find from a political system to which he is subject,
+        namely public services, comradeship, and glory by
+        association. Let's look at ways to create these perceived
+        benefits for your players.
+    </para>
+    <para>
+        The first, public services, is the proverbial carrot. By
+        allowing your political organization to provide benefits
+        that the player cannot get elsewhere, you provide an
+        initial, concrete sense that political organizations are
+        meaningful. The range of benefits that can be provided is
+        large, but, like most details of a political system, will
+        depend to a significant extent upon the details of the world
+        within which the system is set.
+    </para>
+    <para>
+        Broadly though, these services could be things like teachers
+        who will only teach citizens, NPC security forces to protect
+        citizens from their enemies, state-owned banks, state-owned
+        shops, quests that take place within the city, state-run
+        brothels, and so on. Anything that is moderately interesting
+        or useful to the players can be used, and will help to
+        create meaning for political organizations in the minds of
+        the players, as long as whatever you are using can't be
+        easily gotten elsewhere.
+    </para>
+    <para>
+        The second, comradeship, is best realized via one, very
+        important method: collective striving under threat. The
+        players must be given the opportunity to experience fear for
+        the survival of their organization, or at least for survival
+        of their organization's pride. They need to strive together
+        against credible threats, and for credible goals.
+    </para>
+    <para>
+        There are really two emotions that we want to arouse in the
+        players to accomplish the goal of comradeship: fear and the
+        elation that comes from overcoming challenges. It's
+        important to understand that by fear I don't simply mean the
+        fear one feels when one looks out ones window in the morning
+        to see Mongol hordes thundering towards that lovely little
+        picket fence in your front yard that you spent last weekend
+        painting. I also mean the fear of humiliation; the fear that
+        comes when your hated rival bests you at something you both
+        care about.
+    </para>
+    <para>
+        The most obvious way to create this sort of unifying threat,
+        which has numerous real-life parallels, is hostile foreign
+        militaries. Creating a military system for your statist
+        governments is a topic too complicated to go into here, but
+        suffice to say that as long as your military system has
+        potentially real negative effects for the citizenry of the
+        victim political organization, and provided that the victim
+        citizenry doesn't feel totally powerless to combat the
+        threat, and further provided that there are perceived
+        positive benefits to being a citizen (public services, etc),
+        external threats can be a fantastic way to gel a citizen
+        base into a viable sub-community within your MMORPG. 
+    </para>
+    <para>
+        Fear is a powerful motivator. This fear can be useful, even 
+        when the object of the fear triumphs. Providing that a 
+        certain hope of eventual success remains among the 
+        citizenry, the siege mentality that can come from being 
+        beaten can really bind people together.
+    </para>
+    <para>
+        One can create effects similar to a military system in this
+        respect by establishing and making public certain yardsticks
+        of success for competing political organizations. For
+        instance, perhaps you might make public the total net worth
+        of these organizations, and give some sort of minor reward
+        to the citizenry based on the success of the political
+        organization relative to competing ones. Alternatively, you
+        could hold international competitions between your political
+        organizations like the Olympics. The details aren't really
+        that important. It's simply the element of competition and
+        the fear of humiliation and defeat that matter.
+    </para>
+    <para>
+        The second method of creating comradeship &mdash; the 
+        experience of collective elation &mdash; also requires that 
+        there be some sort of external threat or rivalry to the 
+        organization over which the members may triumph. What this 
+        threat or rivalry is isn't particularly important, but the 
+        more the players fear or hate the thing providing the 
+        threat, the more effective this will be. If you don't want 
+        to set up a situation where one political organization must 
+        lose, you could provide rivalries with NPC organizations (or 
+        powerful individuals). The upsides to this are that no one 
+        loses. The downside is that it is difficult to get players 
+        to feel the kind of rivalry with NPCs that they do with 
+        actual players. It takes a lot in terms of admin resources 
+        to create an ongoing rivalry of this sort.
+    </para>
+    <para>
+        A side benefit to the process of collective victory over an
+        adversary is the final way I've identified to get your
+        players to care about being a citizen, and that is glory by
+        association. I liken this to the bandwagon effect that
+        sports franchises experience when they are having a great
+        season. Suddenly all the fans, even ones who were not fans
+        until the team started winning, are having a great time
+        being involved in the experience, despite having nothing
+        whatsoever to do with overcoming the challenges the team has
+        overcome. Similar effects can be seen in successful
+        organizations in an MMORPG.
+    </para>
+    <para>
+        Create meaning by:
+        <itemizedlist>
+        <listitem><para>
+            Creating public services that the government can provide
+        </para></listitem>
+        <listitem><para>
+            Unify the populace through fear and collective striving
+        </para></listitem>
+        <listitem><para>
+            Ensure at least occasional collective victory
+        </para></listitem>
+      </itemizedlist>
+    </para>
+    </sect1>
+
+
+    <sect1 id="democracy_hierarchy">
+    <title>Democracy and Hierarchy</title>
+    <para>
+        The next important thing to consider in constructing a
+        political system is that it needs to be based on some sort
+        of democratic or republican principles. I wrote earlier of
+        the fact that players come to your MMORPG with their
+        fundamental values pre-determined by factors out of your
+        control. Given that the vast majority of internet users come
+        from democratic cultures, it is folly to try to force them
+        into a feudalistic or autocratic system. Now, of course you
+        can call your system feudalistic, autocratic, communistic,
+        or anything similar, but in reality, unless the users feel
+        like they have a say in their government, they
+        <emphasis>will</emphasis> be annoyed. This say doesn't have
+        to be on the principle of one man, one vote, but it does
+        need to give them the feeling that their opinion matters, or
+        at least, if they meet certain, attainable requirements,
+        their opinion will matter.
+    </para>
+    <para>
+        When actually structuring your system, consider the
+        importance of hierarchy. A hierarchy of governmental
+        positions allows participants to climb the ladder of
+        success, and it also makes for more vibrant politics. Now,
+        for this hierarchy to have any use, it must have real,
+        though limited, power over the citizenry, and ideally there
+        should be a division of responsibilities.
+    </para>
+    <para>
+        The reason that I advocate a division of responsibilities is
+        that by doing so, you increase the number of players who are
+        potentially interested in participating in the political
+        system. I've seen games where the only position of power in
+        an organization (in this case a city), was the mayor. So the
+        only people interested in that kind of position were fairly
+        ambitious players who yearned to be at the top of the food
+        chain, with the most control possible. It's my experience,
+        however, that these players are not in the majority. Many
+        players want to participate, but they either don't feel they
+        are ready to be in charge yet, or they simply have no desire
+        to be in charge. Further, in many cases, even an ambitious
+        player does not have what it takes to lead, but could still
+        make excellent and valuable contributions to a political
+        organization.
+    </para>
+    <para>
+        There are really any number of ways to divide up
+        responsibilities, but I would generally suggest using a
+        division by function. You might immediately think of simply
+        imitating the large-scale structure of a government, say,
+        the American. In other words, divide things up into
+        legislative, judicial, and executive branches. However, it
+        is important to keep in mind that this is supposed to be
+        fun. Mimicking a real, modern government is neither really
+        going to be possible or desirable. Who wants to sit through
+        endless budget hearings or worse yet, a US Senate
+        filibuster? Streamline, and simplify.
+    </para>
+    <para>
+        Since one of the explicit goals of a political system in an
+        MMORPG is to glorify the participants, and since you do have
+        an admin staff that can step in to stop extreme cases of
+        citizen-abuse, you do not really need to worry as much as
+        many modern governments do about the idea of checks and
+        balances. Checks and balances exist to regulate the behavior
+        of government in absence of external authority, but this is
+        not a true concern in an MMORPG. Regardless of how much
+        power you cede to the players, the admin staff necessarily
+        can step in, preventing would-be Stalins from driving their
+        own citizens to quit playing through repressive actions.
+    </para>
+    <para>
+        To stop certain designers from going fits of apoplexy this
+        idea, permit me to hastily add that admins stepping in to
+        regulate government in this manner should be a last resort
+        only, and hopefully never at all. In practice, due to the
+        fact that you can permit people in a virtual world to pick
+        up and move far more easily than is possible in real life,
+        and thus can afford to tolerate more repressive government
+        than you could if the barriers to moving were as high as
+        real life, and due to the fact that you can set up your
+        system so that some sort of civic mandate is required to
+        continue to rule, there is almost no need to intervene. If a
+        ruler is too repressive, his citizens will replace him or he
+        will soon find himself ruling an empty and rapidly-failing
+        city.
+    </para>
+    <para>
+        Instead, then, of organizing your governmental systems to
+        accommodate internal checks and balances, you can
+        concentrate on organizing it in such a way that best
+        fulfills the reasons for having a political system at all
+        that I mentioned earlier, namely a sense of player
+        attainment and ownership, plot control, and newbie
+        assistance. A hierarchy that is meaningful can fulfill the
+        sense of player attainment. Giving the officeholders some
+        real power, of which I'll speak more in a bit, gives them a
+        feeling of ownership in the world.
+    </para>
+    <para>
+        Masses of citizens can be motivated to act in ways that
+        contribute positively to the overall atmosphere of your
+        world by making them care about their organization, and then
+        creating goals applicable to the entire organization, such
+        as triumph over a rival organization, etc. Newbie assistance
+        can be provided for by ensuring that an organization
+        benefits from increased numbers of players, and particularly
+        from increased numbers of active, involved players.
+    </para>
+    </sect1>
+
+
+    <sect1 id="power">
+    <title>Power</title>
+    <para>
+        Possibly one of the most difficult aspects of constructing a
+        political system is deciding how much potential power the
+        government can have over the citizens. The government has to
+        have some, or the system will have little meaning to anyone.
+        But, if the government has too much, you risk either the
+        government abusing it and irritating the citizens to the
+        point where they may permanently leave your world, or having
+        to emasculate the government by frequent admin interference.
+        Interfere too much, and the system loses meaning, because
+        the players begin to perceive their actions as being
+        necessitated by admin demands rather than as being the
+        result of their relatively free choice.
+    </para>
+    <para>
+        Some things to consider when measuring the impact of power
+        are: How intrusive is the power? One thing that players
+        particularly hate is the feeling that their private, 
+        out-of-character conversations are being spied upon. Giving 
+        a player government the equivalent of unlimited wiretapping 
+        is a bad idea.
+    </para>
+    <para>
+        How difficult/punishing is it for a player to escape the
+        authority of a repressive regime? If it's impossible to
+        escape in-game, you force players to escape by leaving the
+        game. If it's too easy to avoid the authority of a
+        government, particularly within its geographical
+        jurisdiction, then you may as well not have one. Oftentimes,
+        if the political organizations are sufficiently discrete
+        (meaning that there is limited social crossover between
+        them), the cost of leaving the organization is kept
+        sufficiently high simply because players do not like to
+        leave their peer group.
+    </para>
+    <para>
+        What kind of power might a government have over its
+        citizens, or, more generally, those living, working, or
+        merely being, in their jurisdiction? You might consider
+        taxation and the regulation of commerce, some sort of
+        judicial system, and police power to enforce both the
+        dictates of the lawmakers and the decisions of the judicial
+        system. Here one must be careful however. It's been my
+        experience that players are less willing to accept taxation
+        of their income than people are in real life. Much trickier
+        to pull off are judicial and enforcement systems that
+        players will view as fair.
+    </para>
+    <para>
+        The construction of judicial systems has been the subject of
+        extensive debate, to no satisfying conclusion, within the
+        MMORPG design world. Three of the focal points of the
+        disagreements are
+        <orderedlist numeration="arabic">
+        <listitem><para>
+            How to bring and hold those suspected of criminal
+            activity to trial (whether that trial be by
+            player-magistrates or player-citizen jurists),
+        </para></listitem>
+        <listitem><para>
+            How to conduct the trial itself, and
+        </para></listitem>
+        <listitem><para>
+            What punishments can be acceptably imposed upon the
+            player found guilty?
+        </para></listitem>
+      </orderedlist>
+    </para>
+    <para>
+        The problems are largely those not faced in a large degree
+        by real-life systems, and they all involve deciding how
+        much power to allow players to have over each other. I'm not
+        going to go into the various proposals for solutions to this
+        problem, but I will say that in my opinion, the most
+        difficult judicial issue to deal with is the issue of repeat
+        offenders. This is because it's my opinion that players
+        should <emphasis>never</emphasis> be given the power to
+        permanently and irreversibly harm another player.
+    </para>
+    <para>
+        In real life, we deal with criminals who have repeatedly
+        committed certain acts considered particularly heinous by,
+        usually, permanent (or at least extremely lengthy)
+        imprisonment, or execution. Neither of these are truly
+        options in an MMORPG's political system. Permanent
+        imprisonment would just cause the player to lose interest
+        fairly quickly, and execution (which, unless the game in
+        question has a permadeath system, is not the same as
+        'killing' someone in the game), or, in the case of a game,
+        deletion. Some would not doubt disagree with me, but I
+        believe that limiting punishments of this magnitude to the
+        administrators is wise.
+    </para>
+    </sect1>
+
+
+    <sect1 id="civic_participation">
+    <title>Civic Participation</title>
+    <para>
+        So let's say that by now, you've designed a system that
+        takes all the aforementioned elements into consideration.
+        You've planned out a hierarchy, you've given it some, but
+        not too much, power over the citizenry. You've created
+        external threats or rivals to help bind the citizens
+        together, and you've given the government the power to
+        provide valuable public services, to further create a sense
+        that the government has worth. The citizens are able to
+        regularly voice their approval of disapproval of their
+        leaders, and the leaders stand to lose their jobs if enough
+        citizens disapprove. Perhaps you've created a bureaucracy
+        that is either elected or appointed, and divided up the
+        responsibilities of the government by department (Department
+        of Defence, Department of Interior Security, Department of
+        Newbie Assistance, Department of the Treasury, and so on,
+        for example). What's missing?
+    </para>
+    <para>
+        Civic participation. So far, the only way we've given the
+        citizens themselves a way to take part in politics is by
+        voting, or some other method of expressing favour or
+        disfavour of a leader (for an interesting system in which
+        players announce approval or disapproval of a leader on a
+        daily basis, rather than in a one-time vote, see the MMORPG
+        <ulink url="http://www.darkages.com" >Dark Ages</ulink>.
+        This, however, is not enough.
+    </para>
+    <para>
+        You need to give the citizens opportunities to get involved
+        on a more day to day basis. Perhaps they could work as aides
+        to the officeholders, with some, but not all, of the powers
+        that the officeholders have. Better still, create tasks that
+        any citizen can perform that will help the city. Make it as
+        arbitrary as you need.
+    </para>
+    <para>
+        Maybe your governments need widgets. These widgets are in
+        limited supply around the land, but all governments need the
+        same widgets. Ensure ways exist to recognize the citizens
+        who bring in the most widgets to help his or her government.
+    </para>
+    <para>
+        Bang! You've created the external rivalry I spoke of
+        earlier, you've provided a challenge for the players to
+        overcome, you've made the citizens feel more a part of their
+        'nation' (or whatever), and you've given an opportunity for
+        them to be recognized by their leaders for their work.
+    </para>
+    <para>
+        Another example, specific to the city or city-state type of
+        government, would be creating a rodent problem within the
+        city and setting it up so that an excess of rodents within
+        the city has ill effects for the city (perhaps outbreaks of
+        disease among player- citizens, or a lowering of morale of
+        the NPC population, which would lower economic
+        productivity). The city could offer bounties per rodent,
+        which would likely be an excellent way for small players to
+        help the city and be rewarded financially at the same time.
+        Positive reinforcement.
+    </para>
+    <para>
+        This leads us to the final, basic thing to think about when
+        creating a political system: creating incentives to build
+        successful citizens. By successful, I mean successful from
+        your point of view (i.e. they stay customers of your
+        business and enrich the world in such a way as to cause more
+        people to become customers of your business) and successful
+        from their point of view (i.e., they feel enriched and
+        excited by you world).
+    </para>
+    <para>
+        You can significantly reduce your cost of administration,
+        and increase your rate of newbie retention, by setting up a
+        system that inherently rewards organizations that take good
+        care of its newbies. For instance, if your system has an
+        element that depends upon players voluntarily donating money
+        to their government, it's likely that the cities with more
+        active, competent players will benefit.
+    </para>
+    <para>
+        A word is necessary as to why I strongly advocate allowing
+        player-governments to be responsible for some essential
+        services. The obvious objection is that due to the
+        discontinuous nature of most player's in-game lives (players
+        regularly up and leave the game, take extended absences, and
+        so on), it's dangerous to set up a situation where players
+        are potentially deprived of services they need and desire.
+    </para>
+    <para>
+        My response to this is that a political system shouldn't, in
+        any case, require constant effort and attention on the part
+        of the leaders. There may be benefit to the government if
+        the leaders do work constantly and steadily, but in most
+        cases this is expecting too much. In order to prevent a
+        disruption of services that the players need and want (and
+        in turn prevent your customer service lines from lighting up
+        with complaining customers), simply ensure that more than
+        one person in a government is capable of performing the
+        duties that an office requires, and that in case of
+        emergency, the players have the power, through a special
+        election, or whatever means of selection your system uses,
+        to replace the itinerant leader.
+    </para>
+    </sect1>
+
+
+    <sect1 id="destructive_politics">
+    <title>Destructive Politics</title>
+    <para>
+        I've mainly talked, thus far, about constructive and
+        beneficial politics, but now I want to discuss some major
+        pitfalls, that can lead to destructive politics. These fall
+        mainly into three categories: Overly dynamic politics,
+        overly static politics, and an inability to resolve
+        disputes. I've touched on most of these earlier in the
+        essay, so I will keep this brief.
+    </para>
+    <para>
+        Overly dynamic politics mean that the system is too fluid
+        and changes too frequently. When political leaders are cast
+        in and out of office too often, it becomes difficult for
+        them to establish themselves as opinion leaders, and provide
+        good leadership for the player-citizens. Further, winning an
+        election (or your equivalent of an election) loses meaning
+        to the victor, because he knows he got swept in on today's
+        whim, and probably will be out again on tomorrow's.
+    </para>
+    <para>
+        It also gets tiring and repetitive to the citizens if a new
+        election is taking place every day (note that the
+        aforementioned system of very regularly expressing your
+        preference that Dark Ages uses avoids this, despite frequent
+        'voting'. Real-life systems have never used this on a large
+        scale because of logistical details that are mainly
+        nonexistent in a virtual world).
+    </para>
+    <para>
+        Static politics result from a powerless citizenship, or from
+        a system that makes it too difficult to replace the
+        leadership. This is undesirable because it removes the
+        climbing-the-ladder-of-success aspect (if you can't replace
+        the leadership, then no one new has a shot at climbing the
+        ladder). In practice, this can be created by making the
+        requirements for voting too high.
+    </para>
+    <para>
+        The final major pitfall to avoid is the lack of ability to
+        resolve disputes. This is a well-known pitfall in MMORPGs as
+        regards plot resolution, and the issues involved here are
+        basically the same. Example: World X has a political system
+        whereby the in-game governments can define the voting
+        criteria for its citizens. The government of city A has
+        decided that only those of the Tsol'aa race may vote. This
+        greatly upsets members of the Human, Rajamalan, Horkval, and
+        Dwarven races and they would like to do something about it.
+        Clearly they can't vote the government leaders out, so their
+        only options (short of bribing or convincing the Tsol'aa
+        voters to force their leaders to change their policies) are
+        leaving the organization, unless you institute a way by
+        which a government may be forcibly overthrown via force.
+    </para>
+    <para>
+        Leaving the organization is really not something you want to
+        force the citizens to do in a case like this, because they
+        may be leaving their homes, breaking their psychological
+        attachment to the organization, and so on. These can be very
+        stressful things to do for a player, and can damage his
+        interest in your world.
+    </para>
+    <para>
+        Another example of poor plot resolution would be an
+        experience I had in an MMORPG I designed and run. This world
+        has a system of city-states in the Hellenic style. Two
+        city-states were continually at odds, but the military
+        system had not yet been implemented. One city-state, Ashtan,
+        seemed to be winning most conflicts between players, and
+        generally had high morale. It's primary enemy, Shallam, had
+        somewhat lower morale, due to some internal conflicts that
+        prevented it from gelling as a community. The way the
+        military system was set up, it rewarded those city-states
+        who had very active and devoted governments far more than it
+        rewarded any strategic ability on the part of the generals.
+    </para>
+    <para>
+        In any case, quite soon, Ashtan had conquered probably 10x
+        the amount of revenue-producing land as Shallam, and was
+        literally at the gates of Shallam, ready to take it over. I
+        had not anticipated this would happen that quickly, if ever,
+        and I was caught with my pants down, because I had no way to
+        resolve this. There was no way to "take over" a city, and
+        simply letting Ashtan burn Shallam to the ground was not an
+        acceptable solution. In the end, I had to solve it, rather
+        lamely, by simply nullifying the effects of the system and
+        putting the system on hold while it was redone. Clearly this
+        is just about the worst way to handle plot resolution, as it
+        irritated the victors, and made the losers feel as if they
+        didn't need to try next time, because the administration
+        would rescue them.
+    </para>
+    <para>
+        In retrospect, the major problem was that the Shallam
+        citizens did not care enough. They didn't feel like there
+        was enough reason to care whether they won or lost, and once
+        Ashtan got rolling, the attitude that "We can't do anything
+        about it." quickly prevailed. These were largely the results
+        of an improperly constructed political system. There wasn't
+        enough perceived benefit to being a citizen, and the major
+        benefit that players saw was glory by association (which, of
+        course, doesn't do much for those presently losing a
+        conflict). So, the external threat posed to Shallam by
+        Ashtan wasn't effective, because the citizens of Shallam
+        didn't feel attached to Shallam.
+    </para>
+    <para>
+        Major pitfalls:
+        <itemizedlist>
+        <listitem><para>
+            An overly dynamic system
+        </para></listitem>
+        <listitem><para>
+            An overly static system
+        </para></listitem>
+        <listitem><para>
+            An inability to resolve disputes
+        </para></listitem>
+      </itemizedlist>
+    </para>
+    </sect1>
+
+
+    <sect1 id="conclusion">
+    <title>Conclusion</title>
+    <para>
+        I believe that I've elucidated the fundamental reasons and
+        requirements for having an in-game political system in your
+        MMORPG. It is useful from the administrative point of view
+        because it is something interesting for your players to do,
+        it binds communities together, and it can help reduce the
+        cost of administrative support for newbies. It is viewed as
+        useful to the players because they can achieve glory,
+        because their friends are involved (circular, I know), and
+        because they can gain services they could not otherwise gain
+        through it.
+    </para>
+    <para>
+        On a less practical level, political systems in virtual
+        worlds are fascinating both to the creators and the players.
+        Those in my MMORPG often comment that the intensity of
+        politics are their favourite thing about it.
+    </para>
+    <para>
+        There's something very, well, for lack of a better word,
+        cool, about political interactions. I've watched people who
+        started off as meek, seemingly weak players blossom into
+        lions when the burden of leadership was placed upon them.
+        I've seen problem players become responsible and valued
+        leaders who, through their actions, also improved the
+        experiences of those who followed them. Finally, few
+        conflicts and storylines are more exciting to watch and
+        arouse more passion in the participants than those of
+        nations at odds. Without a political system, all you have is
+        a bunch of informally aligned players clashing. But give
+        these players a formal framework to work within, and
+        suddenly players are making nobler sacrifices and deeper
+        efforts than most of them ever would make if only their own
+        welfare was at stake.
+    </para>
+    <para>
+        This essay has merely scratched the surface I'm sure,
+        particularly as so far, MMORPG political systems have been
+        fairly rudimentary. I have little doubt, however, that as
+        successive generations of MMORPGs are created, politics will
+        become a more integral part of the design process. I expect
+        to see systems with features that have not been tried on any
+        large scale. For instance, systems where the players can,
+        without admin assistance, determine their form of
+        government, be it direct democracy, republicanism,
+        plutocracy (rule by the rich), communism, 
+        anarcho-capitalism, or whatever!
+    </para>
+    <para>
+        Social engineering in virtual communities is already a
+        nascent field of study, and as research into it progresses
+        (certainly beyond the meager scope of this essay), I believe
+        we're going to see these political systems become more
+        sophisticated and more dominant (along with other, somewhat
+        related systems, like economics) in game design. We have the
+        technology. We can build them.
+    </para>
+    </sect1>
+    </article>

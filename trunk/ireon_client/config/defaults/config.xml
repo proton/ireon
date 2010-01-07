@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+  This is default config file for ireon.org client.
+
+  DO NOT CHANGE IT! Set values you need in config/config.xml instead.
+
+  -->
+
+<config>
+	<rootServer>
+		<host>		alpha.ireon.org		</host>
+		<port>		29100							</port>
+	</rootServer>
+
+	<worldServer>
+		<port>		29120							</port>
+	</worldServer>
+
+	<resources>
+		<general>
+			<FileSystem> ../data/ 												</FileSystem>
+			<FileSystem> ../data/models 									</FileSystem>
+			<FileSystem> ../data/models/loc1 							</FileSystem>
+			<FileSystem> ../data/interface 								</FileSystem>
+			<FileSystem> ../data/interface/layouts 				</FileSystem>
+			<FileSystem> ../data/interface/fonts 					</FileSystem>
+			<FileSystem> ../data/interface/schemes 				</FileSystem>
+			<FileSystem> ../data/interface/looknfeel 			</FileSystem>
+			<FileSystem> ../data/materials/scripts				</FileSystem>
+			<FileSystem> ../data/materials/scripts/loc1 	</FileSystem>
+			<FileSystem> ../data/materials/textures				</FileSystem>
+			<FileSystem> ../data/materials/textures/loc1 	</FileSystem>
+			<Zip>				 ../data/packs/morning.zip				</Zip>
+		</general>
+		<PLSM2>
+			<FileSystem> ../data/landscape								</FileSystem>
+			<FileSystem> ../data/landscape/ireon 					</FileSystem>
+			<FileSystem> ../data/landscape/Splat 					</FileSystem>
+		</PLSM2>
+		<ireon>
+			<dir>			../data/zones/					</dir>
+			<dir>			../data/zones/mobs			</dir>
+			<dir>			../data/zones/static		</dir>
+			<dir>			../data/zones/zones			</dir>
+		</ireon>
+	</resources>
+
+
+	<world>
+		<light>
+		  <MainLight>
+		      0.0 1.0 0.0
+		  </MainLight>
+		  <AmbientLight>
+		      0.5 0.5 0.5
+		  </AmbientLight>
+		</light>
+        	<shadows>
+            		true
+        	</shadows>
+		<config>
+			../data/landscape/world.cfg
+		</config>
+		<ZonesDir>
+			../data/zones/
+		</ZonesDir>
+	</world>
+
+	<profile>
+		<!-- no defaults for these -->
+		<login/>
+		<password/>
+	</profile>
+
+	<interface>
+		<dir>
+			../data/interface/
+		</dir>
+		<symbols>
+			абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_-+=|\/ &lt;&gt;,.;:{}[]'"?
+		</symbols>
+	</interface>
+
+</config>

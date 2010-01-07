@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MobPrototype>
+<Option Id="1"/>
+<Option Name="Костяной воин"/>
+<Option Mesh="ch04.mesh"/>
+<Option Scale="-1 1 -1"/>
+</MobPrototype>

@@ -1,0 +1,3 @@
+Import('*')
+
+SConscript(['cvs_tutorial/SConscript','constructive_politics/SConscript','hcds/SConscript'], exports='docBuildEnv')

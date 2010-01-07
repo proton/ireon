@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+  This is default config file for ireon.org cluster manager.
+
+  DO NOT CHANGE IT! Set values you need in config/config.xml instead.
+
+  -->
+
+<config>
+	<!-- this server id -->
+	<id>
+		1
+	</id>
+
+	<!-- world server connections settings -->
+	<wsConnections>
+		<port>
+			29110
+		</port>
+		<maxConnections>
+			20
+		</maxConnections>
+		<wsAddress>
+			127.0.0.1
+		</wsAddress>
+	</wsConnections>
+
+	<!-- connection to root server settings -->
+	<rsConnection>
+		<rsAddress>
+			127.0.0.1
+		</rsAddress>
+		<port>
+			29105
+		</port>
+	</rsConnection>
+
+</config>

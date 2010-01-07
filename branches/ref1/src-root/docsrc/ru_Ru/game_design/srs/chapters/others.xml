@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!--
+others chapter :: ireon srs
+(c) ireon.org, 2004, 2005
+-->
+
+  <chapter id="others">
+    <chapterinfo>
+      <author>
+        <othername>не назначен</othername>
+      </author>
+    </chapterinfo>
+    <title id="others.title">Прочее [пусто]</title>
+    <para>
+    </para>
+
+    <sect1>
+      <title>Графика [пусто]</title>
+      <para>
+      </para>
+
+      <sect2>
+        <title>Виды (от 1-го/3-го лица) [пусто]</title>
+        <para>
+        </para>
+      </sect2>
+      <!-- /Виды -->
+
+
+    </sect1>
+    <!-- /Графика -->
+
+
+    <sect1>
+      <title>Звук [пусто]</title>
+      <para>
+      </para>
+    </sect1>
+    <!-- /Звук -->
+
+
+    <sect1>
+      <title>Интерфейс [пусто]</title>
+      <para>
+      </para>
+
+      <sect2>
+        <title>Меню [пусто]</title>
+        <para>
+        </para>
+      </sect2>
+      <!-- /Меню -->
+
+
+      <sect2>
+        <title>Игровой интерфейс [пусто]</title>
+        <para>
+        </para>
+      </sect2>
+      <!-- /Игровой интерфейс -->
+
+
+      <sect2>
+        <title>Специализированные интерфейсы [пусто]</title>
+        <para>
+        </para>
+
+        <sect3>
+          <title>Интерфейс дома [пусто]</title>
+          <para>
+          </para>
+        </sect3>
+        <!-- /Интерфейс дома -->
+
+
+        <sect3>
+          <title>Интерфейс ратуши [пусто]</title>
+          <para>
+          </para>
+        </sect3>
+        <!-- /Интерфейс ратуши -->
+
+
+        <sect3>
+          <title>Интерфейс гильдии [пусто]</title>
+          <para>
+          </para>
+        </sect3>
+        <!-- /Интерфейс гильдии -->
+
+
+        <sect3>
+          <title>Интерфейс клана [пусто]</title>
+          <para>
+          </para>
+        </sect3>
+        <!-- /Интерфейс клана -->
+
+
+        <sect3>
+          <title>Интерфейс кузнеца [пусто]</title>
+          <para>
+          </para>
+        </sect3>
+        <!-- /Интерфейс кузнеца -->
+
+
+        <sect3>
+          <title>Интерфейс травника [пусто]</title>
+          <para>
+          </para>
+        </sect3>
+        <!-- /Интерфейс травника -->
+
+
+      </sect2>
+      <!-- /Специализированные интерфейсы -->
+
+
+    </sect1>
+    <!-- /Интерфейс -->
+
+
+    <sect1>
+      <title>Целевые системные требования [пусто]</title>
+      <para>
+      </para>
+
+      <sect2>
+        <title>Клиентские требования [пусто]</title>
+        <para>
+        </para>
+      </sect2>
+      <!-- /Клиентские требования -->
+
+
+      <sect2>
+        <title>Серверные требования [пусто]</title>
+        <para>
+        </para>
+      </sect2>
+      <!-- /Серверные требования -->
+
+
+    </sect1>
+    <!-- /Целевые системные требования -->
+
+
+    <sect1>
+      <title>Информация о пользователе через www [пусто]</title>
+      <para>
+      </para>
+    </sect1>
+    <!-- /Информация о пользователе через www -->
+
+
+  </chapter>
+  <!-- /Прочее -->

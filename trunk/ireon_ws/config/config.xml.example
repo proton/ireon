@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfg:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:cfg="http://www.ireon.org/ireon/ws/"
+		xsi:schemaLocation="http://www.ireon.org/ireon/ws/ config.xsd" >
+
+	<wsID>1</wsID>
+
+	<db>
+		<login></login>
+		<password></password>
+	</db>
+
+	<resources>
+		<dir>../data/</dir>
+		<dir>../data/landscape/ireon</dir>
+		<dir>../data/mobs</dir>
+	</resources>
+
+</cfg:config>

@@ -1,0 +1,22 @@
+
+vertex_program DecompressVertex/VP cg
+{
+	source DecompressVertex.cg
+	entry_point main_vp
+	profiles vs_1_1 arbvp1
+}
+
+vertex_program DecompressVertexOnly/VP cg
+{
+	source DecompressVertex.cg
+	entry_point main_vp_only
+	profiles vs_1_1 arbvp1
+}
+
+fragment_program DecompressVertex/FP cg
+{
+	source DecompressVertex.cg
+	entry_point main_fp
+	profiles ps_1_1 arbfp1 fp20
+	//profiles ps_2_a arbfp1
+}

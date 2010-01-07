@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!DOCTYPE article
+  PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+  "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  [
+    <!ENTITY % global.entities SYSTEM
+        "../../../include/global.xml">
+    %global.entities;
+  ]
+>
+
+<!--
+  Attention! If you have your local version of DTD
+  Docbook on your computer, replace this line
+    "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  with this one
+    "file:/path_to_dtd/docbookx.dtd"
+
+  (If you use eDE from e-novative, than replace with this one
+    "file:/c:/docbook/dtd/docbookx.dtd")
+-->
+
+	<article lang="en">
+
+  	<articleinfo>
+
+   	<title>Software Project Management Plan of MMORPG Ireon</title>
+
+    <releaseinfo>Version 1.0.3</releaseinfo>
+
+    <abstract>
+    <para>
+        This Software Project Management Plan (SPMP) describes the 
+        planning, organisation and staffing in all the phases of the 
+        Ireon project.
+    </para>
+   	<para>
+        If you have any questions, feel free to ask them at 
+        project’s <ulink url="http://forum.ireon.org/" 
+        >forum</ulink> or via e-mail <email>input@ireon.org</email>.
+    </para>
+    </abstract>
+
+    <keywordset>
+    <keyword>ireon</keyword>
+    <keyword>spmp</keyword>
+    </keywordset>
+
+    <copyright>
+    	&copyrightinfo;
+    </copyright>
+    <legalnotice>
+    	&legalnotice;
+    </legalnotice>
+  	</articleinfo>
+
+	<sect1 id="intro">
+  	<title id="intro.title">Introduction</title>
+
+  	<sect2 id="project_overview">
+    <title id="project_overview.title">Project overview</title>
+    <para>
+    	General information about the project is available in the 
+    	<ulink url= 
+    	"http://www.ireon.org/en/docs/html/concept.html">Concept 
+    	Document</ulink>.
+    </para>
+  	</sect2>
+  	<!-- /Project overview -->
+
+  	<sect2 id="deliverables">
+  	<title id="deliverables.title">Project deliverables</title>
+  	<para>
+      	The project deliverables are (except source code and 
+      	compiled files in a distribution kit):
+  	</para>
+  	<itemizedlist mark='bullet'>
+  	<listitem>
+  	<para>
+        the Software Project Management Plan (SPMP) &mdash; this 
+        document
+  	</para>
+  	</listitem>
+    <listitem>
+    <para>
+        the Software Quality Assurance Plan (SQAP)
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        the Software Configuration Management Plan (SCMP)
+    </para>
+   	</listitem>
+    <listitem>
+    <para>
+        the Software Requirements Specification (SRS)
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        the Software Design Document (SDD)
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        the Software Test Document (STD)
+    </para>
+    </listitem>
+    </itemizedlist>
+    <para>
+      	Creation of the user's manual is not planned at this time.
+    </para>
+  	</sect2>
+  	<!-- /Project deliverables -->
+
+  	<sect2 id="spmp_support">
+    <title id="spmp_support.title">SPMP support</title>
+    <para>
+    	The SPMP is supported and updated regularly by project's 
+    	leader.
+    </para>
+ 	</sect2>
+ 	<!-- /SPMP support -->
+ 	
+	</sect1>
+	<!-- /Introduction -->
+
+	<sect1 id="project_organization">
+  	<title id="project_organization.title">Project 
+  	organization</title>
+
+  	<sect2 id="process_model">
+    <title id="process_model.title">Process model</title>
+    
+    <sect3 id="developers">
+    <title id="developers.title">The developers</title>
+    <para>
+    	Ireon project is to be developed by volunteers in their free 
+    	time. Most of the work is managed through the Internet. 
+    	Ireon is a non-commercial project, so no wages are to be 
+    	paid. New members of the development team are selected by 
+    	key developers.
+    </para>
+    </sect3>
+    <!-- /The developers -->
+    
+    <sect3 id="dev_process_general">
+    <title id="dev_process_general.title">General description of 
+    development process</title>
+    
+    <sect4 id="iterations">
+    <title id="iterations.title">Iterations</title>
+    <para>
+        An iteration is the core of project's development process. 
+        An iteration is a short cycle that consists of planning, 
+        development, testing, and integration. One iteration usually 
+        is a month long and it ends with a new public release. The 
+        entire development process is a sequence of iterations.
+    </para>
+	<para>
+		Thus, we don't have a single 'launch date'. We constantly 
+		implement new features and release the updates regularly. 
+		There are no 'closed betas' of any kind; all our programs 
+		are available to grab and to test at any given time.
+    </para>
+    <para>
+    <figure id="iteration_en">
+   	<title>Scheme of iteration</title>
+    <graphic fileref="figures/iteration_en.gif"/></figure>
+    </para>
+    <formalpara>
+    <title>Planning</title>
+    <para>
+    	We do not plan for a long time ahead, because we can not 
+    	possibly know what our human resources will be in a, say, 
+    	half a year. We have incremental process, so we plan in 
+    	detail only work for the next two or three iterations.
+    </para>
+    <para>
+    	At the beginning of each iteration programmers estimate in 
+    	days the time needed to resolve each of <ulink 
+    	url="http://bugtraq.ireon.org/report/1">all active 
+    	tickets</ulink>. Then we choose the most urgent ones that 
+    	can be resolved in a month and put them in a <ulink 
+    	url="http://bugtraq.ireon.org/report/15">plan for next 
+    	iteration</ulink>. After that chief programmer defines the 
+    	priorities for the completion of tasks and personally 
+    	assigns them to all available programmers.
+	</para>
+	</formalpara>
+	<formalpara>
+	<title>Development and testing</title>
+	<para>
+		And so the work does begin! Aim is to write any workable 
+		piece of code as soon as possible in order to begin testing 
+		and tuning it based on exact results rather than on 
+		assumptions. Code testing is scheduled to be at the end of 
+		each iteration and is to be a serious stand alone part of 
+		the development process (see <xref 
+		linkend="maintenance" endterm="maintenance.title"/>).
+	</para>
+	</formalpara>
+	<formalpara>
+	<title>Integration</title>
+	<para>
+		When new features are implemented and tested, main game 
+		server is updated and a public release is made. If at the 
+		end of iteration there are still some unresolved tickets, 
+		priority is a scheduled release and unresolved tickets are 
+		carried over to the next iteration. 
+	</para>
+	<para>		
+		After the release new iteration begins and the cycle repeats 
+		again. See also <xref linkend="iteration_dev_scheme" 
+		endterm="iteration_dev_scheme.title"/>.
+	</para>
+	</formalpara>
+    </sect4>
+    <!-- /Iterations -->
+    
+    
+    <sect4 id="phases">
+    <title id="phases.title">Phases</title>
+    <para>
+        A phase is a larger part of the development process that 
+        usually embraces a complex of similar tasks. There are 
+        planning, design, implementation, testing, and support 
+        phases. Each phase consists of several iterations. For 
+        example, during the design phase technical docs went through 
+        compiling-editing-publishing cycle several times.
+    </para>
+	<para>
+		Our development process is continuous, that is, immediately 
+		after the release of the first final version (complete world 
+		with all of the planned features implemented), our team will 
+		go on working on the next version.
+    </para> 
+    <para>
+    	Thus, we will have no distinct testing, implementation, and 
+    	maintenance phases.
+    </para>
+    </sect4>
+    <!-- /Phases -->
+    
+    
+    </sect3>
+    <!-- /Процесс: общее описание -->
+    
+    <sect3 id="phase_design">
+	<title id="phase_design.title">Phase 1: design</title>
+	<para>
+	    Aim of the design phase is to prepare for an implementation 
+	    phase.
+	</para>
+	<formalpara>
+	<title>Requirements development</title>
+	<para>
+	    First part of the design phase is understanding and 
+	    describing of project's 
+	    requirements
+	    (creation of the <ulink 
+	    url="http://www.ireon.org/en/docs/html/srs/index.html" 
+	    >Software Requirements Specification</ulink>). The 
+	    direction and the scope of the project should be defined, as 
+	    well as core gameplay and setting features. The result of 
+	    this phase is to be a 50-60% completed SRS.
+	</para>
+	</formalpara>
+    <para>
+    	<emphasis>We completed design phase in September 
+    	2005.</emphasis>
+    </para>
+    </sect3>
+    <!-- /Phase 1: design -->
+    
+    <sect3 id="phase_development">
+    <title id="phase_development.title">Phase 2: 
+    implementation</title>
+    <para>
+      	Фаза реализации &mdash; то время, когда основные усилия 
+      	разработчиков направлены на написание программного кода 
+      	приложений. На этой фазе инкрементальный процесс выражен 
+      	наиболее сильно &mdash; фаза состоит из большого числа 
+      	итераций.
+    </para>
+    
+    <sect4 id="iteration_dev_scheme"> 
+    <title id="iteration_dev_scheme.title">Development scheme during 
+    an iteration</title>
+    <para>
+        Каждая итерация начинается с выбора <link linkend="board" 
+        endterm="board.title">советом разработчиков</link> задач 
+        на выполнение в этой итерации и проведения детального 
+        проектирования выбранной области. Область выбирается как 
+        некоторая целостная подсистема, которая в течение итерации 
+        должна быть целиком реализована. На эту работу отводится 
+        несколько первых дней итерации.
+   	</para>
+    <para>
+        После завершения детального проектирования начинается этап 
+        реализации. На него отводится примерно треть итерации. В это 
+        время ведется интенсивная работа по написанию кода. 
+        Выпускаются только внутренние релизы для тестирования внутри 
+        команды программистов и ядра команды тестирования.
+    </para>
+    <para>
+        На второй трети итерации к работе подключается команда
+        тестирования. В это время команда программистов должна
+        выпускать не менее одной ревизии в неделю. Эти ревизии
+        предназначаются для команды тестирования и заинтересованных
+        пользователей. На этом этапе работа по написанию нового кода
+        плавно завершается.
+    </para>
+    <para>
+        На последней трети итерации процесс переходит на этап
+        тестирования. В это время не должно писаться кода, все силы
+        разработчиков должны быть направлены на нахождение и
+        устранение ошибок. К участию в тестировании бета-релизов,
+        выпускаемых на этом этапе, будут привлекаться пользователи.
+    </para>
+    <para>
+        Завершается итерация выпуском стабильного релиза.
+    </para>
+    <formalpara>
+    <title>Работа геймдизайнеров и создателей контента</title>
+    <para>
+        В целом, работа команд геймдизайна, моделлеров, художников 
+        ведется вне итерационного процесса. Эти команды создают 
+        артефакты по своему графику, но они должны синхронизировать 
+        свой процесс с итерациями code team. Внесение изменений в 
+        игру разрешается только на первых двух третях итерации. 
+        Например, команда геймдизайна должна быть в постоянном 
+        контакте с командой тестирования для определения 
+        оптимального геймплея. В течение итерации она собирает 
+        предложения по улучшению геймплея, в начале следующей 
+        итерации на этапе детального проектирования эти изменения 
+        обсуждаются и, в случае принятия, реализуются. Аналогично, 
+        вставка любого контента в игру возможна только на первых 
+        двух третях итерации, хотя производство контента ведется 
+        непрерывно.
+    </para>
+    </formalpara>
+    </sect4>
+    <!-- /Development scheme during an iteration -->
+    
+    </sect3>
+    <!-- /Phase 2: implementation -->
+    
+    <sect3 id="maintenance_and_support">
+    <title id="maintenance_and_support.title">Maintenance and 
+    support</title>
+    <para>
+        Каждая итерация фазы реализации будет завершаться выпуском
+        релиза &mdash; продукта, который пока не обладает всей
+        полнотой возможностей. Релизы выпускаются для того, чтобы
+        большой круг пользователей мог реально оценить игру в
+        работе, высказать замечания и пожелания, то есть для
+        обеспечения обратной связи с пользователями. Привлекательная
+        игра ожидается не ранее 10-15 релиза.
+    </para>
+    <para>
+        Более детальную информацию по фазе сопровождения см. в
+        разделе <xref linkend="maintenance"
+        endterm="maintenance.title"/>.
+    </para>
+    </sect3>
+    <!-- /Maintenance and support -->
+    
+    <sect3 id="prerelease_testing">
+    <title id="prerelease_testing.title">Testing forward the final 
+    release</title>
+    <para>
+        Во время каждой итерации некоторое количество рабочего
+        времени отводится на тестирование. Тем не менее, когда
+        проект будет близок к выпуску финальной версии, мы перейдем
+        на фазу тестирования, когда основное внимание во время
+        итераций будет уделяться именно тестированию. Таким образом
+        финальная версия игры будет подготавливаться к выпуску.
+        Первая полноценная версия игры планируется не ранее 20
+        релиза.
+    </para>
+    </sect3>
+    <!-- /Testing forward the final release -->
+    
+  	</sect2>
+  	<!-- /Process model -->
+
+  	<sect2 id="org_structure">
+    <title id="org_structure.title">Organisational structure</title>
+    <para>
+    	Управление проектом организовано иерархически. Существуют 
+    	три уровня: совет разработчиков, ответственные и команды.
+    </para>
+    <para>
+    	Каждый участник проекта должен относиться к какой-либо 
+    	команде или выполнять отдельную роль. Допускается участие в 
+    	нескольких командах одновременно или выполнение роли 
+    	ответственного и участие в команде.
+    </para>
+    <para>
+    	Проект организован как группа команд. Поэтому изначально все 
+    	споры должны решаться большинством голосов внутри команды, 
+    	отвечающей за спорную часть разработки. При невозможности 
+    	решить вопрос внутри команды он выносится на обсуждение в 
+    	совет ведущих разработчиков.
+    </para>
+    
+    <sect3 id="board">
+    <title id="board.title">Board of developers</title>
+    <para>
+        Совет разработчиков является главной движущей частью проекта
+        и его решения обязательны для исполнения всеми. Члены совета
+        определяют направление развития проекта и только совет может
+        кардинально менять принципы, заложенные в проектных
+        документах.
+    </para>
+    <para>
+        Совет разработчиков уполномочен решать все вопросы, для
+        которых не указана явно компетенция ответственного.
+        Например, совет разработчиков уполномочен решать все
+        возникающие финансовые вопросы.
+    </para>
+    <para>
+        Совет разработчиков состоит из лидеров всех команд и лидера
+        проекта. Решения принимаются большинством голосов (>50%). В
+        случае, если ни одно из решений не наберет нужного
+        количества голосов, право принятия решения передается лидеру
+        проекта.
+    </para>
+    </sect3>
+    <!-- /Board of developers -->
+    
+    <sect3 id="org_roles_resp"> 
+    <title id="org_roles_resp.title">Organisational roles and 
+    responsibilities</title>
+    <para>
+    	В команде проекта Иреон существуют ответственные за 
+    	различные направления деятельности. Все ответственные (кроме 
+    	ответственного за сопровождение) выбираются на 
+    	продолжительный срок решением совета разработчиков. Здесь 
+    	представлен список ответственных с объяснением зоны 
+    	ответственности (кроме ответственности за документы, см. 
+    	<xref linkend="docsresp" endterm="docsresp.title"/>).
+    </para>
+    <itemizedlist mark='bullet'>
+    <listitem>
+    <para>
+    	<emphasis>Лидер проекта</emphasis> &mdash; общее 
+    	руководство, поддержание правильного идеологического 
+    	направления развития, слежение за созданием новых 
+    	документов, а также за исполнением указаний уже 
+    	существующих.
+    </para>
+   	</listitem>
+    <listitem>
+    <para>
+        <emphasis>Ответственный за требования</emphasis> &mdash; 
+        общее руководство над созданием требований (например, 
+        &laquo;диздока&raquo;). Сбор пожеланий пользователей и 
+        ознакомление с ними проектировочной команды. Взаимодействие 
+        с командой контроля качества для проведения детального 
+        инспектирования требований. Ответственным за требования 
+        является лидер design team.
+        </para>
+    </listitem>
+    <listitem>
+    <para>
+        <emphasis>Ответственный за сеттинг</emphasis> &mdash; общее 
+        руководство над созданием сеттинга &mdash; описание 
+        монстров, локаций, предметов и т. п. Ответственный за 
+        сеттинг входит в design team.
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        <emphasis>Ответственный за конфигурации</emphasis> &mdash; 
+        поддержание в рабочем состоянии системы управления 
+        конфигурациями, архивирование материалов в соответствии с 
+        планом управления конфигурациями, сборка системы в 
+        исполняемые файлы (возможно, с инсталлятором) для 
+        выкладывания на сайт.
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        <emphasis>Ответственный за реализацию</emphasis> &mdash; 
+        руководство процессом реализации системы, инспектирование 
+        работы (вместе с командой контроля качества), распределение 
+        работы в code team, организация единого пакета инструментов 
+        у разработчиков, организация обучения разработчиков. 
+        Ответственным за реализацию является лидер code team.
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        <emphasis>Ответственный за качество</emphasis> &mdash; 
+        организация инспектирования и тестирования на всем 
+        протяжении работы проекта, сбор информации и анализ данных 
+        bug traq системы. Ответственным за качество является лидер 
+        qa team.
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        <emphasis>Ответственный за сопровождение</emphasis> &mdash; 
+        community manager, консультирует пользователей по форуму или 
+        электронной почте, осуществляет посредничество между 
+        разработчиками и игроками, а также работает вместе с qa team 
+        над устранением ошибок и недочетов.
+    </para>
+    </listitem>
+   	</itemizedlist>
+    </sect3>
+    <!-- /Organisational roles and responsibilities -->
+    
+
+    <sect3 id="teams">
+    <title id="teams.title">Teams</title>
+    <para>
+    	В проекте существует четыре команды разработчиков, у каждой 
+    	команды есть лидер, который отвечает за работу команды перед 
+    	всем остальным проектом.
+    </para>
+    <para>
+    	Задачи команд:
+    </para>
+    <itemizedlist mark='bullet'>
+    <listitem>
+    <para>
+        <emphasis>design team</emphasis> &mdash; эта команда 
+        принимается за работу в первую очередь. В ее обязанности 
+        входит составление документации по проекту. В частности 
+        spmp, srs, scmp. Эта команда определяет видение игры с точки 
+        зрения пользователя, которое уже не будет меняться в ходе 
+        разработки. После завершения работы над спецификацией 
+        требований команда продолжит работу над описанием предметов, 
+        оружия, заклинаний и другого контента.
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        <emphasis>gfx team</emphasis> &mdash; это команда 
+        моделлеров, художников, дизайнеров карт и т. д. Она начинает 
+        свою работу на этапе разработки требований, чтобы снабдить 
+        разрабатываемую спецификацию иллюстрациями к наиболее важным 
+        моментам. Основная доля работы будет приходится на этап 
+        разработки игры, когда эта команда будет должна произвести 
+        полный комплект графических артефактов. В задачи этой 
+        команды разработка документации не входит.
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        <emphasis>code team</emphasis> &mdash; команда, 
+        ответственная за разработку кода игры. Вступает в разработку 
+        в фазе реализации. Команда должна будет помимо исходного 
+        кода и компилированных файлов произвести sdd.
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        <emphasis>qa team</emphasis> &mdash; команда, отвечающая за 
+        качество. Эта команда начинает свою работу с разработки sqap 
+        еще во время разработки srs. После этого, команда должна 
+        проводить инспектирование всей работы (в том числе и по 
+        созданию документации) согласно sqap. Помимо sqap команда 
+        должна будет выпустить std.
+    </para>
+    </listitem>
+    </itemizedlist>
+
+    </sect3>
+    <!-- /Teams -->
+    
+    <para>
+    	Список текущих разработчиков и их роли/обязанности можно 
+    	посмотреть в <ulink url= 
+    	"http://bugtraq.ireon.org/wiki/Management/Team" 
+    	>багтрэке</ulink>.
+    </para>
+    
+  	</sect2>
+  	<!-- /Organisational structure -->
+
+  	<sect2 id="docsresp">
+    <title id="docsresp.title">Ответственность за документы</title>
+    <para>
+      	Ответственность за документы подразумевает под собой 
+      	следующее:
+    </para>
+    <itemizedlist mark='bullet'>
+    <listitem>
+    <para>
+        документ должен быть создан в положенный срок
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        документ должен поддерживаться в актуальном состоянии
+    </para>
+    </listitem>
+    </itemizedlist>
+    
+    <table frame='all'>
+    <title>Ответственность за документы</title>
+    <tgroup cols='8' align='left' colsep='1' rowsep='1'>
+    <tbody>
+    <row>
+       	<entry>Ответственный/документ</entry>
+        <entry align="center">spmp</entry>
+        <entry align="center">sqap</entry>
+        <entry align="center">scmp</entry>
+        <entry align="center">srs</entry>
+        <entry align="center">sdd</entry>
+        <entry align="center">std</entry>
+        <entry align="center">сеттинг</entry>
+   	</row>
+   	<row>
+      	 <entry>лидер проекта</entry>
+         <entry align="center">x</entry>
+         <entry align="center">x</entry>
+         <entry align="center"></entry>
+         <entry align="center"></entry>
+         <entry align="center"></entry>
+         <entry align="center"></entry>
+    </row>
+    <row>
+        <entry>отв за требования</entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center">x</entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+   	</row>
+    <row>
+        <entry>отв за реализацию</entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center">x</entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+    </row>
+    <row>
+        <entry>отв за конфигурации</entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center">x</entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+    </row>
+    <row>
+        <entry>отв за качество</entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center">x</entry>
+        <entry align="center"></entry>
+    </row>
+    <row>
+        <entry>отв за сеттинг</entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center"></entry>
+        <entry align="center">x</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para>
+    	Сокращения названий документов см. в разделе <xref 
+    	linkend="deliverables" endterm="deliverables.title"/>.
+    </para>
+   	</sect2>
+   	<!-- /Ответственность за документы -->
+
+  	<sect2 id="on_money">
+    <title id="on_money.title">Переход проекта на коммерческую 
+    основу</title>
+    <note>
+    <title>Про деньги</title>
+    <para>
+    	Ни сейчас, ни в будущем совет разработчиков не планирует 
+    	переводить проект на коммерческий или частично коммерческий 
+    	уровень. Тем не менее, в связи с большой заинтересованностью 
+    	в этом вопросе вновьприходящих, этот вопрос освещается в 
+    	документе.
+   	</para>
+    </note>
+    <para>
+      	В обозримом будущем переход проекта на частично коммерческую 
+      	основу не предвидится, но в процессе проектирования и 
+      	реализации будут оставлены возможности для добавления 
+      	платного пользования игрой. При этом бесплатное 
+      	использование будет оставлено даже в случае перехода проекта 
+      	в разряд коммерческих. Предпочтительный вариант возможного 
+      	коммерческого использования &mdash; предоставление платных 
+      	дополнительных услуг за дополнительную плату. Конкретные 
+      	предложения о предоставлении платного доступа не будут 
+      	рассматриваться до выпуска относительно стабильной версии 
+      	игры. Вопросы, связанные с коммерческим использованием, 
+      	уполномочен решать <xref linkend="board" 
+      	endterm="board.title"/>.
+    </para>
+  	</sect2>
+  	<!-- /Переход проекта на коммерческую основу -->
+
+	</sect1>
+	<!-- /Организация проекта -->
+
+
+	<sect1 id="managerial_process">
+  	<title id="managerial_process.title">Управляющий процесс</title>
+
+  	<sect2 id="management_objectives_priorities">
+    <title id="management_objectives_priorities.title">Цели и 
+    приоритеты</title>
+    <para>
+      	Высшим приоритетом при управлении проектом является выпуск 
+      	полноценной финальной версии продукта. На втором месте по 
+      	приоритетности стоит достижение высокого качества всех 
+      	артефактов.
+    </para>
+  	</sect2>
+
+  	<sect2 id="monitoring_control_mechanisms">
+    <title id="monitoring_control_mechanisms.title">Механизмы 
+    мониторинга и контроля</title>
+    <para>
+      	Для контроля за работой проекта минимум два раза в неделю 
+      	проводятся общепроектные совещания, на которых
+      	устраивается мозговой штурм по насущным проблемам.
+    </para>
+    <para>
+      	Участие в совещаниях обязательно для участников проекта. О 
+      	невозможности участия следует сообщить заранее.
+    </para>
+    <para>
+    <note><title>Совещания участников проекта</title>
+    <para>
+        Совещания проекта проводятся в irc-сети RusNet.
+	<screen>
+		сеть: RusNet
+		сервер: irc.lucky.net (или любой другой из сети RusNet)
+		порт: 6669
+		канал: #ireon
+	</screen>
+    </para>
+    <para>
+    	<emphasis>Время совещаний</emphasis>: среда, пятница и 
+    	воскресенье, 22:30 &mdash; 24:00 МСК.
+   	</para>
+    <para>
+        <emphasis>Обновление:</emphasis> после начала стадии 
+        реализации отдельные поинтовки более не проводятся, так как 
+        нужда в больших общепроектных совещаниях фактически исчезла: 
+        команда разработчиков столь мала, что все вопросы гораздо 
+        оперативнее решаются тет-а-тет через ICQ. Однако канал 
+        открыт круглосуточно &mdash; и в случае необходимости 
+        общепроектного совещания нам есть куда податься.
+    </para>
+    <para>
+        ПО для доступа к IRC-сетям можно найти, например, на <ulink 
+        url="http://www.mirc.com">www.mirc.com</ulink>. Также у нас 
+        есть <ulink 
+        url="http://bugtraq.ireon.org/wiki/Tutorials/IRC" >урок 
+        (туториал) по IRC</ulink>.
+    </para>
+    </note>
+    </para>
+    
+    <para>
+    	Рабочие группы могут устраивать свои отдельные совещания по 
+    	выбранному графику.
+    </para>
+    <para>
+    	Для членов команды, проживающих в Москве, предусматриваются 
+    	очные поинтовки, которые проходят по договоренности. 
+    	Результаты этих поинтовок выкладываются 
+    	для прочтения на форум.
+    </para>
+    
+    <sect3 id="point_leader">
+   	<title id="point_leader.title">Роль ответственного за проведение 
+   	поинтовок</title>
+    <para>
+        На каждую поинтовку (онлайновую и офлайновую) назначается
+        ведущий. Ведущий выбирается на каждой поинтовке для
+        следующей. Ведущий отвечает за продуктивное ведение встречи,
+        а также за документирование решений.
+    </para>
+   	<itemizedlist mark='opencircle'>
+    <title>Обязанности ведущего поинтовки:</title>
+    <listitem>
+    <para>
+        Подготовка к проведению:
+    <itemizedlist mark='bullet'>
+    <listitem>
+    <para>
+      	выбор основной темы и информирование о ней остальных 
+      	участников;
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        разработка предложений по теме, которые послужат отправной 
+        точкой для дискуссии;
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        составление плана встречи с временем на обсуждение каждой 
+        темы.
+    </para>
+    </listitem>
+    </itemizedlist>
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        слежение за соблюдением плана дискуссии (по темам и 
+        времени);
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+        конспектирование результатов и решений.
+    </para>
+    </listitem>
+    </itemizedlist>
+    </sect3>
+    <!-- /Роль ответственного за проведение поинтовок -->
+    
+  	</sect2>
+	<!-- /Механизмы мониторинга и контроля -->
+
+	</sect1>
+	<!-- /Управляющий процесс -->
+
+	<sect1 id="technical_process">
+  	<title id="technical_process.title">Technical process</title>
+
+  	<sect2 id="methods">
+    <title id="methods.title">Methods</title>
+    <para>
+    	Основные элементы стратегии разработки, необходимые для
+    	успешной работы проекта:
+    </para>
+    <itemizedlist>
+    <listitem><para>
+    	<emphasis>Открытый исходный код</emphasis> позволяет быстрее 
+    	получать комментарии, критические замечания, исправления и 
+    	дополнения от добровольцев, формально не являющихся 
+    	участниками проекта. Поэтому весь код будет выпускаться под 
+    	лицензией <ulink url="http://www.gnu.org/copyleft/gpl.html" 
+    	>GPL</ulink>. Таким образом, продукты ireon.org &mdash; 
+    	<ulink 
+    	url="http://opensource.org/docs/certification_mark.php" >OSI 
+    	Certified Open Source Software</ulink>.
+   </para>
+   <para>
+    	Кроме того, аналогичный подход применяется ко всем областям 
+    	разработки: дизайну, текстам (документация распространяется 
+    	по лицензии <ulink 
+    	url="http://www.gnu.org/licenses/fdl.html" >GNU Free 
+    	Documentation License</ulink>), контенту и т. д.
+    </para></listitem>
+    <listitem><para>
+    	<emphasis>Использование</emphasis> максимально возможного 
+    	числа <emphasis>готовых компонентов</emphasis>, доступных с 
+    	учетом лицензирования, позволит получать результаты быстрее, 
+    	качественнее и без существенных затрат ресурсов. Так, для 
+    	графики используется движок <ulink 
+    	url="http://www.ogre3d.org">OGRE 3D</ulink> и т. д. Полный 
+    	список используемых компонентов сторонних разработчиков 
+    	можно посмотреть на <ulink 
+    	url="http://bugtraq.ireon.org/wiki/Dependencies" 
+    	>специальной странице в вики</ulink>.
+    </para></listitem>
+    <listitem><para>
+    	<emphasis>Атмосфера разработки</emphasis>, способствующая 
+    	обмену знаниями и идеями, включению новичков в команду, 
+    	проявлению творческих способностей участников проекта. 
+    	Поддерживается благодаря большому поличеству средств 
+    	взаимодействия: icq, форуму, <ulink 
+    	url="http://bugtraq.ireon.org/" >багтрэку</ulink>, <ulink 
+    	url="http://wiki.ireon.org/" >вики</ulink> и <ulink 
+    	url="http://bugtraq.ireon.org/wiki/Tutorials/IRC" 
+    	>чату</ulink>.
+    </para></listitem>
+    </itemizedlist>
+   	</sect2>
+   	<!-- /Methods -->
+
+  	<sect2 id="tools_and_techniques">
+    <title id="tools_and_techniques.title">Инструменты и 
+    технологии</title>
+    <para>
+      	Для производства игры будут применяться различные 
+      	инструменты и технологии. Клиент игры должен будет 
+      	поддерживать платформу Windows &mdash; Windows XP, а сервера 
+      	работать на платформе FreeBSD (конкретные версии и прочие 
+      	требования к аппаратному и программному обеспечению будут 
+      	установлены в дальнейшей документации).
+    </para>
+    <para>
+      	Исходный код проекта будет написан на языке С++. Для его 
+      	компиляции в Win32 будет использоваться компилятор MS Visual 
+      	C++ 2003 и выше, для *nix-платформ &mdash; gcc 3.4 и выше. 
+      	Код будет максимально совместимым со стандартами языка (для 
+      	уменьшения условной компиляции и повышения переносимости), 
+      	но для определенных мест допускается условная компиляция в 
+      	целях повышения производительности.
+    </para>
+    <para>
+      	Для контроля над версиями используется система SVN 
+      	(более подробно см. <ulink 
+      	url="http://www.ireon.org/ru/docs/html/scmp.html" >план 
+      	управления конфигурациями</ulink>). Также в работе для 
+      	коммуникации между разработчиками используется большое число 
+      	онлайновых инструментов, например, багтрэк, форум, вики, чат 
+      	и т. д.
+    </para>
+    <note>
+   	<title>Про linux</title>
+	<para>
+	    Обеспечение межплатформенной переносимости не является 
+	    задачей команды, тем не менее, мы сделаем все возможное, 
+	    чтобы облегчить потенциальный перенос. Также, если найдется 
+	    человек, готовый быть ответственным за перенос на linux 
+	    клиента, мы с радостью возьмем его в команду.
+	</para>
+    </note>
+  	</sect2>
+  	<!-- /Инструменты и технологии -->
+
+  	<sect2 id="maintenance">
+    <title id="maintenance.title">Сопровождение</title>
+    <para>
+    	Для сопровождения программы будет выделяться определенный 
+    	человек из code team. Его прямой обязанностью будет 
+    	исправление найденных багов в текущих релизах и поддержка 
+    	пользователей (через e-mail и форум). Пока проект не наберет 
+    	большое число участников, ответственный за сопровождение 
+    	будет совмещать работу над разработкой релиза и 
+    	сопровождение. Ответственный за сопровождение будет 
+    	выбираться каждый раз перед началом кодирования на этапе 
+    	планирования каждого нового релиза. В дальнейшем будет 
+    	организована отдельная команда сопровождения.
+    </para>
+    <para>
+      	QA team во время первой фазы разработки каждого релиза 
+      	(проектирования и начальной стадии кодирования) продолжает 
+      	заниматься инспектированием выпущенного предыдущего релиза. 
+      	Таким образом даже уже выпущенный стабильный релиз 
+      	продолжает улучшаться и выпускаются новые ревизии с 
+      	исправленными ошибками. Работа по выпуску этих релизов лежит 
+      	на ответственном за сопровождение (команде сопровождения).
+    </para>
+  	</sect2>
+  	<!-- /Сопровождение -->
+
+	</sect1>
+	<!-- /Технический процесс -->
+
+
+	<sect1 id="schedule_and_budget">
+  	<title id="schedule_and_budget.title">План-график и 
+  	бюджет</title>
+
+  	<sect2 id="resources">
+    <title id="resources.title">Потребности в ресурсах</title>
+    <para>
+    	После выпуска первого релиза появилась необходимость в 
+    	общедоступном игровом сервере. Для этих целей в настоящее 
+    	время используется сервер, предоставленный проекту компанией 
+    	<ulink url="http://www.smartbit.ru">СмартБит</ulink>.
+    </para>
+    <para>
+      	Все средства, которые расходует проект, являются личными 
+      	добровольными пожертвованиями разработчиков. Участие в 
+      	команде не требует пожертвований, равно как и пожертвования 
+      	не требуют участия в команде. В дальнейшем планируется 
+      	организовать сбор средств в виде пожертвований через 
+      	различные платежные системы.
+    </para>
+  	</sect2>
+  	<!-- /Потребности в ресурсах -->
+
+  	<sect2 id="schedule">
+    <title id="schedule.title">План-график</title>
+    
+    <!--
+    <note>
+    <para>
+        На сайте выложен более подробный <ulink
+        url="http://wiki.ireon.org/index.php/Roadmap"
+        >план разработки</ulink>.
+    </para>
+    </note>
+    -->
+    <para>
+      	Фаза реализации началась с сентября 2005 года. На этот 
+      	момент концептуальная часть дизайна была завершена на 50-60% 
+      	(см. <ulink url= 
+      	"http://www.ireon.org/ru/docs/html/srs/index.html" 
+      	>спецификацию требований</ulink>). Разработка требований, 
+      	определение деталей геймдизайна продолжаются и сейчас.
+    </para>
+    <para>
+    	Выпуск первых играбельных релизов планируется в 2008 году.
+    </para>
+    <para>
+      	Основные вехи разработки проекта представлены графически в 
+      	<ulink url="http://www.ireon.org/docs/img/timeline.gif" 
+      	>timeline</ulink>. История проекта освещена в <ulink 
+      	url="http://wiki.ireon.org/index.php/Project_history" 
+      	>летописи</ulink>.
+    </para>
+  	</sect2>
+  	<!-- /План-график -->
+
+	</sect1>
+	<!-- /План-график и бюджет -->
+
+	</article>
+	<!-- /План управления программным проектом -->

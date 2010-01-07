@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!--
+magic chapter :: ireon srs
+(c) ireon.org, 2004 &mdash; 2006
+-->
+
+  <chapter id="magic">
+    <chapterinfo>
+      <!-- <author>
+        <othername>не назначен</othername>
+      </author> -->
+    </chapterinfo>
+    <title id="magic.title">Магия [пусто]</title>
+    <para>
+    </para>
+
+  </chapter>
+  <!-- /Магия -->

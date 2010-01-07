@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+<Window Type="DefaultGUISheet" Name="RootMenu" >
+<Property Name="Position" Value="x:0 y:0" />
+<Property Name="Size" Value="w:1 h:1" />
+<Window Type="TaharezLook/FrameWindow" Name="RootMenu/CharactersList" >
+<Property Name="CloseButtonEnabled" Value="False" />
+<Property Name="DragMovingEnabled" Value="True" />
+<Property Name="SizingEnabled" Value="False" />
+<Property Name="TitlebarEnabled" Value="True" />
+<Property Name="TitlebarFont" Value="Tahoma-12" />
+<Property Name="Position" Value="x:0.1 y:0.2" />
+<Property Name="Size" Value="w:0.8 h:0.6" />
+<Property Name="Text" Value="Главный сервер" />
+<Window Type="TaharezLook/StaticText" Name="RootMenu/CharactersList/Text" >
+<Property Name="Position" Value="x:0.10 y:0.08" />
+<Property Name="Size" Value="w:0.8 h:0.1" />
+<Property Name="BackgroundEnabled" Value="false" />
+<Property Name="FrameEnabled" Value="false" />
+<Property Name="HorzFormatting" Value="HorzLeftAligned" />
+<Property Name="VertFormatting" Value="VertCentered" />
+<Property Name="Text" Value="Твои персонажи" />
+</Window>
+<Window Type="TaharezLook/MultiColumnList" Name="RootMenu/CharactersList/List" >
+<Property Name="Position" Value="x:0.03 y:0.15" />
+<Property Name="Size" Value="w:0.94 h:0.65" />
+<Property Name="SortSettingEnabled" Value="False" />
+<Property Name="SelectionMode" Value="RowSingle" />
+</Window>
+<Window Type="TaharezLook/Button" Name="RootMenu/CharactersList/SelectCharacterButton" >
+<Property Name="Position" Value="x:0.08 y:0.85" />
+<Property Name="Size" Value="w:0.25 h:0.08" />
+<Property Name="Text" Value="Выбрать" />
+</Window>
+<Window Type="TaharezLook/Button" Name="RootMenu/CharactersList/AddCharacterButton" >
+<Property Name="Position" Value="x:0.40 y:0.85" />
+<Property Name="Size" Value="w:0.25 h:0.08" />
+<Property Name="Text" Value="Создать нового" />
+</Window>
+<Window Type="TaharezLook/Button" Name="RootMenu/CharactersList/RemoveCharacterButton" >
+<Property Name="Position" Value="x:0.70 y:0.85" />
+<Property Name="Size" Value="w:0.25 h:0.08" />
+<Property Name="Text" Value="Удалить" />
+</Window>
+</Window>
+</Window>
+</GUILayout>

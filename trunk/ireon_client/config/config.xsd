@@ -1,0 +1,126 @@
+﻿<?xml version="1.0"?>
+
+<xsd:schema
+		targetNamespace="http://www.ireon.org/ireon/client/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:cfg="http://www.ireon.org/ireon/client/" >
+
+	<xsd:element name="config" type="cfg:CPCConfig" />
+
+	<xsd:complexType name="CPCConfig">
+		<xsd:all>
+			<xsd:element name="net" type="cfg:CNet" minOccurs="0" />
+			<xsd:element name="resources" type="cfg:CResources" minOccurs="0" />
+			<xsd:element name="world" type="cfg:CWorldSettings" minOccurs="0" />
+			<xsd:element name="profile" type="cfg:CProfile" minOccurs="0" />
+			<xsd:element name="_interface" type="cfg:CInterfaceSettings" minOccurs="0" />
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="CNet">
+		<xsd:all>
+			<xsd:element name="rootServer" type="cfg:CRootServer" minOccurs="0"  />
+			<xsd:element name="worldServer" type="cfg:CWorldServer" minOccurs="0" />
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="CRootServer">
+		<xsd:all>
+			<xsd:element name="ip" type="cfg:CIPv4Address" default="127.0.0.1" minOccurs="0"/>
+			<xsd:element name="port" type="cfg:CPort" default="29100" minOccurs="0"/>
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="CWorldServer">
+		<xsd:all>
+			<xsd:element name="port" type="cfg:CPort" default="29120" minOccurs="0"/>
+		</xsd:all>
+	</xsd:complexType>
+
+
+	<xsd:simpleType name="CIPv4Address">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="CPort">
+		<xsd:restriction base="xsd:unsignedShort">
+			<xsd:minInclusive value="1025"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:complexType name="CWorldSettings">
+		<xsd:all>
+			<xsd:element name="light" type="cfg:CLightSettings" minOccurs="0" />
+			<xsd:element name="worldPath" type="xsd:normalizedString" minOccurs="0" default="../data/landscape/world.cfg" />
+			<xsd:element name="proto" type="cfg:CProtoSettings" minOccurs="0"  />
+		    
+			<xsd:element name="dataPath" type="xsd:normalizedString" minOccurs="0" default="../data/" />
+		    <xsd:element name="player" type="cfg:CPlayerSettings" minOccurs="0" />
+		</xsd:all>
+	</xsd:complexType>
+
+
+    <xsd:complexType name="CProtoSettings">
+		<xsd:all>
+		  <xsd:element name="directory" type="xsd:normalizedString" minOccurs="0" default="../data/proto/" />
+		  <xsd:element name="loadAll" type="xsd:boolean" minOccurs="0" default="true" />
+		</xsd:all>
+	</xsd:complexType>
+	
+    <xsd:complexType name="CPlayerSettings">
+		<xsd:all>
+			<xsd:element name="mesh" type="xsd:normalizedString" minOccurs="0" default="ninja.mesh" />
+		</xsd:all>
+	</xsd:complexType>
+	
+	<xsd:complexType name="CLightSettings">
+		<xsd:all>
+			<xsd:element name="main" type="xsd:normalizedString" default="0.2 0.18 0.2" />
+			<xsd:element name="ambient" type="xsd:normalizedString" default="0.5 0.5 0.5 1" />
+			<xsd:element name="shadows" type="cfg:CShadowSettings"  minOccurs="0" />
+		</xsd:all>
+		<xsd:attribute name="enabled" type="xsd:boolean" use="optional" default="true"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="CShadowSettings">
+		<xsd:all>
+			<xsd:element name="colour" type="xsd:normalizedString" default="0.5 0.5 0.5"/>
+		</xsd:all>
+		<xsd:attribute name="enabled" type="xsd:boolean" use="optional" default="true"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="CProfile">
+		<xsd:all>
+			<xsd:element name="login" type="xsd:normalizedString"/>
+			<xsd:element name="password" type="xsd:normalizedString"/>
+			<xsd:element name="registration" type="xsd:boolean" minOccurs="0" default="true"/>
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="CInterfaceSettings">
+		<xsd:sequence>
+			<xsd:element name="dir" type="xsd:normalizedString" minOccurs="0" default="../data/interface" />
+			<xsd:element name="symbols" type="xsd:string" minOccurs="0" default="str" />
+			<xsd:element name="script" type="cfg:CResourceItem" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="CResources">
+		<xsd:sequence>
+			<xsd:element name="resource" type="cfg:CResourceItem" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="CResourceItem">
+	    <xsd:simpleContent>
+	      <xsd:extension base="xsd:string">
+			<xsd:attribute name="category" type="xsd:string" use="required"/>
+			<xsd:attribute name="type" type="xsd:string" use="required"/>
+	      </xsd:extension>
+	    </xsd:simpleContent>
+	</xsd:complexType>
+
+</xsd:schema>

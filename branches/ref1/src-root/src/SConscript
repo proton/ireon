@@ -1,0 +1,126 @@
+Import('baseEnv')
+
+codeBaseEnv = baseEnv.Copy()
+
+codeBaseEnv['CPPPATH']=['#include/common/', '#include/']
+
+if (codeBaseEnv['_debugMode']) :
+	codeBaseEnv['LIBPATH']=['#lib/release/']
+	if (codeBaseEnv['platform_'] == 'win32') :
+		codeBaseEnv['CPPDEFINES']=['_DEBUG']
+		codeBaseEnv['LINKFLAGS']=['/DEBUG']
+	else :
+		codeBaseEnv['CPPDEFINES']=['DEBUG']
+#       codeBaseEnv['LINKFLAGS']=['/DEBUG']
+else:
+	codeBaseEnv['LIBPATH']=['#lib/debug/']
+
+
+if (codeBaseEnv['platform_'] == 'win32') :
+	codeBaseEnv.Append (CCFLAGS = ['/Od', '/Gm', '/EHsc', '/RTC1', '/MDd', '/W4', '/c', '/Wp64', '/ZI', '/TP'])
+	codeBaseEnv.Append (LINKFLAGS = ['/SUBSYSTEM:CONSOLE', '/MACHINE:X86'])
+	codeBaseEnv.Append (CPPDEFINES = ['WIN32', '_CONSOLE'])
+elif (codeBaseEnv['platform_'] == 'posix') :
+	codeBaseEnv.Append (CCFLAGS = ['-g'])
+	codeBaseEnv.Append (CPPDEFINES = 'UNIX')
+	codeBaseEnv.Append (CPPPATH = ['/usr/local/include/', '/usr/include'])
+	codeBaseEnv.Append(LIBPATH = ['/usr/local/lib/', '/usr/lib/']);
+	codeBaseEnv.Append(LIBS = ['stdc++', 'intl', 'iconv', 'pthread'])
+
+
+# -------------------------------------------------------------------------------
+# ---- cdata test ---------------------------------------------------------------
+# -------------------------------------------------------------------------------
+
+testBuildEnv = codeBaseEnv.Copy()
+testBuildEnv['_targetName'] = 'cdata_test'
+testBuildEnv['_buildDir'] = str(codeBaseEnv['buildRoot_']) + '/' + testBuildEnv['_targetName'] + '/'
+testBuildEnv.BuildDir(testBuildEnv['_buildDir'], '#src/', duplicate = 0)
+
+testBuildEnv.Append (CPPPATH = ['#include/tests/'])
+if (testBuildEnv['platform_'] == 'win32') :
+	testBuildEnv.Append(LIBS = 'unit_test_framework.lib');
+elif (testBuildEnv['platform_'] == 'posix') :
+	testBuildEnv.Append(LIBS = ['boost_unit_test_framework'])
+
+testBuildEnv.Alias(testBuildEnv['_targetName'], testBuildEnv.Program(testBuildEnv['_buildDir']+testBuildEnv['_targetName'],[ \
+			testBuildEnv['_buildDir']+'common/net/tests/data_test.cpp', \
+
+			testBuildEnv['_buildDir']+'common/net/data.cpp', \
+
+			testBuildEnv['_buildDir']+'common/file/file.cpp', \
+			testBuildEnv['_buildDir']+'common/file/fs.cpp', \
+			testBuildEnv['_buildDir']+'common/file/directory.cpp', \
+
+			testBuildEnv['_buildDir']+'common/log/log.cpp', \
+
+			testBuildEnv['_buildDir']+'common/kernel/crc.cpp' \
+			]))
+
+
+# -------------------------------------------------------------------------------
+# ---- ogre types library -------------------------------------------------------
+# -------------------------------------------------------------------------------
+
+ogretypesBuildEnv = codeBaseEnv.Copy()
+
+ogretypesBuildEnv['_targetName'] = 'ogre_types'
+ogretypesBuildEnv['_buildDir'] = str(codeBaseEnv['buildRoot_']) + '/' + ogretypesBuildEnv['_targetName'] + '/'
+ogretypesBuildEnv.BuildDir(ogretypesBuildEnv['_buildDir'], '#src/', duplicate = 0)
+
+ogretypesBuildEnv.Append (CPPPATH = ['#include/common/OgreTypes/'])
+if (ogretypesBuildEnv['platform_'] == 'posix') :
+	ogretypesBuildEnv.Append (CPPDEFINES = ['EXT_HASH']);
+
+ogretypesBuildEnv.Alias(ogretypesBuildEnv['_targetName'], ogretypesBuildEnv.StaticLibrary(ogretypesBuildEnv['_buildDir']+ogretypesBuildEnv['_targetName'],[ \
+			ogretypesBuildEnv['_buildDir']+'common/OgreTypes/OgreAxisAlignedBox.cpp', \
+			ogretypesBuildEnv['_buildDir']+'common/OgreTypes/OgreColourValue.cpp', \
+			ogretypesBuildEnv['_buildDir']+'common/OgreTypes/OgreMath.cpp', \
+			ogretypesBuildEnv['_buildDir']+'common/OgreTypes/OgreMatrix3.cpp', \
+			ogretypesBuildEnv['_buildDir']+'common/OgreTypes/OgreMatrix4.cpp', \
+			ogretypesBuildEnv['_buildDir']+'common/OgreTypes/OgrePlane.cpp', \
+			ogretypesBuildEnv['_buildDir']+'common/OgreTypes/OgreQuaternion.cpp', \
+			ogretypesBuildEnv['_buildDir']+'common/OgreTypes/OgreString.cpp', \
+			ogretypesBuildEnv['_buildDir']+'common/OgreTypes/OgreStringConverter.cpp', \
+			ogretypesBuildEnv['_buildDir']+'common/OgreTypes/OgreStringVector.cpp', \
+			ogretypesBuildEnv['_buildDir']+'common/OgreTypes/OgreVector2.cpp', \
+			ogretypesBuildEnv['_buildDir']+'common/OgreTypes/OgreVector3.cpp' \
+			]))
+
+
+# -------------------------------------------------------------------------------
+# ---- server ode library -------------------------------------------------------
+# -------------------------------------------------------------------------------
+
+#serverodeBuildEnv = codeBaseEnv.Copy()
+#
+#serverodeBuildEnv['_targetName'] = 'ogreode'
+#serverodeBuildEnv['_buildDir'] = str(codeBaseEnv['buildRoot_']) + '/' + serverodeBuildEnv['_targetName'] + '/'
+#serverodeBuildEnv.BuildDir(serverodeBuildEnv['_buildDir'], '#src/', duplicate = 0)
+#
+#serverodeBuildEnv.Append (CPPPATH = ['#include/common/OgreTypes/', 'include/common/OgreOde', \
+#										'include/common/OgreOde/OgreOde', 'include/ireon_client/Ogre/main', \
+#										'include/ireon_client/Ogre/paging_landscape'])
+#if (serverodeBuildEnv['platform_'] == 'win32') :
+#	serverodeBuildEnv.Append(CPPDEFINES = ['_WINDOWS', '_USRDLL', 'OGREODE_EXPORTS']);
+#elif (serverodeBuildEnv['platform_'] == 'posix') :
+#	serverodeBuildEnv.Append (CPPDEFINES = ['EXT_HASH', '_USRDLL', 'OGREODE_EXPORTS']);
+#
+#serverodeBuildEnv.Alias(serverodeBuildEnv['_targetName'], serverodeBuildEnv.StaticLibrary(serverodeBuildEnv['_buildDir']+serverodeBuildEnv['_targetName'],[ \
+#			serverodeBuildEnv['_buildDir']+'common/OgreOde/OgreOdeBody.cpp', \
+#			serverodeBuildEnv['_buildDir']+'common/OgreOde/OgreOdeCollision.cpp', \
+#			serverodeBuildEnv['_buildDir']+'common/OgreOde/OgreOdeDebugObject.cpp', \
+#			serverodeBuildEnv['_buildDir']+'common/OgreOde/OgreOdeEigenSolver.cpp', \
+#			serverodeBuildEnv['_buildDir']+'common/OgreOde/OgreOdeGeometry.cpp', \
+#			serverodeBuildEnv['_buildDir']+'common/OgreOde/OgreOdeJoint.cpp', \
+#			serverodeBuildEnv['_buildDir']+'common/OgreOde/OgreOdeMaintainedList.cpp', \
+#			serverodeBuildEnv['_buildDir']+'common/OgreOde/OgreOdeMass.cpp', \
+#			serverodeBuildEnv['_buildDir']+'common/OgreOde/OgreOdeMeshInformer.cpp', \
+#			serverodeBuildEnv['_buildDir']+'common/OgreOde/OgreOdeSpace.cpp', \
+#			serverodeBuildEnv['_buildDir']+'common/OgreOde/OgreOdeStepper.cpp', \
+#			serverodeBuildEnv['_buildDir']+'common/OgreOde/OgreOdeUtility.cpp', \
+#			serverodeBuildEnv['_buildDir']+'common/OgreOde/OgreOdeWorld.cpp'
+#			]))
+
+
+SConscript(['ireon_client/SConscript', 'ireon_rs/SConscript', 'ireon_cm/SConscript', 'ireon_ws/SConscript'], exports='codeBaseEnv')

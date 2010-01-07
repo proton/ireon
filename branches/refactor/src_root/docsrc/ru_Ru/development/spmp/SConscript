@@ -1,0 +1,10 @@
+Import('*')
+
+documentCategory_ = 'development'
+thisDocument_ = 'spmp'
+lang_ = 'ru_Ru'
+
+# now execute template to do actual work
+execfile(docBuildEnv.Dir('#').get_abspath()+'/docsrc/generic_template.py')
+execfile(docBuildEnv.Dir('#').get_abspath()+'/docsrc/xhtml_article_template.py')
+execfile(docBuildEnv.Dir('#').get_abspath()+'/docsrc/pdf_template.py')

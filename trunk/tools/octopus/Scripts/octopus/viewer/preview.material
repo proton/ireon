@@ -1,0 +1,23 @@
+material preview/01_-_Default
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.207843 0.854902 0.878431
+			diffuse 0.584314 0.815686 0.309804
+			specular 0.0 0.0 0.0 0
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override false
+			shading gouraud
+			colour_write on
+		}
+	}
+}

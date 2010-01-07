@@ -1,0 +1,287 @@
+How to build ireon.org from sources
+===================================
+
+
+Contents
+----------
+  1. Requirements
+  2. Build Process Basics
+  3. Docs Compilation
+  4. Where You Can Find Help
+
+
+1. Requirements
+---------------
+  To compile a project you are going to need this soft:
+
+   * C++ compilator:
+   	 Microsoft Visual C++, release 8.0 (2005) or higher
+   * additional libraries:
+     boost (http://www.boost.org/)
+     Ogre3d (http://www.ogre3d.org/)
+     RakNet (http://rakkarsoft.com/)
+     gettext (http://www.gnu.org/software/gettext/)
+     Python (http://www.python.org/), release 2.3 or higher
+     {build tool needs it in order to work)
+     Java 2 Platform, Standard Edition (J2SE), release 1.4 or higher
+     (you will need it in order to render docs)
+     http://java.sun.com/j2se/corejava/index.jsp
+
+  Make sure that Java and Python paths are set in PATH environment
+  variable.
+
+
+2. Build Process Basics
+-----------------------
+  Build process is powered by build tool called SCons
+  (http://www.scons.org). It is included in this distributive
+  (src_root/build/scons/scons.py) as well as certain additional
+  utilities. One should run SCons from a src_root directory (this
+  file is inside that directory) with following command:
+
+      python build/scons/scons.py here_target
+
+
+3. Docs Rendering
+-----------------
+  The provided project documentation is in xml format
+  (http://www.w3.org/XML/) in a docbook notation
+  (http://docbook.org/). An advantage of such an approach is that
+  the users can render the files to almost any format. The
+  disadvantage of it is that the documentation should be first
+  rendered from the initial files. Our project supplies a number of
+  utilities that make rendering docs to xhtml and pdf formats easy.
+  Rendering docs to other formats right now is left for users to
+  take care of.
+
+  We prepared a number of scripts to ease the process of docs
+  rendering, so that it will take only three commands to enter to
+  compile them.
+
+  3.1 Utilities Setup
+  -------------------
+
+  The full set of utilities for the docs compiling takes 8MB of free
+  space. That's why we separated it into basic and full packs. Basic
+  pack allows you to render all of the docs in html. Full pack
+  allows you to render docs in pdf too.
+
+
+  Run this command to download and install basic pack :
+
+      python build/scons/scons.py install-prereqs-docbook-html
+
+  Run this command to download and install full pack :
+
+  		python build/scons/scons.py install-prereqs-docbook
+
+  The files will be downloaded from our website (if you have
+  firewall, don't forget to permit this to scons). Then the files
+  will be installed in src_root/build/docbook/ directory.
+
+
+  Basic pack features:
+
+      * xslt saxon processor
+      * dtd docbook
+      * xsl-files for renders
+      * special xsl-files of ireon.org project
+      * a set of additional images for xhtml
+
+  Full pack additionally features:
+
+  		* FOP (Formatting Objects Processor)
+      * set of fonts for FOP
+
+  A total of 1.5 to 2Mb will be downloaded for a basic pack and 8MB
+  for a full pack.
+
+
+  You'll need to run this command only once. As soon as the setup is
+  done you can render docs any number of times.
+
+  If you do not get any error reports during this stage, you can
+  proceed to the next one.
+
+  Utilities update
+  ----------------
+
+  For an update of utilities run the sane commands you were sing to
+  download and install them. Only the updated files will be
+  downloaded.
+
+  3.2 Docs Rendering
+  ------------------
+  Run this command to compile docs:
+
+      python build/scons/scons.py <target>
+
+  where instead of <target> you should insert one of the targets
+  described below. Like this one:
+
+      python build/scons/scons.py docs-development docs-chronicles
+
+  or you can just use this one
+
+      python build/scons/scons.py docs
+
+  to compile the whole documentation.
+
+  Targets tree:
+  -------------
+  + docs
+  | all of the docs
+  |
+  |- + docs-development
+  |  | development process docs
+  |
+  | -+ docs-development-scmp
+  |  | software configuration management plan
+  |
+  |- + docs-development-spmp
+  |  | software process management plan
+  |
+  |- + docs-game_design
+  |  | game design docs
+  |
+  |- + docs-game_design-concept
+  |  | concept document
+  |
+  |- + docs-game_design-game_basics
+  |  | game basics document
+  |
+  |- + docs-game_design-chronicles
+  |  | ireon world chronicles
+  |
+  |- + docs-game_design-srs
+  |  | software requirements specification
+  |
+  |- + docs-game_design-world_guide
+  |  | game locations description
+  |
+  |- + docs-papers
+  |  | additional docs and papers
+  |
+  |- + docs-papers-cvs_tutorial
+  |  | short tutorial on cvs using
+  |
+  |- + docs-papers-constructive_politics
+  |  | Matthew Mihaly's article about politics in MMORPG in Russian
+
+  For each target you can add -html or -pdf suffix in case you need
+  only html or pdf to be compiled. For example, running this command
+
+  		python build/scons/scons.py docs-development-pdf
+
+  will result in compiling pdf versions of all development docs
+  (make sure you have a full pack installed in order to do that).
+
+  If everything goes OK, the compiled docs will be in subdirectories
+  of src_root/build/output/<os>/doc directories, where <os> is your
+  operating system type. For example, for Windows the directory is
+  going to be src_root/build/output/win32/doc.
+
+  If you need to compile docs for a web site, you can
+  integrate support of Orphus - an interactive spellcheck
+  system. You simply put 'buildForSite=1' ahead of your <target>.
+  For example, like this:
+
+  scons buildForSite=1 docs-development-proposal-html
+
+  3.3 Docs Setup
+  --------------
+
+  If you are not going to recompile docs, we recommend you to
+  install it to the "docs" directory of the root of distributive.
+  You can do it by running this command
+
+  		python build/scons/scons.py install-<target>
+
+  where <target> is the target you compiled in the previous step.
+  For example, if you compiled docs by runnins this command
+
+  		python build/scons/scons.py docs-html
+
+  you can install it by running this command
+
+      python build/scons/scons.py install-docs-html
+
+4. Programs Compilation
+-----------------------
+
+  4.1 Libs compilation
+  --------------------
+
+    4.1.1 Ogre
+    *	You are going to need these Ogre projects to compile libs:
+
+    	aterialUpgrader
+      MeshUpgrader
+      OgreGUIRenderer
+      PlatformManager_Win32
+      Plugin_BSPSceneManager
+      Plugin_OctreeSceneManager
+      Plugin_CgProgramManager
+      Plugin_ParticleFX
+      XMLConverter
+      plus one or two projects beginning with
+      RenderSystem_
+
+      Also you will need PagingLandScapeSceneManager plugin, which
+      is on of Ogre add-ons. Its download and install instructions
+      you may find here:
+
+      		http://www.ogre3d.org/wiki/index.php/Paging_Scene_Manager
+
+      Before you start the compiling of it, copy to its directory
+      modified files which you can find at our repository in
+      lib/Ogre directory. With these files you'll get plugin as a
+      static library.
+
+     4.1.2. gettext
+
+     4.1.3. boost
+       From the boost library you are going to need only
+       boost.python. Run bjam program in a root directory of boost
+       SDK to copmpile it:
+
+         bjam --with-python -sPYTHON_VERSION=X.X
+              -sPYTHON_ROOT=dir -sTOOLS=tools
+
+       where X.X is your Python version (e.g. 2.4), dir is a way to
+       python directory (e.g. c:/Python24), tools is a set of
+       instruments for compilation. For Visual Studio 7.1 this is
+       vc-7_1. Full list you can get at boost documentation
+       (Getting started sections).
+
+
+  4.2. Заголовочные файлы
+  -----------------------
+    Скопируйте заголовочные файлы библиотек в директории проекта:
+     * src_root/include/common/RakNet
+     * src_root/include/common/gettext
+     * src_root/include/common/boost
+     * src_root/include/common/Python
+     * src_root/include/ireon_client/Ogre/main
+        сюда нужно скопировать заголовочные файлы из
+        OgreMain/include
+     * src_root/include/ireon_client/Ogre/paging_landscape
+        сюда нужно скопировать заголовочные файлы плагина
+        PagingLandScape
+     * src_root/include/ireon_client/CEGUI
+        Crazy Eddie's GUI входит в состав dependencies для Ogre
+
+
+5. Where You Can Find Help
+--------------------------
+  We will be glad to answer all of your questions concerning the
+  project at our forum or irc channel:
+    * forum - http://forum.ireon.org/
+    * irc channel - #ireon, net of "rus-net"
+
+  Also feel free to e-mail us:
+    * help-build@ireon.org
+
+
+$Id: README_EN 129 2005-10-23 00:02:39 +0400 (Р’СЃ, 23 РѕРєС‚ 2005)
+zak$

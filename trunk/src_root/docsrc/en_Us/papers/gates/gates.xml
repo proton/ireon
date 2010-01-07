@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!DOCTYPE article
+  PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+  "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  [
+    <!ENTITY % global.entities SYSTEM
+        "../../../include/global.xml">
+    %global.entities;
+  ]
+>
+
+<article lang="en">
+
+  <articleinfo>
+
+    <title>Gates and keys</title>
+    <subtitle>
+
+    </subtitle>
+    <author>
+      <firstname>Mike</firstname>
+      <surname>Rozak</surname>
+    </author>
+
+    <copyright>
+        <holder>Mike Rozak</holder>
+    </copyright>
+
+    <legalnotice>
+      <para>
+        All rights reserved.
+      </para>
+    </legalnotice>
+
+    <abstract>
+      <para> <ulink url=
+      "http://www.mxac.com.au/drt/GatesAndKeys.htm" 
+      >Gates and keys</ulink></para>
+    </abstract>
+
+    </articleinfo>
+
+
+    <para>
+    	<ulink url= "http://www.mxac.com.au/drt/GUT.htm" >Avatar 
+    	games</ulink> segment their worlds so that players can't 
+    	enter portions of the world without completing specific 
+    	tasks. Designers do this to ensure that new geography 
+    	content is gradually opened the user throughout the life of 
+    	the game, <emphasis>preventing the user from experiencing 
+    	all the geography content at the game's outset</emphasis>, 
+    	thereby weakening the experience. (Character abilities, such 
+    	as spells, are also <ulink url= 
+    	"http://www.mxac.com.au/drt/SubGameVariation.htm" >gradually 
+    	unlocked</ulink> throughout the game.)
+    </para>
+    <para>
+    	I just thought I'd spend some time listing different styles 
+    	of gates and keys. First, the most common mechanisms:
+    	<itemizedlist>
+        <listitem><para>
+          <emphasis>Doors</emphasis>
+          	<itemizedlist>
+            <listitem><para>
+            	Locked, requiring a <emphasis>key</emphasis> 
+            	(found/acquired somewhere else) to unlock.
+            </para></listitem>
+        	<listitem><para>
+        		Locked, with a <ulink url= 
+"http://www.mxac.com.au/drt/PuzzlesProblemSolving.htm" 
+				>puzzle-based</ulink> locking mechanism.
+        	</para></listitem>
+            </itemizedlist>
+        </para></listitem>
+        <listitem><para>
+          <emphasis>Guard</emphasis> &mdash; Instead of a locked 
+          door, the way is obstructed by a guard who won't let 
+          characters pass without the proper conditions. Some games 
+          allow guards to be killed, negating the need for players 
+          to meet the conditions.
+        </para></listitem>
+        <listitem><para>
+          <emphasis>Monsters</emphasis> &mdash; Monsters create a 
+          "fuzzy" lock that's based on the player character's level. 
+          Killing monsters not only "unlocks" the gate, but requires 
+          action from the player and provides rewards such as loot 
+          an XP.
+        </para></listitem>
+      </itemizedlist>
+    </para>
+    <para>
+    	Some solutions that restrict world access that 
+    	<emphasis>aren't exactly gate-and-key</emphasis>:
+    	<itemizedlist>
+        <listitem><para>
+          	<emphasis>Cost</emphasis> &mdash; Travelling to the new 
+          	area incurs a cost.
+          	<itemizedlist>
+            <listitem><para>
+            	<emphasis>Resources</emphasis> &mdash; Money to pay 
+            	for a train ticket.
+            </para></listitem>
+        	<listitem><para>
+            	<emphasis>Time</emphasis> &mdash; Crossing the 
+            	barrier takes real time:
+            		<itemizedlist>
+            		<listitem><para>
+            			<emphasis>Non-play time</emphasis> &mdash; 
+            			The player is told to leave and come back 
+            			tomorrow, by which point the character will 
+            			have gotten to its destination.
+            		</para></listitem>
+        			<listitem><para>
+        				<emphasis>Play time</emphasis> &mdash; The 
+        				player must sit around and wait.
+        					<itemizedlist>
+            				<listitem><para>
+            					<emphasis>Make-work</emphasis> 
+            					&mdash; Sometimes a non-game 
+            					activity is required, like making 
+            					the character run for a kilometre 
+            					(holding down the 'W' key for 10 
+            					minutes).
+            				</para></listitem>
+      						</itemizedlist>
+        			</para></listitem>
+      				</itemizedlist>
+            </para></listitem>
+      		</itemizedlist>
+        </para></listitem>
+        <listitem><para>
+          	<emphasis>Choices</emphasis> &mdash; The player cannot 
+          	move across the barrier without making choices:
+          		<itemizedlist>
+        		<listitem><para>
+        			<emphasis>Swimming</emphasis> &mdash; The 
+        			character cannot carry armour or much weight.
+        		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Tight corridor</emphasis> &mdash; The 
+        			amount of weight the character can carry is 
+        			limited.
+        		</para></listitem>
+      			</itemizedlist>
+        </para></listitem>
+        <listitem><para>
+        	<emphasis>Hidden/obscured</emphasis>
+        		<itemizedlist>
+        		<listitem><para>
+        			<emphasis>Hidden doors</emphasis> &mdash; 
+        			Players only get through hidden doors if they 
+        			(a) notice the appropriate clue, (b) are 
+        			meticulous and always search for secret doors, 
+        			(c) read the game walkthrough, or (d) are told 
+        			by a NPC where to look.
+        		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Inaccessible</emphasis> &mdash; 
+        			Players can't get to the location until a NPC 
+        			informs the player of the location. The location 
+        			isn't even on the map (or menu).
+        		</para></listitem>
+      			</itemizedlist>
+        </para></listitem>
+        <listitem><para>
+        	<emphasis>Obstacles</emphasis> &mdash; For the player to 
+        	get to the new section of the world, they must overcome 
+        	a non-trivial obstacle, in the form of a sub-game:
+        		<itemizedlist>
+        		<listitem><para>
+        			<emphasis>Climbing</emphasis> &mdash; A climbing 
+        			game.
+        		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Jumping</emphasis> &mdash; A jumping 
+        			game, with moving platforms and whatnot.
+        		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Maze</emphasis> &mdash; The gateway 
+        			isn't exactly locked. It's just difficult to 
+        			find one's way through.
+        		</para></listitem>
+      			</itemizedlist>
+        </para></listitem>
+        <listitem><para>
+        	<emphasis>Preparation</emphasis> &mdash; The player 
+        	cannot pass without proper preparation:
+        		<itemizedlist>
+        		<listitem><para>
+        			<emphasis>Skills</emphasis> &mdash; The 
+        			character can't pass without the appropriate 
+        			skill level. Since skills are often chosen by 
+        			the player, this becomes a resource allocation 
+        			problem.
+        		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Underwater</emphasis> &mdash; Proper 
+        			water-breathing spells/potions must be acquired.
+        		</para></listitem>
+      			</itemizedlist>
+        </para></listitem>
+        <listitem><para>
+        	<emphasis>Risks</emphasis> &mdash; Travelling to the new 
+        	area is dangerous:
+        		<itemizedlist>
+        		<listitem><para>
+        			<emphasis>Monsters</emphasis>
+        		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Traps</emphasis>
+        		</para></listitem>
+      			</itemizedlist>
+        </para></listitem>
+        <listitem><para>
+        	<emphasis>State</emphasis> &mdash; The place is a "state 
+        	of being" that results in a different perception of the 
+        	same world.
+        		<itemizedlist>
+        		<listitem><para>
+        			<emphasis>Alternate reality</emphasis> &mdash; 
+        			When the player puts on the ring of 
+        			invisibility, they enter the world of shadows, 
+        			which is half reality, and half filled with 
+        			previously invisible creatures.
+        		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Different perspective</emphasis> 
+        			&mdash; If a player character gets knighted, all 
+        			the NPCs in the game suddenly treat the player 
+        			differently.
+         		</para></listitem>
+        		<listitem><para>
+        			<emphasis>Events</emphasis> &mdash; The "place" 
+        			is an event. For example: The "place" is a dance 
+        			where all the NPCs gather in a specific place 
+        			and time. Unless the player knows the exact 
+        			place and time, they won't experience the dance.
+        		</para></listitem>
+      			</itemizedlist>
+        </para></listitem>
+        <listitem><para>
+          	<emphasis>Timing</emphasis> &mdash; The door only opens 
+          	at specific times, such as a full moon.
+        </para></listitem>
+      </itemizedlist>
+    </para>
+
+    </article>

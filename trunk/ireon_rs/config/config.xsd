@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<xsd:schema
+		targetNamespace="http://www.ireon.org/ireon/rs/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:cfg="http://www.ireon.org/ireon/rs/" >
+
+	<xsd:element name="config" type="cfg:CRSConfig" />
+
+	<xsd:complexType name="CRSConfig">
+		<xsd:all>
+			<xsd:element name="requiredClientVersion" type="cfg:CClientVersion" minOccurs="0" />
+			<xsd:element name="playerConnectionsListener" type="cfg:CPlayerListener" minOccurs="0" />
+			<xsd:element name="wsConnectionsListener" type="cfg:CWSListener" minOccurs="0" />
+			<xsd:element name="db" type="cfg:CDBconnection" />
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="CPlayerListener">
+		<xsd:all>
+			<xsd:element name="port" type="cfg:CPort" minOccurs="0" default="29100" />
+			<xsd:element name="maxConnections" type="cfg:CConnectionsNumber" minOccurs="0" default="10" />
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="CWSListener">
+		<xsd:all>
+			<xsd:element name="port" type="cfg:CPort" minOccurs="0" default="29105" />
+			<xsd:element name="maxConnections" type="cfg:CConnectionsNumber" minOccurs="0" default="2" />
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="CClientVersion">
+		<xsd:all>
+			<xsd:element name="major" type="xsd:unsignedByte" default="0" />
+			<xsd:element name="minor" type="xsd:unsignedByte" default="1" />
+			<xsd:element name="release" type="xsd:unsignedShort" default="4" />
+			<xsd:element name="build" type="xsd:unsignedShort" default="50" />
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="CDBconnection">
+		<xsd:all>
+			<xsd:element name="ip" type="cfg:CIPv4Address" minOccurs="0" default="127.0.0.1" />
+			<xsd:element name="port" type="cfg:CPort" minOccurs="0" default="3306" />
+			<xsd:element name="login" type="xsd:normalizedString" />
+			<xsd:element name="password" type="xsd:normalizedString" />
+			<xsd:element name="schema" type="xsd:normalizedString" minOccurs="0" default="rs" />
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:simpleType name="CIPv4Address">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="CPort">
+		<xsd:restriction base="xsd:unsignedShort">
+			<xsd:minInclusive value="1025"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:simpleType name="CConnectionsNumber">
+		<xsd:restriction base="xsd:unsignedByte">
+			<xsd:minInclusive value="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

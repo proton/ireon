@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+<Window Type="DefaultGUISheet" Name="MainMenu" >
+<Property Name="Position" Value="x:0 y:0" />
+<Property Name="Size" Value="w:1 h:1" />
+<Window Type="TaharezLook/FrameWindow" Name="MainMenu/ConnectWindow" >
+<Property Name="CloseButtonEnabled" Value="False" />
+<Property Name="DragMovingEnabled" Value="True" />
+<Property Name="SizingEnabled" Value="False" />
+<Property Name="Text" Value="Подключение" />
+<Property Name="TitlebarEnabled" Value="True" />
+<Property Name="TitlebarFont" Value="Tahoma-12" />
+<Property Name="Position" Value="x:0.25 y:0.15" />
+<Property Name="Size" Value="w:0.5 h:0.4" />
+<Property Name="BackgroundEnabled" Value="false" />
+
+	<!-- ============================================================ -->
+
+	<Window Type="TaharezLook/StaticText" Name="MainMenu/ConnectWindow/ServerHostText" >
+	<Property Name="FrameEnabled" Value="False" />
+	<Property Name="Text" Value="Сервер" />
+	<Property Name="Position" Value="x:0.03 y:0.25" />
+	<Property Name="Size" Value="w:0.2 h:0.1" />
+	<Property Name="BackgroundEnabled" Value="false" />
+	</Window>
+	<Window Type="TaharezLook/Editbox" Name="MainMenu/ConnectWindow/HostEdit" >
+	<Property Name="MaxTextLength" Value="1073741823" />
+	<Property Name="Text" Value="" />
+	<Property Name="Position" Value="x:0.25 y:0.25" />
+	<Property Name="Size" Value="w:0.4 h:0.1" />
+	</Window>
+
+	<!-- ============================================================ -->
+
+	<Window Type="TaharezLook/StaticText" Name="MainMenu/ConnectWindow/ServerPortText" >
+	<Property Name="FrameEnabled" Value="False" />
+	<Property Name="Text" Value="Порт" />
+	<Property Name="Position" Value="x:0.69 y:0.25" />
+	<Property Name="Size" Value="w:0.2 h:0.1" />
+	<Property Name="BackgroundEnabled" Value="false" />
+	</Window>
+	<Window Type="TaharezLook/Editbox" Name="MainMenu/ConnectWindow/PortEdit" >
+	<Property Name="MaxTextLength" Value="5" />
+	<Property Name="Text" Value="" />
+	<Property Name="Position" Value="x:0.82 y:0.25" />
+	<Property Name="Size" Value="w:0.13 h:0.1" />
+	</Window>
+
+	<!-- ============================================================ -->
+
+<Window Type="TaharezLook/StaticText" Name="MainMenu/ConnectWindow/LoginText" >
+<Property Name="Text" Value="Аккаунт" />
+<Property Name="Position" Value="x:0.03 y:0.40" />
+<Property Name="Size" Value="w:0.2 h:0.1" />
+<Property Name="FrameEnabled" Value="False" />
+<Property Name="BackgroundEnabled" Value="false" />
+</Window>
+<Window Type="TaharezLook/StaticText" Name="MainMenu/ConnectWindow/PasswordText" >
+<Property Name="Text" Value="Пароль" />
+<Property Name="Position" Value="x:0.03 y:0.55" />
+<Property Name="Size" Value="w:0.2 h:0.1" />
+<Property Name="FrameEnabled" Value="False" />
+<Property Name="BackgroundEnabled" Value="false" />
+</Window>
+<Window Type="TaharezLook/Editbox" Name="MainMenu/ConnectWindow/LoginEdit" >
+<Property Name="MaxTextLength" Value="1073741823" />
+<Property Name="MouseCursorImage" Value="set:TaharezLook image:MouseTextBar" />
+<Property Name="Text" Value="" />
+<Property Name="Position" Value="x:0.25 y:0.40" />
+<Property Name="Size" Value="w:0.7 h:0.1" />
+</Window>
+<Window Type="TaharezLook/Editbox" Name="MainMenu/ConnectWindow/PasswordEdit" >
+<Property Name="MaxTextLength" Value="1073741823" />
+<Property Name="MouseCursorImage" Value="set:TaharezLook image:MouseTextBar" />
+<Property Name="Text" Value="" />
+<Property Name="Position" Value="x:0.25 y:0.55" />
+<Property Name="Size" Value="w:0.7 h:0.1" />
+</Window>
+<Window Type="TaharezLook/Checkbox" Name="MainMenu/ConnectWindow/CheckBox" >
+<Property Name="Text" Value="Создать аккаунт" />
+<Property Name="Position" Value="x:0.1 y:0.67" />
+<Property Name="Size" Value="w:0.8 h:0.1" />
+</Window>
+<Window Type="TaharezLook/Button" Name="MainMenu/ConnectWindow/Button" >
+<Property Name="Position" Value="x:0.35 y:0.80" />
+<Property Name="Size" Value="w:0.3 h:0.15" />
+<Property Name="Text" Value="Пошёл" />
+</Window>
+</Window>
+
+	<Window Type="TaharezLook/FrameWindow" Name="MainMenu/NewsWindow" >
+		<Property Name="CloseButtonEnabled" Value="False" />
+		<Property Name="DragMovingEnabled" Value="False" />
+		<Property Name="SizingEnabled" Value="False" />
+		<Property Name="Text" Value="Новости проекта" />
+		<Property Name="TitlebarEnabled" Value="True" />
+		<Property Name="TitlebarFont" Value="Tahoma-12" />
+		<Property Name="Position" Value="x:0.25 y:0.60" />
+		<Property Name="Size" Value="w:0.5 h:0.35" />
+		<Property Name="BackgroundEnabled" Value="false" />
+
+		<!-- ============================================================ -->
+
+		<Window Type="TaharezLook/StaticText" Name="MainMenu/NewsWindow/NewsText" >
+			<Property Name="FrameEnabled" Value="True" />
+			<Property Name="Text" Value="текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст " />
+			<Property Name="Position" Value="x:0.1 y:0.2" />
+			<Property Name="Size" Value="w:0.8 h:0.7" />
+			<Property Name="BackgroundEnabled" Value="false" />
+			<Property Name="VertScrollbar" Value="True" />
+			<Property Name="VertFormatting" value="TopAligned" />
+			<Property Name="HorzFormatting" value="WordWrapLeftAligned" />
+			<Property Name="UnifiedAreaRect" Value="{{0.2,0.0},{0.2,0.0},{0.6,0.0},{0.9,0.0}}" />
+		</Window>
+
+		<!-- ============================================================ -->
+
+	</Window>
+</Window>
+</GUILayout>

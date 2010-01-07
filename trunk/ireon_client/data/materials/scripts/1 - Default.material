@@ -1,0 +1,15 @@
+
+material 1 - Default
+{
+	technique
+	{
+		pass
+		{
+
+			texture_unit
+			{
+				texture cube.jpg
+			}
+		}
+	}
+}

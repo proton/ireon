@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Zone>
+<Static Id="1" Position="-50 0 -80" Rotation="0.85" />
+<Static Id="1" Position="-60 0 -100" Rotation="0" />
+<Static Id="2" Position="-35 0 -95" Rotation="0" />
+<Static Id="5" Position="-50 0 -85" Rotation="2.5" />
+<Static Name="Mill" Position="-30 0 -130" Rotation="-1" />
+<Static Name="Tree01" Position="-25 0 -120" Rotation="0" />
+<Static Name="Tree01" Position="-50 0 -130" Rotation="0" />
+</Zone>

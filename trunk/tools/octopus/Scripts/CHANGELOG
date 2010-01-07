@@ -1,0 +1,13 @@
+28 Jul 2006
+* Octopus now handles instancing of meshes (affects .mesh and .scene export)
+  - Only one mesh is exported for a set of instances.
+  - The mesh is determined by the first instance (of a set of instances) encountered
+    in the scene or selection set.
+
+09 Mar 2005
+* adjusted to latest dotScene format
+* new persistent settings (octopusScript.ini): units scale, temporary XML file policy and flip Y/Z
+* adjusted to latest dotLink format ("complex" is now "actor")
+* fixed various issues with Y/Z flipping and relative coordinates for dotScene
+* fixed various issues with Y/Z flipping and relative coordinates for dotXODE
+

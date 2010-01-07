@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!--
+magic chapter :: ireon srs
+(c) ireon.org, 2004, 2005
+-->
+
+  <chapter id="magic">
+    <chapterinfo>
+      <author>
+        <othername>не назначен</othername>
+      </author>
+    </chapterinfo>
+    <title id="magic.title">Магия [пусто]</title>
+    <para>
+    </para>
+
+    <sect1>
+      <title>Школа 1 [пусто]</title>
+      <para>
+      </para>
+
+      <sect2>
+        <title>Особенности [пусто]</title>
+        <para>
+        </para>
+      </sect2>
+      <!-- /Особенности -->
+
+
+      <sect2>
+        <title>Каталог заклинаний [пусто]</title>
+        <para>
+        </para>
+      </sect2>
+      <!-- /Каталог заклинаний -->
+
+
+    </sect1>
+    <!-- /Школа 1 -->
+
+
+  </chapter>
+  <!-- /Магия -->

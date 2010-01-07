@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!DOCTYPE article
+  PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+  "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  [
+    <!ENTITY % global.entities SYSTEM
+        "../../../include/global.xml">
+    %global.entities;
+  ]
+>
+
+<!--
+  Attention! If you have your local version of DTD
+  Docbook on your computer, replace this line
+    "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  with this one
+    "file:/path_to_dtd/docbookx.dtd"
+
+  (If you use eDE from e-novative, than replace with this one
+    "file:/c:/docbook/dtd/docbookx.dtd")
+-->
+
+	<article lang="en">
+
+  	<articleinfo>
+
+    <title>Concept Document of MMORPG Ireon</title>
+
+    <releaseinfo>Version 1.2.1</releaseinfo>
+
+    <abstract>
+    <para>
+        This document describes Ireon's gameplay in short.
+    </para>
+    <para>
+        If you have any questions, feel free to ask them at
+        project’s <ulink url="http://forum.ireon.org/"
+        >forum</ulink> or via e-mail <email>input@ireon.org</email>.
+    </para>
+    </abstract>
+
+    <keywordset>
+    	<keyword>ireon</keyword>
+    	<keyword>concept</keyword>
+    </keywordset>
+
+    <copyright>
+    	&copyrightinfo;
+    </copyright>
+    <legalnotice>
+    	&legalnotice_en;
+    </legalnotice>
+  	</articleinfo>
+
+  	<sect1 id="intro">
+    <title id="intro.title">Introduction</title>
+    <para>
+    </para>
+    <para>
+        Ireon is a three-dimensional multiplayer online RPG for the
+        Windows operational system on a PC platform. Game action is
+        going to take place in a fantasy world where players would
+        live in a virtual community.
+    </para>
+    <para>
+        The project is open for anyone interested in development and 
+        it is <ulink 
+        url="http://www.fsf.org/licensing/essays/free-sw.html" 
+        >free</ulink> for all.
+    </para>
+  	</sect1>
+  	<!-- /Introduction -->
+
+    <sect1 id="design_philosophy">
+    <title id="design_philosophy.title">Game design 
+    philosophy</title>
+    <para>
+        Game design philosophy is described in the <ulink
+        url="http://www.ireon.org/en/docs/html/proposal.html"
+        >Proposal</ulink>. In short its aim is to provide gameplay
+        for players of different types and styles, whether they like
+        fights and ratings, or socializing, roleplaying, and
+        exploring the world.
+    </para>
+    <para>
+        The game should support possible (and probable) change of
+        player's interests during his living in a virtual world. It
+        should provide convenient mechanisms for such a change and
+        for a interaction and co-existence of players of different
+        types in common areas.
+    </para>
+    <para>
+        Thus game environment should constrain and restrict players
+        to a minimal extent while encouraging positive and
+        productive gameplay.
+    </para>
+    </sect1>
+    <!-- /Game design philosophy -->
+
+    <sect1 id="game_description">
+    <title id="game_description.title">Game description</title>
+
+    <sect2 id="genre">
+    <title id="genre.title">Genre</title>
+    <para>
+        Three-dimensional fantasy online multiplayer RPG (MMORPG).
+    </para>
+    </sect2>
+    <!-- /Genre -->
+
+    <sect2 id="physics_view_control">
+    <title id="physics_view_control.title">Game physics, view and 
+    control</title>
+    <para>
+        All game actions will take place in real time
+        three-dimensional area, the only exceptions being some
+        special interface actions such as crafting or exchange of
+        goods.
+    </para>
+    <para>
+        There will be first-person and third-person views in the 
+        game. The player will be able to switch between the two 
+        views. Third-person view will have the sufficient mobility, 
+        the player will be able to change the angle of view, a 
+        direction and a distance to the character.
+    </para>
+    <para>
+        The player will operate the character using a 
+        'point-and-click' system. Thus player will move the cursor 
+        on the screen and choose a place he wants the character to 
+        go or a character to attack. In a similar way player gets 
+        access to in-game menus and other interface elements. 
+        Keyboard control of character character will also be 
+        provided.
+    </para>
+    </sect2>
+    <!-- /Game physics, view and control -->
+
+    <sect2 id="setting">
+    <title id="setting.title">Setting</title>
+
+    <sect3 id="game_world">
+    <title id="game_world.title">Game world</title>
+    <para>
+        Ireon is a medieval fantasy world. Game will take place at
+        Novalia isles (Novalia itself and a small 'satellite'
+        Fjornell isle to the south). There will be no 'locations' in
+        the game, the player will be able to move through all
+        accessible world seamlessly.
+    </para>
+    <para>
+        In Ireon 'real' creatures such as men and wolves will
+        co-exist with fantasy ones such as orcs and dryads.
+        Landscapes will vary from deadly mires and dense forests to
+        vast plains and mountains. Novalia isle is divided into
+        several regions by large rivers.
+    </para>
+    </sect3>
+    <!-- /Game world -->
+
+    <sect3 id="scenario">
+    <title id="scenario.title">Scenario</title>
+    <para>
+        There would be no scenario in the game as such. The player
+        will not be obliged to accomplish a certain chain of actions
+        to be able to play. There will be only a prehistory of the
+        world that would explain why everything in the world is as
+        it is.
+    </para>
+    <para>
+        It is possible, however, that sometime in future server's
+        administration will carry out certain large events, that are
+        going to 'advance' history and a world state.
+    </para>
+    <para>
+        There will be minor quests in game, that will serve mainly
+        as means of character development and money supply.
+        The quests in our game are not main attractions for players,
+        who would hopefully spend more time interacting with other
+        players rather than with the mobs. Team quests are given
+        much larger priority, than single person ones.
+    </para>
+    <para>
+        The quests are going to be mostly of fedex-type variety.
+        Players will be able to get assignments from certain npcs.
+        It is possible that some quests will be organized in chains,
+        so they become mini-scenarios.
+    </para>
+    </sect3>
+    <!-- /Scenario -->
+
+    <sect3 id="states">
+    <title id="states.title">States</title>
+    <para>
+        There are four states at Novalia: Gillimor, Yiala, Kharum,
+        and Elbra. Each state consists of one or more towns and
+        surrounding territories. Characters of different races (see
+        below) live in each of the states. There is also a concept
+        of citizenship in our world &mdash; when character becomes a
+        citizen of a state, that state provides him services
+        (protection, discount at state-owned shops, etc.) in
+        exchange for certain duties and obligations such as paying
+        taxes.
+    </para>
+    <para>
+        Each state has its own unique style, architecture, and
+        culture. Gillimor is a typical medieval kingdom, while in
+        Kharum there are more close-to-nature barbarians (though
+        they are considered barbarians only in Gillimor). Yiala is a
+        technocracy-like state, where science is almost a religion.
+        City-state of Elbra is a shelter for criminals of all kinds.
+        In a centre of Novalia isle there are Neutral lands, where
+        player characters without citizenship can live in a free
+        town of Allberg.
+    </para>
+    <para>
+        Gillimor and Kharum are at war with each other, Yiala is
+        neutral (as well as Neutral lands under Yiala's
+        protectorate), while citizens of Elbra are not welcome
+        anywhere.
+    </para>
+    </sect3>
+    <!-- /States -->
+
+    </sect2>
+    <!-- /Setting -->
+
+    <sect2 id="roleplay">
+    <title id="roleplay.title">Roleplay</title>
+
+    <sect3 id="races">
+    <title id="races.title">Races</title>
+    <para>
+        There are four playable races, that player can choose from
+        for his characters: humans, dwarves, orcs, and elves. Each
+        race has some unique features and predispositions to certain
+        activities. The place of first appearance of a player
+        character in a game world depends on its race. AI-controlled
+        characters will react differently to characters of different
+        races, though fundamental possibility of any action does not
+        depend on character's race. Races actually have little
+        impact on gameplay, rather giving little bonuses here and
+        there. There might be characters of other races in game as
+        well.
+    </para>
+    <para>
+        There are no racial wars of any kind in Ireon. Heart of a
+        conflict is a confrontation of multiracial states.
+    </para>
+    </sect3>
+    <!-- /Races -->
+
+    <sect3 id="basic_char_parameters">
+    <title id="basic_char_parameters.title">Basic character 
+    parameters</title>
+    <para>
+        Each character has basic numerical parameters. Result of
+        almost any action in the world depends on there parameters.
+        For example, strength, intellect and luck are among them.
+    </para>
+    <para>
+        There is a system of experience points for development of
+        these parameters. Character gets experience points for
+        certain actions. This 'experience' is summed up with overall
+        character 'experience'. When character's experience reaches
+        a special milestone on a predefined scale (character
+        advances to next 'level'), player gets points to distribute
+        among his character's basic parameters. The impact of levels
+        on other aspects of gameplay is minimal.
+    </para>
+    <para>
+        Parameters can also be altered through magical means &mdash;
+        scrolls, potions, spells. These changes may be temporary or
+        permanent.
+    </para>
+    </sect3>
+    <!-- /Basic character parameters -->
+
+    <sect3 id="skills">
+    <title id="skills.title">Skills</title>
+    <para>
+        The skills indicate how good a character can perform
+        actions. The result of an action is the better the higher
+        the corresponding skill is. Skills usually fit for a whole
+        group of actions. Lack of a skill for performing certain
+        action results in impossibility to perform that action.
+        Possibility any given item's use also depends on having the
+        appropriate skill.
+    </para>
+    <para>
+        The skills may fall into one of following types:
+    </para>
+    <itemizedlist>
+    <listitem><para>
+        basic &mdash; these skills are given to all characters at
+        the moment of their creation. These skills define actions
+        that all characters need and players can not have a
+        full-fledged game without them. Examples of such skills:
+        short blades, light armor, basic magic, etc.
+    </para></listitem>
+    <listitem><para>
+        racial &mdash; some races may possibly have special skills
+        inherent from birth. Example: maintenance of weapons for
+        dwarves.
+    </para></listitem>
+    <listitem><para>
+        professional &mdash; character gets a chance to learn these
+        skills after getting a certain profession. More about
+        professions see below.
+    </para></listitem>
+    </itemizedlist>
+    <para>
+        Skills can be altered through these ways:
+    </para>
+    <itemizedlist>
+    <listitem><para>
+        direct use &mdash; performing actions, that this skill is
+        responsible for. The more character trains, the higher his
+        skill becomes.
+    </para></listitem>
+    <listitem><para>
+        racial modifiers &mdash; some races give bonuses to some
+        skills.
+    </para></listitem>
+    <listitem><para>
+        'magical means' &mdash; a skill can be raised by various
+        potions, scrolls, etc. The effects may be temporary or
+        permanent.
+    </para></listitem>
+    </itemizedlist>
+    </sect3>
+    <!-- /Skills -->
+
+    <sect3 id="abilities">
+    <title id="abilities.title">Abilities</title>
+    <para>
+        Unlike skills abilities define an ability of a character to
+        perform one specific action. Character can learn abilities
+        for a fee from special npc-teachers. Other ways of learning
+        new abilities are also possible.
+    </para>
+    <para>
+        Magic spells or specific ways of weapon enchanting are
+        examples of abilities.
+    </para>
+    </sect3>
+    <!-- /Abilities -->
+
+    <sect3 id="professions">
+    <title id="professions.title">Professions</title>
+    <para>
+        A character does not need to choose his occupation once and
+        for all in Ireon. There are no 'classes' in our world, we
+        have professions instead. When a character learns a
+        profession, he gets access to a set of skills (and abilities
+        associated with those skills) that is peculiar to this
+        profession. For example, when a character learns a 'basic
+        blacksmith' profession, he may start to forge blades (he
+        gets a 'forge blades' skill and several abilities such as
+        'forge short knife' and 'forge short sword').
+    </para>
+    <para>
+        It is up to a player which professions he wants his
+        character to learn. At the beginning of the game, each
+        character has access to four 'basic' versions of warrior,
+        mage, craftsman and thief professions. Some professions may
+        open access to other professions, that in turn may be an
+        advancement of previous profession or a completely new area
+        of knowledge. Thus a character may be a specialist in one or
+        more professions, advancing earlier ones in the same field,
+        or he may choose to combine several entirely different
+        professions and become a 'ready-for-anything'-like person.
+    </para>
+    <para>
+        A character may learn professions only at guilds (see more
+        about them below). Overall number of professions that a
+        character may get depends only on his intellect (the basic
+        parameter one, not hacking-the-server variety).
+    </para>
+    <para>
+        Characters that know certain professions, such as
+        'blacksmith' or 'herbalist', can create their own game
+        items. The rest has a choice to buy items from them or in
+        shops or from other people.
+    </para>
+    </sect3>
+    <!-- /Professions -->
+
+    </sect2>
+    <!-- /Roleplay -->
+
+    </sect1>
+    <!-- /Game description -->
+
+
+    <sect1 id="gameplay">
+    <title id="gameplay.title">Gameplay</title>
+
+    <sect2 id="main_gameplay_features">
+    <title id="main_gameplay_features.title">Main gameplay 
+    features</title>
+
+    <sect3 id="pseudoquests">
+    <title id="pseudoquests.title">Pseudoquests</title>
+    <para>
+        The most interesting mini-games in the world of Ireon we
+        term 'pseudoquests'. To be called a pseudoquest one should
+        qualify as being a) self-sufficient and b) players who
+        participate in it should oppose other players.
+    </para>
+    <formalpara>
+    <title>Self-suffiency</title>
+    <para>
+        Pseudoquests exist without players. They are generated by
+        system regularly and serve as a lure for players, the puzzle
+        they can try to solve, the challenge they can accept. Of
+        course, without players pseudoquests are of no interest. But
+        as they work by themselves players are free to join actions
+        performed by AI and have some fun and benefit for their
+        characters.
+    </para>
+    </formalpara>
+    <formalpara>
+    <title>The confrontation between players</title>
+    <para>
+        The majority of the pseudoquests will be designed for two
+        teams of players, and those teams would compete for a quest
+        completion. Usually this is going to be achieved by setting
+        opposite reqirements for quest accomplishment. Players can
+        join pseudoquest by their will and they can choose the side
+        also by their will. Cooperation between the members of one
+        team significantly affects the final result of their
+        actions. Thus you may say that cooperation is a key victory
+        factor in pseudoquests.
+    </para>
+    </formalpara>
+    </sect3>
+    <!-- /Pseudoquests -->
+
+    <sect3 id="players_cooperation">
+    <title id="players_cooperation.title">Cooperation between 
+    players</title>
+    <para>
+        Cooperation between players plays special role in the game.
+        One would be successful most if he co-operates with others.
+        Solo play is an option, but most interesting features of the
+        game are designed for a teamplay.
+    </para>
+    <para>
+        There will be lots of different interactions between players
+        in the game. But the main difference from analogues is that
+        in-game interactions are going to play useful functional
+        role. See more below.
+    </para>
+    </sect3>
+    <!-- /Cooperation between players -->
+
+    <sect3 id="war_of_states">
+    <title id="war_of_states.title">War of states</title>
+    <para>
+        The most global and interesting pseudoquest from our point
+        of view will be based on a full-scale war between two
+        states. Thus, all the players are divided into five major
+        groups: two conflicting sides (Gillimor and Kharum), two
+        neutral sides (Yiala and Neutral lands), and rogues (Elbra)
+        that are hostile towards everybody. In accordance with
+        principles of freedom of choice all the players may choose
+        the side they want to play for regardless of parameters or
+        skills of their respective characters. Therefore if a player
+        doesn't want to fight, we will find a peaceful labor for
+        him.
+    </para>
+    <para>
+        Global pseudoquest based on magical springs capture is
+        closely tied with war of states. It will give wide gameplay
+        opportunities for its participants. It will be available
+        only for high-level characters. In this pseudoquest several
+        teams from each of two conflicting sides will oppose each
+        other. Interaction between players here will take on special
+        significance. In detail this pseudoquest will be described
+        in the <ulink
+        url="http://www.ireon.org/en/docs/html/srs/index.html"
+        >Software Requirements Specification</ulink>.
+    </para>
+    <para>
+        Most of the gameplay will be associated with this war one
+        way or another, though this does not necessarily mean only
+        battles. But each and every inhabitant of Novalia will feel
+        an impact of war on his own back.
+    </para>
+    </sect3>
+    <!-- /War of states -->
+
+    <sect3 id="magic">
+    <title id="magic.title">Magic</title>
+    <para>
+        Magic is not least of importance in our world. Three schools
+        of magic are going to be helpful not only for mages, but
+        herbalists and blacksmiths as well.
+    </para>
+    <para>
+        One could learn magic at magic guild. Gillimor, Kharum and
+        Yiala specialize each in its unique school of magic.
+    </para>
+    <para>
+        Simple magic spells are going to be available to anyone in
+        the world. Some of the most noticeable things of magical
+        nature are teleports (maintained by magic guilds), healing
+        springs, and various potions and amulets that affect
+        character's organism.
+    </para>
+    </sect3>
+    <!-- /Magic -->
+
+    <sect3 id="communities">
+    <title id="communities.title">Communities</title>
+    <para>
+        There are going to be several forms of communities for
+        players to join: clans, guilds and parties.
+    </para>
+    <para>
+        Clans are organized by players and consist of players only.
+        Player can establish a clan just for a formal union with
+        one's friends or develop it into a business organization. If
+        the latter is the case, clan will need to acquire a license
+        for each kind of activity. Then a state or other players
+        will give assignments to clan and pay for their completion.
+        Each clan will have a residence in one of the towns. A clan
+        will have some means of group management and provide nice
+        little bonuses to its members.
+    </para>
+    <para>
+        For example, clan will be able to acquire
+        'to-serve-and-protect' sort of license and help npc-patrol
+        with that uneasy task; but unlike npcs clan members will
+        have an option to chase criminal through the whole Novalia
+        island. Another example is 'find-an-item' license. Players
+        that are in need of certain game items but for some reasons
+        can not find them (or get them from other player or mob) can
+        turn to a clan for help &mdash; that is for a price, of
+        course. Bonuses to reputation for every successfully
+        accomplished assignment will stimulate clans to buy official
+        licenses. Clans of one state are strongly discouraged to
+        wage any 'wars' against each other &mdash; membership in a
+        clan does not relieve anyone of citizenship
+        responsibilities.
+    </para>
+    <para>
+        Guilds are professional unions of characters. Guilds consist
+        of both players and npcs. Guilds are managed by npcs. Guilds
+        will provide jobs for those who doesn't want or can't join a
+        clan. Guilds will also educate characters (let me remind you
+        that one can learn professions only at guilds). Guilds are
+        going to have public message boards, where anyone can leave
+        a 'serious clan needs a serious mage'-like note. A guild
+        will give its members discounts for any related supplies
+        (cheap herbs for herbalists, cheap armor for warriors).
+        Guilds in a same field are not going to be identical in
+        different states, for example, Yiala's warrior's guild will
+        educate archers better than the one in Gillimor or Kharum.
+    </para>
+    <para>
+        Players also will be able to create and join parties &mdash;
+        temporary unifying entity set up to ease realizing
+        short-term goals such as hunting mobs or working in mines.
+        Parties may play significant role as units of one force in
+        time of great battles.
+    </para>
+    </sect3>
+    <!-- /Communities -->
+
+    </sect2>
+    <!-- /Main gameplay features -->
+
+    <sect2 id="gameplay_types">
+    <title id="gameplay_types.title">Gameplay types</title>
+    <para>
+        Our virtual world is designed for different types of players
+        and for each type we propose individual aims and ways to
+        achieve them. The choice of way and role is always up to a
+        player himself. Here are some possible aims depending on a
+        player type:
+    </para>
+    <itemizedlist>
+    <listitem><para>
+        be best in something &mdash; there is going to be a large
+        system of formal levels, points and so on, as well as
+        detailed statistics of player actions; mage and warrior
+        professions provide lots of opportunities to prove oneself a
+        noble man;
+    </para></listitem>
+    <listitem><para>
+        explore the world &mdash; here we've got non-trivial
+        crafting and professions like herbalist and blacksmith;
+        though game world is small in size, it will not feel like
+        that thanks to locations highly varied in feel and look;
+    </para></listitem>
+    <listitem><para>
+        socialize, create an extensive social network, just have a
+        little rest after all &mdash; we provide a mud-like
+        opportunities for socializing (politics, organizations
+        managed by players, in-game press).
+    </para></listitem>
+    </itemizedlist>
+
+    <sect3 id="action_gameplay">
+    <title id="action_gameplay.title">Action gameplay</title>
+    <para>
+        Major part of the action gameplay is going to be a war
+        between the states. Organization and carrying out of
+        campaigns lies on players' shoulders for the most part. That
+        is, the players may organize and participate in raids
+        whenever they want to.  But, definitely, the most
+        interesting part of warrior gameplay is a 'magical springs
+        capture' pseudoquest. It will be generated regularly
+        (approximately once a week). It will include various actions
+        to be executed by large numbers of warriors and mages.
+        Battles with mobs are going to be of secondary importance.
+    </para>
+    
+    <sect4 id="on_murders">
+    <title id="on_murders.title">On murders</title>
+    <para>
+        Utter probition of murders exists only within city
+        boundaries, all the other territories are theoretically free
+        of such restriction. But in practice there are several
+        in-game mechanisms making unlawful murder highly
+        undesirable for a murderer. There are pc and npc police,
+        carma, reputation, and so on. It should be noted that all of
+        these measures apply only to murders of allies and neutral
+        citizens. Murder of a character from an enemy state is
+        considered a good and useful thing.
+    </para>
+    </sect4>
+    <!-- /On murders -->
+    
+    <para>
+        Fights between characters at special arenas with game
+        money at stake is an option as well.
+    <para>
+    </para>
+        Last but not least players have a choice of joining a dark
+        side of the Force and becoming citizens of a criminal haven,
+        a special city-state of Elbra. Citizens of Elbra can perform
+        actions considered illegal in all other states, such as
+        robberies and murders, with rather mild consequences.
+    </para>
+
+    <sect4 id="Combat system">
+    <title id="Combat system.title">Combat system</title>
+    <para>
+        In-game combat doesn't differ from other actions, that is,
+        the game doesn't switch to some special 'combat' regime.
+        Combat takes place in real time with a free camera.
+    </para>
+    <para>
+        During the combat defence (parrying the enemy blows) and
+        continuous weak blows are done automatically. All strong
+        blows, combos, stands, attack/defence priorities are
+        executed  manually by players.
+    </para>
+    <para>
+        At special arenas characters can participate in training
+        fights (not to death) and fights for money. These last ones
+        can be even hardcore (player who loses says goodbye to his
+        character). Other players can watch the duel and make
+        stakes. The winner and players who bet on him will get
+        additional money.
+    </para>
+    </sect4>
+    <!-- /Combat system -->
+
+    </sect3>
+    <!-- /Action gameplay -->
+
+    <sect3 id="peaceful_labor">
+    <title id="peaceful_labor.title">Peaceful labor</title>
+    <para>
+        There is going to be a large trade system in the game. The
+        players will be able to exchange and trade goods with npcs
+        and other players either tete-a-tete or through auctions.
+    </para>
+    <para>
+        Players will be able to craft game items. To get good
+        results the crafter will not only have to get 'knowledge'
+        within the game (e.g. learn the appropriate profession and
+        have necessary skills) but also he should understand the
+        procedure of our non-linear crafting itself. This procedure
+        will define the quality, characteristics, and price of the
+        crafted item. An experienced crafter will be able to make
+        things that are specially tuned for their owner to suit him
+        best.
+    </para>
+    <para>
+         Also player will be able to occupy himself with healing
+         magic, production of potions, search for resources,
+         gambling, etc.
+    </para>
+    </sect3>
+    <!-- /Peaceful labor -->
+
+    <sect3 id="politics_and_management">
+    <title id="politics_and_management.title">Politics and 
+    management</title>
+    <para>
+        Political activities provide yet another opportunities for
+        character development in Ireon. Players are going to be
+        self-governed to a large degree. Players will themselves
+        take important decisions, and those decisions are going to
+        have a real impact on game world. Players will create laws
+        and see to their realization, they will (with a little help
+        of live team, of course) organize various events.
+    </para>
+    <para>
+        A character who's executing government functions will get
+        wages, experience points, and so forth. Thus politics
+        becomes alternative way of character development.
+    </para>
+    <para>
+        Another highly social work is going to be a publishing of
+        in-game press.
+    </para>
+    </sect3>
+    <!-- /Politics and management -->
+
+    </sect2>
+    <!-- /Gameplay types -->
+
+    </sect1>
+    <!-- /Gameplay -->
+
+    <sect1 id="key_features">
+    <title id="key_features.title">Key features</title>
+
+    <sect2 id="key_features_general">
+    <title id="key_features_general.title">General</title>
+      <itemizedlist>
+        <listitem><para>
+            Completely three-dimensional seamless island with highly
+            variable content
+        </para></listitem>
+        <listitem><para>
+            Human-friendly interface
+        </para></listitem>
+        <listitem><para>
+            Advanced in-game communicative systems
+        </para></listitem>
+        <listitem><para>
+            First-person and third-person views with a free camera
+        </para></listitem>
+      </itemizedlist>
+    </sect2>
+    <!-- /Key features: General -->
+
+    <sect2 id="key_features_role">
+    <title id="key_features_role.title">Role system</title>
+      <itemizedlist>
+        <listitem><para>
+            Four different races
+        </para></listitem>
+        <listitem><para>
+            Classless system
+        </para></listitem>
+        <listitem><para>
+            Flexible system of professions
+        </para></listitem>
+        <listitem><para>
+            Reduced impact of levels on player's actions
+        </para></listitem>
+        </itemizedlist>
+    </sect2>
+    <!-- /Key features: Role system -->
+
+    <sect2 id="key_features_gameplay">
+    <title id="key_features_gameplay.title">Gameplay</title>
+        <itemizedlist>
+        <listitem><para>
+            Trade and exchange
+        </para></listitem>
+        <listitem><para>
+            Political system and social life
+        </para></listitem>
+        <listitem><para>
+            Citizenship system
+        </para></listitem>
+        <listitem><para>
+            Non-trivial crafting system
+        </para></listitem>
+        <listitem><para>
+            Several player communities, each with its own unique
+            goals
+        </para></listitem>
+        </itemizedlist>
+    </sect2>
+    <!-- /Key features: Gameplay -->
+
+    <sect2 id="key_features_combats">
+    <title id="key_features_combats.title">Combats</title>
+        <itemizedlist>
+        <listitem><para>
+            Various warrior professions
+        </para></listitem>
+        <listitem><para>
+            Major events for players are massive military campaigns
+            rather than random skirmishes or quests
+        </para></listitem>
+        <listitem><para>
+            Combat system with combos and feats
+        </para></listitem>
+        <listitem><para>
+            Three schools of magic
+        </para></listitem>
+        </itemizedlist>
+    </sect2>
+    <!-- /Key features: Combats -->
+
+    </sect1>
+    <!-- /Key features -->
+
+    <sect1 id="what_read_next">
+    <title id="what_read_next.title">What to read next</title>
+    <para>
+        If you want to learn more about Ireon's game design, we
+        recommend to turn to the <ulink
+        url="http://www.ireon.org/en/docs/html/srs/index.html"
+        >Software Requirements Specification</ulink>.
+    </para>
+    <para>
+        If you are not exactly sure what do you want to read next,
+        our <ulink
+        url="http://bugtraq.ireon.org/wiki/en/Tutorials/Docs"
+        >Documentaion Guide</ulink> may help you to make up your
+        mind.
+    </para>
+    </sect1>
+    <!-- /What to read next -->
+
+    </article>
+    <!-- /Concept Document of MMORPG Ireon -->

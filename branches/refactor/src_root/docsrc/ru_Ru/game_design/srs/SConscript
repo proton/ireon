@@ -1,0 +1,10 @@
+Import('*')
+
+documentCategory_ = 'game_design'
+thisDocument_ = 'srs'
+lang_ = 'ru_Ru'
+
+# now execute template to do actual work
+execfile(docBuildEnv.Dir('#').get_abspath()+'/docsrc/generic_template.py')
+execfile(docBuildEnv.Dir('#').get_abspath()+'/docsrc/xhtml_book_template.py')
+execfile(docBuildEnv.Dir('#').get_abspath()+'/docsrc/pdf_template.py')

@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ireon.org\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-08-22 20:01+0400\n"
+"PO-Revision-Date: 2006-08-22 20:26+0300\n"
+"Last-Translator: Dmitry Bitman <i18n@ireon.org>\n"
+"Language-Team: ireon.org <i18n@ireon.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: D:\projects\ireon.trunk\src_root\src\common\xmlconfig.cpp:72
+#, possible-c-format
+msgid "XML parser returned an error: %s\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\xmlconfig.cpp:188
+#, possible-c-format
+msgid "Can't find required option '%s' in xml config.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\file\directory.cpp:239
+#, possible-c-format
+msgid "Can't open requested resource '%s'."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\log\log_listener.cpp:32
+#, possible-c-format
+msgid "Error creating log file '%s'.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\generic_state.cpp:54
+#, possible-c-format
+msgid "State '%s': access to slot %u denied.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\generic_state.cpp:60
+#, possible-c-format
+msgid "State '%s': could not find signal with id %u.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\generic_state.cpp:71
+#, possible-c-format
+msgid "Signal handler re-registration -- signal %u.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\generic_state.cpp:83
+#, possible-c-format
+msgid "Got <<unknown command>> response for command %d.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\net_connection.cpp:76
+#, possible-c-format
+msgid "Received internal packet. Id = %d.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\net_connection.cpp:78
+#, possible-c-format
+msgid "Received packet. Id = %d.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\net_connection.cpp:89
+msgid "Can't process packet. Contents:\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\state_machine.cpp:78
+msgid "State machine could not find state!."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\compressing_layer.cpp:101
+msgid "ZLib: Output command don't maybe compressed (z-image > 0xFFFF)"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\compressing_layer.cpp:114
+#, possible-c-format
+msgid "ZLib(Error): Compress2 return %d"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\compressing_layer.cpp:155
+#, possible-c-format
+msgid "ZLib(Error): Uncompress return %d\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:42
+msgid "Outgoing connection created with NULL remote host!\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:51
+#, possible-c-format
+msgid "Connecting to host %s, port %d.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:56
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:259
+msgid "Error allocating socket set.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:70
+#, possible-c-format
+msgid "(%s:%d) : Error creating connection thread.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:123
+#, possible-c-format
+msgid "Can't resolve host '%s'.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:130
+#, possible-c-format
+msgid "Error opening socket -- connection to %s failed.\n"
+msgstr "Ошибка при открытии сокета, соединение с %s не установлено.\n"
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:139
+#, possible-c-format
+msgid "Connection to %s established.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:159
+msgid "CIncomingConnectionListener: server already started."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:166
+msgid "Error allocating listening socket set.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:173
+msgid "Error allocating data socket set.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:182
+msgid "Error creating listening socket.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:193
+msgid "CIncomingConnectionListener::stop: Shutting server down."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:358
+msgid "Attempt to write to not initialized data socket.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:365
+#, possible-c-format
+msgid "(%s:%d) : Ping timeout.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:380
+#, possible-c-format
+msgid "Data too long (%d).\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:386
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:395
+#, possible-c-format
+msgid "(%s:%d) : Error occured while writing socket.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:438
+msgid "Attempt to read from not initialized data socket.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:448
+#, possible-c-format
+msgid "(%s:%d) : Data socket input buffer overflow.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\src\common\net\layers\sock_layer.cpp:457
+#, possible-c-format
+msgid "(%s:%d) : Error occured while reading from data soket.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\include\common\net\connections_manager.h:106
+msgid "CIncomingConnectionsManager::start: Starting server."
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\include\common\net\connections_manager.h:144
+#, possible-c-format
+msgid "CIncomingConnectionsManager::processNewConnections: New connection from host %s.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\include\common\net\connections_manager.h:284
+msgid "Attempt to delete not initialized connection.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\include\common\net\connections_manager.h:312
+msgid "Outgoing connection manager already connected.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\include\common\net\connections_manager.h:319
+msgid "Outgoing connection failed.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\include\common\net\connections_manager.h:363
+#: D:\projects\ireon.trunk\src_root\include\common\net\connections_manager.h:390
+msgid "Outgoing connection manager not connected.\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\include\common\net\connections_manager.h:369
+msgid "Outgoing connection manager input processing failed, reconnecting...\n"
+msgstr ""
+
+#: D:\projects\ireon.trunk\src_root\include\common\net\connections_manager.h:395
+msgid "Outgoing connection manager output processing failed, reconnecting...\n"
+msgstr ""
+

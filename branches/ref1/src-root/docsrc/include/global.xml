@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+
+<!ENTITY legalnotice "
+      <para>
+        Каждый имеет право <emphasis>воспроизводить, распространять
+        и/или вносить изменения</emphasis> в настоящий Документ в
+        соответствии с условиями <ulink
+        url='http://www.gnu.org/licenses/fdl.html'>GNU Free
+        Documentation License</ulink>, Версией 1.2 или любой более
+        поздней версией, опубликованной <ulink
+        url='http://www.fsf.org/'>Free Software Foundation</ulink>;
+        данный Документ не содержит Неизменяемых разделов; данный
+        Документ не содержит Текст, помещаемый на первой странице
+        обложки; данный Документ не содержит Текст, помещаемый на
+        последней странице обложки.
+      </para>">
+
+
+<!ENTITY legalnotice_en "
+      <para>
+        Permission is granted to <emphasis>copy, distribute and/or
+        modify</emphasis> this document under the terms of the
+        <ulink url='http://www.gnu.org/licenses/fdl.html'>GNU Free
+        Documentation License</ulink>, Version 1.2 or any later
+        version published by the <ulink
+        url='http://www.fsf.org/'>Free Software Foundation</ulink>;
+        with no Invariant Sections, no Front-Cover Texts, and no
+        Back-Cover Texts.
+      </para>">
+
+
+<!ENTITY copyrightinfo "
+      <year>2004</year>
+      <year>2005</year>
+      <year>2006</year>
+      <holder>ireon.org project</holder>">

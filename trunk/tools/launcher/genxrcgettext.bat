@@ -1,0 +1,1 @@
+c:\Python24\Lib\site-packages\wx-2.6-msw-unicode\wx\tools\pywxrc.py -g -o launcher.xrc-gettext launcher.xrc

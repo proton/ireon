@@ -1,0 +1,19 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\AddIns\AutoBuildNumber.Connect]
+"FriendlyName"="AutoBuildNumber"
+"Description"="Automatically increments Microsoft Visual C++ 2005 projects build number after each build"
+"CommandPreload"=dword:1
+"CommandLineSafe"=dword:1
+
+[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\7.1\AddIns\AutoBuildNumber.Connect]
+"FriendlyName"="AutoBuildNumber"
+"Description"="Automatically increments Microsoft Visual C++.NET projects build number after each build"
+"CommandPreload"=dword:1
+"CommandLineSafe"=dword:1
+
+[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\7.0\AddIns\AutoBuildNumber.Connect]
+"FriendlyName"="AutoBuildNumber"
+"Description"="Automatically increments Microsoft Visual C++.NET projects build number after each build"
+"CommandPreload"=dword:1
+"CommandLineSafe"=dword:1

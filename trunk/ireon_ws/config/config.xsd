@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<xsd:schema
+		targetNamespace="http://www.ireon.org/ireon/ws/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:cfg="http://www.ireon.org/ireon/ws/" >
+
+	<xsd:element name="config" type="cfg:CWSConfig" />
+
+	<xsd:complexType name="CWSConfig">
+		<xsd:all>
+			<xsd:element name="wsID" type="xsd:unsignedByte" />
+			<xsd:element name="worldCfg" type="xsd:string" default="../data/landscape/world.cfg" minOccurs="0" />
+			<xsd:element name="playerConnectionsListener" type="cfg:CPlayerListener" minOccurs="0" />
+			<xsd:element name="rsConnection" type="cfg:CRSConnection" minOccurs="0" />
+			<xsd:element name="db" type="cfg:CDBconnection" />
+			<xsd:element name="resources" type="cfg:CResources" minOccurs="0" />
+			<xsd:element name="playerDefaultPosition" type="cfg:CDefaultPosition" minOccurs="0" />
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="CPlayerListener">
+		<xsd:all>
+			<xsd:element name="port" type="cfg:CPort" minOccurs="0" default="29120" />
+			<xsd:element name="maxConnections" type="cfg:CConnectionsNumber" minOccurs="0" default="10" />
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="CRSConnection">
+		<xsd:all>
+			<xsd:element name="ip" type="cfg:CIPv4Address" minOccurs="0" default="127.0.0.1" />
+			<xsd:element name="port" type="cfg:CPort" minOccurs="0" default="29105" />
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="CDBconnection">
+		<xsd:all>
+			<xsd:element name="ip" type="cfg:CIPv4Address" minOccurs="0" default="127.0.0.1" />
+			<xsd:element name="port" type="cfg:CPort" minOccurs="0" default="3306" />
+			<xsd:element name="login" type="xsd:normalizedString" />
+			<xsd:element name="password" type="xsd:normalizedString" />
+			<xsd:element name="schema" type="xsd:normalizedString" minOccurs="0" default="ws" />
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="CResources">
+		<xsd:sequence>
+			<xsd:element name="dir" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="CDefaultPosition">
+		<xsd:all>
+			<xsd:element name="x" type="xsd:float" default="0" />
+			<xsd:element name="y" type="xsd:float" default="0" />
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:simpleType name="CIPv4Address">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="CPort">
+		<xsd:restriction base="xsd:unsignedShort">
+			<xsd:minInclusive value="1025"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="CConnectionsNumber">
+		<xsd:restriction base="xsd:unsignedByte">
+			<xsd:minInclusive value="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

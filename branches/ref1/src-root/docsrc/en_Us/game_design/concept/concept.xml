@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!DOCTYPE article
+  PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+  "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  [
+    <!ENTITY % global.entities SYSTEM
+        "../../../include/global.xml">
+    %global.entities;
+  ]
+>
+
+<!--
+  Attention! If you have your local version of DTD
+  Docbook on your computer, replace this line
+    "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  with this one
+    "file:/path_to_dtd/docbookx.dtd"
+
+  (If you use eDE from e-novative, than replace with this one
+    "file:/c:/docbook/dtd/docbookx.dtd")
+-->
+
+<article lang="en">
+
+  <articleinfo>
+
+   <title>Concept Document of MMORPG Ireon</title>
+    <authorgroup>
+      <author>
+        <othername>zak</othername>
+      </author>
+    </authorgroup>
+
+    <releaseinfo>Version 1.1.0b</releaseinfo>
+
+
+    <abstract>
+      <para>
+        This document reflects a development team’s view of MMORPG 
+        Ireon's gameplay.
+      </para>
+      <para>
+        You can find additional information at project’s forum. Also
+        feel free to e-mail to <email>input@ireon.org</email>.
+      </para>
+    </abstract>
+
+    <keywordset>
+      <keyword>ireon</keyword>
+      <keyword>concept</keyword>
+    </keywordset>
+
+    <copyright>
+      &copyrightinfo;
+    </copyright>
+    <legalnotice>
+      &legalnotice_en;
+    </legalnotice>
+  </articleinfo>
+
+  <sect1>
+    <title>Introduction</title>
+    <para>
+    </para>
+    <para>
+      Ireon is a three-dimensional multiplayer online
+      RPG for the Windows operational system on a PC platform. Game
+      action is going to take place in a fantasy world where players
+      would live in a virtual community.
+    </para>
+    <para>
+      The project is entirely open-source and free-of-charge for
+      all.
+    </para>
+    <para>
+    </para>
+    <para>
+    </para>
+  </sect1>
+
+  <sect1>
+    <title>Gamedesign Philosophy</title>
+
+    <sect2>
+      <title>Game concept</title>
+      <para>
+        Game concept lies in a creation of a virtual world. Players’ 
+        occupation in this world is not restricted to fights. The 
+        world is developed to satisfy needs of different player 
+        categories such as warriors, politicians, traders, crafters, 
+        explorers and socializers. Another feature of a world would 
+        be accent on a group gameplay. Players would either meet the 
+        challenges as a group in one team or in several groups 
+        opposing each other. In such kind of a system the role of 
+        npc (mobs) is subsidiary: players need them only for some 
+        hunting if there is no team available. The most interesting 
+        gameplay is provided for groups of players.
+      </para>
+      <para>
+        We regard the future world as a place where residents can
+        occupy themselves with interesting affairs. Thus gameplay
+        consists of mini-tasks every one of which offers gameplay
+        for certain group of players. Some of the tasks are proposed
+        for fighters (e.g. some quests), another ones are for
+        socializers (talks in a tavern). The biggest and most
+        interesting tasks we call <emphasis>pseudoquests</emphasis>
+        (more about pseudoquests see below). One distinguishing
+        feature of pseudoquests is that they happen by themselves,
+        and player characters just join them. Another one is that in
+        such pseudoquests players oppose other players in teams.
+      </para>
+      <para>
+        The world of the game would be a fantasy one, but this fact
+        doesn’t suppose the use of any fixed undoubted system or one
+        source. The world is developing first for of all for needs
+        of a gameplay, combining different rpg systems and worlds of
+        different authors, combining realism and fiction.
+      </para>
+      <formalpara>
+        <title>World size and saturation</title>
+        <para>
+          Game world (Novalia island) would be small but very
+          saturated. We do not promise vast territories: the player
+          would be able to cross the whole island afoot for about
+          half an hour or even less, but the existing space would be
+          filled with content to the maximum. Our approach to world
+          design is providing width of functionality instead of
+          increasing amount of the similar content.
+        </para>
+      </formalpara>
+    </sect2>
+
+
+    <sect2>
+      <title>Players</title>
+      <para>
+        The game is developed for hardcore and moderate players.
+        Enhanced possibilities of players’ interaction and
+        simplicity of use (which is one of the main priorities
+        during the game development) may possibly attract some
+        players from mass sector. The game is designed for the
+        players who are at least 14 years old.
+      </para>
+    </sect2>
+
+  </sect1>
+
+  <sect1>
+    <title>Game description</title>
+
+    <sect2>
+      <title>Genre</title>
+      <para>
+        Three-dimensional fantasy online multiplayer RPG (MMORPG).
+      </para>
+    </sect2>
+
+    <sect2>
+      <title>General description of gameplay</title>
+      <para>
+        Game process consists of management of player’s character
+        and use of this character for carrying-out certain actions,
+        such as
+      </para>
+      <itemizedlist>
+        <listitem><para>
+          conducting fights, fulfilling quests;
+        </para></listitem>
+        <listitem><para>
+          trade;
+        </para></listitem>
+        <listitem><para>
+          intercourse with other players;
+        </para></listitem>
+        <listitem><para>
+          crafting;
+        </para></listitem>
+        <listitem><para>
+          world exploration;
+        </para></listitem>
+        <listitem><para>
+          politics.
+        </para></listitem>
+      </itemizedlist>
+      <para>
+        The game will take place in a uniform three-dimensional
+        world (island of Novalia). Therefore there will be no
+        "locations" in the game, the player will be able to move
+        through all accessible world at once.
+      </para>
+      <para>
+        All of the game actions will happen in a real time and a
+        three-dimensional space. The exception will be made only for
+        certain actions like crafting or things’ exchange that are
+        carried out using special interfaces.
+      </para>
+    </sect2>
+
+    <sect2>
+      <title>Main gameplay features</title>
+      <sect3>
+        <title>Look and control</title>
+        <para>
+          There will be first-person and third-person look in the
+          game. The player will be able to switch between the two
+          views. Third-person look will have the sufficient
+          mobility, the player will be able to change the angle of
+          view, a direction and a distance to the character.
+        </para>
+        <para>
+          The player will operate the character using 'point-and-
+          click' system. Thus operating the mouse player moves the
+          cursor on the screen and decided the place he wants the
+          character to go or a character to attack. Also using
+          cursor player gets access to in-game menus and other
+          interface elements. Keyboard operation of character will
+          also be supported.
+        </para>
+      </sect3>
+
+      <sect3>
+        <title>Pseudoquests</title>
+        <para>
+          Based on a principle of mini-games we introduced special 
+          term and that is pseudoquests. The most interesting 
+          mini-games in the world of Ireon are called pseudoquests. 
+          Pseudoquests have two basic qualitites: they are 
+          self-sufficient and players who participate in them 
+          oppose other players.
+        </para>
+        <formalpara>
+          <title>Self-suffiency</title>
+          <para>
+            Pseudoquests exist without players. Pseudoquests are
+            generated by system and serve as a lure for players, the
+            task they can solve. Of course, without players
+            pseudoquests are of no interest. But as they work by
+            themselves players are free to join actions
+            performed by AI and get fun and benefit for their
+            characters.
+          </para>
+        </formalpara>
+        <formalpara>
+          <title>Players' confrontation</title>
+          <para>
+            The majority of the pseudoquests would be designed for
+            two teams of players, and those teams would compete for
+            quest completion. Usually this can be achieved by
+            setting opposite reqirements for quest accomplishment.
+            Players can join pseudoquest by their will and they can
+            choose the side also by their will. Cooperation between
+            the members of one team significantly influences the
+            final result of their actions for quest completion. Thus
+            you may say that cooperation is a key factor while
+            fulfilling pseudoquests.
+          </para>
+        </formalpara>
+      </sect3>
+
+      <sect3>
+        <title>Freedom of choice for players</title>
+        <para>
+          We hold the opinion that players should be able to choose
+          gameplay to one’s liking regardless of character’s stats
+          and that players should be able to change their choice
+          while not creating new character. That’s why we do not
+          have usual ‘levels’ for characters and stats binded to
+          them: the possibility of making an action depends on
+          skills of the character. That’s why in the war of states
+          (see below) players take part voluntarily, and there is no
+          race war (player is able to choose his side regardless of
+          his character’s race). Also player would be able to choose
+          freely if he wants to fight or participate in peaceful
+          labor. Anybody will be able to make a career in a labor he
+          likes to take part into.
+        </para>
+      </sect3>
+
+      <sect3>
+        <title>Cooperation of players</title>
+        <para>
+          Players’ cooperation plays special role in the game. One
+          would be successful most if he co-operates with others.
+          Single play is an option, but most interesting features of
+          the game are designed for a teamplay.
+        </para>
+        <para>
+          In the game there will be lots of different interactions
+          between players. But the main difference from analogues is
+          that interactions in game will play useful functional role
+          such as clans (see below).
+        </para>
+      </sect3>
+
+      <sect3>
+        <title>War of states</title>
+        <para>
+          The most global and interesting pseudoquest from our point
+          of view would be based on a full-scale war between two
+          states. Thus, all the players are divided into four major
+          groups: two conflicting sides, neutral side, and rogues
+          that are hostile towards everybody. In accordance with
+          principles of freedom of choice all the players may choose
+          the side they want to play for regardless of their stats.
+          Therefore if a player doesn't want to fight there will be
+          a peaceful labor for him.
+        </para>
+        <para>
+          Global pseudoquest based on magical springs capture is
+          closely tied with war of states. It will give wide
+          gameplay opportunities for its participants. It will be
+          available only for characters with high stats. In this
+          pseudoquest several teams from each of two sides will
+          oppose each other. Players' interaction here will take on
+          special significance. In detail this pseudoquest will be
+          described in Software Requirements Specification.
+        </para>
+        <para>
+          Most of the game will be related with war though this
+          does not always mean only battles. But each citizen of
+          island would feel impact of war on his own back.
+        </para>
+      </sect3>
+    </sect2>
+
+    <sect2>
+      <title>Various forms of gameplay</title>
+
+      <sect3>
+        <title>Character development</title>
+        <para>
+          Distinguishing feature of all players' in-game actions is
+          that for their successful accomplishment players need not
+          only the good in-game skills (i.e. character's stats) but
+          also skills and knowledge of a real man in each specific
+          situation. Unlike other RPGs where everything depends on
+          numbers of stats in our game 'human element' plays
+          significant role.
+        </para>
+      </sect3>
+
+      <sect3>
+        <title>Military actions</title>
+        <para>
+          Major part of the military actions would be war between
+          the states. Organization and carrying out of campaigns
+          lies on players' shoulders for the most part. That is the
+          players would organize and participate in raids whenever
+          they want to do it. Game AI would encourage players to
+          organize such campaigns. But, definitely, the most
+          interesting part of warrior gameplay would be springs
+          capture pseudoquest. It will be generated periodically
+          (approximately once a week). It will include various
+          actions to be executed by large numbers of warriors and
+          mages. Battles with mobs would be of secondary importance.
+        </para>
+        <formalpara>
+        <title>Murders</title>
+        <para>
+          Physical restriction on murder takes place only within
+          city boundaries, all the other territories are
+          theoretically free of such restriction. But in practice
+          there are several in-game mechanisms making unlawful
+          murder undesirable for a murderer. There are pc and npc
+          police, carma and reputation and so on. It should be
+          mentioned that all of this stuff applies only to murders
+          of allies and neutral citizens, while murder of a
+          character from an enemy state is considered a good and
+          useful thing.
+        </para>
+        </formalpara>
+        <para>
+          Also players would be able to perform actions that are
+          illegal in primary states (such as robberies and murders)
+          in a special city-state Elbra. Elbra is a criminal haven.
+        </para>
+      </sect3>
+
+      <sect3>
+        <title>Peaceful labor</title>
+        <para>
+          There would be large bifurcated trade system in game.
+          Players would be able to exchange and trade with npc and
+          other players, organize auctions or simply walk from town
+          to town and offer their goods.
+        </para>
+        <para>
+          Players would be able to create goods through crafting.
+          This process would not only require from crafter to get
+          "knowledge" within the game (as how to create some sort of
+          thing in game), but also real knowledge of crafting
+          process which is non-linear. Quality, characteristics and
+          price of the thing would depend on the whole course of the
+          crafting process. Experienced crafter would be able to
+          make things that are specially tuned for their owner.
+        </para>
+        <para>
+          Also player would be able to occupy himself with battle
+          and healing magic, potions production, battles on special
+          arenas with in-game money stakes, quest accomplishment,
+          stealing, search for resources etc. Unique gameplay would
+          exist for each profession, and it's not going to be like
+          "click here, than click there". It would allow players to
+          perform actions though various ways and evince one's
+          keenness of wit.
+        </para>
+      </sect3>
+
+      <sect3>
+        <title>Politics and a system of management</title>
+        <para>
+          Another form of character development in the game would be
+          political activities. Players would be provided with large
+          opportunities for self-government. Players would
+          themselves take important decisions, which are going to
+          have real impact on game world. Players would themselves
+          create laws and see to their implementation, they would
+          themselves (with a help of live team of course)
+          organize various events.
+        </para>
+        <para>
+          At the same time character who's executing government
+          functions would receive wage, experience points and so on.
+          Thus politics becomes alternative way of character
+          development.
+        </para>
+      </sect3>
+
+      <sect3>
+        <title>Professional associations</title>
+        <para>
+          In the game there would be professional associations of
+          players called clans, which are going to be organized for
+          executing of certain functions. Such associations would be
+          aimed at exectuion of tasks that players would choose
+          themselves while creating a clan. They would in no
+          circumstances fight with each other.
+        </para>
+        <para>
+          Clan is the group of the players which has publicly 
+          offered some services. Players who need such services, 
+          will know precisely the place to come to. Clan is an 
+          analogue of a real world service firm. For example, there 
+          would be clan of "seekers". Players that need some things 
+          but for any reason can't get or find them may turn to such 
+          a clan and for a contractual fee charge a clan member with 
+          a work of search for those things.
+        </para>
+      </sect3>
+    </sect2>
+
+    <sect2>
+      <title>Network opportunities</title>
+      <para>
+        There will be only a multiplayer mode in game, a single mode
+        is not planned.
+      </para>
+      <para>
+        Players will be able to establish their own servers on the
+        computers connected to a LAN.
+      </para>
+      <para>
+        The advanced opportunities will be built-in game for
+        players’ intercourse such as a chat, a message system,
+        thematic bulletin boards, etc. Also the game would have the
+        developed system of services that would help novices to
+        become acquainted with the game and join the gamers'
+        community.
+      </para>
+    </sect2>
+  </sect1>
+
+  <sect1>
+    <title>Key features</title>
+
+    <sect2>
+      <title>General</title>
+      <itemizedlist>
+        <listitem><para>
+           Saturated completely three-dimensional island with no
+           separate locations
+        </para></listitem>
+        <listitem><para>
+           Trade and exchange
+        </para></listitem>
+        <listitem><para>
+           Political system
+        </para></listitem>
+        <listitem><para>
+           Non-trivial crafting system
+        </para></listitem>
+        <listitem><para>
+           Four different races
+        </para></listitem>
+        <listitem><para>
+           Four states and citizenship system
+        </para></listitem>
+        <listitem><para>
+           Presence of different by means and aims forms of players
+           associations
+        </para></listitem>
+        <listitem><para>
+           Full-blown and convenient interface, easiness of
+           familiarizing with the game
+        </para></listitem>
+        <listitem><para>
+           Advanced in-game communicative systems
+        </para></listitem>
+        <listitem><para>
+           First and third person look with a free camera
+        </para></listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2>
+      <title>Battles</title>
+      <itemizedlist>
+        <listitem><para>
+           Various warrior professions
+        </para></listitem>
+        <listitem><para>
+           Main events for players are taking place in massive
+           military campaigns, not minor internal skirmishes or
+           quests
+        </para></listitem>
+        <listitem><para>
+           Developed fightning system with a rich set of combos and
+           tricks
+        </para></listitem>
+        <listitem><para>
+           Three schools of magic
+        </para></listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2>
+      <title>Role system</title>
+      <itemizedlist>
+        <listitem><para>
+           Classless system
+        </para></listitem>
+        <listitem><para>
+           Reduced influence of levels on player's actions
+        </para></listitem>
+        <listitem><para>
+           Five trees of professions
+        </para></listitem>
+        <listitem><para>
+           Three levels of development in each profession
+        </para></listitem>
+        <listitem><para>
+           Prorolling skills by training
+        </para></listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2>
+      <title>Additional</title>
+      <itemizedlist>
+        <listitem><para>
+           The game is free-of-charge for players
+        </para></listitem>
+        <listitem><para>
+           Completely open initial code
+        </para></listitem>
+        <listitem><para>
+           Anyone can establish his own server
+        </para></listitem>
+      </itemizedlist>
+    </sect2>
+
+  </sect1>
+
+  <sect1>
+    <title>Platform</title>
+    <para>
+      The game will be developed for the PC platform. Development
+      for other platforms currently is not planned. Developers will
+      support the client for Windows OS, and server for FreeBSD.
+      Developers will not support any other systems, but will help
+      anyone who's willing to do it. Game will be played through the
+      Internet. The virtual allocated server will be rented for the
+      game. The game through the Internet for all users will be
+      free-of-charge.
+    </para>
+    <para>
+      Hardware requirements for client and server parts will be
+      described later in Software Requirements Specification. Game
+      will need at least 56 Kbit/s internet connecion speed.
+    </para>
+  </sect1>
+
+  <sect1>
+    <title>Audience</title>
+    <para>
+      The game is designed for the players who are at least 14 years
+      old. The game is intended for the Russian and English-speaking
+      markets (two game versions in Russian and in English). Also
+      game will be initially developed with the opportunities for
+      further translation in different languages.
+
+    </para>
+    <para>
+      Some games that are similar to Ireon in some aspects:
+    </para>
+    <itemizedlist>
+      <listitem><para>
+        World Of Warcraft
+      </para></listitem>
+      <listitem><para>
+        Lineage II
+      </para></listitem>
+      <listitem><para>
+        Planeshift
+      </para></listitem>
+      <listitem><para>
+        Gothic
+      </para></listitem>
+      <listitem><para>
+        3sider.com
+      </para></listitem>
+    </itemizedlist>
+  </sect1>
+
+</article>

@@ -1,0 +1,8 @@
+Import('*')
+
+docBuildEnv.Alias('docs-cleanup', \
+docBuildEnv.Command('delete.dir', '', docBuildEnv.Action(docBuildEnv.cleanupDir,docBuildEnv.cleanupDirStr)) )
+docBuildEnv.Alias('install-docs-cleanup', \
+docBuildEnv.Command(docBuildEnv['installPath_']+'/doc/en_Us/delete.dir', '', docBuildEnv.Action(docBuildEnv.cleanupDir,docBuildEnv.cleanupDirStr)) )
+
+SConscript(['development/SConscript','game_design/SConscript','tech/SConscript','papers/SConscript'], exports='docBuildEnv')

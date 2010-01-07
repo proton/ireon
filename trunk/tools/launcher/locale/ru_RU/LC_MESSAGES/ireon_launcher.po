@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ireon_launcher\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2006-05-04 12:21+0300\n"
+"Last-Translator: Dmitry Bitman <i18n@ireon.org>\n"
+"Language-Team: ireon.org <input@ireon.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: D:\\projects\\ireon\\tools\\\n"
+"X-Poedit-SearchPath-0: D:\\projects\\ireon\\tools\\launcher\n"
+
+# D:\projects\ireon\tools\launcher/launcher.pyw:102
+msgid "GMT time:"
+msgstr "GMT:"
+
+# D:\projects\ireon\tools\launcher/launcher.pyw:131
+msgid "Update failed!"
+msgstr "Ошибка обновления!"
+
+# D:\projects\ireon\tools\launcher/launcher.pyw:131
+msgid "Update started..."
+msgstr "Обновление запущено..."
+
+# D:\projects\ireon\tools\launcher/launcher.pyw:157
+msgid "Update finished."
+msgstr "Обновление завершено."
+
+# D:\projects\ireon\tools\launcher/launcher.pyw:169
+msgid "ok"
+msgstr "работает"
+
+# D:\projects\ireon\tools\launcher/launcher.pyw:171
+msgid "failed"
+msgstr "не работает"
+
+# D:\projects\ireon\tools\launcher/launcher.xrc-gettext:1
+msgid "ireon.org launcher"
+msgstr "ireon.org launcher"
+
+# D:\projects\ireon\tools\launcher/launcher.pyw:131
+msgid "Update Game"
+msgstr "Обновить игру"
+
+# D:\projects\ireon\tools\launcher/launcher.xrc-gettext:3
+msgid "Launch Game"
+msgstr "Запустить игру"
+
+# D:\projects\ireon\tools\launcher/launcher.xrc-gettext:4
+msgid "Server state"
+msgstr "Состояние серверов"
+
+# D:\projects\ireon\tools\launcher/launcher.xrc-gettext:5
+msgid "ireon root server"
+msgstr "корневой сервер"
+
+# D:\projects\ireon\tools\launcher/launcher.xrc-gettext:6
+msgid "ireon cluster manager"
+msgstr "менеджер кластера"
+
+# D:\projects\ireon\tools\launcher/launcher.xrc-gettext:7
+msgid "ireon world server"
+msgstr "сервер мира"
+

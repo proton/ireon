@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="TaharezLook/FrameWindow" Name="AddCharacterWindow" >
+        <Property Name="Text" Value="Создание нового персонажа" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TitlebarFont" Value="Tahoma-12" />
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="SizingEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0.5,0},{0.25,0}}" />
+        <Property Name="TitlebarEnabled" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.4,0},{1,0},{1,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="MainMenu/ConnectWindow/NameText" >
+            <Property Name="Text" Value="Имя" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.025,0},{0.195876,0},{0.171429,0},{0.429553,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="AddCharacterWindow/NameEdit" >
+            <Property Name="MaxTextLength" Value="1073741823" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.144643,0},{0.213059,0},{0.951785,0},{0.436426,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="AddCharacterWindow/OK" >
+            <Property Name="Text" Value="Создать" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.5375,0},{0.676976,0},{0.919643,0},{0.917525,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="AddCharacterWindow/Cancel" >
+            <Property Name="Text" Value="Отмена" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0803571,0},{0.680412,0},{0.410714,0},{0.924398,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

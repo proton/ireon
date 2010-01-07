@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!DOCTYPE book
+  PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+    "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  [
+    <!ENTITY % entities SYSTEM "entities.xml">
+    %entities;
+    <!ENTITY % global.entities SYSTEM
+        "../../../include/global.xml">
+    %global.entities;
+  ]
+>
+
+
+<!--
+  Внимание, если на вашем компьютере есть локальная версия DTD
+  Docbook, то замените строчку
+    "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  на
+    "file:/c:/path_to_dtd/docbookx.dtd"
+
+  (Если вы используете eDE от e-novative, то на строчку
+    "file:/c:/docbook/dtd/docbookx.dtd")
+-->
+
+
+<book lang="ru" status="draft">
+
+  <bookinfo>
+
+    <title>Локации в мире ireon</title>
+
+    <releaseinfo>Версия 0.01.04</releaseinfo>
+    <revhistory>
+      <revision>
+        <revnumber>0.01.01</revnumber>
+        <date>4 сентября 2005</date>
+        <revdescription>
+          <para>
+            Создание исходной версии
+          </para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>0.01.02</revnumber>
+        <date>25 сентября 2005</date>
+        <revdescription>
+          <para>
+            Начато описание зон Арналльских лесов, Гиллиморской
+            низменности, Белых холмов, Западных гор и острова
+            Фьорнелл
+          </para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>0.01.03</revnumber>
+        <date>16 октября 2005</date>
+        <revdescription>
+          <para>
+            Начато описание зоны Северных земель
+          </para>
+        </revdescription>
+      </revision>
+	  <revision>
+        <revnumber>0.01.04</revnumber>
+        <date>25 октября 2005</date>
+        <revdescription>
+          <para>
+            Начато описание зон Мергонских топей, Гиллиморских
+            равнин и Харумских равнин
+          </para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <abstract>
+      <para>
+        В данном документе описаны локации мира ireon. В каждой из
+        них игрока ждут интересные квесты, опасные монстры, редкие
+        артефакты. У каждой локации будет свой уникальный игровой
+        сеттинг.
+      </para>
+      <para>
+        Внимание, этот документ целиком для <emphasis>просмотра в
+        оффлайне</emphasis> вы можете скачать со <ulink
+        url="http://www.ireon.org/docs.html">страницы
+        документации</ulink> на нашем сайте.
+      </para>
+      <para>
+        По всем вопросам обращайтесь на <ulink
+        url="http://forum.ireon.org/">форум проекта
+        &proj_name;</ulink> или по электронной почте
+        <email>gunslinger[at]ireon.org</email>.
+      </para>
+    </abstract>
+
+    <keywordset>
+      <keyword>&game_title;</keyword>
+      <keyword>game</keyword>
+      <keyword>world guide</keyword>
+    </keywordset>
+
+    <copyright>
+      &copyrightinfo;
+    </copyright>
+    <legalnotice>
+      &legalnotice;
+    </legalnotice>
+  </bookinfo>
+
+	&northern_novalia_chapter;
+	&west_mountains_chapter;
+	&tardorian_mountains_chapter;
+	&white_hills_chapter;
+	&arnall_woods_chapter;
+	&gillimor_plains_chapter;
+	&gillimor_lowlands_chapter;
+	&kharum_plains_chapter;
+	&mergon_mires_chapter;
+	&fjornell_isle_chapter;
+
+</book>

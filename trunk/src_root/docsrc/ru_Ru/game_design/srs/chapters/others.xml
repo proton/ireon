@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!--
+others chapter :: ireon srs
+(c) ireon.org, 2004 &mdash; 2006
+-->
+
+  <chapter id="others">
+    <chapterinfo>
+    </chapterinfo>
+    <title id="others.title">Прочее</title>
+    <para>
+    </para>
+    
+    <sect1>
+    <title>Матрица фич</title>
+    <para>
+      	На этой странице представлено распределение основных фич 
+      	игры по типам игроков и их уровням. Про базовые типы игроков 
+      	можно прочитать в статье Ричарда Бартла <ulink url= 
+      	"http://www.ireon.org/docs/html/hcds.html" >Черви, трефы, 
+      	бубны, пики: игроки виртуальных миров</ulink> (<ulink url= 
+      	"http://www.mud.co.uk/richard/hcds.htm" >Hearts, Clubs, 
+      	Diamonds, Spades: Players Who Suit MUDs</ulink>).
+    </para>
+    <para>
+    	Значения условных уровней игроков приводятся ниже:
+		<itemizedlist>
+  		<listitem>
+    	<para>
+    		Начальный &mdash; одна-три первые недели игры, игрок 
+    		знакомится с игровым миром, геймплеем, законами.
+    	</para>
+  		</listitem>
+  		<listitem>
+    	<para>
+    		Средний &mdash; следующие два-три месяца игры, основной 
+    		этап прокачки, изучения игры, получения статуса и 
+    		репутации.
+    	</para>
+  		</listitem>
+  		<listitem>
+    	<para>
+    		Высокий &mdash; игрок получает доступ к самому 
+    		высокоуровневому контенту, уже практически везде был и 
+    		все знает; следующие один-два месяца.
+    	</para>
+  		</listitem>
+  		<listitem>
+    	<para>
+    		&laquo;Отец&raquo; &mdash; игрок отыграл весь контент, 
+    		побывал везде, играл во все, знает все, приходит в игру, 
+    		в основном, для общения с друзьями.
+    	</para>
+  		</listitem>
+		</itemizedlist>
+  	</para>
+  	
+  	<para>
+  	<figure>
+    	<title>Матрица фич</title>
+        <graphic
+                fileref="figures/features_matrix.gif"/>
+        </figure>
+  	</para>
+  	
+  	<para>
+  	<orderedlist>
+  <listitem>
+    <simpara>Полужирным отмечается наиболее важный пункт в 
+    ячейке.</simpara>
+  </listitem>
+  <listitem>
+    <simpara>Игроки, встречающие нубов в точках их появления и 
+    вводящие в курс дела (FIXME -- поставить ссылку на 
+    описание)</simpara>
+  </listitem>
+  <listitem>
+    <simpara>Плюс средства поиска друзей.</simpara>
+  </listitem>
+  <listitem>
+    <simpara>Встроенные средства для комьюнити, мигрирующих целиком. 
+    Какие именно &mdash; еще не придумали :)</simpara>
+  </listitem>
+  <listitem>
+    <simpara>Готовый спрос на мелкие &laquo;грязные&raquo; делишки, 
+    связано с системой &laquo;отмывки&raquo; вещей.</simpara>
+  </listitem>
+  <listitem>
+    <simpara>Картинка с кодом.</simpara>
+  </listitem>
+  <listitem>
+    <simpara>Развитие нелинейно и игрок делает выбор путей развития 
+    в течение всей игры, а не только при создании 
+    персонажа.</simpara>
+  </listitem>
+  <listitem>
+    <simpara>См. <xref
+          linkend="ministry_of_culture"
+          endterm="ministry_of_culture.title"/></simpara>
+  </listitem>
+  <listitem>
+    <simpara>Позволяет сменить ник на время совершения 
+    преступления.</simpara>
+  </listitem>
+  <listitem>
+    <simpara>Доска почета героев всех времен.</simpara>
+  </listitem>
+  <listitem>
+    <simpara>Квесты с состояниями, различными исходами, 
+    взаимодействиями игроков и т.п.</simpara>
+  </listitem>
+  <listitem>
+    <simpara>См. <xref
+          linkend="politics_and_management"
+          endterm="politics_and_management.title"/></simpara>
+  </listitem>
+  <listitem>
+    <simpara>До перманентной смерти.</simpara>
+  </listitem>
+</orderedlist>
+  	</para>
+  	
+    </sect1>
+
+    <sect1>
+      <title>Графика [пусто]</title>
+      <para>
+      </para>
+
+      <sect2>
+        <title>Виды (от 1-го/3-го лица) [пусто]</title>
+        <para>
+        </para>
+      </sect2>
+      <!-- /Виды -->
+
+
+    </sect1>
+    <!-- /Графика -->
+
+
+    <sect1>
+      <title>Звук [пусто]</title>
+      <para>
+      </para>
+    </sect1>
+    <!-- /Звук -->
+
+
+    <sect1>
+      <title>Интерфейс [пусто]</title>
+      <para>
+      </para>
+
+      <sect2>
+        <title>Меню [пусто]</title>
+        <para>
+        </para>
+      </sect2>
+      <!-- /Меню -->
+
+
+      <sect2>
+        <title>Игровой интерфейс [пусто]</title>
+        <para>
+        </para>
+      </sect2>
+      <!-- /Игровой интерфейс -->
+
+
+      <sect2>
+        <title>Специализированные интерфейсы [пусто]</title>
+        <para>
+        </para>
+
+        <sect3>
+          <title>Интерфейс дома [пусто]</title>
+          <para>
+          </para>
+        </sect3>
+        <!-- /Интерфейс дома -->
+
+
+        <sect3>
+          <title>Интерфейс ратуши [пусто]</title>
+          <para>
+          </para>
+        </sect3>
+        <!-- /Интерфейс ратуши -->
+
+
+        <sect3>
+          <title>Интерфейс гильдии [пусто]</title>
+          <para>
+          </para>
+        </sect3>
+        <!-- /Интерфейс гильдии -->
+
+
+        <sect3>
+          <title>Интерфейс клана [пусто]</title>
+          <para>
+          </para>
+        </sect3>
+        <!-- /Интерфейс клана -->
+
+
+        <sect3>
+          <title>Интерфейс кузнеца [пусто]</title>
+          <para>
+          </para>
+        </sect3>
+        <!-- /Интерфейс кузнеца -->
+
+
+        <sect3>
+          <title>Интерфейс травника [пусто]</title>
+          <para>
+          </para>
+        </sect3>
+        <!-- /Интерфейс травника -->
+
+
+      </sect2>
+      <!-- /Специализированные интерфейсы -->
+
+
+    </sect1>
+    <!-- /Интерфейс -->
+
+
+    <sect1>
+      <title>Целевые системные требования [пусто]</title>
+      <para>
+      </para>
+
+      <sect2>
+        <title>Клиентские требования [пусто]</title>
+        <para>
+        </para>
+      </sect2>
+      <!-- /Клиентские требования -->
+
+
+      <sect2>
+        <title>Серверные требования [пусто]</title>
+        <para>
+        </para>
+      </sect2>
+      <!-- /Серверные требования -->
+
+
+    </sect1>
+    <!-- /Целевые системные требования -->
+
+
+    <sect1>
+      <title>Информация о пользователе через www [пусто]</title>
+      <para>
+      </para>
+    </sect1>
+    <!-- /Информация о пользователе через www -->
+
+
+  </chapter>
+  <!-- /Прочее -->

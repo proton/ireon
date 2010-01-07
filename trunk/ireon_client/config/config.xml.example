@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Configuration file for ireon.org client.
+
+-->
+<cfg:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:cfg="http://www.ireon.org/ireon/client/"
+     xsi:schemaLocation="http://www.ireon.org/ireon/client/ config.xsd" >
+    <net>
+        <rootServer>
+            <ip>127.0.0.1</ip>
+        </rootServer>
+        <worldServer>
+        </worldServer>
+    </net>
+    <resources>
+        <resource category="General" type="FileSystem">../data/</resource>
+        <resource category="General" type="FileSystem">../data/models</resource>
+        <resource category="General" type="FileSystem">../data/models/loc1</resource>
+        <resource category="General" type="FileSystem">../data/interface </resource>
+        <resource category="General" type="FileSystem">../data/interface/layouts</resource>
+        <resource category="General" type="FileSystem">../data/interface/fonts</resource>
+        <resource category="General" type="FileSystem">../data/interface/schemes</resource>
+        <resource category="General" type="FileSystem">../data/interface/looknfeel</resource>
+        <resource category="General" type="FileSystem">../data/interface/imagesets</resource>
+        <resource category="General" type="FileSystem">../data/materials/scripts</resource>
+        <resource category="General" type="FileSystem">../data/materials/scripts/loc1</resource>
+        <resource category="General" type="FileSystem">../data/materials/textures</resource>
+        <resource category="General" type="FileSystem">../data/materials/textures/loc1</resource>
+        <resource category="General" type="FileSystem">../data/interface/scripts</resource>
+        <resource category="General" type="FileSystem">../config</resource>
+        <resource category="General" type="FileSystem">../logs</resource>
+        <resource category="General" type="Zip">../data/packs/morning.zip</resource>
+        <resource category="PLSM2" type="FileSystem">../data/landscape</resource>
+        <resource category="PLSM2" type="FileSystem">../data/landscape/ireon</resource>
+        <resource category="PLSM2" type="FileSystem">../data/landscape/Splat</resource>
+        <resource category="Ireon" type="Dir">../data/zones/</resource>
+        <resource category="Ireon" type="Dir">../data/zones/mobs</resource>
+        <resource category="Ireon" type="Dir">../data/zones/static</resource>
+        <resource category="Ireon" type="Dir">../data/zones/zones</resource>
+    </resources>
+    <world>
+        <light>
+            <main>0.5 0.5 0.5</main>
+            <ambient>1 1 1 1</ambient>
+        </light>
+    </world>
+    <profile>
+        <login>test</login>
+        <password>test</password>
+        <registration>false</registration>
+    </profile>
+    <_interface>
+        <script category="General" type="py">output.py</script>
+        <script category="General" type="py">scripts.py</script>
+    </_interface>
+</cfg:config>

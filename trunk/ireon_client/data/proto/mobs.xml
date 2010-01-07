@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Configuration file for loading static prototypes.
+
+-->
+<cfg:mobs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:cfg="http://www.ireon.org/ireon/client/"
+     xsi:schemaLocation="http://www.ireon.org/ireon/client/ mobs.xsd" >
+
+    <prototype>skelet.mob</prototype>
+    <prototype>demon.mob</prototype>
+    <prototype>rubaka.mob</prototype>
+    <prototype>wolf.mob</prototype>
+    <prototype>kotopes.mob</prototype>
+    
+</cfg:mobs>      

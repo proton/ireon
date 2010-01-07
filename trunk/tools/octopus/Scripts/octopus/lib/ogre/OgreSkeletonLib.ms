@@ -1,0 +1,5 @@
+include "octopus/lib/ogre/ogreSkeletonLib_usefulfns.ms"
+include "octopus/lib/ogre/ogreSkeletonLib_meshfns.ms"
+include "octopus/lib/ogre/ogreSkeletonLib_skelfns.ms"
+include "octopus/lib/ogre/ogreBipedLib.ms"
+include "octopus/lib/ogre/ogreMaterialLib.ms"

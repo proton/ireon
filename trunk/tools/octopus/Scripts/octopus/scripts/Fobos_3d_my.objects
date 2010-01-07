@@ -1,0 +1,90 @@
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/station",
+	entity = "station"
+}
+
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/Object01",
+	entity = "Object01"
+}
+
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/Object02",
+	entity = "Object02"
+}
+
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/Object03",
+	entity = "Object03"
+}
+
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/Object05",
+	entity = "Object05"
+}
+
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/Object06",
+	entity = "Object06"
+}
+
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/Object07",
+	entity = "Object07"
+}
+
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/Object08",
+	entity = "Object08"
+}
+
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/Object09",
+	entity = "Object09"
+}
+
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/Object10",
+	entity = "Object10"
+}
+
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/Object11",
+	entity = "Object11"
+}
+
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/Object12",
+	entity = "Object12"
+}
+
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/Object13",
+	entity = "Object13"
+}
+
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/Object14",
+	entity = "Object14"
+}
+
+defineObjectTemplate
+{
+	name = "Fobos_3d_my/Object04",
+	entity = "Object04"
+}
+

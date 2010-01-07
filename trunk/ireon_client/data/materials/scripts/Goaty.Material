@@ -1,0 +1,75 @@
+material GoatMaterial
+{
+    technique
+    {
+        pass
+        {
+//            ambient 0.988235 0.388235 0.588235
+//		diffuse 0.2 0.2 0.2
+  //          specular 0.9 0.9 0.9 0.0
+    //        emissive 0.3 0.3 0.3
+            texture_unit
+            {
+                texture GoatyMap.TGA 
+            }
+        }
+    }
+}
+
+material GoatMaterial1
+{
+    technique
+    {
+        pass
+        {
+//	    scene_blend alpha_blend
+  //          ambient 0.588235 0.588235 0.588235
+    // 		diffuse 0.2 0.2 0.2
+	//      specular 0.9 0.9 0.9 0.0
+          //  emissive 0.0 0.0 0.0
+            texture_unit
+            {
+                texture GoatyMap.jpg
+            }
+        }
+    }
+}
+
+material GoatMaterial3
+{
+    technique
+    {
+        pass
+        {
+	    scene_blend alpha_blend
+            ambient 0.588235 0.588235 0.588235
+            diffuse 0.2 0.2 0.2
+            specular 0.9 0.9 0.9 0.0
+            emissive 0.0 0.0 0.0
+            texture_unit
+            {
+                texture GoatyMap.TGA 
+            }
+        }
+    }
+}
+material GoatMaterial2
+{
+    technique
+    {
+        pass
+        {
+	    scene_blend alpha_blend
+            ambient 0.588235 0.588235 0.588235
+            diffuse 0.2 0.2 0.2
+            specular 0.9 0.9 0.9 0.0
+            emissive 0.0 0.0 0.0
+            texture_unit
+            {
+                texture GoatyMap.TGA 
+            }
+        }
+    }
+}
+
+

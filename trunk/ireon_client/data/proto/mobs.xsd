@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<xsd:schema
+		targetNamespace="http://www.ireon.org/ireon/client/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:cfg="http://www.ireon.org/ireon/client/" >
+
+	<xsd:element name="mobs" type="cfg:CPCMobs" />
+
+	<xsd:complexType name="CPCMobs">
+		<xsd:sequence>
+			<xsd:element name="prototype" type="xsd:string" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>

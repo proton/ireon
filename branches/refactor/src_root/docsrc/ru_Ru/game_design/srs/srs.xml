@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!DOCTYPE book
+  PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+    "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  [
+    <!ENTITY % entities SYSTEM "entities.xml">
+    %entities;
+    <!ENTITY % global.entities SYSTEM
+        "../../../include/global.xml">
+    %global.entities;
+  ]
+>
+
+
+<!--
+  Внимание, если на вашем компьютере есть локальная версия DTD
+  Docbook, то замените строчку
+    "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+  на
+    "file:/c:/path_to_dtd/docbookx.dtd"
+
+  (Если вы используете eDE от e-novative, то на строчку
+    "file:/c:/docbook/dtd/docbookx.dtd")
+-->
+
+
+<book lang="ru">
+
+  <bookinfo>
+
+    <title>&game_title;</title>
+    <subtitle>
+      Software Requirements Specification (SRS), известная также как
+      &laquo;диздок&raquo;
+    </subtitle>
+
+    <releaseinfo>Версия 0.03.05a</releaseinfo>
+    <revhistory>
+      <revision>
+        <revnumber>0.02.01</revnumber>
+        <date>8 мая 2005</date>
+        <revdescription>
+          <para>
+          Обновлены описания государств (добавлены Нейтральные
+          земли), рас и добавлено описание основных параметров.
+          </para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>0.02.02</revnumber>
+        <date>23 мая 2005</date>
+        <revdescription>
+          <para>
+          Добавлено описание таверн и истории государств.
+          </para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>0.02.03</revnumber>
+        <date>13 июля 2005</date>
+        <revdescription>
+          <para>
+          Описан институт гражданства.
+          </para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>0.02.04</revnumber>
+        <date>16 июля 2005</date>
+        <revdescription>
+          <para>
+          Описана политическая система.
+          </para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>0.03</revnumber>
+        <date>2 августа 2005</date>
+        <revdescription>
+          <para>
+          Дописана политическая система, в общих чертах глава
+          &laquo;Государства&raquo; завершена.
+          </para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>0.03.01</revnumber>
+        <date>8 августа 2005</date>
+        <revdescription>
+          <para>
+          Добавлено краткое описание ролей.
+          </para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>0.03.02</revnumber>
+        <date>10 августа 2005</date>
+        <revdescription>
+          <para>
+          Добавлено описание вступления персонажа в игру.
+          </para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>0.03.03</revnumber>
+        <date>14 августа 2005</date>
+        <revdescription>
+          <para>
+          Добавлено описание систем общения в игре и жилья
+          персонажей.
+          </para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>0.03.04</revnumber>
+        <date>15 августа 2005</date>
+        <revdescription>
+          <para>
+          Описаны механизмы использования инвентаря, смерти,
+          регенерации и входа из игры, а также описаны
+          взаимоотношения между государствами.
+          </para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>0.03.05</revnumber>
+        <date>5 сентября 2005</date>
+        <revdescription>
+          <para>
+          Добавлено описание систем торговли.
+          </para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <abstract>
+      <para>
+        Данный документ описывает игру &game_title;  с точки зрения
+        конечного пользователя и служит основным документом для всех
+        разработчиков игры.
+      </para>
+      <para>
+        Внимание, этот документ целиком для <emphasis>просмотра в
+        оффлайне</emphasis> вы можете скачать со <ulink
+        url="http://www.ireon.org/docs.html">страницы
+        документации</ulink> на нашем сайте.
+      </para>
+      <para>
+        По всем вопросам обращайтесь на <ulink
+        url="http://forum.ireon.org/">форум проекта
+        &proj_name;</ulink> или по электронной почте
+        <email>zak[at]ireon.org</email>.
+      </para>
+    </abstract>
+
+    <keywordset>
+      <keyword>&game_title;</keyword>
+      <keyword>game</keyword>
+      <keyword>design document</keyword>
+    </keywordset>
+
+    <copyright>
+      &copyrightinfo;
+    </copyright>
+    <legalnotice>
+      &legalnotice;
+    </legalnotice>
+  </bookinfo>
+
+  &preface;
+  &intro_chapter;
+  &background_chapter;
+  &roleplay_chapter;
+  &states_chapter;
+  &communities_chapter;
+  &world_chapter;
+  &magic_chapter;
+  &gameplay_chapter;
+  &others_chapter;
+
+  <!-- glossary goes here -->
+  &glossary;
+
+</book>

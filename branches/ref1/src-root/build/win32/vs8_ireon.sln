@@ -1,0 +1,58 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ireon_client", "vs8_ireon_client.vcproj", "{49F2E5A5-47A6-4032-9FF6-C03F59384F8A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FC8118A4-376A-48EA-8062-999E589EA482} = {FC8118A4-376A-48EA-8062-999E589EA482}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ireon_cm", "vs8_ireon_cm.vcproj", "{DBC43454-224A-461C-85F7-6FDF295A1AA7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ireon_rs", "vs8_ireon_rs.vcproj", "{D58BEB0C-984B-4FE3-8DA5-D94A86D78F47}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ireon_ws", "vs8_ireon_ws.vcproj", "{8933DF92-211C-4305-82FA-8C665B9D3393}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6C413CEA-8407-4AD1-B6BA-5DED3549A3E5} = {6C413CEA-8407-4AD1-B6BA-5DED3549A3E5}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MapSplitter", "vs8_MapSplitter.vcproj", "{B8DB13C1-5F0E-4C42-8764-6DEE559A6646}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OgreTypes", "vs8_OgreTypes.vcproj", "{6C413CEA-8407-4AD1-B6BA-5DED3549A3E5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Plugin_PagingLandScapeSceneManager2", "vs8_Plugin_PagingLandScapeSceneManager2.vcproj", "{FC8118A4-376A-48EA-8062-999E589EA482}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49F2E5A5-47A6-4032-9FF6-C03F59384F8A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{49F2E5A5-47A6-4032-9FF6-C03F59384F8A}.Debug|Win32.Build.0 = Debug|Win32
+		{49F2E5A5-47A6-4032-9FF6-C03F59384F8A}.Release|Win32.ActiveCfg = Release|Win32
+		{49F2E5A5-47A6-4032-9FF6-C03F59384F8A}.Release|Win32.Build.0 = Release|Win32
+		{DBC43454-224A-461C-85F7-6FDF295A1AA7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DBC43454-224A-461C-85F7-6FDF295A1AA7}.Debug|Win32.Build.0 = Debug|Win32
+		{DBC43454-224A-461C-85F7-6FDF295A1AA7}.Release|Win32.ActiveCfg = Release|Win32
+		{DBC43454-224A-461C-85F7-6FDF295A1AA7}.Release|Win32.Build.0 = Release|Win32
+		{D58BEB0C-984B-4FE3-8DA5-D94A86D78F47}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D58BEB0C-984B-4FE3-8DA5-D94A86D78F47}.Debug|Win32.Build.0 = Debug|Win32
+		{D58BEB0C-984B-4FE3-8DA5-D94A86D78F47}.Release|Win32.ActiveCfg = Release|Win32
+		{8933DF92-211C-4305-82FA-8C665B9D3393}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8933DF92-211C-4305-82FA-8C665B9D3393}.Debug|Win32.Build.0 = Debug|Win32
+		{8933DF92-211C-4305-82FA-8C665B9D3393}.Release|Win32.ActiveCfg = Release|Win32
+		{B8DB13C1-5F0E-4C42-8764-6DEE559A6646}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B8DB13C1-5F0E-4C42-8764-6DEE559A6646}.Debug|Win32.Build.0 = Debug|Win32
+		{B8DB13C1-5F0E-4C42-8764-6DEE559A6646}.Release|Win32.ActiveCfg = Release|Win32
+		{6C413CEA-8407-4AD1-B6BA-5DED3549A3E5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6C413CEA-8407-4AD1-B6BA-5DED3549A3E5}.Debug|Win32.Build.0 = Debug|Win32
+		{6C413CEA-8407-4AD1-B6BA-5DED3549A3E5}.Release|Win32.ActiveCfg = Release|Win32
+		{6C413CEA-8407-4AD1-B6BA-5DED3549A3E5}.Release|Win32.Build.0 = Release|Win32
+		{FC8118A4-376A-48EA-8062-999E589EA482}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FC8118A4-376A-48EA-8062-999E589EA482}.Debug|Win32.Build.0 = Debug|Win32
+		{FC8118A4-376A-48EA-8062-999E589EA482}.Release|Win32.ActiveCfg = Release|Win32
+		{FC8118A4-376A-48EA-8062-999E589EA482}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

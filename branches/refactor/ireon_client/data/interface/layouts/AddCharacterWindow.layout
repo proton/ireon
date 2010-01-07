@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+<Window Type="TaharezLook/FrameWindow" Name="AddCharacterWindow" >
+<Property Name="CloseButtonEnabled" Value="True" />
+<Property Name="AlwaysOnTop" Value="True" />
+<Property Name="DragMovingEnabled" Value="True" />
+<Property Name="SizingEnabled" Value="False" />
+<Property Name="Text" Value="Создание нового персонажа" />
+<Property Name="TitlebarEnabled" Value="True" />
+<Property Name="Position" Value="x:0.30 y:0.4" />
+<Property Name="Size" Value="w:0.5 h:0.25" />
+<Window Type="TaharezLook/StaticText" Name="MainMenu/ConnectWindow/NameText" >
+<Property Name="FrameEnabled" Value="False" />
+<Property Name="Text" Value="Имя" />
+<Property Name="Position" Value="x:0.03 y:0.2" />
+<Property Name="Size" Value="w:0.15 h:0.2" />
+<Property Name="BackgroundEnabled" Value="false" />
+</Window>
+<Window Type="TaharezLook/Editbox" Name="AddCharacterWindow/NameEdit" >
+<Property Name="Text" Value="" />
+<Property Name="Position" Value="x:0.2 y:0.2" />
+<Property Name="Size" Value="w:0.75 h:0.2" />
+</Window>
+<Window Type="TaharezLook/Button" Name="AddCharacterWindow/OK" >
+<Property Name="Position" Value="x:0.2 y:0.75" />
+<Property Name="Size" Value="w:0.25 h:0.2" />
+<Property Name="Text" Value="Создать" />
+</Window>
+<Window Type="TaharezLook/Button" Name="AddCharacterWindow/Cancel" >
+<Property Name="Position" Value="x:0.5 y:0.75" />
+<Property Name="Size" Value="w:0.25 h:0.2" />
+<Property Name="Text" Value="Отмена" />
+</Window>
+</Window>
+</GUILayout>

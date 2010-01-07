@@ -1,0 +1,14 @@
+
+vertex_program Splatcg/VP cg
+{
+	source Splat.cg
+	entry_point main_vp
+	profiles vs_2_0 arbvp1
+}
+
+fragment_program Splatcg/FP cg
+{
+	source Splat.cg
+	entry_point main_fp
+	profiles ps_2_0 arbfp1
+}

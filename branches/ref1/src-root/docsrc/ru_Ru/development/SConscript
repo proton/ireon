@@ -1,0 +1,3 @@
+Import('*')
+
+SConscript(['scmp/SConscript','spmp/SConscript','proposal/SConscript'], exports='docBuildEnv')

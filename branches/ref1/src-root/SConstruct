@@ -1,0 +1,20 @@
+#
+#	ireon.org main build file
+#
+
+# Generating base construction enviroment
+baseEnv = Environment()
+
+# Parsing command line parameters
+baseEnv['forceReinstall_'] = int(ARGUMENTS.get('forceReinstall', 0))
+
+Export('baseEnv')
+
+# Calling build configuration script, and userconfig script to override values
+SConscript(['build/build_config.py','userconfig.py'], exports='baseEnv')
+
+# No default targets, user must use `scons .` to build all targets
+Default(None)
+
+# Calling subsequent SConscript files to do actual work
+SConscript(['docsrc/SConscript', 'src/SConscript'], exports='baseEnv')
